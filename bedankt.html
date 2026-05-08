@@ -1,0 +1,117 @@
+<!--
+  /bedankt page — landing after a base-tier Stripe Payment Link.
+  Brand-consistent with the platform: Cormorant Garamond + Jost,
+  --teal / --gold / --off-white / --cream-dark palette.
+
+  V1 use: minimal "thanks, login details on the way" message. The
+  account-provisioning flow (Firebase Auth user creation + welcome email
+  via Brevo) is V2 work — until then, André manually provisions accounts
+  using the signups_pending/* records the Stripe webhook writes.
+
+  Hosted from the project root alongside index.html. Reachable as
+  vaetestament.nl/bedankt.html (or /bedankt if the host rewrites
+  extension-less paths).
+-->
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bedankt — VAE Testament</title>
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --teal: #0C4A45; --gold: #C8A44A;
+      --cream: #F6F1E7; --cream-dark: #EDE6D6; --off-white: #FAF7F0;
+      --dark: #181818; --mid: #4B4B4B;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; padding: 0;
+      font-family: 'Jost', system-ui, sans-serif; color: var(--dark);
+      background: var(--cream);
+      min-height: 100vh;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bedankt-card {
+      max-width: 580px; width: 100%;
+      background: #FFFFFF; border: 1px solid var(--cream-dark);
+      padding: 3rem 2.5rem; margin: 2rem 1rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .bedankt-accent {
+      width: 60px; height: 4px; background: var(--gold);
+      margin-bottom: 1.75rem;
+    }
+    .bedankt-h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.25rem; line-height: 1.2; font-weight: 600;
+      color: var(--teal); margin: 0 0 1.25rem;
+    }
+    .bedankt-p {
+      font-size: 1.02rem; line-height: 1.7; color: var(--dark);
+      margin: 0 0 1.1rem;
+    }
+    .bedankt-p--muted { color: var(--mid); font-size: 0.92rem; }
+    .bedankt-list {
+      list-style: none; padding: 0; margin: 1.5rem 0;
+      border-left: 3px solid var(--gold);
+      padding-left: 1.25rem;
+    }
+    .bedankt-list li {
+      font-size: 0.96rem; line-height: 1.6; color: var(--dark);
+      margin-bottom: 0.6rem;
+    }
+    .bedankt-list li:last-child { margin-bottom: 0; }
+    .bedankt-list strong { color: var(--teal); font-weight: 600; }
+    .bedankt-cta {
+      display: inline-block; margin-top: 0.5rem;
+      padding: 0.7rem 1.4rem;
+      background: var(--gold); color: var(--teal);
+      text-decoration: none; font-weight: 600; font-size: 0.95rem;
+      border-radius: 2px;
+      transition: background 0.15s;
+    }
+    .bedankt-cta:hover { background: #E2C47A; }
+    .bedankt-divider {
+      border: none; border-top: 1px solid var(--cream-dark);
+      margin: 1.75rem 0;
+    }
+    .bedankt-footer {
+      font-size: 0.85rem; line-height: 1.6; color: var(--mid);
+    }
+    .bedankt-footer a { color: var(--teal); }
+    @media (max-width: 600px) {
+      .bedankt-card { padding: 2rem 1.5rem; }
+      .bedankt-h1 { font-size: 1.85rem; }
+    }
+  </style>
+</head>
+<body>
+
+<article class="bedankt-card">
+  <div class="bedankt-accent"></div>
+  <h1 class="bedankt-h1">Bedankt voor uw aankoop</h1>
+
+  <p class="bedankt-p">
+    Uw betaling is ontvangen. U ontvangt binnen enkele minuten een e-mail van VAE Testament met uw inloggegevens en de eerste stappen.
+  </p>
+
+  <ul class="bedankt-list">
+    <li><strong>Volgende stap:</strong> log in op uw persoonlijke portal en doorloop Fase 1 — Welkom &amp; oriëntatie.</li>
+    <li><strong>Mocht u niets ontvangen na 30 minuten:</strong> controleer uw spam-folder, of stuur een bericht via <a href="mailto:support@vaetestament.nl">support@vaetestament.nl</a>.</li>
+    <li><strong>Heeft u een vraag tussendoor:</strong> antwoord op de welkomste-mail of mail rechtstreeks <a href="mailto:support@vaetestament.nl">support@vaetestament.nl</a> — wij reageren binnen 2 werkdagen.</li>
+  </ul>
+
+  <hr class="bedankt-divider" />
+
+  <p class="bedankt-footer">
+    Een DIFC-testament dekt uitsluitend uw onroerend goed in de VAE. Het vervangt uw Nederlandse testament niet.<br/>
+    VAE Testament is geen advocatenkantoor — wij bieden begeleiding en coördinatie, geen juridisch advies.<br/>
+    <a href="/privacybeleid.html" style="color:#2A7B6F;">Privacybeleid</a> &middot; <a href="/algemene-voorwaarden.html" style="color:#2A7B6F;">Algemene voorwaarden</a>
+  </p>
+</article>
+
+</body>
+</html>
