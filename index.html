@@ -354,7 +354,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 24px;
-      align-items: start;
+      align-items: stretch;
     }
     .card {
       background: var(--white);
@@ -363,6 +363,8 @@
       position: relative;
       border: 1px solid rgba(0,0,0,0.06);
       transition: transform 0.25s ease, box-shadow 0.25s ease;
+      display: flex;
+      flex-direction: column;
     }
     .card:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(0,0,0,0.08); }
     .card.featured {
@@ -440,6 +442,37 @@
       flex-direction: column;
       gap: 10px;
       margin-bottom: 36px;
+      flex: 1;
+    }
+    .card-cta {
+      margin-top: auto;
+    }
+    .card-cta-secondary {
+      display: block;
+      text-align: center;
+      margin-top: 12px;
+      font-size: 0.82rem;
+      color: var(--light-text);
+      font-weight: 300;
+    }
+    .card-cta-secondary a {
+      color: var(--teal);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .card.featured .card-cta-secondary a {
+      color: var(--gold-light);
+    }
+    .card-cta-note {
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+      font-size: 0.78rem;
+      color: var(--light-text);
+      font-weight: 300;
+    }
+    .card.featured .card-cta-note {
+      color: rgba(255,255,255,0.45);
     }
     .card-features li {
       font-size: 0.9rem;
@@ -819,6 +852,139 @@
       margin-right: auto;
     }
 
+    /* Tier-check modal */
+    .tc-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,.55);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+    }
+    .tc-overlay.open { display: flex; }
+    .tc-modal {
+      background: #fff;
+      border-radius: 16px;
+      max-width: 520px;
+      width: 92%;
+      max-height: 90vh;
+      overflow-y: auto;
+      padding: 40px 36px 32px;
+      position: relative;
+      box-shadow: 0 20px 60px rgba(0,0,0,.25);
+    }
+    .tc-close {
+      position: absolute;
+      top: 16px;
+      right: 20px;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--light-text);
+      line-height: 1;
+    }
+    .tc-close:hover { color: var(--teal); }
+    .tc-progress {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 28px;
+    }
+    .tc-progress span {
+      flex: 1;
+      height: 4px;
+      border-radius: 2px;
+      background: #e0e0e0;
+      transition: background .3s;
+    }
+    .tc-progress span.done { background: var(--teal); }
+    .tc-step { display: none; }
+    .tc-step.active { display: block; }
+    .tc-step h3 {
+      font-size: 1.15rem;
+      margin-bottom: 6px;
+      color: var(--dark);
+    }
+    .tc-step p {
+      font-size: 0.88rem;
+      color: var(--light-text);
+      margin-bottom: 20px;
+    }
+    .tc-options { display: flex; flex-direction: column; gap: 10px; }
+    .tc-opt {
+      display: block;
+      width: 100%;
+      text-align: left;
+      padding: 14px 18px;
+      border: 2px solid #e0e0e0;
+      border-radius: 10px;
+      background: #fff;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: border-color .2s, background .2s;
+    }
+    .tc-opt:hover { border-color: var(--teal); background: #fafafa; }
+    .tc-opt.selected { border-color: var(--teal); background: var(--accent-light); }
+    .tc-result {
+      display: none;
+      text-align: center;
+      padding: 20px 0 0;
+    }
+    .tc-result.active { display: block; }
+    .tc-result-card {
+      background: var(--accent-light);
+      border-radius: 12px;
+      padding: 28px 24px;
+      margin-bottom: 20px;
+    }
+    .tc-result .tc-tier-name {
+      display: block;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 4px;
+    }
+    .tc-result .tc-tier-price {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--teal);
+      margin-bottom: 12px;
+    }
+    .tc-result .tc-tier-desc {
+      font-size: 0.88rem;
+      color: var(--light-text);
+      line-height: 1.6;
+    }
+    .tc-result .tc-buy {
+      display: block;
+      background: var(--teal);
+      color: #fff;
+      padding: 16px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.05rem;
+      transition: background .2s;
+    }
+    .tc-result .tc-buy:hover { background: var(--teal-mid); }
+    .tc-result .tc-consult {
+      display: block;
+      background: var(--teal);
+      color: #fff;
+      padding: 16px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.05rem;
+      margin-top: 10px;
+      transition: background .2s;
+    }
+    .tc-result .tc-consult:hover { background: var(--teal-mid); }
+    @media (max-width: 600px) {
+      .tc-modal { padding: 28px 20px 24px; }
+    }
+
   </style>
 
   <script type="application/ld+json">
@@ -874,7 +1040,7 @@
             "name": "Geldt de Sharia ook voor mij als niet-moslim?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Ja. De VAE past bij overlijden standaard de Sharia toe op alle bezittingen die zich op haar grondgebied bevinden — ongeacht uw nationaliteit of religie. Een DIFC Will biedt niet-moslims de mogelijkheid hiervan af te wijken."
+              "text": "In veel gevallen wel. De UAE past bij overlijden in de regel lokaal erfrecht toe op bezittingen die zich op haar grondgebied bevinden — ongeacht uw nationaliteit of religie. Voor niet-moslims kan dit betekenen dat het standaardregime gebaseerd op de Sharia van toepassing is. Een DIFC Will biedt niet-moslims de mogelijkheid hier vooraf van af te wijken via een rechtsgeldig geregistreerd testament."
             }
           },
           {
@@ -898,7 +1064,7 @@
             "name": "Is een DIFC Will ingewikkeld om te regelen?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Niet met de juiste begeleiding. Het proces verloopt volledig digitaal via het officiële DIFC-portaal en vereist geen fysieke aanwezigheid in Dubai. De meeste registraties worden binnen één tot twee weken afgerond."
+              "text": "Niet met de juiste begeleiding. Het proces verloopt volledig digitaal via het officiële DIFC-portaal en vereist geen fysieke aanwezigheid in Dubai. De voorbereiding is doorgaans binnen 1 tot 2 weken klaar. De DIFC-afhandeling daarna neemt vervolgens 4 tot 8 weken in beslag."
             }
           },
           {
@@ -907,6 +1073,30 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "De totale kosten bestaan uit drie onderdelen: onze servicekosten (€497–€1.499), DIFC-registratiekosten (AED 7.500 enkelvoudig / AED 10.000 mirror will voor Tier 1 en 2; AED 10.000–15.000 voor Tier 3) plus advocaatkosten bij Tier 3. Alle DIFC-tarieven zijn indicatief."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Wat kost een UAE-erfprocedure zonder lokaal testament?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Zonder een lokaal geldig testament moeten uw nabestaanden een volledige UAE-erfprocedure doorlopen. Dit omvat legalisatie, beëdigde Arabische vertalingen en lokale advocaten. De kosten lopen al snel op tot €10.000 of meer, en het proces duurt doorgaans 12 tot 24 maanden."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kan ik later upgraden als blijkt dat ik een andere tier nodig heb?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ja. U kunt op elk moment upgraden naar een hogere tier. U betaalt dan alleen het prijsverschil tussen uw huidige tier en de nieuwe tier. Geen verborgen kosten, geen dubbele betaling."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Wat is een mirror will en heb ik er één nodig?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Een mirror will is een gezamenlijke registratie van twee testamenten — voor u en uw partner — in één procedure. Inhoudelijk bepaalt elke partner zelfstandig wie de begunstigden, executeurs en verdeling zijn. Voor stellen met gezamenlijk UAE-vastgoed is dit doorgaans de meest praktische én voordeligste optie."
             }
           },
           {
@@ -940,16 +1130,15 @@
       <div class="hero-inner">
         <span class="hero-label fade-up">DIFC Will voor Nederlanders</span>
         <h1 class="fade-up delay-1">
-          Uw UAE vastgoed.<br>
-          In de <em>juiste</em> handen.
+          Uw UAE-vastgoed.<br>
+          Zonder <em>jarenlang</em> gedoe voor uw nabestaanden.
         </h1>
         <p class="hero-sub fade-up delay-2">
-          Zonder een geldig testament bepaalt de Sharia wie uw UAE eigendom erft — 
-          ongeacht uw wensen of uw nationaliteit. Wij helpen u dat te voorkomen.
+          Zonder lokaal geldig testament wacht uw familie een UAE-erfprocedure van 12 tot 24 maanden, met legalisatie, beëdigde Arabische vertalingen en lokale advocaatkosten die snel oplopen tot €10.000 of meer. Een DIFC-testament voorkomt dit.
         </p>
         <div class="hero-actions fade-up delay-3">
           <a href="#kennismaking" class="btn btn-gold btn-lg">Plan gratis kennismaking</a>
-          <a href="#pakketten" class="btn btn-outline btn-lg">Bekijk de opties</a>
+          <a href="#" class="btn btn-outline btn-lg" onclick="openTierCheck();return false;">Vind direct uw passende tier</a>
         </div>
         <p class="hero-note fade-up delay-4">15 minuten · Vrijblijvend · In het Nederlands</p>
       </div>
@@ -960,16 +1149,16 @@
   <div class="stat-strip">
     <div class="container">
       <div class="stat-item">
-        <span class="stat-num">12,5%</span>
-        <span class="stat-label">Wat uw partner erft zonder testament (Sharia-standaard)</span>
+        <span class="stat-num">12–24 mnd</span>
+        <span class="stat-label">Gemiddelde doorlooptijd UAE-erfprocedure zonder lokaal testament</span>
       </div>
       <div class="stat-item">
-        <span class="stat-num">100%</span>
-        <span class="stat-label">Controle die u terugkrijgt met een DIFC Will</span>
+        <span class="stat-num">€10.000+</span>
+        <span class="stat-label">Mogelijke kosten voor legalisatie, vertaling en lokale advocaten</span>
       </div>
       <div class="stat-item">
         <span class="stat-num">Alle<br>emiraten</span>
-        <span class="stat-label">Een DIFC Will geldt voor vastgoed door de hele UAE</span>
+        <span class="stat-label">Een DIFC-testament geldt voor vastgoed in de hele UAE</span>
       </div>
     </div>
   </div>
@@ -979,33 +1168,23 @@
     <div class="container">
       <div class="problem-left">
         <p class="section-label">Het probleem</p>
-        <h2>De UAE hanteert de Sharia als erfrecht — ook voor u.</h2>
+        <h2>Zonder lokaal testament wordt uw vastgoed een lang en duur traject voor uw nabestaanden.</h2>
         <p>
-          U bent Nederlander. U kocht een appartement in Dubai of Abu Dhabi als investering, 
-          misschien via een project dat u vanuit Nederland aanschreef. U hebt goed nagedacht 
-          over het rendement — maar waarschijnlijk niet over wat er met dat appartement 
-          gebeurt als u overlijdt.
+          U bent Nederlander, woont in Nederland, en heeft vastgoed gekocht in de UAE. Bij overlijden valt dat vastgoed onder het rechtssysteem van de UAE — niet onder het Nederlandse erfrecht. Uw Nederlandse testament wordt in de UAE niet automatisch erkend voor lokaal vastgoed.
         </p>
         <p>
-          De UAE past bij overlijden standaard de Sharia toe op alle eigendom dat zich op 
-          haar grondgebied bevindt. Dat betekent: uw wensen zijn juridisch niet bindend. 
-          Uw partner, kinderen of wie u ook maar als erfgenaam ziet — zij staan juridisch 
-          achteraan als u niets vastlegt.
+          Zonder een lokaal geldig testament moeten uw nabestaanden een UAE-erfprocedure doorlopen. Dit betekent: Nederlandse documenten gelegaliseerd via apostille, beëdigde Arabische vertalingen, lokale advocaten ingeschakeld, en maanden — vaak meer dan een jaar — wachten voordat het vastgoed daadwerkelijk overgedragen kan worden. Tijdens die periode kan het pand niet vrij verkocht of bewoond worden, en kunnen huurinkomsten en gekoppelde bankrekeningen bevroren zijn.
         </p>
         <p>
-          Een DIFC Will verandert dat. Het is de enige manier voor niet-moslims om 
-          rechtsgeldige controle te houden over wie uw UAE eigendom erft.
+          Daarbij komt: in veel gevallen past de UAE standaard erfrechtregels toe die zijn gebaseerd op de Sharia. Voor niet-moslims kan dit betekenen dat uw partner slechts een beperkt deel ontvangt en de rest verdeeld wordt volgens regels die u zelf niet zou kiezen. Een DIFC-testament — een aparte juridische structuur voor niet-moslims — geeft u de zekerheid dat uw eigen wensen worden gevolgd.
         </p>
       </div>
       <div class="problem-right">
-        <span class="big-pct">12,5%</span>
-        <h3>Dat erft uw partner zonder testament.</h3>
+        <span class="big-pct">€10.000+</span>
+        <h3>Wat een UAE-erfprocedure uw nabestaanden kan kosten.</h3>
         <div class="divider"></div>
         <p>
-          Stel: u heeft een appartement van €400.000 in Dubai. U overlijdt onverwacht. 
-          Zonder DIFC Will ontvangt uw partner €50.000. De overige €350.000 wordt 
-          verdeeld onder familieleden op basis van de Sharia — mogelijk mensen die u 
-          zelf nooit als erfgenaam zou kiezen.
+          Stel: u heeft een appartement van €400.000 in Dubai. Bij overlijden moeten uw nabestaanden documenten legaliseren, laten vertalen, lokale advocaten inschakelen en een UAE-erfprocedure doorlopen. De kosten lopen al snel op tot €10.000 of meer, en het proces duurt doorgaans 12 tot 24 maanden. Een DIFC-testament — eenmalig vanaf €497 — voorkomt dit volledig.
         </p>
       </div>
     </div>
@@ -1021,21 +1200,22 @@
         </div>
         <div class="solution-text">
           <p>
-            Het Dubai International Financial Centre (DIFC) heeft een aparte juridische 
-            structuur die niet-moslims toestaat een testament te registreren dat 
-            gebaseerd is op westerse erfrechtnormen. Dit testament is geldig voor 
-            al uw vastgoed én andere bezittingen in de UAE.
+            Het Dubai International Financial Centre (DIFC) heeft een aparte juridische
+            structuur die niet-moslims toestaat een testament te registreren dat
+            gebaseerd is op westerse erfrechtnormen. Dit testament is geldig voor
+            uw vastgoed in de hele UAE — in Dubai, Abu Dhabi en alle andere emiraten.
           </p>
           <p>
-            De registratie verloopt via een officieel online portaal. U hoeft niet 
+            De registratie verloopt via een officieel online portaal. U hoeft niet
             fysiek in Dubai aanwezig te zijn.
           </p>
           <ul class="solution-bullets">
-            <li>Uw partner erft 100% als u dat wilt — niet 12,5%</li>
-            <li>U bepaalt zelf wie uw voogden zijn voor minderjarige kinderen</li>
+            <li>Uw eigen verdeling — u bepaalt wie wat erft</li>
+            <li>Snelle afhandeling voor uw nabestaanden, geen langdurig erfproces</li>
+            <li>Geen onverwachte vertaal- of advocaatkosten voor uw familie</li>
             <li>Geldig voor vastgoed in alle emiraten</li>
             <li>Wijzigbaar zolang u leeft</li>
-            <li>Registratie volledig op afstand mogelijk</li>
+            <li>Volledig digitaal te regelen vanuit Nederland</li>
           </ul>
         </div>
       </div>
@@ -1071,7 +1251,10 @@
             <li>Ondersteuning via het in-portal contactformulier (reactietijd: 2 werkdagen)</li>
             <li>Tot 5 panden per testament</li>
           </ul>
-          <a href="#kennismaking" class="btn btn-outline">Start met kennismaking</a>
+          <div class="card-cta">
+            <a href="https://buy.stripe.com/4gM28q9yJcuReIZ4TtbjW02" class="btn btn-outline">Direct kopen</a>
+            <p class="card-cta-secondary"><a href="#kennismaking">Of plan eerst een gratis kennismaking →</a></p>
+          </div>
         </div>
 
         <!-- Tier 2 (featured) -->
@@ -1092,7 +1275,10 @@
             <li>WhatsApp-ondersteuning rondom uw sessie</li>
             <li>Tot 5 panden per testament</li>
           </ul>
-          <a href="#kennismaking" class="btn btn-gold">Start met kennismaking</a>
+          <div class="card-cta">
+            <a href="https://buy.stripe.com/4gM28q12d1QddEV5XxbjW03" class="btn btn-gold">Direct kopen</a>
+            <p class="card-cta-secondary"><a href="#kennismaking">Of plan eerst een gratis kennismaking →</a></p>
+          </div>
         </div>
 
         <!-- Tier 3 -->
@@ -1112,10 +1298,17 @@
             <li>Eén inbegrepen aanvullend adviesgesprek van 15 minuten (extra gesprekken €69)</li>
             <li>Voor: bedrijfsbezit, niet-onroerend bezit, voogdij, &gt;5 panden of maatwerk-voorwaarden</li>
           </ul>
-          <a href="#kennismaking" class="btn btn-outline">Neem contact op</a>
+          <div class="card-cta">
+            <a href="https://buy.stripe.com/8x24gy3al0M91WdclVbjW04" class="btn btn-outline">Direct kopen</a>
+            <p class="card-cta-secondary"><a href="#kennismaking">Of plan eerst een gratis kennismaking →</a></p>
+          </div>
         </div>
 
       </div>
+
+      <p class="reassurance-note" style="text-align:center; margin-top:24px; font-size:0.88rem; color:var(--mid); font-weight:300; max-width:640px; margin-left:auto; margin-right:auto;">
+        Niet zeker welke tier het beste past? U kunt tijdens het proces altijd upgraden naar een hogere tier — u betaalt alleen het verschil. Meer weten? <a href="#kennismaking" style="color:var(--teal); text-decoration:underline;">Plan een gratis kennismaking</a>.
+      </p>
 
       <p class="costs-note">
         * DIFC-registratiekosten voor Tier 1 &amp; 2: <strong>AED 7.500</strong> (enkelvoudig testament) of <strong>AED 10.000</strong> (mirror will) + AED 20 admin. Tier 3: <strong>AED 10.000–15.000</strong> DIFC-kosten + advocaatkosten <strong>AED 5.000–10.000</strong> afhankelijk van complexiteit. Alle DIFC-tarieven zijn indicatief en onder voorbehoud van wijziging. Actuele kosten bespreken wij tijdens de kennismaking.
@@ -1129,7 +1322,7 @@
       <div class="process-header">
         <p class="section-label">Hoe werkt het</p>
         <h2>Van kennismaking tot geregistreerde Will</h2>
-        <p>Doorgaans binnen 1–2 weken volledig afgerond.</p>
+        <p>Voorbereiding doorgaans 1–2 weken. DIFC-afhandeling daarna 4–8 weken.</p>
       </div>
       <div class="steps">
         <div class="step">
@@ -1167,7 +1360,7 @@
             Ik ben André van Wijngaarden — oprichter van VAEtestament en voormalig 
             Head of Investor Services in de UAE vastgoedsector. Met een achtergrond in 
             International Business en commerciële ervaring in meerdere landen sprak ik 
-            met honderden Nederlandse investeerders die UAE vastgoed kochten als 
+            met tal van Nederlandse investeerders die UAE vastgoed kochten als 
             investering of als anker voor hun internationale levensstijl.
           </p>
           <p>
@@ -1185,7 +1378,7 @@
               <div class="cred-icon">✦</div>
               <div class="cred-text">
                 <strong>Voormalig Head of Investor Services, UAE vastgoedsector</strong>
-                Honderden Nederlandse vastgoedinvesteerders begeleid in de UAE
+                Tal van Nederlandse vastgoedinvesteerders begeleid in de UAE
               </div>
             </div>
             <div class="cred-item">
@@ -1242,7 +1435,7 @@
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-answer">
-            Ja. De VAE past bij overlijden standaard de Sharia toe op alle bezittingen die zich op haar grondgebied bevinden — ongeacht uw nationaliteit of religie. Dit is vastgelegd in de Federale wet en geldt ook voor Nederlandse eigenaren van UAE vastgoed. Een DIFC Will biedt niet-moslims de mogelijkheid hiervan af te wijken.
+            In veel gevallen wel. De UAE past bij overlijden in de regel lokaal erfrecht toe op bezittingen die zich op haar grondgebied bevinden — ongeacht uw nationaliteit of religie. Voor niet-moslims kan dit betekenen dat het standaardregime gebaseerd op de Sharia van toepassing is, wat tot een verdeling kan leiden die niet overeenkomt met uw wensen. Een DIFC Will biedt niet-moslims de mogelijkheid hier vooraf van af te wijken via een rechtsgeldig geregistreerd testament.
           </div>
         </div>
 
@@ -1272,7 +1465,7 @@
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-answer">
-            Niet als u de juiste begeleiding heeft. Het proces verloopt volledig digitaal via het officiële DIFC-portaal en vereist geen fysieke aanwezigheid in Dubai. De meeste registraties worden binnen één tot twee weken afgerond. Wij begeleiden u stap voor stap door het volledige proces.
+            Niet als u de juiste begeleiding heeft. Het proces verloopt volledig digitaal via het officiële DIFC-portaal en vereist geen fysieke aanwezigheid in Dubai. De voorbereiding (gegevens verzamelen, documenten klaarmaken, portal-registratie) is doorgaans binnen 1 tot 2 weken klaar. De DIFC-afhandeling daarna — afspraak, ondertekening en officiële registratie — neemt vervolgens 4 tot 8 weken in beslag.
           </div>
         </div>
 
@@ -1283,7 +1476,7 @@
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-answer">
-            Een mirror will is een gezamenlijk testament voor twee partners, waarbij beide testamenten elkaars spiegelbeeld zijn — doorgaans erven partners van elkaar en gaan de bezittingen daarna naar de kinderen. Dit is de meest gekozen optie voor stellen met gezamenlijk UAE vastgoed. De DIFC-registratiekosten voor een mirror will zijn hoger dan voor een enkelvoudig testament, maar lager dan twee losse testamenten.
+            Een mirror will is een gezamenlijke registratie van twee testamenten — voor u en uw partner — in één procedure. Inhoudelijk bepaalt elke partner zelfstandig wie de begunstigden, executeurs en verdeling zijn; de testamenten hoeven niet identiek te zijn. Voor stellen met gezamenlijk UAE-vastgoed is dit doorgaans de meest praktische én voordeligste optie: de DIFC-registratiekosten voor een mirror will zijn lager dan voor twee losse testamenten.
           </div>
         </div>
 
@@ -1304,6 +1497,26 @@
           </button>
           <div class="faq-answer">
             Ja. De DIFC Will is specifiek toegankelijk voor niet-ingezetenen. Het volledige registratieproces verloopt op afstand via een beveiligd online portaal. U hoeft de VAE niet voor te bezoeken.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Wat kost een UAE-erfprocedure zonder lokaal testament?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Zonder een lokaal geldig testament moeten uw nabestaanden een volledige UAE-erfprocedure doorlopen. Dit omvat legalisatie van Nederlandse documenten via apostille, beëdigde Arabische vertalingen, en het inschakelen van lokale advocaten. De kosten lopen al snel op tot €10.000 of meer, en het proces duurt doorgaans 12 tot 24 maanden. Tijdens die periode kan het vastgoed niet vrij verkocht of bewoond worden, en kunnen huurinkomsten en gekoppelde bankrekeningen bevroren zijn.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Kan ik later upgraden als blijkt dat ik een andere tier nodig heb?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Ja. Als tijdens het proces blijkt dat uw situatie beter past bij een hogere tier — bijvoorbeeld omdat uw vastgoed via een bedrijf is geregistreerd, of omdat u meer dan vijf panden heeft — kunt u op elk moment upgraden. U betaalt dan alleen het prijsverschil tussen uw huidige tier en de nieuwe tier. Geen verborgen kosten, geen dubbele betaling.
           </div>
         </div>
 
@@ -1363,6 +1576,184 @@
         if (!isOpen) item.classList.add('open');
       });
     });
+  </script>
+
+  <!-- Tier-check modal -->
+  <div class="tc-overlay" id="tcOverlay">
+    <div class="tc-modal">
+      <button class="tc-close" onclick="closeTierCheck()" aria-label="Sluiten">&times;</button>
+
+      <div class="tc-progress" id="tcProgress">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <!-- Q1: Budget -->
+      <div class="tc-step active" data-step="0">
+        <h3>Wat is uw budget voor de begeleiding?</h3>
+        <p>Dit is exclusief de DIFC-registratiekosten die u rechtstreeks aan het DIFC betaalt.</p>
+        <div class="tc-options">
+          <button class="tc-opt" onclick="tcAnswer(0,'laag')">Tot €500</button>
+          <button class="tc-opt" onclick="tcAnswer(0,'midden')">€500 – €1.000</button>
+          <button class="tc-opt" onclick="tcAnswer(0,'hoog')">Meer dan €1.000</button>
+        </div>
+      </div>
+
+      <!-- Q2: Aantal panden -->
+      <div class="tc-step" data-step="1">
+        <h3>Hoeveel panden in de UAE wilt u opnemen?</h3>
+        <p>Tel alle appartementen, villa's en andere vastgoedobjecten.</p>
+        <div class="tc-options">
+          <button class="tc-opt" onclick="tcAnswer(1,'1')">1 pand</button>
+          <button class="tc-opt" onclick="tcAnswer(1,'2-5')">2 t/m 5 panden</button>
+          <button class="tc-opt" onclick="tcAnswer(1,'5+')">Meer dan 5 panden</button>
+        </div>
+      </div>
+
+      <!-- Q3: Bedrijfsstructuur -->
+      <div class="tc-step" data-step="2">
+        <h3>Is het vastgoed (deels) in een bedrijfsstructuur ondergebracht?</h3>
+        <p>Denk aan een LLC, holding of free-zone company.</p>
+        <div class="tc-options">
+          <button class="tc-opt" onclick="tcAnswer(2,'nee')">Nee, alles op eigen naam</button>
+          <button class="tc-opt" onclick="tcAnswer(2,'ja')">Ja, geheel of gedeeltelijk</button>
+        </div>
+      </div>
+
+      <!-- Q4: Andere bezittingen -->
+      <div class="tc-step" data-step="3">
+        <h3>Wilt u ook andere UAE-bezittingen opnemen?</h3>
+        <p>Bijvoorbeeld bankrekeningen, beleggingen of voertuigen in de UAE.</p>
+        <div class="tc-options">
+          <button class="tc-opt" onclick="tcAnswer(3,'nee')">Nee, alleen vastgoed</button>
+          <button class="tc-opt" onclick="tcAnswer(3,'ja')">Ja, ook andere bezittingen</button>
+        </div>
+      </div>
+
+      <!-- Q5: Samen of alleen -->
+      <div class="tc-step" data-step="4">
+        <h3>Registreert u alleen of samen met uw partner?</h3>
+        <p>Bij een mirror will registreren beide partners tegelijk, elk met een eigen testament.</p>
+        <div class="tc-options">
+          <button class="tc-opt" onclick="tcAnswer(4,'alleen')">Alleen (single will)</button>
+          <button class="tc-opt" onclick="tcAnswer(4,'samen')">Samen met partner (mirror will)</button>
+        </div>
+      </div>
+
+      <!-- Result -->
+      <div class="tc-result" id="tcResult">
+        <div class="tc-result-card">
+          <span class="tc-tier-name" id="tcTierName"></span>
+          <div class="tc-tier-price" id="tcTierPrice"></div>
+          <p class="tc-tier-desc" id="tcTierDesc"></p>
+        </div>
+        <a class="tc-buy" id="tcBuyLink" href="#">Direct kopen &rarr;</a>
+        <a class="tc-consult" href="https://cal.com/vaetestament/kennismaking" target="_blank" rel="noopener">Liever eerst overleggen? Plan een gratis kennismaking &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function(){
+      var answers = [];
+      var step = 0;
+      var totalSteps = 5;
+
+      window.openTierCheck = function(){
+        answers = [];
+        step = 0;
+        document.querySelectorAll('.tc-step').forEach(function(s){ s.classList.remove('active'); });
+        document.querySelector('.tc-step[data-step="0"]').classList.add('active');
+        document.getElementById('tcResult').classList.remove('active');
+        updateProgress();
+        document.getElementById('tcOverlay').classList.add('open');
+        document.body.style.overflow = 'hidden';
+      };
+
+      window.closeTierCheck = function(){
+        document.getElementById('tcOverlay').classList.remove('open');
+        document.body.style.overflow = '';
+      };
+
+      document.getElementById('tcOverlay').addEventListener('click', function(e){
+        if(e.target === this) closeTierCheck();
+      });
+
+      function updateProgress(){
+        var bars = document.querySelectorAll('#tcProgress span');
+        for(var i = 0; i < bars.length; i++){
+          bars[i].classList.toggle('done', i <= step);
+        }
+      }
+
+      window.tcAnswer = function(q, val){
+        answers[q] = val;
+
+        // highlight selected
+        var opts = document.querySelector('.tc-step[data-step="'+q+'"]').querySelectorAll('.tc-opt');
+        opts.forEach(function(o){ o.classList.remove('selected'); });
+        event.currentTarget.classList.add('selected');
+
+        setTimeout(function(){
+          // Q2 (index 1): >5 panden → T3
+          if(val === '5+'){
+            showResult('t3');
+            return;
+          }
+          // Q3-Q4 (index 2,3): any "ja" → T3
+          if((q === 2 || q === 3) && val === 'ja'){
+            showResult('t3');
+            return;
+          }
+
+          if(q < totalSteps - 1){
+            step = q + 1;
+            document.querySelectorAll('.tc-step').forEach(function(s){ s.classList.remove('active'); });
+            document.querySelector('.tc-step[data-step="'+step+'"]').classList.add('active');
+            updateProgress();
+          } else {
+            // All 5 answered — no T3 triggers, so T1 or T2
+            if(answers[4] === 'samen'){
+              showResult('t2');
+            } else {
+              showResult('t1');
+            }
+          }
+        }, 300);
+      };
+
+      var tiers = {
+        t1: {
+          name: 'Zelf & Zeker',
+          price: '€497',
+          desc: 'Eén DIFC-testament voor één persoon met maximaal 5 vastgoedobjecten op eigen naam.',
+          link: 'https://buy.stripe.com/4gM28q9yJcuReIZ4TtbjW02'
+        },
+        t2: {
+          name: 'Samen Registreren',
+          price: '€797',
+          desc: 'Twee DIFC-testamenten: voor u én uw partner, elk een eigen testament met maximaal 5 vastgoedobjecten op eigen naam.',
+          link: 'https://buy.stripe.com/4gM28q12d1QddEV5XxbjW03'
+        },
+        t3: {
+          name: 'Volledig Ontzorgd',
+          price: '€1.499',
+          desc: 'Voor situaties met meer dan 5 panden, bedrijfsstructuren of aanvullende bezittingen. Inclusief persoonlijke begeleiding.',
+          link: 'https://buy.stripe.com/8x24gy3al0M91WdclVbjW04'
+        }
+      };
+
+      function showResult(tier){
+        document.querySelectorAll('.tc-step').forEach(function(s){ s.classList.remove('active'); });
+        var bars = document.querySelectorAll('#tcProgress span');
+        bars.forEach(function(b){ b.classList.add('done'); });
+        var t = tiers[tier];
+        document.getElementById('tcTierName').textContent = t.name;
+        document.getElementById('tcTierPrice').textContent = t.price;
+        document.getElementById('tcTierDesc').textContent = t.desc;
+        document.getElementById('tcBuyLink').href = t.link;
+        document.getElementById('tcResult').classList.add('active');
+      }
+    })();
   </script>
 
 </body>
