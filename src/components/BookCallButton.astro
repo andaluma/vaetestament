@@ -20,11 +20,11 @@ export interface Props {
 const {
   slug = '',
   cluster = '',
-  label = 'Plan een gratis kennismaking',
+  label = 'Plan een gesprek van 15 minuten',
   variant = 'subtle',
 } = Astro.props;
 
-const baseUrl = 'https://cal.com/vaetestament/kennismaking';
+const baseUrl = 'https://cal.com/vaetestament.nl/15min';
 const params = new URLSearchParams({
   utm_source: 'article',
   utm_medium: 'cta',
