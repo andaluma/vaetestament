@@ -11,6 +11,8 @@
 // without per-page boilerplate.
 
 import '../styles/global.css';
+import SiteNav from '../components/SiteNav.astro';
+import SiteFooter from '../components/SiteFooter.astro';
 import TierCheckModal from '../components/TierCheckModal.astro';
 import WhatsAppFab from '../components/WhatsAppFab.astro';
 import AIAskPanel from '../components/AIAskPanel.astro';
@@ -32,6 +34,10 @@ export interface Props {
   articleTitle?: string;
   /** Emit <meta name="robots" content="noindex,follow"> — for thin/utility pages. */
   noindex?: boolean;
+  /** Hide the fixed top nav (defaults to showing it). */
+  hideNav?: boolean;
+  /** Hide the site footer (defaults to showing it). */
+  hideFooter?: boolean;
 }
 
 const {
@@ -45,6 +51,8 @@ const {
   author,
   jsonLd = [],
   noindex = false,
+  hideNav = false,
+  hideFooter = false,
 } = Astro.props;
 
 const siteName = 'VAEtestament';
@@ -101,7 +109,9 @@ const siteName = 'VAEtestament';
     ))}
   </head>
   <body>
+    {!hideNav && <SiteNav />}
     <slot />
+    {!hideFooter && <SiteFooter />}
     <TierCheckModal />
     <AIAskPanel slug={Astro.props.articleSlug ?? ''} />
     <WhatsAppFab slug={Astro.props.articleSlug ?? ''} title={Astro.props.articleTitle ?? ''} />

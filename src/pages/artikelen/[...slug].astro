@@ -1,16 +1,22 @@
 ---
 // Dynamic article route — renders every entry in the `articles` collection
-// at /artikelen/{slug}.
-//
-// D1 scope: render title, byline, body, FAQ block, related-articles block,
-// plus Article + FAQPage + BreadcrumbList JSON-LD. The interactive components
-// (tier-check, cal.com, newsletter, AI button, WhatsApp FAB) come in D3+.
+// at /artikelen/{slug}. Visual design mirrors the live homepage:
+// teal hero with gold gradient + optional Unsplash overlay, then a
+// cream-background article body with drop-cap lede + gold-accented h2s,
+// related-articles grid, FAQ block, and CTA card.
 
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import TierCheckButton from '../../components/TierCheckButton.astro';
 import BookCallButton from '../../components/BookCallButton.astro';
 import NewsletterSignup from '../../components/NewsletterSignup.astro';
+
+// Universal fallback hero image — Dubai skyline by ZQ Lee on Unsplash.
+// Each article can override via frontmatter `hero_image`. The image sits
+// under a teal/gold radial gradient at ~18% opacity, so it reads as a
+// subtle backdrop rather than a photo banner.
+const DEFAULT_HERO =
+  'https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1600&q=85&auto=format&fit=crop';
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles');
@@ -24,28 +30,31 @@ const { entry } = Astro.props;
 const { Content } = await render(entry);
 
 const data = entry.data;
-const canonical = `https://vaetestament.nl/artikelen/${entry.id.replace(/\.(md|mdx)$/, '')}`;
+const slug = entry.id.replace(/\.(md|mdx)$/, '');
+const canonical = `https://vaetestament.nl/artikelen/${slug}`;
+const heroImage = data.hero_image || DEFAULT_HERO;
 
-// Rough leestijd estimate — 200 wpm for Dutch nonfiction body copy.
+// Reading-time estimate — 200 wpm Dutch nonfiction.
 const bodyText = entry.body ?? '';
 const wordCount = bodyText.split(/\s+/).filter(Boolean).length;
 const readMinutes = Math.max(1, Math.round(wordCount / 200));
 
-// Resolve related-article entries (validated to exist; missing slugs warned at build).
+// Resolve related-article entries.
 const allArticles = await getCollection('articles');
 const slugIndex = new Map(
   allArticles.map((a) => [a.id.replace(/\.(md|mdx)$/, ''), a]),
 );
 const relatedEntries = (data.related ?? [])
-  .map((slug) => slugIndex.get(slug))
+  .map((s) => slugIndex.get(s))
   .filter((a): a is NonNullable<typeof a> => Boolean(a));
 
-// JSON-LD blocks
+// JSON-LD
 const articleJsonLd = {
   '@context': 'https://schema.org',
   '@type': data.schema_type,
   headline: data.title,
   description: data.meta_description,
+  image: heroImage,
   datePublished: data.publish_date.toISOString(),
   ...(data.updated_date && { dateModified: data.updated_date.toISOString() }),
   author: {
@@ -63,10 +72,7 @@ const articleJsonLd = {
       url: 'https://vaetestament.nl/favicon.png',
     },
   },
-  mainEntityOfPage: {
-    '@type': 'WebPage',
-    '@id': canonical,
-  },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
   keywords: data.keywords.join(', '),
   inLanguage: 'nl-NL',
 };
@@ -89,10 +95,7 @@ const faqJsonLd =
         mainEntity: data.faq.map((qa) => ({
           '@type': 'Question',
           name: qa.q,
-          acceptedAnswer: {
-            '@type': 'Answer',
-            text: qa.a,
-          },
+          acceptedAnswer: { '@type': 'Answer', text: qa.a },
         })),
       }
     : null;
@@ -104,7 +107,7 @@ const clusterLabels: Record<string, string> = {
   hoe: 'Hoe het werkt',
   keuze: 'Welke keuze past bij u',
 };
-const clusterLabel = data.cluster ? clusterLabels[data.cluster] : null;
+const clusterLabel = clusterLabels[data.cluster] ?? null;
 
 const publishDateFmt = data.publish_date.toLocaleDateString('nl-NL', {
   day: 'numeric',
@@ -113,24 +116,38 @@ const publishDateFmt = data.publish_date.toLocaleDateString('nl-NL', {
 });
 ---
 
-{/* Slug used for component attribution (UTM + WhatsApp pre-fill). */}
-{(() => {
-  return null;
-})()}
-
 <BaseLayout
   title={`${data.title} — VAEtestament`}
   description={data.meta_description}
   canonical={canonical}
   ogType="article"
+  ogImage={heroImage}
   publishDate={data.publish_date}
   updatedDate={data.updated_date}
   author={data.author}
   jsonLd={jsonLd}
-  articleSlug={entry.id.replace(/\.(md|mdx)$/, '')}
+  articleSlug={slug}
   articleTitle={data.title}
 >
-  <article>
+  <main class="page">
+    <section
+      class={`article-hero ${heroImage ? 'has-image' : ''}`}
+      style={`--hero-image: url('${heroImage}')`}
+    >
+      <div class="container">
+        {clusterLabel && <span class="hero-eyebrow fade-up">{clusterLabel}</span>}
+        <h1 class="fade-up delay-1">{data.title}</h1>
+        <p class="lede fade-up delay-2">{data.meta_description}</p>
+        <p class="meta fade-up delay-3">
+          <span>Door <a href="/over-andre/" rel="author">{data.author}</a></span>
+          <span aria-hidden="true">·</span>
+          <time datetime={data.publish_date.toISOString()}>{publishDateFmt}</time>
+          <span aria-hidden="true">·</span>
+          <span>{readMinutes} min lezen</span>
+        </p>
+      </div>
+    </section>
+
     <nav class="breadcrumbs" aria-label="Broodkruimels">
       <a href="/">Home</a>
       <span aria-hidden="true"> › </span>
@@ -139,41 +156,32 @@ const publishDateFmt = data.publish_date.toLocaleDateString('nl-NL', {
       <span aria-current="page">{data.title}</span>
     </nav>
 
-    {clusterLabel && <p class="eyebrow">{clusterLabel}</p>}
-
-    <h1>{data.title}</h1>
-
-    <p class="byline">
-      <span>
-        Door <a href="/over-andre" rel="author">{data.author}</a>
-      </span>
-      <span aria-hidden="true">·</span>
-      <time datetime={data.publish_date.toISOString()}>{publishDateFmt}</time>
-      <span aria-hidden="true">·</span>
-      <span>{readMinutes} min lezen</span>
-    </p>
-
-    <div class="prose">
+    <article class="article-body">
       <Content />
-    </div>
+    </article>
 
     <section class="cta-block" aria-labelledby="cta-heading">
-      <h2 id="cta-heading">Volgende stap</h2>
-      <p>Bepaal welk pakket bij uw situatie past — vijf korte vragen — of plan een gratis kennismaking.</p>
+      <p class="section-label">Volgende stap</p>
+      <h2 id="cta-heading">Welk pakket past bij uw situatie?</h2>
+      <p>Vijf korte vragen en u weet welke tier het beste bij u past. Of plan eerst een vrijblijvend gesprek van vijftien minuten.</p>
       <div class="cta-row">
-        <TierCheckButton slug={entry.id.replace(/\.(md|mdx)$/, '')} />
-        <BookCallButton
-          slug={entry.id.replace(/\.(md|mdx)$/, '')}
-          cluster={data.cluster}
-        />
+        <button
+          type="button"
+          class="btn btn-gold btn-lg"
+          onclick={`openTierCheck(${JSON.stringify(slug)})`}
+        >Welk pakket past bij u?</button>
+        <BookCallButton slug={slug} cluster={data.cluster} variant="subtle" />
       </div>
     </section>
 
-    <NewsletterSignup slug={entry.id.replace(/\.(md|mdx)$/, '')} />
+    <div style="max-width:720px;margin:0 auto;padding:0 1.25rem;">
+      <NewsletterSignup slug={slug} />
+    </div>
 
     {data.faq.length > 0 && (
       <section class="faq-block" aria-labelledby="faq-heading">
-        <h2 id="faq-heading">Veelgestelde vragen</h2>
+        <p class="section-label">Veelgestelde vragen</p>
+        <h2 id="faq-heading">Wat lezers vaak vragen</h2>
         {data.faq.map((qa) => (
           <div class="faq-item">
             <h3>{qa.q}</h3>
@@ -185,13 +193,14 @@ const publishDateFmt = data.publish_date.toLocaleDateString('nl-NL', {
 
     {relatedEntries.length > 0 && (
       <section class="related-block" aria-labelledby="related-heading">
+        <p class="section-label" style="text-align:center;display:block;">Verder lezen</p>
         <h2 id="related-heading">Gerelateerde artikelen</h2>
         <ul class="related-list">
           {relatedEntries.map((rel) => {
             const relSlug = rel.id.replace(/\.(md|mdx)$/, '');
             return (
               <li>
-                <a href={`/artikelen/${relSlug}`}>
+                <a href={`/artikelen/${relSlug}/`}>
                   <strong>{rel.data.title}</strong>
                   <span>{rel.data.meta_description}</span>
                 </a>
@@ -201,5 +210,5 @@ const publishDateFmt = data.publish_date.toLocaleDateString('nl-NL', {
         </ul>
       </section>
     )}
-  </article>
+  </main>
 </BaseLayout>

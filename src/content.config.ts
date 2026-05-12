@@ -55,6 +55,11 @@ const articles = defineCollection({
 
     // Linked FAQ entry on the landing page — bidirectional reference.
     linked_landing_faq: z.string().optional(),
+
+    // Optional hero image URL. Used as a subtle overlay on top of the
+    // teal/gold gradient hero. Pick photos that read well at ~18% opacity
+    // (cityscape, light pattern). When omitted, the hero is gradient-only.
+    hero_image: z.string().url().optional(),
   }),
 });
 
