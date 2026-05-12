@@ -1,0 +1,281 @@
+---
+// /artikelen/ — index of the article hub.
+//
+// Articles are grouped into 3 funnel clusters (per locked decision Day 15):
+//   1. Waarom dit telt   — awareness/risk
+//   2. Hoe het werkt     — consideration/process
+//   3. Welke keuze past bij u — decision/comparison
+//
+// Within each cluster, articles are sorted by `publish_date` (oldest first
+// — clusters at launch all share the same date, so order falls back to
+// title alphabetic, which is fine).
+//
+// At the bottom: the same CTA stack as on individual articles, so anyone
+// landing here can take the next step without first having to read.
+
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TierCheckButton from '../../components/TierCheckButton.astro';
+import BookCallButton from '../../components/BookCallButton.astro';
+import NewsletterSignup from '../../components/NewsletterSignup.astro';
+
+const canonical = 'https://vaetestament.nl/artikelen/';
+
+const allArticles = await getCollection('articles');
+
+const clusters = [
+  {
+    key: 'waarom',
+    title: 'Waarom dit telt',
+    intro:
+      'Wat een DIFC-testament is, waarom het belangrijk is voor Nederlandse eigenaren in de VAE, en wat er gebeurt als u niets regelt.',
+  },
+  {
+    key: 'hoe',
+    title: 'Hoe het werkt',
+    intro:
+      'De DIFC-registratie stap voor stap, en wat uw nabestaanden tegenkomen als er geen testament is.',
+  },
+  {
+    key: 'keuze',
+    title: 'Welke keuze past bij u',
+    intro:
+      'DIFC-Will of Nederlands testament, alleen of samen met uw partner, en wat het allemaal kost.',
+  },
+] as const;
+
+const articlesByCluster = clusters.map((c) => ({
+  ...c,
+  items: allArticles
+    .filter((a) => a.data.cluster === c.key)
+    .map((a) => ({
+      slug: a.id.replace(/\.(md|mdx)$/, ''),
+      title: a.data.title,
+      meta_description: a.data.meta_description,
+      // Quick read-time estimate from body length (same heuristic as article page).
+      readMinutes: Math.max(1, Math.round((a.body ?? '').split(/\s+/).length / 200)),
+    }))
+    .sort((a, b) => a.title.localeCompare(b.title)),
+}));
+
+// CollectionPage JSON-LD with a contained ItemList. Helps Google + AI engines
+// parse the hub structure: 3 clusters, 8 articles, one author entity.
+const collectionJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': canonical,
+  name: 'Artikelen — VAEtestament',
+  description:
+    'Praktische uitleg over DIFC-testamenten voor Nederlandse eigenaren van VAE-vastgoed. Drie clusters: waarom dit telt, hoe het werkt, welke keuze past bij u.',
+  url: canonical,
+  inLanguage: 'nl-NL',
+  isPartOf: {
+    '@type': 'WebSite',
+    name: 'VAEtestament',
+    url: 'https://vaetestament.nl/',
+  },
+  mainEntity: {
+    '@type': 'ItemList',
+    numberOfItems: allArticles.length,
+    itemListElement: articlesByCluster.flatMap((c, ci) =>
+      c.items.map((a, ai) => ({
+        '@type': 'ListItem',
+        position: ci * 100 + ai + 1, // unique, stable across clusters
+        url: `https://vaetestament.nl/artikelen/${a.slug}/`,
+        name: a.title,
+      })),
+    ),
+  },
+};
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://vaetestament.nl/' },
+    { '@type': 'ListItem', position: 2, name: 'Artikelen', item: canonical },
+  ],
+};
+---
+
+<BaseLayout
+  title="Artikelen — VAEtestament"
+  description="Praktische uitleg over DIFC-testamenten voor Nederlandse eigenaren van VAE-vastgoed: waarom het telt, hoe het werkt, en welke keuze bij uw situatie past."
+  canonical={canonical}
+  jsonLd={[collectionJsonLd, breadcrumbJsonLd]}
+>
+  <main class="hub">
+    <nav class="breadcrumbs" aria-label="Broodkruimels">
+      <a href="/">Home</a>
+      <span aria-hidden="true"> › </span>
+      <span aria-current="page">Artikelen</span>
+    </nav>
+
+    <header class="hub-hero">
+      <p class="eyebrow">Kennishub</p>
+      <h1>DIFC-testament uitgelegd</h1>
+      <p class="hub-lead">
+        Drie vragen, in deze volgorde:
+        <strong>waarom dit telt</strong> →
+        <strong>hoe het werkt</strong> →
+        <strong>welke keuze past bij u</strong>.
+        Acht artikelen, gemiddeld vijf minuten lezen, in helder Nederlands.
+      </p>
+    </header>
+
+    {articlesByCluster.map((c, idx) => (
+      <section class="cluster" aria-labelledby={`cluster-${c.key}`}>
+        <header class="cluster-header">
+          <p class="cluster-num">{idx + 1}</p>
+          <div>
+            <h2 id={`cluster-${c.key}`}>{c.title}</h2>
+            <p>{c.intro}</p>
+          </div>
+        </header>
+
+        <ul class="cluster-list">
+          {c.items.map((a) => (
+            <li>
+              <a href={`/artikelen/${a.slug}/`}>
+                <h3>{a.title}</h3>
+                <p>{a.meta_description}</p>
+                <span class="read-time">{a.readMinutes} min lezen</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+
+    <section class="hub-cta">
+      <h2>Niet op uw vraag gevonden?</h2>
+      <p>
+        Stel de online-assistent een vraag (knop rechtsonder), bepaal welk pakket bij u past, of
+        plan een gratis kennismaking van vijftien minuten.
+      </p>
+      <div class="cta-row">
+        <TierCheckButton />
+        <BookCallButton cluster="keuze" />
+      </div>
+    </section>
+
+    <NewsletterSignup />
+  </main>
+</BaseLayout>
+
+<style>
+  .hub {
+    max-width: var(--max-page);
+    margin: 0 auto;
+    padding: 3rem 1.25rem 6rem;
+  }
+  .hub-hero {
+    max-width: 760px;
+    margin: 1rem 0 4rem;
+  }
+  .hub-hero h1 { margin: 0 0 1rem; }
+  .hub-lead {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: var(--body);
+  }
+  .hub-lead strong {
+    font-weight: 500;
+    color: var(--teal);
+  }
+
+  .cluster {
+    margin: 4rem 0;
+    max-width: 960px;
+  }
+  .cluster-header {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 1.5rem;
+    align-items: start;
+    margin: 0 0 2rem;
+  }
+  .cluster-num {
+    font-family: var(--font-display);
+    font-size: 4rem;
+    font-weight: 300;
+    color: var(--gold);
+    line-height: 1;
+    margin: 0;
+  }
+  .cluster-header h2 {
+    margin: 0 0 0.5rem;
+    font-size: 2rem;
+    line-height: 1.15;
+  }
+  .cluster-header p {
+    color: var(--muted);
+    margin: 0;
+    line-height: 1.55;
+  }
+
+  .cluster-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+  .cluster-list a {
+    display: block;
+    padding: 1.5rem;
+    background: #fff;
+    border: 1px solid var(--cream-dark);
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--body);
+    transition: border-color 0.15s, transform 0.15s;
+    height: 100%;
+  }
+  .cluster-list a:hover {
+    border-color: var(--gold);
+    transform: translateY(-2px);
+  }
+  .cluster-list h3 {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--teal);
+    margin: 0 0 0.5rem;
+    line-height: 1.25;
+  }
+  .cluster-list p {
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.55;
+    margin: 0 0 1rem;
+  }
+  .read-time {
+    font-size: 0.8rem;
+    color: var(--gold);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .hub-cta {
+    max-width: 760px;
+    margin: 5rem auto 0;
+    padding: 2.5rem;
+    background: #fff;
+    border: 1px solid var(--cream-dark);
+    border-radius: 6px;
+    text-align: center;
+  }
+  .hub-cta h2 { margin: 0 0 0.5rem; }
+  .hub-cta p { margin: 0 0 1.5rem; color: var(--muted); }
+
+  @media (max-width: 640px) {
+    .cluster-header {
+      grid-template-columns: 60px 1fr;
+      gap: 1rem;
+    }
+    .cluster-num { font-size: 3rem; }
+    .cluster-header h2 { font-size: 1.5rem; }
+  }
+</style>
