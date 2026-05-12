@@ -30,6 +30,8 @@ export interface Props {
   articleSlug?: string;
   /** Article title — passed to the WhatsApp FAB for context-aware greeting. */
   articleTitle?: string;
+  /** Emit <meta name="robots" content="noindex,follow"> — for thin/utility pages. */
+  noindex?: boolean;
 }
 
 const {
@@ -42,6 +44,7 @@ const {
   updatedDate,
   author,
   jsonLd = [],
+  noindex = false,
 } = Astro.props;
 
 const siteName = 'VAEtestament';
@@ -56,6 +59,7 @@ const siteName = 'VAEtestament';
 
     <title>{title}</title>
     <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex,follow" />}
 
     <link rel="canonical" href={canonical} />
     <link rel="alternate" hreflang="nl" href={canonical} />

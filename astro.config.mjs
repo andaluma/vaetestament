@@ -18,6 +18,7 @@ export default defineConfig({
       // Exclude utility/legal/internal pages from the sitemap surfaced to crawlers
       filter: (page) =>
         !page.includes('/bedankt') &&
+        !page.includes('/aanmelding-bevestigd') &&
         !page.includes('/baraca') &&
         !page.includes('/BARACA_'),
       changefreq: 'weekly',

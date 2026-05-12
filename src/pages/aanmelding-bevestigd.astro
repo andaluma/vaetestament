@@ -1,0 +1,62 @@
+---
+// /aanmelding-bevestigd — DOI confirmation landing page.
+//
+// Brevo redirects newsletter subscribers here after they click the
+// confirmation link in the DOI email. Worker env var:
+// BREVO_DOI_REDIRECT_URL = https://vaetestament.nl/aanmelding-bevestigd
+//
+// Not in sitemap (Brevo-driven landing, not a content surface). noindex so
+// search engines don't crawl a thin page that exists only to close a loop.
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const canonical = 'https://vaetestament.nl/aanmelding-bevestigd';
+---
+
+<BaseLayout
+  title="Aanmelding bevestigd — VAEtestament"
+  description="Uw aanmelding voor de VAEtestament-update is bevestigd."
+  canonical={canonical}
+  noindex={true}
+>
+  <article class="confirm">
+    <p class="eyebrow">Bevestigd</p>
+    <h1>Bedankt. Uw aanmelding is bevestigd.</h1>
+    <p>
+      U ontvangt vanaf nu eens per maand een korte update over DIFC-Wills en UAE-erfrecht voor
+      Nederlandse eigenaren. Geen verkooppraat, geen overdaad. Uitschrijven kan altijd via de
+      link onderaan iedere e-mail.
+    </p>
+    <p>
+      In de tussentijd:
+    </p>
+    <ul>
+      <li><a href="/artikelen/">Bekijk de artikelen-hub</a> — drie clusters, acht artikelen.</li>
+      <li><a href="https://cal.com/vaetestament/kennismaking?utm_source=doi-confirm" rel="noopener" target="_blank">Plan een gratis kennismaking</a> als u liever direct overlegt.</li>
+    </ul>
+  </article>
+</BaseLayout>
+
+<style>
+  .confirm {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 4rem 1.25rem 6rem;
+    text-align: center;
+  }
+  .confirm h1 {
+    margin: 0.5rem 0 1.5rem;
+  }
+  .confirm p {
+    color: var(--body);
+    margin: 0 0 1.25rem;
+  }
+  .confirm ul {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+</style>
