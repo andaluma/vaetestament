@@ -5,8 +5,16 @@
   "observability": {
     "enabled": true
   },
+  // Astro builds the site (Markdown articles + .astro pages + public/*) into
+  // ./dist. Cloudflare Workers Static Assets serves it. Repo-root files like
+  // BARACA_*.html stay out of the build (per D1 flag) so they don't ship.
   "assets": {
-    "directory": "."
+    "directory": "./dist"
+  },
+  // Cloudflare's auto-deploy runs `npm install` + this build before uploading
+  // ./dist. Local: `npm run deploy` (Astro build + wrangler deploy).
+  "build": {
+    "command": "npm install && npm run build"
   },
   "compatibility_flags": [
     "nodejs_compat"
