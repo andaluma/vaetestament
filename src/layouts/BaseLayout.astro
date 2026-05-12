@@ -11,6 +11,8 @@
 // without per-page boilerplate.
 
 import '../styles/global.css';
+import TierCheckModal from '../components/TierCheckModal.astro';
+import WhatsAppFab from '../components/WhatsAppFab.astro';
 
 export interface Props {
   title: string;
@@ -23,6 +25,10 @@ export interface Props {
   author?: string;
   /** JSON-LD blocks to inject in <head> as raw <script type="application/ld+json">. */
   jsonLd?: Record<string, unknown>[];
+  /** Article slug — passed to the WhatsApp FAB for context-aware greeting. */
+  articleSlug?: string;
+  /** Article title — passed to the WhatsApp FAB for context-aware greeting. */
+  articleTitle?: string;
 }
 
 const {
@@ -91,5 +97,7 @@ const siteName = 'VAEtestament';
   </head>
   <body>
     <slot />
+    <TierCheckModal />
+    <WhatsAppFab slug={Astro.props.articleSlug ?? ''} title={Astro.props.articleTitle ?? ''} />
   </body>
 </html>

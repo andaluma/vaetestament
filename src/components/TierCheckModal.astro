@@ -1,0 +1,320 @@
+---
+// TierCheckModal — singleton modal that the rest of the site triggers via
+// `window.openTierCheck()`. Ported verbatim (logic-wise) from the original
+// inline implementation in index.html so the UX is identical on landing
+// page and inside articles.
+//
+// Inclusion contract: BaseLayout renders <TierCheckModal /> once per page
+// so any <TierCheckButton> on the page can call the global opener.
+//
+// Locked tier prices/Stripe links live here. If a Stripe Payment Link
+// rotates, update both this file AND phase4-renderer/phase4.js in the
+// platform repo (see HANDOVER_DAY_14.md § 1.4).
+---
+
+<div class="tc-overlay" id="tcOverlay" role="dialog" aria-modal="true" aria-labelledby="tcTitle">
+  <div class="tc-modal">
+    <button class="tc-close" type="button" id="tcClose" aria-label="Sluiten">&times;</button>
+
+    <div class="tc-progress" id="tcProgress">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="tc-step active" data-step="0">
+      <h3 id="tcTitle">Wat is uw budget voor de begeleiding?</h3>
+      <p>Dit is exclusief de DIFC-registratiekosten die u rechtstreeks aan het DIFC betaalt.</p>
+      <div class="tc-options">
+        <button class="tc-opt" type="button" data-q="0" data-v="laag">Tot €500</button>
+        <button class="tc-opt" type="button" data-q="0" data-v="midden">€500 – €1.000</button>
+        <button class="tc-opt" type="button" data-q="0" data-v="hoog">Meer dan €1.000</button>
+      </div>
+    </div>
+
+    <div class="tc-step" data-step="1">
+      <h3>Hoeveel panden in de UAE wilt u opnemen?</h3>
+      <p>Tel alle appartementen, villa's en andere vastgoedobjecten.</p>
+      <div class="tc-options">
+        <button class="tc-opt" type="button" data-q="1" data-v="1">1 pand</button>
+        <button class="tc-opt" type="button" data-q="1" data-v="2-5">2 t/m 5 panden</button>
+        <button class="tc-opt" type="button" data-q="1" data-v="5+">Meer dan 5 panden</button>
+      </div>
+    </div>
+
+    <div class="tc-step" data-step="2">
+      <h3>Is het vastgoed (deels) in een bedrijfsstructuur ondergebracht?</h3>
+      <p>Denk aan een LLC, holding of free-zone company.</p>
+      <div class="tc-options">
+        <button class="tc-opt" type="button" data-q="2" data-v="nee">Nee, alles op eigen naam</button>
+        <button class="tc-opt" type="button" data-q="2" data-v="ja">Ja, geheel of gedeeltelijk</button>
+      </div>
+    </div>
+
+    <div class="tc-step" data-step="3">
+      <h3>Wilt u ook andere UAE-bezittingen opnemen?</h3>
+      <p>Bijvoorbeeld bankrekeningen, beleggingen of voertuigen in de UAE.</p>
+      <div class="tc-options">
+        <button class="tc-opt" type="button" data-q="3" data-v="nee">Nee, alleen vastgoed</button>
+        <button class="tc-opt" type="button" data-q="3" data-v="ja">Ja, ook andere bezittingen</button>
+      </div>
+    </div>
+
+    <div class="tc-step" data-step="4">
+      <h3>Registreert u alleen of samen met uw partner?</h3>
+      <p>Bij een mirror will registreren beide partners tegelijk, elk met een eigen testament.</p>
+      <div class="tc-options">
+        <button class="tc-opt" type="button" data-q="4" data-v="alleen">Alleen (single will)</button>
+        <button class="tc-opt" type="button" data-q="4" data-v="samen">Samen met partner (mirror will)</button>
+      </div>
+    </div>
+
+    <div class="tc-result" id="tcResult">
+      <div class="tc-result-card">
+        <span class="tc-tier-name" id="tcTierName"></span>
+        <div class="tc-tier-price" id="tcTierPrice"></div>
+        <p class="tc-tier-desc" id="tcTierDesc"></p>
+      </div>
+      <a class="tc-buy" id="tcBuyLink" href="#">Nu beginnen &rarr;</a>
+      <a class="tc-consult" href="https://cal.com/vaetestament/kennismaking?utm_source=tier-check&amp;utm_medium=modal" target="_blank" rel="noopener">Liever eerst overleggen? Plan een gratis kennismaking &rarr;</a>
+    </div>
+  </div>
+</div>
+
+<style is:global>
+  .tc-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+  }
+  .tc-overlay.open { display: flex; }
+  .tc-modal {
+    background: #fff;
+    border-radius: 16px;
+    max-width: 520px;
+    width: 92%;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 40px 36px 32px;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  }
+  .tc-close {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--muted);
+    line-height: 1;
+  }
+  .tc-close:hover { color: var(--teal); }
+  .tc-progress {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 28px;
+  }
+  .tc-progress span {
+    flex: 1;
+    height: 4px;
+    border-radius: 2px;
+    background: #e0e0e0;
+    transition: background 0.3s;
+  }
+  .tc-progress span.done { background: var(--teal); }
+  .tc-step { display: none; }
+  .tc-step.active { display: block; }
+  .tc-step h3 {
+    font-size: 1.15rem;
+    margin-bottom: 6px;
+    color: var(--ink);
+    font-family: var(--font-body);
+  }
+  .tc-step p {
+    font-size: 0.88rem;
+    color: var(--muted);
+    margin-bottom: 20px;
+  }
+  .tc-options { display: flex; flex-direction: column; gap: 10px; }
+  .tc-opt {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 14px 18px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    background: #fff;
+    font-size: 0.95rem;
+    font-family: var(--font-body);
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .tc-opt:hover { border-color: var(--teal); background: #fafafa; }
+  .tc-opt.selected { border-color: var(--teal); background: var(--cream); }
+  .tc-result { display: none; text-align: center; padding: 20px 0 0; }
+  .tc-result.active { display: block; }
+  .tc-result-card {
+    background: var(--cream);
+    border-radius: 12px;
+    padding: 28px 24px;
+    margin-bottom: 20px;
+  }
+  .tc-result .tc-tier-name {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 4px;
+  }
+  .tc-result .tc-tier-price {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--teal);
+    margin-bottom: 12px;
+  }
+  .tc-result .tc-tier-desc {
+    font-size: 0.88rem;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  .tc-result .tc-buy,
+  .tc-result .tc-consult {
+    display: block;
+    background: var(--teal);
+    color: #fff;
+    padding: 16px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: background 0.2s;
+  }
+  .tc-result .tc-consult { margin-top: 10px; }
+  .tc-result .tc-buy:hover,
+  .tc-result .tc-consult:hover { background: var(--teal-mid); }
+  @media (max-width: 600px) {
+    .tc-modal { padding: 28px 20px 24px; }
+  }
+</style>
+
+<script is:inline>
+  (function () {
+    if (window.__tcInit) return; // singleton guard
+    window.__tcInit = true;
+
+    var answers = [];
+    var step = 0;
+    var totalSteps = 5;
+    // Article slug, set by openTierCheck() — appended to the result CTAs as
+    // utm_content so we can attribute conversions back to the originating piece.
+    var sourceSlug = null;
+
+    var tiers = {
+      t1: {
+        name: 'Zelf & Zeker',
+        price: '€497',
+        desc: 'Eén DIFC-testament voor één persoon met maximaal 5 vastgoedobjecten op eigen naam.',
+        link: 'https://buy.stripe.com/4gM28q9yJcuReIZ4TtbjW02'
+      },
+      t2: {
+        name: 'Samen Registreren',
+        price: '€797',
+        desc: 'Twee DIFC-testamenten: voor u én uw partner, elk een eigen testament met maximaal 5 vastgoedobjecten op eigen naam.',
+        link: 'https://buy.stripe.com/4gM28q12d1QddEV5XxbjW03'
+      },
+      t3: {
+        name: 'Volledig Ontzorgd',
+        price: '€1.499',
+        desc: 'Voor situaties met meer dan 5 panden, bedrijfsstructuren of aanvullende bezittingen. Inclusief persoonlijke begeleiding.',
+        link: 'https://buy.stripe.com/8x24gy3al0M91WdclVbjW04'
+      }
+    };
+
+    function updateProgress() {
+      var bars = document.querySelectorAll('#tcProgress span');
+      for (var i = 0; i < bars.length; i++) {
+        bars[i].classList.toggle('done', i <= step);
+      }
+    }
+
+    function showResult(tier) {
+      document.querySelectorAll('.tc-step').forEach(function (s) { s.classList.remove('active'); });
+      document.querySelectorAll('#tcProgress span').forEach(function (b) { b.classList.add('done'); });
+      var t = tiers[tier];
+      document.getElementById('tcTierName').textContent = t.name;
+      document.getElementById('tcTierPrice').textContent = t.price;
+      document.getElementById('tcTierDesc').textContent = t.desc;
+      // Stripe ignores arbitrary query params; we keep the link clean.
+      // Attribution lives in the cal.com link + the AI-button analytics.
+      document.getElementById('tcBuyLink').href = t.link;
+      document.getElementById('tcResult').classList.add('active');
+    }
+
+    window.openTierCheck = function (slug) {
+      sourceSlug = typeof slug === 'string' ? slug : null;
+      answers = [];
+      step = 0;
+      document.querySelectorAll('.tc-step').forEach(function (s) { s.classList.remove('active'); });
+      document.querySelector('.tc-step[data-step="0"]').classList.add('active');
+      document.getElementById('tcResult').classList.remove('active');
+      // Reset selected state
+      document.querySelectorAll('.tc-opt.selected').forEach(function (o) { o.classList.remove('selected'); });
+      updateProgress();
+      document.getElementById('tcOverlay').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    };
+
+    window.closeTierCheck = function () {
+      document.getElementById('tcOverlay').classList.remove('open');
+      document.body.style.overflow = '';
+    };
+
+    document.getElementById('tcClose').addEventListener('click', window.closeTierCheck);
+    document.getElementById('tcOverlay').addEventListener('click', function (e) {
+      if (e.target === this) window.closeTierCheck();
+    });
+
+    document.querySelectorAll('.tc-opt').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var q = parseInt(btn.getAttribute('data-q'), 10);
+        var v = btn.getAttribute('data-v');
+        answers[q] = v;
+
+        // highlight selected
+        document
+          .querySelectorAll('.tc-step[data-step="' + q + '"] .tc-opt')
+          .forEach(function (o) { o.classList.remove('selected'); });
+        btn.classList.add('selected');
+
+        setTimeout(function () {
+          // Routing rules (locked):
+          //   Q2 (index 1): >5 panden → T3
+          //   Q3-Q4 (index 2,3): any "ja" → T3
+          //   Otherwise: Q5 'samen' → T2; 'alleen' → T1
+          if (v === '5+') return showResult('t3');
+          if ((q === 2 || q === 3) && v === 'ja') return showResult('t3');
+
+          if (q < totalSteps - 1) {
+            step = q + 1;
+            document.querySelectorAll('.tc-step').forEach(function (s) { s.classList.remove('active'); });
+            document.querySelector('.tc-step[data-step="' + step + '"]').classList.add('active');
+            updateProgress();
+          } else {
+            showResult(answers[4] === 'samen' ? 't2' : 't1');
+          }
+        }, 300);
+      });
+    });
+
+    // Esc closes the modal
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && document.getElementById('tcOverlay').classList.contains('open')) {
+        window.closeTierCheck();
+      }
+    });
+  })();
+</script>

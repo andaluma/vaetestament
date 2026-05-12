@@ -1,0 +1,200 @@
+---
+// NewsletterSignup — Brevo nurture-list opt-in form.
+//
+// POSTs to `https://api.vaetestament.nl/v1/newsletter/subscribe` (Worker
+// endpoint added in D4). Worker:
+//  1. Validates email shape + simple honeypot field.
+//  2. Adds the contact to the `nl-article-nurture` list with attributes
+//     SOURCE='article', ARTICLE_SLUG=<slug>.
+//  3. Triggers Brevo's double-opt-in confirmation email (GDPR requirement).
+//
+// On Stripe purchase, the existing `checkout.session.completed` webhook
+// (vaetestament-worker/src/handlers/stripe-webhook.js) also removes the
+// email from the nurture list — so paying customers don't get nurtured.
+//
+// Props:
+//   slug   — article slug, sent as ARTICLE_SLUG attribute
+//   variant — 'inline' (text + email + submit on one row) or 'card' (boxed)
+
+export interface Props {
+  slug?: string;
+  variant?: 'inline' | 'card';
+  heading?: string;
+  body?: string;
+}
+
+const {
+  slug = '',
+  variant = 'card',
+  heading = 'Eens per maand een update over DIFC-Wills',
+  body = 'Praktische uitleg, geen verkooppraat. Een e-mail per maand, uitschrijven kan altijd.',
+} = Astro.props;
+---
+
+<aside class={`nl-block nl-block--${variant}`} aria-labelledby={`nl-heading-${slug || 'generic'}`}>
+  <div class="nl-text">
+    <h3 id={`nl-heading-${slug || 'generic'}`}>{heading}</h3>
+    <p>{body}</p>
+  </div>
+
+  <form class="nl-form" data-slug={slug} novalidate>
+    <label class="nl-honeypot" aria-hidden="true">
+      {/* Honeypot: real users never fill this; spam bots usually do. */}
+      Website
+      <input type="text" name="website" tabindex="-1" autocomplete="off" />
+    </label>
+
+    <label for={`nl-email-${slug || 'generic'}`} class="nl-sr-only">E-mailadres</label>
+    <input
+      id={`nl-email-${slug || 'generic'}`}
+      type="email"
+      name="email"
+      required
+      autocomplete="email"
+      placeholder="uw@e-mailadres.nl"
+    />
+    <button type="submit">Aanmelden</button>
+
+    <p class="nl-status" role="status" aria-live="polite" hidden></p>
+    <p class="nl-fineprint">Wij sturen u een bevestigingse-mail. Door aan te melden gaat u akkoord met ons <a href="/privacybeleid">privacybeleid</a>.</p>
+  </form>
+</aside>
+
+<style>
+  .nl-block {
+    margin: 3rem 0;
+    padding: 2rem 1.75rem;
+    border: 1px solid var(--cream-dark);
+    border-radius: 6px;
+    background: #fff;
+  }
+  .nl-block--inline {
+    padding: 1.5rem 1.5rem;
+  }
+  .nl-block h3 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--teal);
+    margin: 0 0 0.5rem;
+  }
+  .nl-block p { margin: 0 0 1rem; color: var(--muted); font-size: 0.95rem; }
+  .nl-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  .nl-form input[type="email"] {
+    flex: 1 1 220px;
+    min-width: 0;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--cream-dark);
+    border-radius: 3px;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    background: var(--cream);
+  }
+  .nl-form input[type="email"]:focus {
+    outline: 2px solid var(--gold);
+    outline-offset: 1px;
+  }
+  .nl-form button {
+    padding: 0.75rem 1.4rem;
+    background: var(--teal);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .nl-form button:hover { background: var(--teal-mid); }
+  .nl-form button:disabled { opacity: 0.6; cursor: wait; }
+  .nl-status {
+    width: 100%;
+    margin: 0.75rem 0 0;
+    font-size: 0.9rem;
+  }
+  .nl-status.ok { color: var(--teal); }
+  .nl-status.err { color: #B33A3A; }
+  .nl-fineprint {
+    width: 100%;
+    margin: 0.75rem 0 0;
+    font-size: 0.8rem;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+  .nl-fineprint a { color: var(--muted); text-decoration: underline; }
+  .nl-honeypot {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  .nl-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+</style>
+
+<script is:inline>
+  (function () {
+    // Attach submit handlers to every newsletter form on the page (idempotent).
+    document.querySelectorAll('.nl-form:not([data-nl-bound])').forEach(function (form) {
+      form.setAttribute('data-nl-bound', 'true');
+
+      var status = form.querySelector('.nl-status');
+      var button = form.querySelector('button[type="submit"]');
+
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        var fd = new FormData(form);
+        if (fd.get('website')) return; // honeypot triggered, silently swallow
+        var email = (fd.get('email') || '').toString().trim();
+        if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+          status.textContent = 'Voer een geldig e-mailadres in.';
+          status.className = 'nl-status err';
+          status.hidden = false;
+          return;
+        }
+
+        button.disabled = true;
+        status.textContent = 'Even geduld…';
+        status.className = 'nl-status';
+        status.hidden = false;
+
+        try {
+          var res = await fetch('https://api.vaetestament.nl/v1/newsletter/subscribe', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              email: email,
+              slug: form.getAttribute('data-slug') || null,
+              source: 'article'
+            })
+          });
+          if (!res.ok) throw new Error('subscribe ' + res.status);
+          status.textContent = 'Bedankt. We hebben u een bevestigingse-mail gestuurd — klik op de link om uw aanmelding af te ronden.';
+          status.className = 'nl-status ok';
+          form.querySelector('input[type="email"]').value = '';
+        } catch (err) {
+          status.textContent = 'Aanmelden lukte niet. Probeer het later opnieuw of mail naar support@vaetestament.nl.';
+          status.className = 'nl-status err';
+        } finally {
+          button.disabled = false;
+        }
+      });
+    });
+  })();
+</script>

@@ -8,6 +8,9 @@
 
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import TierCheckButton from '../../components/TierCheckButton.astro';
+import BookCallButton from '../../components/BookCallButton.astro';
+import NewsletterSignup from '../../components/NewsletterSignup.astro';
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles');
@@ -110,6 +113,11 @@ const publishDateFmt = data.publish_date.toLocaleDateString('nl-NL', {
 });
 ---
 
+{/* Slug used for component attribution (UTM + WhatsApp pre-fill). */}
+{(() => {
+  return null;
+})()}
+
 <BaseLayout
   title={`${data.title} — VAEtestament`}
   description={data.meta_description}
@@ -119,6 +127,8 @@ const publishDateFmt = data.publish_date.toLocaleDateString('nl-NL', {
   updatedDate={data.updated_date}
   author={data.author}
   jsonLd={jsonLd}
+  articleSlug={entry.id.replace(/\.(md|mdx)$/, '')}
+  articleTitle={data.title}
 >
   <article>
     <nav class="breadcrumbs" aria-label="Broodkruimels">
@@ -146,6 +156,20 @@ const publishDateFmt = data.publish_date.toLocaleDateString('nl-NL', {
     <div class="prose">
       <Content />
     </div>
+
+    <section class="cta-block" aria-labelledby="cta-heading">
+      <h2 id="cta-heading">Volgende stap</h2>
+      <p>Bepaal welk pakket bij uw situatie past — vijf korte vragen — of plan een gratis kennismaking.</p>
+      <div class="cta-row">
+        <TierCheckButton slug={entry.id.replace(/\.(md|mdx)$/, '')} />
+        <BookCallButton
+          slug={entry.id.replace(/\.(md|mdx)$/, '')}
+          cluster={data.cluster}
+        />
+      </div>
+    </section>
+
+    <NewsletterSignup slug={entry.id.replace(/\.(md|mdx)$/, '')} />
 
     {data.faq.length > 0 && (
       <section class="faq-block" aria-labelledby="faq-heading">

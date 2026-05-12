@@ -1,0 +1,57 @@
+---
+// TierCheckButton — inline CTA that opens the singleton TierCheckModal.
+// Use inside article body or beside a related-articles block.
+//
+// Props:
+//   slug    — article slug, passed to openTierCheck for attribution.
+//   label   — optional override of the button text.
+//   variant — 'primary' (filled teal, default) or 'subtle' (outlined).
+//
+// The modal itself is rendered once per page by BaseLayout.
+
+export interface Props {
+  slug?: string;
+  label?: string;
+  variant?: 'primary' | 'subtle';
+}
+
+const { slug = '', label = 'Welk pakket past bij u?', variant = 'primary' } = Astro.props;
+---
+
+<button
+  type="button"
+  class={`vae-cta vae-cta--${variant}`}
+  data-slug={slug}
+  onclick={`openTierCheck(${JSON.stringify(slug)})`}
+>
+  {label}
+</button>
+
+<style>
+  .vae-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    padding: 14px 28px;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    border-radius: 3px;
+    border: 2px solid var(--teal);
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+    text-decoration: none;
+  }
+  .vae-cta--primary {
+    background: var(--teal);
+    color: #fff;
+  }
+  .vae-cta--primary:hover { background: var(--teal-mid); border-color: var(--teal-mid); }
+  .vae-cta--subtle {
+    background: transparent;
+    color: var(--teal);
+  }
+  .vae-cta--subtle:hover { background: var(--teal); color: #fff; }
+</style>

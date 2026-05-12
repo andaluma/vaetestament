@@ -113,6 +113,29 @@ article {
 }
 .faq-item p { margin: 0; }
 
+.cta-block {
+  margin: 4rem 0 0;
+  padding: 2.5rem 2rem;
+  background: #fff;
+  border: 1px solid var(--cream-dark);
+  border-radius: 6px;
+  text-align: center;
+}
+.cta-block h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.75rem;
+}
+.cta-block p {
+  margin: 0 0 1.5rem;
+  color: var(--muted);
+}
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
 .related-block {
   margin: 4rem 0 0;
   padding: 2.5rem 0 0;

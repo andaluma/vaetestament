@@ -1,0 +1,68 @@
+---
+// BookCallButton — cal.com /vaetestament/kennismaking (free intro call).
+// Appends UTM params so cal.com surfaces the originating article in the
+// booking notification + your analytics. Locked: per Day 15 decision we
+// use ONE event and rely on UTM for attribution (not per-cluster events).
+//
+// Props:
+//   slug    — article slug → utm_content
+//   cluster — funnel cluster → utm_campaign
+//   label   — optional override
+//   variant — 'primary' | 'subtle' (matches TierCheckButton styling)
+
+export interface Props {
+  slug?: string;
+  cluster?: 'waarom' | 'hoe' | 'keuze';
+  label?: string;
+  variant?: 'primary' | 'subtle';
+}
+
+const {
+  slug = '',
+  cluster = '',
+  label = 'Plan een gratis kennismaking',
+  variant = 'subtle',
+} = Astro.props;
+
+const baseUrl = 'https://cal.com/vaetestament/kennismaking';
+const params = new URLSearchParams({
+  utm_source: 'article',
+  utm_medium: 'cta',
+  ...(slug && { utm_content: slug }),
+  ...(cluster && { utm_campaign: cluster }),
+});
+const href = `${baseUrl}?${params.toString()}`;
+---
+
+<a href={href} target="_blank" rel="noopener" class={`vae-cta vae-cta--${variant}`}>
+  {label}
+</a>
+
+<style>
+  .vae-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    padding: 14px 28px;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    border-radius: 3px;
+    border: 2px solid var(--teal);
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+    text-decoration: none;
+  }
+  .vae-cta--primary {
+    background: var(--teal);
+    color: #fff;
+  }
+  .vae-cta--primary:hover { background: var(--teal-mid); border-color: var(--teal-mid); }
+  .vae-cta--subtle {
+    background: transparent;
+    color: var(--teal);
+  }
+  .vae-cta--subtle:hover { background: var(--teal); color: #fff; }
+</style>
