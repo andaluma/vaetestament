@@ -26,9 +26,9 @@ faq:
   - q: Wat kost een mirror will?
     a: "Een mirror will (twee testamenten voor een echtpaar) valt onder Tier 2: EUR 797 totaal, niet per persoon."
   - q: Hoe verhoudt EUR 497 zich tot de EUR 10.000+ probate-kosten?
-    a: "Een DIFC Will is een fractie van wat uw nabestaanden zouden betalen zonder testament. De investering is niet alleen financieel, maar ook in rust: uw partner hoeft geen jarenlange procedure te doorlopen. Lees het [volledige overzicht van het probate-proces](/probate-dubai-nederlandse-erfgenamen)."
+    a: "Een DIFC Will is een fractie van wat uw nabestaanden zouden betalen zonder testament. De investering is niet alleen financieel, maar ook in rust: uw partner hoeft geen jarenlange procedure te doorlopen. Lees het [volledige overzicht van het probate-proces](/artikelen/probate-dubai-nederlandse-erfgenamen/)."
   - q: Biedt VAEtestament een betalingsregeling?
-    a: "Neem contact op via [VAEtestament.nl](https://vaetestament.nl) om de mogelijkheden te bespreken.\n\n---\n\nVoor een directe inschatting van uw situatie en het juiste pakket: [VAEtestament.nl](https://vaetestament.nl)"
+    a: "Neem contact op via [VAEtestament.nl](https://vaetestament.nl) om de mogelijkheden te bespreken."
 ---
 
 Een DIFC Will via VAEtestament kost EUR 497, EUR 797 of EUR 1.499, afhankelijk van uw situatie. Vaste prijzen, vooraf bekend, zonder uurtarieven of verborgen kosten. Dit artikel beschrijft wat elk pakket omvat, voor wie het bedoeld is en hoe de kosten zich verhouden tot de alternatieven.
@@ -89,7 +89,7 @@ Het DIFC Wills Service Centre heeft een online portaal waar u zelf een testament
 
 ### Niets doen
 
-De goedkoopste optie op korte termijn is de duurste op lange termijn. Zonder DIFC Will betalen uw nabestaanden doorgaans meer dan EUR 10.000 aan probate-kosten, met een doorlooptijd van 12 tot 24 maanden. Lees meer over [wat er gebeurt zonder testament](/wat-gebeurt-dubai-vastgoed-zonder-testament).
+De goedkoopste optie op korte termijn is de duurste op lange termijn. Zonder DIFC Will betalen uw nabestaanden doorgaans meer dan EUR 10.000 aan probate-kosten, met een doorlooptijd van 12 tot 24 maanden. Lees meer over [wat er gebeurt zonder testament](/artikelen/wat-gebeurt-dubai-vastgoed-zonder-testament/).
 
 ## Wat is inbegrepen in de prijs?
 

@@ -28,7 +28,7 @@ faq:
   - q: Kan ik een mirror will doen als mijn partner geen Nederlandse nationaliteit heeft?
     a: Ja. Een DIFC Will staat open voor alle niet-moslims, ongeacht nationaliteit. Uw partner hoeft geen Nederlander te zijn.
   - q: Wat als slechts één partner vastgoed op naam heeft?
-    a: "Dan heeft strikt genomen alleen die partner een DIFC Will nodig. U kunt er alsnog voor kiezen om een mirror will te doen als voorzorg voor toekomstige eigendomswijzigingen.\n\n---\n\nVoor een directe inschatting van uw situatie en het juiste pakket: [VAEtestament.nl](https://vaetestament.nl)"
+    a: "Dan heeft strikt genomen alleen die partner een DIFC Will nodig. U kunt er alsnog voor kiezen om een mirror will te doen als voorzorg voor toekomstige eigendomswijzigingen."
 ---
 
 Een mirror will is de meest praktische manier voor echtparen om hun UAE-vastgoed te beschermen. Het zijn twee afzonderlijke testamenten die in dezelfde DIFC-procedure worden geregistreerd, elk met eigen beslissingen over wie wat erft. Dit artikel legt uit wat het precies is, wanneer het de juiste keuze is en waar de grenzen liggen.
@@ -79,7 +79,7 @@ Oplossing: mirror will met per-eigendom-specificatie. Beide partners leggen per 
 
 Een mirror will bij het DIFC vervangt uw Nederlandse testament niet. Het vult het aan. Uw Nederlandse notariële testament regelt uw Nederlandse vermogen. Uw DIFC mirror will regelt uw UAE-vastgoed.
 
-Het is verstandig om uw Nederlandse notaris te informeren over het bestaan van uw DIFC Will, zodat er geen tegenstrijdige bepalingen ontstaan. Lees het uitgebreide artikel over [de combinatie van een DIFC Will met een Nederlands testament](/difc-will-of-nederlands-testament).
+Het is verstandig om uw Nederlandse notaris te informeren over het bestaan van uw DIFC Will, zodat er geen tegenstrijdige bepalingen ontstaan. Lees het uitgebreide artikel over [de combinatie van een DIFC Will met een Nederlands testament](/artikelen/difc-will-of-nederlands-testament/).
 
 ## Beperkingen van een mirror will
 
@@ -101,4 +101,4 @@ Het proces is identiek aan een individueel DIFC Will, maar dan voor twee persone
 5. **DIFC-aanmelding:** beide testamenten worden gelijktijdig ingediend.
 6. **Ondertekening:** beide partners ondertekenen via videocall, eventueel in dezelfde sessie.
 
-Het volledige proces verloopt op afstand. Lees het [stap-voor-stap overzicht](/difc-will-registreren-vanuit-nederland).
+Het volledige proces verloopt op afstand. Lees het [stap-voor-stap overzicht](/artikelen/difc-will-registreren-vanuit-nederland/).

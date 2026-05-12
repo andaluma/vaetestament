@@ -20,15 +20,15 @@ related:
 linked_landing_faq: zonder-testament-uae
 faq:
   - q: Mijn Nederlandse testament regelt toch alles?
-    a: Niet voor vastgoed in de UAE. Een Nederlands notarieel testament wordt in de UAE doorgaans niet erkend voor onroerend goed op UAE-grond. U heeft een apart, lokaal geldig testament nodig. Lees meer over [de combinatie van een DIFC Will met een Nederlands testament](/difc-will-of-nederlands-testament).
+    a: Niet voor vastgoed in de UAE. Een Nederlands notarieel testament wordt in de UAE doorgaans niet erkend voor onroerend goed op UAE-grond. U heeft een apart, lokaal geldig testament nodig. Lees meer over [de combinatie van een DIFC Will met een Nederlands testament](/artikelen/difc-will-of-nederlands-testament/).
   - q: Kan mijn partner niet gewoon naar Dubai vliegen om het te regelen?
     a: Fysieke aanwezigheid versnelt het proces niet wezenlijk. De probate-procedure loopt via de rechtbank en vereist specifieke documentatie die eerst in Nederland moet worden opgesteld, gelegaliseerd en vertaald.
   - q: Wat als ik maar één eigendom heb? Is het dan ook nodig?
     a: Ja. Het maakt voor de juridische blootstelling niet uit of u één appartement bezit of vijf. Zonder lokaal testament geldt dezelfde procedure voor uw nabestaanden.
   - q: Hoe snel kan ik een DIFC Will regelen?
-    a: De voorbereiding duurt doorgaans 1 tot 2 weken. De DIFC-registratie zelf neemt 4 tot 8 weken in beslag. Het volledige proces verloopt op afstand. Zie het [stap-voor-stap overzicht](/difc-will-registreren-vanuit-nederland).
+    a: De voorbereiding duurt doorgaans 1 tot 2 weken. De DIFC-registratie zelf neemt 4 tot 8 weken in beslag. Het volledige proces verloopt op afstand. Zie het [stap-voor-stap overzicht](/artikelen/difc-will-registreren-vanuit-nederland/).
   - q: Wat kost een DIFC Will via VAEtestament?
-    a: "VAEtestament werkt met vaste prijzen: EUR 497, EUR 797 of EUR 1.499, afhankelijk van uw situatie. Lees meer over de [pakketten en prijsstructuur](/wat-kost-een-difc-will).\n\n---\n\nVoor een directe inschatting van uw situatie en het juiste pakket: [VAEtestament.nl](https://vaetestament.nl)"
+    a: "VAEtestament werkt met vaste prijzen: EUR 497, EUR 797 of EUR 1.499, afhankelijk van uw situatie. Lees meer over de [pakketten en prijsstructuur](/artikelen/wat-kost-een-difc-will/)."
 ---
 
 Zonder DIFC Will heeft uw overlevende partner geen zekerheid over de verdeling van uw UAE-vastgoed. De autoriteiten kunnen lokale erfregels toepassen, ongeacht uw nationaliteit. Uw nabestaanden worden geconfronteerd met een kostbare en langdurige probate-procedure. Dit artikel beschrijft wat er concreet gebeurt, wat het kost en hoe u het voorkomt.

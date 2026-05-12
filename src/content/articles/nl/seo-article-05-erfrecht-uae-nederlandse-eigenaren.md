@@ -30,7 +30,7 @@ faq:
   - q: Moet ik mijn Nederlandse notaris informeren over mijn DIFC Will?
     a: Het is verstandig om uw notaris te laten weten dat u een apart testament heeft voor uw UAE-vastgoed. Zo voorkomt u dat uw Nederlandse testament en uw DIFC Will tegenstrijdige bepalingen bevatten.
   - q: Hoe regel ik een DIFC Will vanuit Nederland?
-    a: "Het volledige proces verloopt op afstand. Lees het [stap-voor-stap overzicht](/difc-will-registreren-vanuit-nederland) of bezoek [VAEtestament.nl](https://vaetestament.nl) voor een directe inschatting van uw situatie.\n\n---\n\nVoor een directe inschatting van uw situatie en het juiste pakket: [VAEtestament.nl](https://vaetestament.nl)"
+    a: "Het volledige proces verloopt op afstand. Lees het [stap-voor-stap overzicht](/artikelen/difc-will-registreren-vanuit-nederland/) of bezoek [VAEtestament.nl](https://vaetestament.nl) voor een directe inschatting van uw situatie."
 ---
 
 Het erfrecht in de Verenigde Arabische Emiraten verschilt fundamenteel van het Nederlandse systeem. Voor Nederlandse eigenaren van UAE-vastgoed is het van belang te begrijpen welke regels van toepassing zijn, wat recente wijzigingen betekenen en waarom een DIFC Will de enige manier is om zelf te bepalen wie uw vastgoed erft.
@@ -59,7 +59,7 @@ Als Nederlandse ingezetene heeft u te maken met twee rechtsstelsels:
 
 Er is geen automatische afstemming tussen deze twee systemen. Een Nederlands testament verwijst doorgaans niet naar UAE-vastgoed, en als het dat wel doet, wordt die verwijzing in de UAE niet zonder meer erkend.
 
-De oplossing is twee aparte instrumenten: een Nederlands testament voor uw Nederlandse vermogen, en een DIFC Will voor uw UAE-vastgoed. Beide bestaan naast elkaar en vullen elkaar aan. Lees meer in ons artikel over [de combinatie van een DIFC Will met een Nederlands testament](/difc-will-of-nederlands-testament).
+De oplossing is twee aparte instrumenten: een Nederlands testament voor uw Nederlandse vermogen, en een DIFC Will voor uw UAE-vastgoed. Beide bestaan naast elkaar en vullen elkaar aan. Lees meer in ons artikel over [de combinatie van een DIFC Will met een Nederlands testament](/artikelen/difc-will-of-nederlands-testament/).
 
 ## Wat het DIFC verandert
 
@@ -73,7 +73,7 @@ Zonder DIFC Will is de positie van de overlevende partner onzeker. De lokale reg
 
 Met een DIFC Will legt u exact vast dat uw partner het vastgoed erft (of een ander door u gekozen aandeel ontvangt). Er is geen interpretatie nodig, geen rechtbankprocedure en geen onzekerheid.
 
-Voor echtparen is een mirror will de meest praktische optie: twee afzonderlijke testamenten, geregistreerd in dezelfde procedure. Lees meer over [mirror wills voor echtparen met UAE-vastgoed](/mirror-wills-echtparen-uae-vastgoed).
+Voor echtparen is een mirror will de meest praktische optie: twee afzonderlijke testamenten, geregistreerd in dezelfde procedure. Lees meer over [mirror wills voor echtparen met UAE-vastgoed](/artikelen/mirror-wills-echtparen-uae-vastgoed/).
 
 ## De positie van kinderen en andere erfgenamen
 

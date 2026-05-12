@@ -24,11 +24,11 @@ faq:
   - q: Moet ik mijn Nederlandse testament aanpassen als ik een DIFC Will neem?
     a: "Niet altijd, maar het is verstandig om uw notaris te raadplegen. Als uw Nederlandse testament verwijst naar \"al mijn bezittingen wereldwijd,\" is een aanpassing aan te raden om tegenstrijdigheden te voorkomen."
   - q: Wat als ik ook vastgoed in andere landen heb (Spanje, Indonesië)?
-    a: Voor elk land waar u onroerend goed bezit, moet u nagaan welk lokaal instrument nodig is. Een DIFC Will dekt alleen UAE-vastgoed. Lees meer over [erfrecht in de UAE voor Nederlandse eigenaren](/erfrecht-vae-nederlandse-vastgoedeigenaren).
+    a: Voor elk land waar u onroerend goed bezit, moet u nagaan welk lokaal instrument nodig is. Een DIFC Will dekt alleen UAE-vastgoed. Lees meer over [erfrecht in de UAE voor Nederlandse eigenaren](/artikelen/erfrecht-vae-nederlandse-vastgoedeigenaren/).
   - q: Wie heeft voorrang bij conflicten tussen mijn Nederlandse en DIFC-testament?
     a: Voor UAE-vastgoed is het DIFC-testament leidend. Voor Nederlandse bezittingen is uw Nederlands testament leidend. De documenten opereren in verschillende jurisdicties en conflicteren in principe niet, mits de scope-afbakening helder is.
   - q: Hoe weten mijn erfgenamen dat er twee testamenten zijn?
-    a: "Informeer uw executeur-testamentair en uw partner. Bewaar een overzicht van beide documenten op een toegankelijke locatie. Overweeg om uw notaris een kopie of verwijzing naar uw DIFC Will te laten opnemen in het dossier.\n\n---\n\nVoor een directe inschatting van uw situatie en het juiste pakket: [VAEtestament.nl](https://vaetestament.nl)"
+    a: "Informeer uw executeur-testamentair en uw partner. Bewaar een overzicht van beide documenten op een toegankelijke locatie. Overweeg om uw notaris een kopie of verwijzing naar uw DIFC Will te laten opnemen in het dossier."
 ---
 
 Als u vastgoed bezit in de UAE en in Nederland woont, heeft u in de praktijk twee testamenten nodig: een Nederlands testament voor uw Nederlandse vermogen en een DIFC Will voor uw UAE-vastgoed. Beide documenten staan naast elkaar, vullen elkaar aan en mogen elkaar niet tegenspreken. Dit artikel legt uit hoe dat werkt en waar het misgaat.
@@ -90,6 +90,6 @@ Voor deze situaties biedt VAEtestament Tier 3 (EUR 1.499), inclusief verwijzing 
 ## De praktische stappen
 
 1. **Controleer uw Nederlandse testament.** Bevat het bepalingen die verwijzen naar "al mijn onroerend goed wereldwijd"? Zo ja, bespreek met uw notaris of een aanpassing nodig is.
-2. **Regel een DIFC Will.** Het volledige proces verloopt op afstand en duurt 5 tot 10 weken. Lees het [stap-voor-stap overzicht](/difc-will-registreren-vanuit-nederland).
+2. **Regel een DIFC Will.** Het volledige proces verloopt op afstand en duurt 5 tot 10 weken. Lees het [stap-voor-stap overzicht](/artikelen/difc-will-registreren-vanuit-nederland/).
 3. **Informeer uw notaris.** Laat weten dat u een apart testament heeft voor uw UAE-vastgoed.
 4. **Bewaar beide documenten toegankelijk.** Zorg dat uw erfgenamen of executeur weten dat er twee testamenten zijn en waar ze te vinden zijn.
