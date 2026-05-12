@@ -31,7 +31,7 @@ const { Content } = await render(entry);
 
 const data = entry.data;
 const slug = entry.id.replace(/\.(md|mdx)$/, '');
-const canonical = `https://vaetestament.nl/artikelen/${slug}`;
+const canonical = `https://vaetestament.nl/artikelen/${slug}/`;
 const heroImage = data.hero_image || DEFAULT_HERO;
 
 // Reading-time estimate — 200 wpm Dutch nonfiction.
