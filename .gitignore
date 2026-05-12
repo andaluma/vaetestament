@@ -4,3 +4,17 @@
 !.dev.vars.example
 .env*
 !.env.example
+
+# Astro build artifacts
+dist/
+.astro/
+
+# Node deps
+node_modules/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log

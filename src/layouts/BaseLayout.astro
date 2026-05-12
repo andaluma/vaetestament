@@ -1,0 +1,95 @@
+---
+// BaseLayout — wraps every page with:
+// - meta tags (title, description, OG, Twitter card)
+// - canonical link
+// - hreflang scaffolding (self-ref + x-default; cross-domain EN/ES added later)
+// - Google Fonts (Cormorant + Jost) — same families as live site
+// - favicon
+// - global stylesheet
+//
+// All SEO/AEO-critical tags are emitted here so every page inherits them
+// without per-page boilerplate.
+
+import '../styles/global.css';
+
+export interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  ogImage?: string;
+  ogType?: 'website' | 'article';
+  publishDate?: Date;
+  updatedDate?: Date;
+  author?: string;
+  /** JSON-LD blocks to inject in <head> as raw <script type="application/ld+json">. */
+  jsonLd?: Record<string, unknown>[];
+}
+
+const {
+  title,
+  description,
+  canonical = Astro.url.href,
+  ogImage = 'https://vaetestament.nl/favicon.png',
+  ogType = 'website',
+  publishDate,
+  updatedDate,
+  author,
+  jsonLd = [],
+} = Astro.props;
+
+const siteName = 'VAEtestament';
+---
+
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    <link rel="canonical" href={canonical} />
+    <link rel="alternate" hreflang="nl" href={canonical} />
+    <link rel="alternate" hreflang="x-default" href={canonical} />
+    {/* TODO: when EN/ES domains exist, emit hreflang="en" / "es" entries here. */}
+
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:locale" content="nl_NL" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    {publishDate && (
+      <meta property="article:published_time" content={publishDate.toISOString()} />
+    )}
+    {updatedDate && (
+      <meta property="article:modified_time" content={updatedDate.toISOString()} />
+    )}
+    {author && <meta name="author" content={author} />}
+
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    {jsonLd.map((block) => (
+      <script type="application/ld+json" set:html={JSON.stringify(block)} />
+    ))}
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

@@ -1,0 +1,148 @@
+/* VAEtestament — global styles
+ * Canonical tokens per docs/STYLE_GUIDE.md
+ * --teal #0C4A45 · --gold #C8A44A · --cream #F6F1E7 · --ink #1E1E1E (reserved)
+ * Cormorant Garamond (display) + Jost (body). DM Sans is dead.
+ *
+ * D1 scope: just enough to render an article legibly. Full landing-page CSS
+ * gets ported into modular pieces during D2.
+ */
+
+:root {
+  --teal: #0C4A45;
+  --teal-mid: #145E57;
+  --gold: #C8A44A;
+  --gold-light: #E2C47A;
+  --cream: #F6F1E7;
+  --cream-dark: #EDE6D6;
+  --ink: #1E1E1E;
+  --body: #2A2A2A;
+  --muted: #6B6B6B;
+
+  --font-display: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-body: 'Jost', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  --max-prose: 720px;
+  --max-page: 1180px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--body);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  color: var(--teal);
+  line-height: 1.2;
+  margin: 0 0 0.6em;
+}
+
+h1 { font-size: clamp(2.2rem, 4vw, 3.2rem); }
+h2 { font-size: clamp(1.6rem, 2.6vw, 2.2rem); margin-top: 2.4em; }
+h3 { font-size: 1.3rem; margin-top: 2em; }
+
+p { margin: 0 0 1.1em; }
+
+a {
+  color: var(--teal);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+a:hover { color: var(--teal-mid); }
+
+article {
+  max-width: var(--max-prose);
+  margin: 0 auto;
+  padding: 4rem 1.25rem 6rem;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 500;
+  margin: 0 0 1rem;
+}
+
+.byline {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin: 0 0 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  align-items: center;
+}
+
+.byline a { color: var(--muted); }
+
+.breadcrumbs {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0 0 1.5rem;
+}
+.breadcrumbs a { color: var(--muted); }
+.breadcrumbs span[aria-current] { color: var(--body); }
+
+.faq-block {
+  margin: 4rem 0 0;
+  padding: 2.5rem 0 0;
+  border-top: 1px solid var(--cream-dark);
+}
+.faq-block h2 { margin-top: 0; }
+.faq-item { margin: 0 0 1.75rem; }
+.faq-item h3 {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin: 0 0 0.5rem;
+}
+.faq-item p { margin: 0; }
+
+.related-block {
+  margin: 4rem 0 0;
+  padding: 2.5rem 0 0;
+  border-top: 1px solid var(--cream-dark);
+}
+.related-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+.related-list a {
+  display: block;
+  padding: 1rem 1.25rem;
+  background: #fff;
+  border: 1px solid var(--cream-dark);
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--body);
+  transition: border-color 0.15s;
+}
+.related-list a:hover { border-color: var(--gold); }
+.related-list strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--teal);
+  margin: 0 0 0.25rem;
+}
+
+/* Reset link styling inside prose for AI/related cards already styled above */

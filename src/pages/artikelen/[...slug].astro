@@ -1,0 +1,181 @@
+---
+// Dynamic article route — renders every entry in the `articles` collection
+// at /artikelen/{slug}.
+//
+// D1 scope: render title, byline, body, FAQ block, related-articles block,
+// plus Article + FAQPage + BreadcrumbList JSON-LD. The interactive components
+// (tier-check, cal.com, newsletter, AI button, WhatsApp FAB) come in D3+.
+
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const articles = await getCollection('articles');
+  return articles.map((entry) => ({
+    params: { slug: entry.id.replace(/\.(md|mdx)$/, '') },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+
+const data = entry.data;
+const canonical = `https://vaetestament.nl/artikelen/${entry.id.replace(/\.(md|mdx)$/, '')}`;
+
+// Rough leestijd estimate — 200 wpm for Dutch nonfiction body copy.
+const bodyText = entry.body ?? '';
+const wordCount = bodyText.split(/\s+/).filter(Boolean).length;
+const readMinutes = Math.max(1, Math.round(wordCount / 200));
+
+// Resolve related-article entries (validated to exist; missing slugs warned at build).
+const allArticles = await getCollection('articles');
+const slugIndex = new Map(
+  allArticles.map((a) => [a.id.replace(/\.(md|mdx)$/, ''), a]),
+);
+const relatedEntries = (data.related ?? [])
+  .map((slug) => slugIndex.get(slug))
+  .filter((a): a is NonNullable<typeof a> => Boolean(a));
+
+// JSON-LD blocks
+const articleJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': data.schema_type,
+  headline: data.title,
+  description: data.meta_description,
+  datePublished: data.publish_date.toISOString(),
+  ...(data.updated_date && { dateModified: data.updated_date.toISOString() }),
+  author: {
+    '@type': 'Person',
+    name: data.author,
+    url: 'https://vaetestament.nl/over-andre',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'VAEtestament',
+    legalName: 'Andaluma OÜ',
+    url: 'https://vaetestament.nl',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://vaetestament.nl/favicon.png',
+    },
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': canonical,
+  },
+  keywords: data.keywords.join(', '),
+  inLanguage: 'nl-NL',
+};
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://vaetestament.nl/' },
+    { '@type': 'ListItem', position: 2, name: 'Artikelen', item: 'https://vaetestament.nl/artikelen/' },
+    { '@type': 'ListItem', position: 3, name: data.title, item: canonical },
+  ],
+};
+
+const faqJsonLd =
+  data.faq.length > 0
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: data.faq.map((qa) => ({
+          '@type': 'Question',
+          name: qa.q,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: qa.a,
+          },
+        })),
+      }
+    : null;
+
+const jsonLd = [articleJsonLd, breadcrumbJsonLd, ...(faqJsonLd ? [faqJsonLd] : [])];
+
+const clusterLabels: Record<string, string> = {
+  waarom: 'Waarom dit telt',
+  hoe: 'Hoe het werkt',
+  keuze: 'Welke keuze past bij u',
+};
+const clusterLabel = data.cluster ? clusterLabels[data.cluster] : null;
+
+const publishDateFmt = data.publish_date.toLocaleDateString('nl-NL', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+---
+
+<BaseLayout
+  title={`${data.title} — VAEtestament`}
+  description={data.meta_description}
+  canonical={canonical}
+  ogType="article"
+  publishDate={data.publish_date}
+  updatedDate={data.updated_date}
+  author={data.author}
+  jsonLd={jsonLd}
+>
+  <article>
+    <nav class="breadcrumbs" aria-label="Broodkruimels">
+      <a href="/">Home</a>
+      <span aria-hidden="true"> › </span>
+      <a href="/artikelen/">Artikelen</a>
+      <span aria-hidden="true"> › </span>
+      <span aria-current="page">{data.title}</span>
+    </nav>
+
+    {clusterLabel && <p class="eyebrow">{clusterLabel}</p>}
+
+    <h1>{data.title}</h1>
+
+    <p class="byline">
+      <span>
+        Door <a href="/over-andre" rel="author">{data.author}</a>
+      </span>
+      <span aria-hidden="true">·</span>
+      <time datetime={data.publish_date.toISOString()}>{publishDateFmt}</time>
+      <span aria-hidden="true">·</span>
+      <span>{readMinutes} min lezen</span>
+    </p>
+
+    <div class="prose">
+      <Content />
+    </div>
+
+    {data.faq.length > 0 && (
+      <section class="faq-block" aria-labelledby="faq-heading">
+        <h2 id="faq-heading">Veelgestelde vragen</h2>
+        {data.faq.map((qa) => (
+          <div class="faq-item">
+            <h3>{qa.q}</h3>
+            <p>{qa.a}</p>
+          </div>
+        ))}
+      </section>
+    )}
+
+    {relatedEntries.length > 0 && (
+      <section class="related-block" aria-labelledby="related-heading">
+        <h2 id="related-heading">Gerelateerde artikelen</h2>
+        <ul class="related-list">
+          {relatedEntries.map((rel) => {
+            const relSlug = rel.id.replace(/\.(md|mdx)$/, '');
+            return (
+              <li>
+                <a href={`/artikelen/${relSlug}`}>
+                  <strong>{rel.data.title}</strong>
+                  <span>{rel.data.meta_description}</span>
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+    )}
+  </article>
+</BaseLayout>
