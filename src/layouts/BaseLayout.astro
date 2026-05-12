@@ -13,6 +13,7 @@
 import '../styles/global.css';
 import TierCheckModal from '../components/TierCheckModal.astro';
 import WhatsAppFab from '../components/WhatsAppFab.astro';
+import AIAskPanel from '../components/AIAskPanel.astro';
 
 export interface Props {
   title: string;
@@ -98,6 +99,7 @@ const siteName = 'VAEtestament';
   <body>
     <slot />
     <TierCheckModal />
+    <AIAskPanel slug={Astro.props.articleSlug ?? ''} />
     <WhatsAppFab slug={Astro.props.articleSlug ?? ''} title={Astro.props.articleTitle ?? ''} />
   </body>
 </html>

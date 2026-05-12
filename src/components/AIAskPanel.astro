@@ -1,0 +1,384 @@
+---
+// AIAskPanel — singleton AI Q&A widget. Rendered once per page by
+// BaseLayout. Pairs a floating button (bottom-right, above the WhatsApp
+// FAB on the same corner) with a slide-in chat panel.
+//
+// Backend: POST https://api.vaetestament.nl/v1/article-ask
+//   request:  { question, current_slug? }
+//   response: { answer, cited_slugs[], recommended_cta }
+//
+// Cited articles render as clickable suggestion cards under the answer;
+// the recommended CTA renders as an action button (tier-check modal,
+// cal.com, WhatsApp, or nothing).
+
+export interface Props {
+  /** Current article slug — supplied by article pages for page context. */
+  slug?: string;
+}
+
+const { slug = '' } = Astro.props;
+---
+
+<button
+  type="button"
+  class="ai-fab"
+  id="aiFab"
+  aria-label="Stel een vraag"
+  data-slug={slug}
+>
+  <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+    <path
+      fill="currentColor"
+      d="M12 3a9 9 0 0 0-9 9c0 1.6.42 3.1 1.15 4.4L3 21l4.7-1.13A8.97 8.97 0 0 0 12 21a9 9 0 1 0 0-18zm0 16.2c-1.36 0-2.66-.36-3.78-1.04l-.27-.16-2.8.67.69-2.72-.18-.28A7.2 7.2 0 1 1 12 19.2zM8.4 8.4h7.2v1.6H8.4zm0 2.8h7.2v1.6H8.4zm0 2.8h4.8v1.6H8.4z"
+    />
+  </svg>
+  <span>Stel een vraag</span>
+</button>
+
+<aside
+  class="ai-panel"
+  id="aiPanel"
+  role="dialog"
+  aria-modal="false"
+  aria-labelledby="aiPanelTitle"
+  aria-hidden="true"
+>
+  <header>
+    <h3 id="aiPanelTitle">Stel uw vraag</h3>
+    <button type="button" class="ai-close" id="aiClose" aria-label="Sluiten">&times;</button>
+  </header>
+
+  <p class="ai-intro">
+    Vraag de online-assistent over DIFC-Wills of UAE-erfrecht. Antwoorden zijn gebaseerd op
+    onze artikelen — voor maatwerk kunt u altijd een gratis kennismaking inplannen.
+  </p>
+
+  <div class="ai-suggested" aria-label="Voorbeeldvragen">
+    <button type="button" class="ai-chip" data-q="Wat is een DIFC Will?">Wat is een DIFC Will?</button>
+    <button type="button" class="ai-chip" data-q="Wat kost een DIFC Will?">Wat kost een DIFC Will?</button>
+    <button type="button" class="ai-chip" data-q="Heb ik nog een Nederlands testament nodig?">
+      Nederlands testament nodig?
+    </button>
+  </div>
+
+  <form class="ai-form" id="aiForm" novalidate>
+    <label class="ai-sr-only" for="aiInput">Uw vraag</label>
+    <textarea
+      id="aiInput"
+      name="question"
+      rows="3"
+      maxlength="600"
+      placeholder="Schrijf uw vraag in het Nederlands…"
+      required
+    ></textarea>
+    <button type="submit" id="aiSubmit">Verzenden</button>
+  </form>
+
+  <div class="ai-answer" id="aiAnswer" hidden></div>
+</aside>
+
+<style>
+  .ai-fab {
+    position: fixed;
+    bottom: 1.25rem;
+    right: 5.5rem; /* leave space for WhatsApp FAB (56px + gap) */
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 12px 18px;
+    background: var(--teal);
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+    z-index: 199;
+    transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
+  }
+  .ai-fab:hover { transform: translateY(-2px); background: var(--teal-mid); }
+  .ai-fab:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+  @media (max-width: 600px) {
+    .ai-fab span { display: none; }
+    .ai-fab { padding: 14px; right: 5.25rem; }
+  }
+
+  .ai-panel {
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: min(380px, calc(100vw - 2.5rem));
+    max-height: min(640px, calc(100vh - 2.5rem));
+    background: #fff;
+    border: 1px solid var(--cream-dark);
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 201;
+    transform: translateY(20px);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.18s, opacity 0.18s;
+  }
+  .ai-panel.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .ai-panel header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+    background: var(--teal);
+    color: #fff;
+  }
+  .ai-panel header h3 {
+    margin: 0;
+    color: #fff;
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+  .ai-close {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0 0.25rem;
+  }
+  .ai-intro {
+    margin: 1rem 1.25rem 0.5rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+    line-height: 1.55;
+  }
+  .ai-suggested {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.5rem 1.25rem;
+  }
+  .ai-chip {
+    padding: 6px 12px;
+    border: 1px solid var(--cream-dark);
+    border-radius: 999px;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .ai-chip:hover { border-color: var(--teal); background: #fff; }
+  .ai-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem 1rem;
+  }
+  .ai-form textarea {
+    width: 100%;
+    padding: 0.75rem 0.9rem;
+    border: 1px solid var(--cream-dark);
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    resize: vertical;
+    background: var(--cream);
+  }
+  .ai-form textarea:focus { outline: 2px solid var(--gold); outline-offset: 1px; background: #fff; }
+  .ai-form button[type="submit"] {
+    align-self: flex-end;
+    padding: 0.6rem 1.25rem;
+    background: var(--teal);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  .ai-form button[type="submit"]:hover { background: var(--teal-mid); }
+  .ai-form button[type="submit"]:disabled { opacity: 0.6; cursor: wait; }
+  .ai-answer {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0 1.25rem 1.25rem;
+    border-top: 1px solid var(--cream-dark);
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  .ai-answer h4 {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 1.25rem 0 0.5rem;
+  }
+  .ai-answer .ai-answer-body p { margin: 0.5rem 0 0.75rem; }
+  .ai-cited-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.5rem; }
+  .ai-cited-list a {
+    display: block;
+    padding: 0.6rem 0.8rem;
+    background: var(--cream);
+    border: 1px solid var(--cream-dark);
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--teal);
+    font-size: 0.9rem;
+  }
+  .ai-cited-list a:hover { border-color: var(--teal); background: #fff; }
+  .ai-cta { margin-top: 1rem; }
+  .ai-cta button,
+  .ai-cta a {
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    background: var(--gold);
+    color: var(--ink);
+    border: none;
+    border-radius: 3px;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .ai-err { color: #B33A3A; }
+  .ai-sr-only {
+    position: absolute;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+  }
+</style>
+
+<script is:inline>
+  (function () {
+    if (window.__aiInit) return;
+    window.__aiInit = true;
+
+    var fab = document.getElementById('aiFab');
+    var panel = document.getElementById('aiPanel');
+    var closeBtn = document.getElementById('aiClose');
+    var form = document.getElementById('aiForm');
+    var input = document.getElementById('aiInput');
+    var submit = document.getElementById('aiSubmit');
+    var answer = document.getElementById('aiAnswer');
+
+    function open() {
+      panel.classList.add('open');
+      panel.setAttribute('aria-hidden', 'false');
+      setTimeout(function () { input.focus(); }, 200);
+    }
+    function close() {
+      panel.classList.remove('open');
+      panel.setAttribute('aria-hidden', 'true');
+    }
+
+    fab.addEventListener('click', open);
+    closeBtn.addEventListener('click', close);
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && panel.classList.contains('open')) close();
+    });
+
+    document.querySelectorAll('.ai-chip').forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        input.value = chip.getAttribute('data-q') || '';
+        form.requestSubmit();
+      });
+    });
+
+    function escapeHtml(s) {
+      return String(s)
+        .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+    }
+
+    function renderAnswer(data) {
+      var slug = fab.getAttribute('data-slug') || '';
+
+      var paragraphs = (data.answer || '').split(/\n{2,}|\n/).filter(function (p) { return p.trim(); });
+      var bodyHtml = paragraphs.map(function (p) { return '<p>' + escapeHtml(p.trim()) + '</p>'; }).join('');
+
+      var citedHtml = '';
+      if (data.cited_slugs && data.cited_slugs.length) {
+        citedHtml = '<h4>Lees verder</h4><ul class="ai-cited-list">' +
+          data.cited_slugs.map(function (s) {
+            return '<li><a href="/artikelen/' + encodeURIComponent(s) + '">' + escapeHtml(s.replace(/-/g, ' ')) + '</a></li>';
+          }).join('') + '</ul>';
+      }
+
+      var ctaHtml = '';
+      switch (data.recommended_cta) {
+        case 'tier_check':
+          ctaHtml = '<div class="ai-cta"><button type="button" onclick="openTierCheck(' + JSON.stringify(slug) + ')">Welk pakket past bij u?</button></div>';
+          break;
+        case 'book_call':
+          ctaHtml = '<div class="ai-cta"><a href="https://cal.com/vaetestament/kennismaking?utm_source=ai-ask&utm_content=' + encodeURIComponent(slug) + '" target="_blank" rel="noopener">Plan een gratis kennismaking</a></div>';
+          break;
+        case 'whatsapp':
+          ctaHtml = '<div class="ai-cta"><a href="https://wa.me/31616146007" target="_blank" rel="noopener">Verder via WhatsApp</a></div>';
+          break;
+        default:
+          ctaHtml = '';
+      }
+
+      answer.innerHTML = '<div class="ai-answer-body">' + bodyHtml + '</div>' + citedHtml + ctaHtml;
+      answer.hidden = false;
+      answer.scrollTop = 0;
+    }
+
+    function renderError(msg) {
+      answer.innerHTML = '<p class="ai-err">' + escapeHtml(msg) + '</p>';
+      answer.hidden = false;
+    }
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      var q = (input.value || '').trim();
+      if (q.length < 3) return;
+
+      submit.disabled = true;
+      answer.hidden = false;
+      answer.innerHTML = '<p style="color:var(--muted);">Even nadenken…</p>';
+
+      try {
+        var res = await fetch('https://api.vaetestament.nl/v1/article-ask', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            question: q,
+            current_slug: fab.getAttribute('data-slug') || null
+          })
+        });
+        if (!res.ok) {
+          if (res.status === 429) {
+            renderError('U stelt veel vragen in korte tijd. Probeer het over een minuut opnieuw.');
+          } else {
+            renderError('Het lukte niet om uw vraag te beantwoorden. Probeer het later opnieuw of mail support@vaetestament.nl.');
+          }
+          return;
+        }
+        var data = await res.json();
+        renderAnswer(data);
+      } catch (err) {
+        renderError('Verbindingsfout. Controleer uw internetverbinding en probeer opnieuw.');
+      } finally {
+        submit.disabled = false;
+      }
+    });
+  })();
+</script>
