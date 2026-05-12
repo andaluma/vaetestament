@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Sitemap surfaces every public canonical URL.
+Sitemap: https://vaetestament.nl/sitemap-index.xml
+
+# AI-engine guidance (per emerging convention).
+# Full guidance: https://vaetestament.nl/llms.txt
+
+# Disallowed: internal partner pages and post-purchase landing.
+Disallow: /baraca-1pager.html
+Disallow: /BARACA_OVEREENKOMST.html
+Disallow: /BARACA_VOORSTEL.html
+Disallow: /bedankt

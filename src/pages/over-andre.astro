@@ -1,0 +1,236 @@
+---
+// /over-andre — author authority page for E-E-A-T / GEO / AEO.
+//
+// Every article's JSON-LD `Article.author.url` points here, so the Person
+// schema below is what Google + the LLMs check when weighing author
+// credibility. Keep it factual, name the employer (Baraca Capital), keep
+// the "geen advocaat" disclosure explicit.
+//
+// Bio supplied by André. Do not embellish — credentials lie a short
+// verification away.
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const canonical = 'https://vaetestament.nl/over-andre';
+const image = 'https://vaetestament.nl/andre-headshot.jpg';
+
+const personJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  '@id': `${canonical}#person`,
+  name: 'André van Wijngaarden',
+  givenName: 'André',
+  familyName: 'van Wijngaarden',
+  alternateName: 'Adriaan van Wijngaarden',
+  jobTitle: 'Oprichter VAEtestament',
+  description:
+    'Oprichter van VAEtestament. Begeleidt Nederlandse eigenaren van VAE-vastgoed bij het registreren van een DIFC-testament.',
+  image,
+  url: canonical,
+  sameAs: ['https://www.linkedin.com/in/adriaanvanwijngaarden'],
+  knowsAbout: [
+    'DIFC Wills',
+    'UAE inheritance law',
+    'Dutch inheritance law',
+    'Cross-border estate planning',
+    'UAE real estate',
+  ],
+  knowsLanguage: ['nl', 'en', 'es'],
+  worksFor: [
+    {
+      '@type': 'Organization',
+      name: 'VAEtestament',
+      legalName: 'Andaluma OÜ',
+      url: 'https://vaetestament.nl',
+    },
+    {
+      '@type': 'Organization',
+      name: 'Baraca Capital',
+      description: 'Portfolio Advisor',
+    },
+  ],
+  email: 'mailto:support@vaetestament.nl',
+};
+---
+
+<BaseLayout
+  title="Over André van Wijngaarden — VAEtestament"
+  description="Oprichter van VAEtestament. Begeleidt Nederlandse eigenaren van VAE-vastgoed bij het registreren van een DIFC-testament — volledig op afstand, in eigen taal."
+  canonical={canonical}
+  ogType="website"
+  ogImage={image}
+  jsonLd={[personJsonLd]}
+>
+  <article class="bio">
+    <nav class="breadcrumbs" aria-label="Broodkruimels">
+      <a href="/">Home</a>
+      <span aria-hidden="true"> › </span>
+      <span aria-current="page">Over André</span>
+    </nav>
+
+    <header class="bio-header">
+      <img
+        src="/andre-headshot.jpg"
+        alt="Portretfoto van André van Wijngaarden"
+        width="240"
+        height="300"
+        loading="eager"
+        fetchpriority="high"
+      />
+      <div>
+        <h1>André van Wijngaarden</h1>
+        <p class="bio-role">Oprichter van VAEtestament</p>
+        <p class="bio-tagline">
+          Maakt het DIFC-testament toegankelijk voor Nederlandse eigenaren van vastgoed in de
+          Verenigde Arabische Emiraten. Volledig op afstand, in eigen taal.
+        </p>
+      </div>
+    </header>
+
+    <section>
+      <h2>Achtergrond</h2>
+      <p>
+        Ik ben Nederlander en werk in internationale sales- en advisory-rollen, met de laatste
+        jaren een focus op vastgoed in de Verenigde Arabische Emiraten. Mijn werk als Portfolio
+        Advisor bij Baraca Capital in Dubai brengt me dagelijks in contact met Nederlandse en
+        internationale investeerders die in de Emiraten kopen, met name in Dubai, Abu Dhabi en
+        Ras Al Khaimah. Mijn achtergrond ligt in commerciële en klantgerichte rollen, aangevuld
+        met jaren ervaring als ondernemer in Peru.
+      </p>
+      <p>
+        Daarnaast ben ik zelf actief als investeerder. Dat geeft me een direct perspectief op
+        wat eigenaren in de VAE tegenkomen, en op de praktische vragen die ontstaan zodra een
+        Nederlander vastgoed bezit in een ander rechtssysteem.
+      </p>
+      <p>
+        Ik woon en werk locatie-onafhankelijk samen met mijn partner, en spreek Nederlands,
+        Engels en Spaans vloeiend.
+      </p>
+    </section>
+
+    <section>
+      <h2>Waarom VAEtestament</h2>
+      <p>
+        VAEtestament ontstond uit een patroon dat ik bij Baraca steeds vaker tegenkwam:
+        Nederlandse eigenaren van VAE-vastgoed die hun nalatenschap wilden regelen, maar nergens
+        een coherent traject vonden. De procedure rondom een DIFC-Will is Engelstalig, vraagt om
+        kennis van zowel Emirati erfrecht als de Nederlandse fiscale realiteit, en wordt door
+        lokale notarissen vaak fragmentarisch behandeld. Mensen kregen losse antwoorden op losse
+        vragen, maar nooit één overzicht.
+      </p>
+      <p>
+        Daar is VAEtestament uit ontstaan: één partij die het hele proces coördineert, in uw
+        taal, met begrip van uw situatie als Nederlandse non-resident.
+      </p>
+    </section>
+
+    <section>
+      <h2>Hoe ik werk</h2>
+      <p>
+        Ik ben geen advocaat en geef geen juridisch advies. Mijn rol is die van coördinator en
+        gids: ik zorg dat uw DIFC-Will-registratie soepel verloopt van eerste vraag tot
+        officiële inschrijving, vertaal complexe Emirati procedures naar begrijpelijke stappen,
+        en regel de praktische logistiek namens u.
+      </p>
+      <p>
+        Voor het strikt juridische werk en de officiële registratie werk ik samen met
+        DIFC-erkende juristen in de VAE. Voor Nederlandse fiscale of erfrechtelijke vragen
+        verwijs ik door naar adviseurs in Nederland. In de praktijk fungeer ik als brug tussen
+        beide werelden, omdat de DIFC-context aan Nederlandse kant nog weinig gespecialiseerd
+        is.
+      </p>
+    </section>
+
+    <section class="bio-contact">
+      <h2>Contact</h2>
+      <ul>
+        <li>
+          WhatsApp:
+          <a href="https://wa.me/31616146007" rel="noopener" target="_blank">+31 6 16146007</a>
+        </li>
+        <li>
+          E-mail:
+          <a href="mailto:support@vaetestament.nl">support@vaetestament.nl</a>
+        </li>
+        <li>
+          LinkedIn:
+          <a
+            href="https://www.linkedin.com/in/adriaanvanwijngaarden"
+            rel="me noopener"
+            target="_blank"
+          >linkedin.com/in/adriaanvanwijngaarden</a>
+        </li>
+      </ul>
+      <p class="bio-entity">
+        Entiteit: Andaluma OÜ (Estland), handelend onder de naam VAEtestament.
+      </p>
+    </section>
+  </article>
+</BaseLayout>
+
+<style>
+  .bio { max-width: 760px; }
+
+  .bio-header {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 2rem;
+    align-items: start;
+    margin: 0 0 2.5rem;
+  }
+  .bio-header img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid var(--cream-dark);
+    background: var(--cream);
+  }
+  .bio-header h1 {
+    margin: 0 0 0.25rem;
+  }
+  .bio-role {
+    margin: 0 0 1rem;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--gold);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  .bio-tagline {
+    color: var(--body);
+    font-size: 1.05rem;
+    line-height: 1.55;
+    margin: 0;
+  }
+
+  @media (max-width: 640px) {
+    .bio-header {
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+    }
+    .bio-header img {
+      max-width: 220px;
+    }
+  }
+
+  .bio section { margin: 2.5rem 0; }
+  .bio section h2 {
+    font-size: 1.6rem;
+    margin: 0 0 1rem;
+  }
+
+  .bio-contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .bio-entity {
+    font-size: 0.9rem;
+    color: var(--muted);
+    border-top: 1px solid var(--cream-dark);
+    padding-top: 1rem;
+  }
+</style>
