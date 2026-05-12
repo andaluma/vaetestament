@@ -1,7 +1,7 @@
 ---
-title: "Wat is een DIFC Will en wanneer heeft u er een nodig?"
-slug: "wat-is-een-difc-will"
-meta_description: "Een DIFC Will beschermt uw UAE-vastgoed tegen lokale erfregels. Lees wat het is, voor wie het geldt en wanneer u het moet regelen."
+title: Wat is een DIFC Will en wanneer heeft u er een nodig?
+slug: wat-is-een-difc-will
+meta_description: Een DIFC Will beschermt uw UAE-vastgoed tegen lokale erfregels. Lees wat het is, voor wie het geldt en wanneer u het moet regelen.
 keywords:
   - DIFC Will Nederland
   - DIFC testament Nederlandse eigenaar
@@ -12,8 +12,26 @@ publish_date: 2026-05-19
 status: draft
 author: André van Wijngaarden
 schema_type: Article
+cluster: waarom
+related:
+  - wat-gebeurt-dubai-vastgoed-zonder-testament
+  - difc-will-registreren-vanuit-nederland
+  - difc-will-of-nederlands-testament
+linked_landing_faq: wat-is-een-difc-will
+faq:
+  - q: Is een DIFC Will alleen geldig voor vastgoed in Dubai?
+    a: Nee. Een DIFC Will dekt vastgoed in alle zeven emiraten van de UAE, niet alleen Dubai.
+  - q: Heb ik nog steeds een Nederlands testament nodig?
+    a: Ja. Een DIFC Will regelt uitsluitend uw bezittingen in de UAE. Voor uw Nederlandse vermogen blijft uw notariële testament in Nederland van toepassing. Beide documenten vullen elkaar aan. Lees meer in ons artikel over [het combineren van een DIFC Will met een Nederlands testament](/difc-will-of-nederlands-testament).
+  - q: Kan ik een DIFC Will vanuit Nederland regelen?
+    a: Ja. Het volledige registratieproces is digitaal. U hoeft niet naar de UAE te reizen. Lees het [stap-voor-stap overzicht van het registratieproces](/difc-will-registreren-vanuit-nederland).
+  - q: Geldt een DIFC Will ook voor niet-vastgoedbezittingen?
+    a: Een standaard DIFC Property Will dekt vastgoed op persoonlijke naam. Voor andere bezittingen in de UAE (bankrekeningen, aandelen, voertuigen) of vastgoed in een bedrijfsstructuur is een uitgebreidere variant nodig, waarvoor VAEtestament Tier 3 met advocaatverwijzing biedt.
+  - q: Hoe lang is een DIFC Will geldig?
+    a: Een DIFC Will blijft geldig totdat u het wijzigt of intrekt. Er is geen vervaldatum. Het is wel verstandig om uw testament te herzien bij wijzigingen in uw gezinssituatie of vastgoedportefeuille.
+  - q: Is een DIFC Will juridisch bindend?
+    a: "Ja. Een DIFC Will wordt geregistreerd bij het DIFC Wills Service Centre en is afdwingbaar via het DIFC-rechtssysteem, dat opereert onder common law. Dit systeem functioneert onafhankelijk van de reguliere UAE-rechtbanken.\n\n---\n\nVoor een directe inschatting van uw situatie en het juiste pakket: [VAEtestament.nl](https://vaetestament.nl)"
 ---
-
 
 Een DIFC Will is een testament dat u registreert bij het Dubai International Financial Centre. Het geeft u als buitenlandse vastgoedeigenaar volledige zeggenschap over wie uw UAE-vastgoed erft. Zonder dit document kunnen de lokale autoriteiten erfregels toepassen die u nooit gekozen heeft, met hoge kosten en jarenlange vertraging voor uw nabestaanden.
 
@@ -64,33 +82,3 @@ VAEtestament werkt met vaste prijzen per tier:
 - **Tier 3 (Volledig Ontzorgd):** EUR 1.499. Met advocaatverwijzing voor complexere situaties.
 
 Ter vergelijking: een advocatenkantoor in Dubai rekent doorgaans EUR 2.000 tot EUR 5.000 of meer, met communicatie in het Engels.
-
-## Veelgestelde vragen
-
-### Is een DIFC Will alleen geldig voor vastgoed in Dubai?
-
-Nee. Een DIFC Will dekt vastgoed in alle zeven emiraten van de UAE, niet alleen Dubai.
-
-### Heb ik nog steeds een Nederlands testament nodig?
-
-Ja. Een DIFC Will regelt uitsluitend uw bezittingen in de UAE. Voor uw Nederlandse vermogen blijft uw notariële testament in Nederland van toepassing. Beide documenten vullen elkaar aan. Lees meer in ons artikel over [het combineren van een DIFC Will met een Nederlands testament](/difc-will-of-nederlands-testament).
-
-### Kan ik een DIFC Will vanuit Nederland regelen?
-
-Ja. Het volledige registratieproces is digitaal. U hoeft niet naar de UAE te reizen. Lees het [stap-voor-stap overzicht van het registratieproces](/difc-will-registreren-vanuit-nederland).
-
-### Geldt een DIFC Will ook voor niet-vastgoedbezittingen?
-
-Een standaard DIFC Property Will dekt vastgoed op persoonlijke naam. Voor andere bezittingen in de UAE (bankrekeningen, aandelen, voertuigen) of vastgoed in een bedrijfsstructuur is een uitgebreidere variant nodig, waarvoor VAEtestament Tier 3 met advocaatverwijzing biedt.
-
-### Hoe lang is een DIFC Will geldig?
-
-Een DIFC Will blijft geldig totdat u het wijzigt of intrekt. Er is geen vervaldatum. Het is wel verstandig om uw testament te herzien bij wijzigingen in uw gezinssituatie of vastgoedportefeuille.
-
-### Is een DIFC Will juridisch bindend?
-
-Ja. Een DIFC Will wordt geregistreerd bij het DIFC Wills Service Centre en is afdwingbaar via het DIFC-rechtssysteem, dat opereert onder common law. Dit systeem functioneert onafhankelijk van de reguliere UAE-rechtbanken.
-
----
-
-Voor een directe inschatting van uw situatie en het juiste pakket: [VAEtestament.nl](https://vaetestament.nl)

@@ -1,7 +1,7 @@
 ---
-title: "Wat gebeurt er met mijn Dubai-vastgoed als ik geen testament heb?"
-slug: "wat-gebeurt-dubai-vastgoed-zonder-testament"
-meta_description: "Geen DIFC Will voor uw UAE-vastgoed? Uw nabestaanden krijgen te maken met onzekere verdeling, hoge kosten en een probate-procedure van 12 tot 24 maanden."
+title: Wat gebeurt er met mijn Dubai-vastgoed als ik geen testament heb?
+slug: wat-gebeurt-dubai-vastgoed-zonder-testament
+meta_description: Geen DIFC Will voor uw UAE-vastgoed? Uw nabestaanden krijgen te maken met onzekere verdeling, hoge kosten en een probate-procedure van 12 tot 24 maanden.
 keywords:
   - overlijden Dubai vastgoed zonder testament
   - Dubai property no will consequences
@@ -12,8 +12,24 @@ publish_date: 2026-05-26
 status: draft
 author: André van Wijngaarden
 schema_type: Article
+cluster: waarom
+related:
+  - erfrecht-vae-nederlandse-vastgoedeigenaren
+  - probate-dubai-nederlandse-erfgenamen
+  - wat-is-een-difc-will
+linked_landing_faq: zonder-testament-uae
+faq:
+  - q: Mijn Nederlandse testament regelt toch alles?
+    a: Niet voor vastgoed in de UAE. Een Nederlands notarieel testament wordt in de UAE doorgaans niet erkend voor onroerend goed op UAE-grond. U heeft een apart, lokaal geldig testament nodig. Lees meer over [de combinatie van een DIFC Will met een Nederlands testament](/difc-will-of-nederlands-testament).
+  - q: Kan mijn partner niet gewoon naar Dubai vliegen om het te regelen?
+    a: Fysieke aanwezigheid versnelt het proces niet wezenlijk. De probate-procedure loopt via de rechtbank en vereist specifieke documentatie die eerst in Nederland moet worden opgesteld, gelegaliseerd en vertaald.
+  - q: Wat als ik maar één eigendom heb? Is het dan ook nodig?
+    a: Ja. Het maakt voor de juridische blootstelling niet uit of u één appartement bezit of vijf. Zonder lokaal testament geldt dezelfde procedure voor uw nabestaanden.
+  - q: Hoe snel kan ik een DIFC Will regelen?
+    a: De voorbereiding duurt doorgaans 1 tot 2 weken. De DIFC-registratie zelf neemt 4 tot 8 weken in beslag. Het volledige proces verloopt op afstand. Zie het [stap-voor-stap overzicht](/difc-will-registreren-vanuit-nederland).
+  - q: Wat kost een DIFC Will via VAEtestament?
+    a: "VAEtestament werkt met vaste prijzen: EUR 497, EUR 797 of EUR 1.499, afhankelijk van uw situatie. Lees meer over de [pakketten en prijsstructuur](/wat-kost-een-difc-will).\n\n---\n\nVoor een directe inschatting van uw situatie en het juiste pakket: [VAEtestament.nl](https://vaetestament.nl)"
 ---
-
 
 Zonder DIFC Will heeft uw overlevende partner geen zekerheid over de verdeling van uw UAE-vastgoed. De autoriteiten kunnen lokale erfregels toepassen, ongeacht uw nationaliteit. Uw nabestaanden worden geconfronteerd met een kostbare en langdurige probate-procedure. Dit artikel beschrijft wat er concreet gebeurt, wat het kost en hoe u het voorkomt.
 
@@ -80,29 +96,3 @@ Concreet betekent dit:
 | **Doorlooptijd** | 12 tot 24 maanden | Aanzienlijk korter via DIFC-systeem |
 | **Taalbarrière** | Arabisch, beëdigde vertalingen vereist | Engels |
 | **Vastgoed bevroren** | Ja, gedurende gehele procedure | Nee |
-
-## Veelgestelde vragen
-
-### Mijn Nederlandse testament regelt toch alles?
-
-Niet voor vastgoed in de UAE. Een Nederlands notarieel testament wordt in de UAE doorgaans niet erkend voor onroerend goed op UAE-grond. U heeft een apart, lokaal geldig testament nodig. Lees meer over [de combinatie van een DIFC Will met een Nederlands testament](/difc-will-of-nederlands-testament).
-
-### Kan mijn partner niet gewoon naar Dubai vliegen om het te regelen?
-
-Fysieke aanwezigheid versnelt het proces niet wezenlijk. De probate-procedure loopt via de rechtbank en vereist specifieke documentatie die eerst in Nederland moet worden opgesteld, gelegaliseerd en vertaald.
-
-### Wat als ik maar één eigendom heb? Is het dan ook nodig?
-
-Ja. Het maakt voor de juridische blootstelling niet uit of u één appartement bezit of vijf. Zonder lokaal testament geldt dezelfde procedure voor uw nabestaanden.
-
-### Hoe snel kan ik een DIFC Will regelen?
-
-De voorbereiding duurt doorgaans 1 tot 2 weken. De DIFC-registratie zelf neemt 4 tot 8 weken in beslag. Het volledige proces verloopt op afstand. Zie het [stap-voor-stap overzicht](/difc-will-registreren-vanuit-nederland).
-
-### Wat kost een DIFC Will via VAEtestament?
-
-VAEtestament werkt met vaste prijzen: EUR 497, EUR 797 of EUR 1.499, afhankelijk van uw situatie. Lees meer over de [pakketten en prijsstructuur](/wat-kost-een-difc-will).
-
----
-
-Voor een directe inschatting van uw situatie en het juiste pakket: [VAEtestament.nl](https://vaetestament.nl)

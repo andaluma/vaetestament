@@ -1,6 +1,6 @@
 ---
 title: "Wat kost een DIFC Will: pakketten en prijsstructuur voor Nederlandse eigenaren"
-slug: "wat-kost-een-difc-will"
+slug: wat-kost-een-difc-will
 meta_description: "DIFC Will kosten via VAEtestament: EUR 497, EUR 797 of EUR 1.499. Vaste prijzen, geen verrassingen. Vergelijking met advocatenkantoren in Dubai."
 keywords:
   - kosten DIFC testament
@@ -12,8 +12,24 @@ publish_date: 2026-06-16
 status: draft
 author: André van Wijngaarden
 schema_type: Article
+cluster: keuze
+related:
+  - difc-will-registreren-vanuit-nederland
+  - difc-will-of-nederlands-testament
+  - mirror-wills-echtparen-uae-vastgoed
+linked_landing_faq: wat-kost-difc-will
+faq:
+  - q: Zijn er bijkomende kosten bovenop het gekozen tier?
+    a: Nee. De DIFC-registratiekosten zijn inbegrepen. U betaalt het gekozen tier-tarief en niets meer, tenzij u Tier 3 kiest (waarbij de advocaatkosten apart worden geoffreerd).
+  - q: Kan ik upgraden van Tier 1 naar Tier 2 tijdens het proces?
+    a: Ja. Als u tijdens het traject merkt dat u toch een persoonlijke sessie wilt, kunt u upgraden. U betaalt het verschil.
+  - q: Wat kost een mirror will?
+    a: "Een mirror will (twee testamenten voor een echtpaar) valt onder Tier 2: EUR 797 totaal, niet per persoon."
+  - q: Hoe verhoudt EUR 497 zich tot de EUR 10.000+ probate-kosten?
+    a: "Een DIFC Will is een fractie van wat uw nabestaanden zouden betalen zonder testament. De investering is niet alleen financieel, maar ook in rust: uw partner hoeft geen jarenlange procedure te doorlopen. Lees het [volledige overzicht van het probate-proces](/probate-dubai-nederlandse-erfgenamen)."
+  - q: Biedt VAEtestament een betalingsregeling?
+    a: "Neem contact op via [VAEtestament.nl](https://vaetestament.nl) om de mogelijkheden te bespreken.\n\n---\n\nVoor een directe inschatting van uw situatie en het juiste pakket: [VAEtestament.nl](https://vaetestament.nl)"
 ---
-
 
 Een DIFC Will via VAEtestament kost EUR 497, EUR 797 of EUR 1.499, afhankelijk van uw situatie. Vaste prijzen, vooraf bekend, zonder uurtarieven of verborgen kosten. Dit artikel beschrijft wat elk pakket omvat, voor wie het bedoeld is en hoe de kosten zich verhouden tot de alternatieven.
 
@@ -87,29 +103,3 @@ Alle VAEtestament-tarieven zijn inclusief:
 - Nederlandse begeleiding gedurende het hele traject.
 
 Niet inbegrepen: eventuele kosten voor het opvragen van verloren title deeds bij lokale autoriteiten, en de kosten van externe juridische dienstverlening bij Tier 3 (deze worden apart geoffreerd door de advocaat).
-
-## Veelgestelde vragen
-
-### Zijn er bijkomende kosten bovenop het gekozen tier?
-
-Nee. De DIFC-registratiekosten zijn inbegrepen. U betaalt het gekozen tier-tarief en niets meer, tenzij u Tier 3 kiest (waarbij de advocaatkosten apart worden geoffreerd).
-
-### Kan ik upgraden van Tier 1 naar Tier 2 tijdens het proces?
-
-Ja. Als u tijdens het traject merkt dat u toch een persoonlijke sessie wilt, kunt u upgraden. U betaalt het verschil.
-
-### Wat kost een mirror will?
-
-Een mirror will (twee testamenten voor een echtpaar) valt onder Tier 2: EUR 797 totaal, niet per persoon.
-
-### Hoe verhoudt EUR 497 zich tot de EUR 10.000+ probate-kosten?
-
-Een DIFC Will is een fractie van wat uw nabestaanden zouden betalen zonder testament. De investering is niet alleen financieel, maar ook in rust: uw partner hoeft geen jarenlange procedure te doorlopen. Lees het [volledige overzicht van het probate-proces](/probate-dubai-nederlandse-erfgenamen).
-
-### Biedt VAEtestament een betalingsregeling?
-
-Neem contact op via [VAEtestament.nl](https://vaetestament.nl) om de mogelijkheden te bespreken.
-
----
-
-Voor een directe inschatting van uw situatie en het juiste pakket: [VAEtestament.nl](https://vaetestament.nl)

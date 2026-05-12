@@ -26,10 +26,10 @@ const articles = defineCollection({
     author: z.string().default('André van Wijngaarden'),
 
     // Funnel cluster — drives the index page grouping + cross-references.
-    // Funnel cluster. Optional during the D1→D2 migration; required from D2.
+    // Funnel cluster. Required — drives the index page grouping and the
+    // "next article" suggestions in cross-references.
     cluster: z
       .enum(['waarom', 'hoe', 'keuze'])
-      .optional()
       .describe(
         'waarom = Waarom dit telt, hoe = Hoe het werkt, keuze = Welke keuze past bij u',
       ),

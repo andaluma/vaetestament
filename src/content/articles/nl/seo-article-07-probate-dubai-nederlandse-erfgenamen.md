@@ -1,7 +1,7 @@
 ---
 title: "Probate in Dubai voor Nederlandse erfgenamen: het proces in detail"
-slug: "probate-dubai-nederlandse-erfgenamen"
-meta_description: "Wat doorloopt u als Nederlandse erfgenaam bij probate in Dubai? Stappen, documenten, kosten (EUR 10.000+) en tijdlijn (12-24 maanden) in detail."
+slug: probate-dubai-nederlandse-erfgenamen
+meta_description: Wat doorloopt u als Nederlandse erfgenaam bij probate in Dubai? Stappen, documenten, kosten (EUR 10.000+) en tijdlijn (12-24 maanden) in detail.
 keywords:
   - probate Dubai Nederlands
   - Dubai probate proces erfgenamen
@@ -12,8 +12,26 @@ publish_date: 2026-06-23
 status: draft
 author: André van Wijngaarden
 schema_type: Article
+cluster: hoe
+related:
+  - wat-gebeurt-dubai-vastgoed-zonder-testament
+  - difc-will-registreren-vanuit-nederland
+  - erfrecht-vae-nederlandse-vastgoedeigenaren
+linked_landing_faq: probate-dubai-kosten
+faq:
+  - q: Kan ik als erfgenaam zelf naar Dubai reizen om het proces te versnellen?
+    a: Fysieke aanwezigheid versnelt het proces niet wezenlijk. De doorlooptijd wordt bepaald door de documentatieverwerking en de rechtbank-agenda, niet door de locatie van de erfgenamen.
+  - q: Wat als er meerdere erfgenamen zijn die het niet eens zijn?
+    a: Geschillen tussen erfgenamen compliceren de procedure aanzienlijk. De rechtbank kan aanvullend bewijs en documentatie verlangen, wat de doorlooptijd verder verlengt.
+  - q: Kan een Nederlandse notaris het probate-proces in de UAE afhandelen?
+    a: Nee. Een Nederlandse notaris heeft geen bevoegdheid in de UAE. U heeft een lokale UAE-advocaat nodig die bevoegd is om bij de betreffende rechtbank te procederen.
+  - q: Wat als het vastgoed in Abu Dhabi staat in plaats van Dubai?
+    a: Het probate-proces verloopt dan via de rechtbank in Abu Dhabi in plaats van Dubai. De stappen zijn vergelijkbaar, maar de doorlooptijd en kosten kunnen afwijken. Een DIFC Will dekt vastgoed in alle emiraten.
+  - q: Is probate te vermijden als de eigenaar al een Nederlands testament had?
+    a: Een Nederlands testament wordt in de UAE doorgaans niet erkend voor vastgoed op UAE-grond. De probate-procedure is dan nog steeds nodig. Alleen een lokaal geldig testament (zoals een DIFC Will) voorkomt dit. Lees meer over [de combinatie van beide testamenten](/difc-will-of-nederlands-testament).
+  - q: Wat als de overledene huurinkomsten ontving uit het vastgoed?
+    a: "De huurinkomsten kunnen geblokkeerd worden totdat het eigendom formeel is overgedragen. Dit hangt af van de beheerstructuur en de bank waar de inkomsten binnenkomen. Het is een van de minder zichtbare gevolgen van een probate-procedure.\n\n---\n\nVoor een directe inschatting van uw situatie en het juiste pakket: [VAEtestament.nl](https://vaetestament.nl)"
 ---
-
 
 Als een Nederlandse vastgoedeigenaar in de UAE overlijdt zonder DIFC Will, starten de erfgenamen een probate-procedure bij de UAE-rechtbank. Dit traject kost doorgaans meer dan EUR 10.000 en duurt 12 tot 24 maanden. Dit artikel beschrijft het volledige proces: elke stap, elk document en elke kostenpost.
 
@@ -98,33 +116,3 @@ Zolang de probate-procedure loopt, is het vastgoed effectief bevroren. De erfgen
 Een DIFC Will voorkomt het volledige probate-traject. Het testament is geregistreerd bij het DIFC Wills Service Centre en wordt uitgevoerd via het DIFC-rechtssysteem. De procedure is sneller, goedkoper en verloopt in het Engels.
 
 De kosten van een DIFC Will via VAEtestament: EUR 497, EUR 797 of EUR 1.499. Een fractie van de probate-kosten. Lees meer over de [pakketten en wat elk tier omvat](/wat-kost-een-difc-will).
-
-## Veelgestelde vragen
-
-### Kan ik als erfgenaam zelf naar Dubai reizen om het proces te versnellen?
-
-Fysieke aanwezigheid versnelt het proces niet wezenlijk. De doorlooptijd wordt bepaald door de documentatieverwerking en de rechtbank-agenda, niet door de locatie van de erfgenamen.
-
-### Wat als er meerdere erfgenamen zijn die het niet eens zijn?
-
-Geschillen tussen erfgenamen compliceren de procedure aanzienlijk. De rechtbank kan aanvullend bewijs en documentatie verlangen, wat de doorlooptijd verder verlengt.
-
-### Kan een Nederlandse notaris het probate-proces in de UAE afhandelen?
-
-Nee. Een Nederlandse notaris heeft geen bevoegdheid in de UAE. U heeft een lokale UAE-advocaat nodig die bevoegd is om bij de betreffende rechtbank te procederen.
-
-### Wat als het vastgoed in Abu Dhabi staat in plaats van Dubai?
-
-Het probate-proces verloopt dan via de rechtbank in Abu Dhabi in plaats van Dubai. De stappen zijn vergelijkbaar, maar de doorlooptijd en kosten kunnen afwijken. Een DIFC Will dekt vastgoed in alle emiraten.
-
-### Is probate te vermijden als de eigenaar al een Nederlands testament had?
-
-Een Nederlands testament wordt in de UAE doorgaans niet erkend voor vastgoed op UAE-grond. De probate-procedure is dan nog steeds nodig. Alleen een lokaal geldig testament (zoals een DIFC Will) voorkomt dit. Lees meer over [de combinatie van beide testamenten](/difc-will-of-nederlands-testament).
-
-### Wat als de overledene huurinkomsten ontving uit het vastgoed?
-
-De huurinkomsten kunnen geblokkeerd worden totdat het eigendom formeel is overgedragen. Dit hangt af van de beheerstructuur en de bank waar de inkomsten binnenkomen. Het is een van de minder zichtbare gevolgen van een probate-procedure.
-
----
-
-Voor een directe inschatting van uw situatie en het juiste pakket: [VAEtestament.nl](https://vaetestament.nl)

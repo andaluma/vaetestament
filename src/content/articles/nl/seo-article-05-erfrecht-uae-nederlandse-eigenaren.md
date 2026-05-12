@@ -1,7 +1,7 @@
 ---
 title: "Erfrecht in de VAE voor Nederlandse vastgoedeigenaren: wat u moet weten"
-slug: "erfrecht-vae-nederlandse-vastgoedeigenaren"
-meta_description: "Hoe werkt UAE-erfrecht voor Nederlandse non-residenten? Recente regelwijzigingen, onduidelijkheden en waarom een DIFC Will essentieel is."
+slug: erfrecht-vae-nederlandse-vastgoedeigenaren
+meta_description: Hoe werkt UAE-erfrecht voor Nederlandse non-residenten? Recente regelwijzigingen, onduidelijkheden en waarom een DIFC Will essentieel is.
 keywords:
   - erfrecht VAE Nederlandse
   - UAE inheritance law Dutch national
@@ -12,8 +12,26 @@ publish_date: 2026-06-09
 status: draft
 author: André van Wijngaarden
 schema_type: Article
+cluster: waarom
+related:
+  - wat-gebeurt-dubai-vastgoed-zonder-testament
+  - probate-dubai-nederlandse-erfgenamen
+  - wat-is-een-difc-will
+linked_landing_faq: erfrecht-uae-nederlanders
+faq:
+  - q: Geldt UAE-erfrecht ook als ik in Nederland woon en nooit in de UAE heb gewoond?
+    a: Ja. Het gaat om de locatie van het vastgoed, niet om uw woonplaats. Vastgoed op UAE-grond valt onder UAE-jurisdictie.
+  - q: Kan ik in mijn Nederlandse testament een rechtskeuze opnemen voor UAE-vastgoed?
+    a: Een rechtskeuze in een Nederlands testament wordt in de UAE niet automatisch erkend. De enige betrouwbare manier om zeggenschap te houden over uw UAE-vastgoed is een apart DIFC Will.
+  - q: Wat als de UAE-regels in de toekomst weer veranderen?
+    a: "Dat is precies waarom een DIFC Will waardevol is: het valt onder het DIFC-rechtssysteem, dat onafhankelijk opereert van de reguliere UAE-wetgeving. Uw testament blijft afdwingbaar via de DIFC-rechtbank, ongeacht wijzigingen in het reguliere erfrecht."
+  - q: Hoe verhoudt een DIFC Will zich tot de Europese Erfrechtverordening?
+    a: De Europese Erfrechtverordening (Brussel IV) regelt welk nationaal recht van toepassing is op uw nalatenschap binnen de EU. De UAE is geen EU-lidstaat en valt buiten het bereik van deze verordening. Voor UAE-vastgoed is een apart lokaal instrument nodig.
+  - q: Moet ik mijn Nederlandse notaris informeren over mijn DIFC Will?
+    a: Het is verstandig om uw notaris te laten weten dat u een apart testament heeft voor uw UAE-vastgoed. Zo voorkomt u dat uw Nederlandse testament en uw DIFC Will tegenstrijdige bepalingen bevatten.
+  - q: Hoe regel ik een DIFC Will vanuit Nederland?
+    a: "Het volledige proces verloopt op afstand. Lees het [stap-voor-stap overzicht](/difc-will-registreren-vanuit-nederland) of bezoek [VAEtestament.nl](https://vaetestament.nl) voor een directe inschatting van uw situatie.\n\n---\n\nVoor een directe inschatting van uw situatie en het juiste pakket: [VAEtestament.nl](https://vaetestament.nl)"
 ---
-
 
 Het erfrecht in de Verenigde Arabische Emiraten verschilt fundamenteel van het Nederlandse systeem. Voor Nederlandse eigenaren van UAE-vastgoed is het van belang te begrijpen welke regels van toepassing zijn, wat recente wijzigingen betekenen en waarom een DIFC Will de enige manier is om zelf te bepalen wie uw vastgoed erft.
 
@@ -68,33 +86,3 @@ Zonder DIFC Will bepalen de lokale regels de verdeling over uw erfgenamen. De ui
 Een DIFC Will regelt de vererving van uw UAE-vastgoed. Het vervangt niet uw fiscale verplichtingen in Nederland. Nederlandse erfbelasting is van toepassing op uw wereldwijde nalatenschap, inclusief UAE-vastgoed, als u ten tijde van overlijden Nederlands ingezetene bent.
 
 Raadpleeg uw fiscalist voor de specifieke gevolgen in uw situatie. VAEtestament biedt geen fiscaal advies.
-
-## Veelgestelde vragen
-
-### Geldt UAE-erfrecht ook als ik in Nederland woon en nooit in de UAE heb gewoond?
-
-Ja. Het gaat om de locatie van het vastgoed, niet om uw woonplaats. Vastgoed op UAE-grond valt onder UAE-jurisdictie.
-
-### Kan ik in mijn Nederlandse testament een rechtskeuze opnemen voor UAE-vastgoed?
-
-Een rechtskeuze in een Nederlands testament wordt in de UAE niet automatisch erkend. De enige betrouwbare manier om zeggenschap te houden over uw UAE-vastgoed is een apart DIFC Will.
-
-### Wat als de UAE-regels in de toekomst weer veranderen?
-
-Dat is precies waarom een DIFC Will waardevol is: het valt onder het DIFC-rechtssysteem, dat onafhankelijk opereert van de reguliere UAE-wetgeving. Uw testament blijft afdwingbaar via de DIFC-rechtbank, ongeacht wijzigingen in het reguliere erfrecht.
-
-### Hoe verhoudt een DIFC Will zich tot de Europese Erfrechtverordening?
-
-De Europese Erfrechtverordening (Brussel IV) regelt welk nationaal recht van toepassing is op uw nalatenschap binnen de EU. De UAE is geen EU-lidstaat en valt buiten het bereik van deze verordening. Voor UAE-vastgoed is een apart lokaal instrument nodig.
-
-### Moet ik mijn Nederlandse notaris informeren over mijn DIFC Will?
-
-Het is verstandig om uw notaris te laten weten dat u een apart testament heeft voor uw UAE-vastgoed. Zo voorkomt u dat uw Nederlandse testament en uw DIFC Will tegenstrijdige bepalingen bevatten.
-
-### Hoe regel ik een DIFC Will vanuit Nederland?
-
-Het volledige proces verloopt op afstand. Lees het [stap-voor-stap overzicht](/difc-will-registreren-vanuit-nederland) of bezoek [VAEtestament.nl](https://vaetestament.nl) voor een directe inschatting van uw situatie.
-
----
-
-Voor een directe inschatting van uw situatie en het juiste pakket: [VAEtestament.nl](https://vaetestament.nl)

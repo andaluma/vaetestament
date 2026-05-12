@@ -1,7 +1,7 @@
 ---
 title: "Mirror Wills en gezamenlijke testamenten: wat werkt voor echtparen met UAE-vastgoed?"
-slug: "mirror-wills-echtparen-uae-vastgoed"
-meta_description: "Mirror will voor uw UAE-vastgoed als echtpaar? Definitie, wanneer het past, beperkingen en hoe u het regelt vanuit Nederland."
+slug: mirror-wills-echtparen-uae-vastgoed
+meta_description: Mirror will voor uw UAE-vastgoed als echtpaar? Definitie, wanneer het past, beperkingen en hoe u het regelt vanuit Nederland.
 keywords:
   - mirror will Dubai echtpaar
   - gezamenlijk testament UAE-vastgoed
@@ -12,8 +12,24 @@ publish_date: 2026-06-30
 status: draft
 author: André van Wijngaarden
 schema_type: Article
+cluster: keuze
+related:
+  - wat-is-een-difc-will
+  - difc-will-registreren-vanuit-nederland
+  - wat-kost-een-difc-will
+linked_landing_faq: mirror-will-echtparen
+faq:
+  - q: Is een mirror will goedkoper dan twee afzonderlijke testamenten?
+    a: Ja. Bij VAEtestament is een mirror will EUR 797 (Tier 2). Twee afzonderlijke Tier 1-registraties zouden EUR 994 kosten, zonder persoonlijke sessie.
+  - q: Moeten beide partners dezelfde begunstigden kiezen?
+    a: Nee. Elke partner beslist onafhankelijk. De testamenten worden gelijktijdig geregistreerd, maar de inhoud kan verschillen.
+  - q: Wat als we later scheiden?
+    a: "Bij scheiding kunt u uw DIFC Will laten wijzigen of intrekken. De testamenten staan los van elkaar: het wijzigen van het ene testament heeft geen juridische gevolgen voor het andere."
+  - q: Kan ik een mirror will doen als mijn partner geen Nederlandse nationaliteit heeft?
+    a: Ja. Een DIFC Will staat open voor alle niet-moslims, ongeacht nationaliteit. Uw partner hoeft geen Nederlander te zijn.
+  - q: Wat als slechts één partner vastgoed op naam heeft?
+    a: "Dan heeft strikt genomen alleen die partner een DIFC Will nodig. U kunt er alsnog voor kiezen om een mirror will te doen als voorzorg voor toekomstige eigendomswijzigingen.\n\n---\n\nVoor een directe inschatting van uw situatie en het juiste pakket: [VAEtestament.nl](https://vaetestament.nl)"
 ---
-
 
 Een mirror will is de meest praktische manier voor echtparen om hun UAE-vastgoed te beschermen. Het zijn twee afzonderlijke testamenten die in dezelfde DIFC-procedure worden geregistreerd, elk met eigen beslissingen over wie wat erft. Dit artikel legt uit wat het precies is, wanneer het de juiste keuze is en waar de grenzen liggen.
 
@@ -86,29 +102,3 @@ Het proces is identiek aan een individueel DIFC Will, maar dan voor twee persone
 6. **Ondertekening:** beide partners ondertekenen via videocall, eventueel in dezelfde sessie.
 
 Het volledige proces verloopt op afstand. Lees het [stap-voor-stap overzicht](/difc-will-registreren-vanuit-nederland).
-
-## Veelgestelde vragen
-
-### Is een mirror will goedkoper dan twee afzonderlijke testamenten?
-
-Ja. Bij VAEtestament is een mirror will EUR 797 (Tier 2). Twee afzonderlijke Tier 1-registraties zouden EUR 994 kosten, zonder persoonlijke sessie.
-
-### Moeten beide partners dezelfde begunstigden kiezen?
-
-Nee. Elke partner beslist onafhankelijk. De testamenten worden gelijktijdig geregistreerd, maar de inhoud kan verschillen.
-
-### Wat als we later scheiden?
-
-Bij scheiding kunt u uw DIFC Will laten wijzigen of intrekken. De testamenten staan los van elkaar: het wijzigen van het ene testament heeft geen juridische gevolgen voor het andere.
-
-### Kan ik een mirror will doen als mijn partner geen Nederlandse nationaliteit heeft?
-
-Ja. Een DIFC Will staat open voor alle niet-moslims, ongeacht nationaliteit. Uw partner hoeft geen Nederlander te zijn.
-
-### Wat als slechts één partner vastgoed op naam heeft?
-
-Dan heeft strikt genomen alleen die partner een DIFC Will nodig. U kunt er alsnog voor kiezen om een mirror will te doen als voorzorg voor toekomstige eigendomswijzigingen.
-
----
-
-Voor een directe inschatting van uw situatie en het juiste pakket: [VAEtestament.nl](https://vaetestament.nl)
