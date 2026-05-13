@@ -1,11 +1,11 @@
 ---
-title: "Wat kost een DIFC Will: pakketten en prijsstructuur voor Nederlandse eigenaren"
+title: "Wat kost een testament voor uw Dubai-vastgoed? Prijzen en pakketten"
 slug: wat-kost-een-difc-will
-meta_description: "DIFC Will kosten via VAEtestament: EUR 497, EUR 797 of EUR 1.499. Vaste prijzen, geen verrassingen. Vergelijking met advocatenkantoren in Dubai."
+meta_description: "DIFC-testament kosten via VAEtestament: EUR 497, EUR 797 of EUR 1.499. Vaste prijzen, geen verrassingen. Vergelijking met advocatenkantoren."
 keywords:
   - kosten DIFC testament
   - Dubai will prijs
-  - DIFC Will kosten Nederland
+  - DIFC-testament kosten Nederland
   - prijs testament Dubai
   - VAEtestament pakketten
 publish_date: 2026-06-16
@@ -26,12 +26,12 @@ faq:
   - q: Wat kost een mirror will?
     a: "Een mirror will (twee testamenten voor een echtpaar) valt onder Tier 2: EUR 797 totaal, niet per persoon."
   - q: Hoe verhoudt EUR 497 zich tot de EUR 10.000+ probate-kosten?
-    a: "Een DIFC Will is een fractie van wat uw nabestaanden zouden betalen zonder testament. De investering is niet alleen financieel, maar ook in rust: uw partner hoeft geen jarenlange procedure te doorlopen. Lees het [volledige overzicht van het probate-proces](/artikelen/probate-dubai-nederlandse-erfgenamen/)."
+    a: "Een DIFC-testament is een fractie van wat uw nabestaanden zouden betalen zonder testament. De investering is niet alleen financieel, maar ook in rust: uw partner hoeft geen jarenlange procedure te doorlopen. Lees het [volledige overzicht van het probate-proces](/artikelen/probate-dubai-nederlandse-erfgenamen/)."
   - q: Biedt VAEtestament een betalingsregeling?
     a: "Neem contact op via [VAEtestament.nl](https://vaetestament.nl) om de mogelijkheden te bespreken."
 ---
 
-Een DIFC Will via VAEtestament kost EUR 497, EUR 797 of EUR 1.499, afhankelijk van uw situatie. Vaste prijzen, vooraf bekend, zonder uurtarieven of verborgen kosten. Dit artikel beschrijft wat elk pakket omvat, voor wie het bedoeld is en hoe de kosten zich verhouden tot de alternatieven.
+Een DIFC-testament via VAEtestament kost EUR 497, EUR 797 of EUR 1.499, afhankelijk van uw situatie. Vaste prijzen, vooraf bekend, zonder uurtarieven of verborgen kosten. Dit artikel beschrijft wat elk pakket omvat, voor wie het bedoeld is en hoe de kosten zich verhouden tot de alternatieven.
 
 ## De drie pakketten
 
@@ -41,7 +41,7 @@ Voor eigenaren die het proces zelfstandig willen doorlopen met structurele begel
 
 **Wat u krijgt:**
 - Gestructureerd werkdocument voor alle beslissingen (begunstigden, executeur, substituties).
-- Volledige DIFC-aanmelding en communicatie met het DIFC Wills Service Centre.
+- Volledige DIFC-aanmelding en communicatie met het DIFC-testaments Service Centre.
 - Begeleiding in het Nederlands gedurende het hele traject.
 - Dekking voor maximaal 5 eigendommen op persoonlijke naam.
 
@@ -65,7 +65,7 @@ Voor complexere situaties die juridische expertise vereisen.
 **Wat u krijgt:**
 - Alles uit Tier 2.
 - Verwijzing naar een DIFC-gecertificeerde advocaat uit het netwerk van VAEtestament.
-- Geschikt voor meer dan 5 eigendommen, bedrijfsstructuren, niet-vastgoedbezittingen in de UAE, of voogdijregelingen.
+- Geschikt voor meer dan 5 eigendommen, bedrijfsstructuren, niet-vastgoedbezittingen in de VAE, of voogdijregelingen.
 
 **Voor wie:** eigenaren met een uitgebreide portefeuille, vastgoed in een holding of LLC, of situaties waar juridisch maatwerk nodig is.
 
@@ -73,7 +73,7 @@ Voor complexere situaties die juridische expertise vereisen.
 
 Drie vragen volstaan:
 
-1. **Hoeveel eigendommen bezit u in de UAE op persoonlijke naam?** Tot 5 eigendommen: Tier 1 of 2. Meer dan 5: Tier 3.
+1. **Hoeveel eigendommen bezit u in de VAE op persoonlijke naam?** Tot 5 eigendommen: Tier 1 of 2. Meer dan 5: Tier 3.
 2. **Staan er eigendommen in een bedrijfsstructuur?** Ja: Tier 3.
 3. **Wilt u een persoonlijke sessie of een mirror will?** Ja: minimaal Tier 2.
 
@@ -81,15 +81,15 @@ Drie vragen volstaan:
 
 ### Advocatenkantoor in Dubai
 
-De gangbare route voor buitenlandse eigenaren is een advocatenkantoor in de UAE. Tarieven variëren van EUR 2.000 tot EUR 5.000 of meer. De communicatie verloopt in het Engels. Uurtarieven kunnen de kosten onvoorspelbaar maken. Voor standaardsituaties (tot 5 eigendommen op persoonlijke naam, geen complexe structuren) is dit een disproportionele investering.
+De gangbare route voor buitenlandse eigenaren is een advocatenkantoor in de VAE. Tarieven variëren van EUR 2.000 tot EUR 5.000 of meer. De communicatie verloopt in het Engels. Uurtarieven kunnen de kosten onvoorspelbaar maken. Voor standaardsituaties (tot 5 eigendommen op persoonlijke naam, geen complexe structuren) is dit een disproportionele investering.
 
 ### Zelf via het DIFC-portaal
 
-Het DIFC Wills Service Centre heeft een online portaal waar u zelf een testament kunt aanmelden. Het portaal is in het Engels, biedt geen inhoudelijke begeleiding en verwacht dat u alle velden en beslissingen zelf correct invult. Er is geen Nederlandse ondersteuning. De DIFC-registratiekosten zelf zijn inbegrepen in de VAEtestament-tarieven.
+Het DIFC-testaments Service Centre heeft een online portaal waar u zelf een testament kunt aanmelden. Het portaal is in het Engels, biedt geen inhoudelijke begeleiding en verwacht dat u alle velden en beslissingen zelf correct invult. Er is geen Nederlandse ondersteuning. De DIFC-registratiekosten zelf zijn inbegrepen in de VAEtestament-tarieven.
 
 ### Niets doen
 
-De goedkoopste optie op korte termijn is de duurste op lange termijn. Zonder DIFC Will betalen uw nabestaanden doorgaans meer dan EUR 10.000 aan probate-kosten, met een doorlooptijd van 12 tot 24 maanden. Lees meer over [wat er gebeurt zonder testament](/artikelen/wat-gebeurt-dubai-vastgoed-zonder-testament/).
+De goedkoopste optie op korte termijn is de duurste op lange termijn. Zonder DIFC-testament betalen uw nabestaanden doorgaans meer dan EUR 10.000 aan probate-kosten, met een doorlooptijd van 12 tot 24 maanden. Lees meer over [wat er gebeurt zonder testament](/artikelen/wat-gebeurt-dubai-vastgoed-zonder-testament/).
 
 ## Wat is inbegrepen in de prijs?
 

@@ -1,13 +1,13 @@
 ---
-title: "DIFC Will registreren vanuit Nederland: stap voor stap"
+title: "Testament voor uw Dubai-vastgoed regelen vanuit Nederland: het volledige proces"
 slug: difc-will-registreren-vanuit-nederland
-meta_description: "Het volledige proces van een DIFC Will registratie vanuit Nederland: documenten, tijdlijn, kosten en wat u zelf doet versus wat begeleid wordt."
+meta_description: "DIFC-testament regelen vanuit Nederland: documenten, tijdlijn (5-10 weken), kosten en wat u zelf doet versus wat begeleid wordt."
 keywords:
   - DIFC testament registreren Nederland
   - Dubai will procedure
-  - DIFC Will aanvragen
+  - DIFC-testament aanvragen
   - testament Dubai registreren vanuit Nederland
-  - DIFC Will proces
+  - DIFC-testament proces
 publish_date: 2026-06-02
 status: draft
 author: André van Wijngaarden
@@ -27,11 +27,11 @@ faq:
     a: Dan valt u onder Tier 3 (EUR 1.499), inclusief verwijzing naar een DIFC-gecertificeerde advocaat uit het netwerk van VAEtestament. Lees meer over de [pakketten en prijsstructuur](/artikelen/wat-kost-een-difc-will/).
   - q: In welke taal wordt het testament opgesteld?
     a: Het DIFC-testament is in het Engels. De begeleiding door VAEtestament is volledig in het Nederlands.
-  - q: Kan ik mijn DIFC Will later wijzigen?
+  - q: Kan ik mijn DIFC-testament later wijzigen?
     a: "Ja. U kunt uw testament wijzigen of intrekken zolang u wilsbekwaam bent. Bij wijzigingen doorloopt u een verkorte versie van het registratieproces."
 ---
 
-Een DIFC Will registreert u volledig op afstand, vanuit Nederland. Het proces bestaat uit twee fasen: voorbereiding (1 tot 2 weken) en DIFC-uitvoering (4 tot 8 weken). In dit artikel doorloopt u het volledige traject: welke documenten u nodig heeft, wat u zelf doet, wat begeleid wordt en waar de meeste eigenaren vastlopen.
+Een DIFC-testament registreert u volledig op afstand, vanuit Nederland. Het proces bestaat uit twee fasen: voorbereiding (1 tot 2 weken) en DIFC-uitvoering (4 tot 8 weken). In dit artikel doorloopt u het volledige traject: welke documenten u nodig heeft, wat u zelf doet, wat begeleid wordt en waar de meeste eigenaren vastlopen.
 
 ## Fase 1: voorbereiding (1 tot 2 weken)
 
@@ -39,20 +39,20 @@ Een DIFC Will registreert u volledig op afstand, vanuit Nederland. Het proces be
 
 Het proces begint met het in kaart brengen van uw situatie. De relevante vragen:
 
-- Hoeveel eigendommen bezit u in de UAE, en in welke emiraten?
+- Hoeveel eigendommen bezit u in de VAE, en in welke emiraten?
 - Staan de eigendommen op persoonlijke naam of in een bedrijfsstructuur?
 - Bent u alleenstaand of heeft u een partner die mede-eigenaar is?
 - Heeft u minderjarige kinderen?
-- Zijn er andere UAE-bezittingen naast vastgoed (bankrekeningen, voertuigen)?
+- Zijn er andere VAE-bezittingen naast vastgoed (bankrekeningen, voertuigen)?
 
-Op basis van deze informatie wordt bepaald welk type DIFC Will u nodig heeft en welk VAEtestament-tier het beste past.
+Op basis van deze informatie wordt bepaald welk type DIFC-testament u nodig heeft en welk VAEtestament-tier het beste past.
 
 ### Stap 2: documenten verzamelen
 
 U heeft de volgende documenten nodig:
 
 - **Paspoort** (geldig, van alle betrokken partijen).
-- **Title deed(s)** van uw UAE-vastgoed (het eigendomsbewijs, uitgegeven door de lokale land authority).
+- **Title deed(s)** van uw VAE-vastgoed (het eigendomsbewijs, uitgegeven door de lokale land authority).
 - **Emirates ID** (indien u die heeft; niet verplicht voor non-residenten).
 - **Huwelijksakte** (indien van toepassing, voor mirror wills).
 - **Geboorteaktes kinderen** (indien u hen als begunstigden wilt opnemen).
@@ -76,9 +76,9 @@ Op basis van uw documenten en beslissingen wordt het concept-testament opgesteld
 
 ## Fase 2: DIFC-uitvoering (4 tot 8 weken)
 
-### Stap 5: aanmelding bij DIFC Wills Service Centre
+### Stap 5: aanmelding bij DIFC-testaments Service Centre
 
-Het definitieve testament wordt ingediend bij het DIFC Wills Service Centre. Dit gaat digitaal. De behandeltijd varieert, maar ligt doorgaans tussen de 4 en 8 weken.
+Het definitieve testament wordt ingediend bij het DIFC-testaments Service Centre. Dit gaat digitaal. De behandeltijd varieert, maar ligt doorgaans tussen de 4 en 8 weken.
 
 ### Stap 6: ondertekeningsafspraak
 
@@ -86,7 +86,7 @@ Het DIFC plant een ondertekeningsafspraak. Deze vindt plaats via videocall. U ho
 
 ### Stap 7: registratie en ontvangstbevestiging
 
-Na ondertekening wordt uw testament officieel geregistreerd in het DIFC Wills Register. U ontvangt een registratiebevestiging. Vanaf dat moment is uw testament afdwingbaar via het DIFC-rechtssysteem.
+Na ondertekening wordt uw testament officieel geregistreerd in het DIFC-testaments Register. U ontvangt een registratiebevestiging. Vanaf dat moment is uw testament afdwingbaar via het DIFC-rechtssysteem.
 
 ## Wat VAEtestament doet versus wat u zelf doet
 
