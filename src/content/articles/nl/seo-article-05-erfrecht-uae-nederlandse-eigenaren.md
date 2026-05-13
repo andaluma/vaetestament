@@ -59,7 +59,7 @@ Als Nederlandse ingezetene heeft u te maken met twee rechtsstelsels:
 
 Er is geen automatische afstemming tussen deze twee systemen. Een Nederlands testament verwijst doorgaans niet naar UAE-vastgoed, en als het dat wel doet, wordt die verwijzing in de UAE niet zonder meer erkend.
 
-De oplossing is twee aparte instrumenten: een Nederlands testament voor uw Nederlandse vermogen, en een DIFC Will voor uw UAE-vastgoed. Beide bestaan naast elkaar en vullen elkaar aan. Lees meer in ons artikel over [de combinatie van een DIFC Will met een Nederlands testament](/artikelen/difc-will-of-nederlands-testament/).
+De oplossing is twee aparte instrumenten: een Nederlands testament voor uw Nederlandse vermogen, en een DIFC Will voor uw UAE-vastgoed. Beide bestaan naast elkaar en vullen elkaar aan. Lees meer in ons artikel over [het misverstand dat uw Nederlandse erfgenamen uw Dubai-vastgoed automatisch krijgen](/artikelen/difc-will-of-nederlands-testament/).
 
 ## Wat het DIFC verandert
 

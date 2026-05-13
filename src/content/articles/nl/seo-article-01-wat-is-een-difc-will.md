@@ -22,7 +22,7 @@ faq:
   - q: Is een DIFC Will alleen geldig voor vastgoed in Dubai?
     a: Nee. Een DIFC Will dekt vastgoed in alle zeven emiraten van de UAE, niet alleen Dubai.
   - q: Heb ik nog steeds een Nederlands testament nodig?
-    a: Ja. Een DIFC Will regelt uitsluitend uw bezittingen in de UAE. Voor uw Nederlandse vermogen blijft uw notariële testament in Nederland van toepassing. Beide documenten vullen elkaar aan. Lees meer in ons artikel over [het combineren van een DIFC Will met een Nederlands testament](/artikelen/difc-will-of-nederlands-testament/).
+    a: Ja. Een DIFC Will regelt uitsluitend uw bezittingen in de UAE. Voor uw Nederlandse vermogen blijft uw notariële testament in Nederland van toepassing. Beide documenten vullen elkaar aan. Lees meer in ons artikel over [het misverstand dat uw Nederlandse erfgenamen uw Dubai-vastgoed automatisch krijgen](/artikelen/difc-will-of-nederlands-testament/).
   - q: Kan ik een DIFC Will vanuit Nederland regelen?
     a: Ja. Het volledige registratieproces is digitaal. U hoeft niet naar de UAE te reizen. Lees het [stap-voor-stap overzicht van het registratieproces](/artikelen/difc-will-registreren-vanuit-nederland/).
   - q: Geldt een DIFC Will ook voor niet-vastgoedbezittingen?

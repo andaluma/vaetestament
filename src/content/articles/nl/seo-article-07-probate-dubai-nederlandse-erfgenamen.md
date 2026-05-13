@@ -28,7 +28,7 @@ faq:
   - q: Wat als het vastgoed in Abu Dhabi staat in plaats van Dubai?
     a: Het probate-proces verloopt dan via de rechtbank in Abu Dhabi in plaats van Dubai. De stappen zijn vergelijkbaar, maar de doorlooptijd en kosten kunnen afwijken. Een DIFC Will dekt vastgoed in alle emiraten.
   - q: Is probate te vermijden als de eigenaar al een Nederlands testament had?
-    a: Een Nederlands testament wordt in de UAE doorgaans niet erkend voor vastgoed op UAE-grond. De probate-procedure is dan nog steeds nodig. Alleen een lokaal geldig testament (zoals een DIFC Will) voorkomt dit. Lees meer over [de combinatie van beide testamenten](/artikelen/difc-will-of-nederlands-testament/).
+    a: Een Nederlands testament wordt in de UAE doorgaans niet erkend voor vastgoed op UAE-grond. De probate-procedure is dan nog steeds nodig. Alleen een lokaal geldig testament (zoals een DIFC Will) voorkomt dit. Lees meer over [het misverstand dat uw Nederlandse erfgenamen uw Dubai-vastgoed automatisch krijgen](/artikelen/difc-will-of-nederlands-testament/).
   - q: Wat als de overledene huurinkomsten ontving uit het vastgoed?
     a: "De huurinkomsten kunnen geblokkeerd worden totdat het eigendom formeel is overgedragen. Dit hangt af van de beheerstructuur en de bank waar de inkomsten binnenkomen. Het is een van de minder zichtbare gevolgen van een probate-procedure."
 ---

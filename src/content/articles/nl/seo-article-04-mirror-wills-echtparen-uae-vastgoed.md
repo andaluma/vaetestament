@@ -79,7 +79,7 @@ Oplossing: mirror will met per-eigendom-specificatie. Beide partners leggen per 
 
 Een mirror will bij het DIFC vervangt uw Nederlandse testament niet. Het vult het aan. Uw Nederlandse notariële testament regelt uw Nederlandse vermogen. Uw DIFC mirror will regelt uw UAE-vastgoed.
 
-Het is verstandig om uw Nederlandse notaris te informeren over het bestaan van uw DIFC Will, zodat er geen tegenstrijdige bepalingen ontstaan. Lees het uitgebreide artikel over [de combinatie van een DIFC Will met een Nederlands testament](/artikelen/difc-will-of-nederlands-testament/).
+Het is verstandig om uw Nederlandse notaris te informeren over het bestaan van uw DIFC Will, zodat er geen tegenstrijdige bepalingen ontstaan. Lees het uitgebreide artikel over [het misverstand dat uw Nederlandse erfgenamen uw Dubai-vastgoed automatisch krijgen](/artikelen/difc-will-of-nederlands-testament/).
 
 ## Beperkingen van een mirror will
 

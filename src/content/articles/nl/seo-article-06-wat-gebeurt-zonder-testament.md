@@ -20,7 +20,7 @@ related:
 linked_landing_faq: zonder-testament-uae
 faq:
   - q: Mijn Nederlandse testament regelt toch alles?
-    a: Niet voor vastgoed in de UAE. Een Nederlands notarieel testament wordt in de UAE doorgaans niet erkend voor onroerend goed op UAE-grond. U heeft een apart, lokaal geldig testament nodig. Lees meer over [de combinatie van een DIFC Will met een Nederlands testament](/artikelen/difc-will-of-nederlands-testament/).
+    a: Niet voor vastgoed in de UAE. Een Nederlands notarieel testament wordt in de UAE doorgaans niet erkend voor onroerend goed op UAE-grond. U heeft een apart, lokaal geldig testament nodig. Lees meer over [het misverstand dat uw Nederlandse erfgenamen uw Dubai-vastgoed automatisch krijgen](/artikelen/difc-will-of-nederlands-testament/).
   - q: Kan mijn partner niet gewoon naar Dubai vliegen om het te regelen?
     a: Fysieke aanwezigheid versnelt het proces niet wezenlijk. De probate-procedure loopt via de rechtbank en vereist specifieke documentatie die eerst in Nederland moet worden opgesteld, gelegaliseerd en vertaald.
   - q: Wat als ik maar één eigendom heb? Is het dan ook nodig?
