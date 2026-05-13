@@ -1,7 +1,7 @@
 ---
 title: "Misverstand: mijn Nederlandse erfgenamen krijgen mijn Dubai-vastgoed automatisch"
 slug: difc-will-of-nederlands-testament
-meta_description: "Een Nederlands testament dekt uw vastgoed in Dubai, Abu Dhabi of een andere Emiraat waarschijnlijk niet automatisch. Wat u moet weten over erfrecht voor VAE-vastgoed als Nederlandse eigenaar."
+meta_description: "Een Nederlands testament dekt uw vastgoed in Dubai, Abu Dhabi of de VAE waarschijnlijk niet. Wat u moet weten over erfrecht voor VAE-vastgoed."
 keywords:
   - DIFC testament vs Nederlands testament
   - combinatie testament VAE-vastgoed
