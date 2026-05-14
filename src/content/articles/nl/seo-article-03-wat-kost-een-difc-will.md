@@ -1,7 +1,7 @@
 ---
 title: "Wat kost een testament voor uw Dubai-vastgoed? Prijzen en pakketten"
 slug: wat-kost-een-difc-will
-meta_description: "DIFC-testament kosten via VAEtestament: EUR 497, EUR 797 of EUR 1.499. Vaste prijzen, geen verrassingen. Vergelijking met advocatenkantoren."
+meta_description: "DIFC-testament kosten via VAEtestament: vanaf EUR 497 begeleidingstarief. DIFC-registratiekosten apart. Vergelijking met advocatenkantoren."
 keywords:
   - kosten DIFC testament
   - Dubai will prijs
@@ -20,7 +20,7 @@ related:
 linked_landing_faq: wat-kost-difc-will
 faq:
   - q: Zijn er bijkomende kosten bovenop het gekozen tier?
-    a: Nee. De DIFC-registratiekosten zijn inbegrepen. U betaalt het gekozen tier-tarief en niets meer, tenzij u Tier 3 kiest (waarbij de advocaatkosten apart worden geoffreerd).
+    a: "EUR 497, EUR 797 en EUR 1.499 zijn VAEtestament-begeleidingstarieven. DIFC-registratiekosten worden direct aan de DIFC voldaan en zijn niet inbegrepen. Bij Tier 3 komt het honorarium van de DIFC-jurist daar nog bovenop. De actuele DIFC-tarieven bespreken wij tijdens de kennismaking."
   - q: Kan ik upgraden van Tier 1 naar Tier 2 tijdens het proces?
     a: Ja. Als u tijdens het traject merkt dat u toch een persoonlijke sessie wilt, kunt u upgraden. U betaalt het verschil.
   - q: Wat kost een mirror will?
@@ -31,7 +31,7 @@ faq:
     a: "Neem contact op via [VAEtestament.nl](https://vaetestament.nl) om de mogelijkheden te bespreken."
 ---
 
-Een DIFC-testament via VAEtestament kost EUR 497, EUR 797 of EUR 1.499, afhankelijk van uw situatie. Vaste prijzen, vooraf bekend, zonder uurtarieven of verborgen kosten. Dit artikel beschrijft wat elk pakket omvat, voor wie het bedoeld is en hoe de kosten zich verhouden tot de alternatieven.
+De begeleidingstarieven van VAEtestament zijn EUR 497, EUR 797 of EUR 1.499, afhankelijk van uw situatie. Vooraf bekend, zonder uurtarieven. DIFC-registratiekosten worden apart, rechtstreeks aan de DIFC voldaan. Dit artikel beschrijft wat elk pakket omvat, voor wie het bedoeld is en hoe de kosten zich verhouden tot de alternatieven.
 
 ## De drie pakketten
 
@@ -85,7 +85,7 @@ De gangbare route voor buitenlandse eigenaren is een advocatenkantoor in de VAE.
 
 ### Zelf via het DIFC-portaal
 
-Het DIFC-testaments Service Centre heeft een online portaal waar u zelf een testament kunt aanmelden. Het portaal is in het Engels, biedt geen inhoudelijke begeleiding en verwacht dat u alle velden en beslissingen zelf correct invult. Er is geen Nederlandse ondersteuning. De DIFC-registratiekosten zelf zijn inbegrepen in de VAEtestament-tarieven.
+Het DIFC-testaments Service Centre heeft een online portaal waar u zelf een testament kunt aanmelden. Het portaal is in het Engels, biedt geen inhoudelijke begeleiding en verwacht dat u alle velden en beslissingen zelf correct invult. Er is geen Nederlandse ondersteuning. De DIFC-registratiekosten betaalt u rechtstreeks aan het DIFC en zijn niet inbegrepen in de VAEtestament-tarieven.
 
 ### Niets doen
 
