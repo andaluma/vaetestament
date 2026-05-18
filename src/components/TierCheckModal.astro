@@ -1,5 +1,5 @@
 ---
-// TierCheckModal — singleton modal that the rest of the site triggers via
+// TierCheckModal - singleton modal that the rest of the site triggers via
 // `window.openTierCheck()`. Ported verbatim (logic-wise) from the original
 // inline implementation in index.html so the UX is identical on landing
 // page and inside articles.
@@ -79,7 +79,7 @@
       <!-- Newsletter placement 1: third row, captures non-converters with intent signal -->
       <div class="tc-newsletter">
         <p class="tc-newsletter-label">Nog niet klaar om te beslissen?</p>
-        <p class="tc-newsletter-body">Krijg eens per maand een korte DIFC-update — praktisch, geen verkooppraat.</p>
+        <p class="tc-newsletter-body">Krijg eens per maand een korte DIFC-update - praktisch, geen verkooppraat.</p>
         <form class="nl-form tc-newsletter-form" data-slug="tier-check" novalidate>
           <label class="nl-honeypot" aria-hidden="true">Website<input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
           <input type="email" name="email" required autocomplete="email" placeholder="uw@e-mailadres.nl" />
@@ -288,7 +288,7 @@
     var answers = [];
     var step = 0;
     var totalSteps = 5;
-    // Article slug, set by openTierCheck() — appended to the result CTAs as
+    // Article slug, set by openTierCheck() - appended to the result CTAs as
     // utm_content so we can attribute conversions back to the originating piece.
     var sourceSlug = null;
 

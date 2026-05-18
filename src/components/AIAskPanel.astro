@@ -1,5 +1,5 @@
 ---
-// AIAskPanel — singleton AI Q&A widget. Rendered once per page by
+// AIAskPanel - singleton AI Q&A widget. Rendered once per page by
 // BaseLayout. Pairs a floating button (bottom-right, above the WhatsApp
 // FAB on the same corner) with a slide-in chat panel.
 //
@@ -12,18 +12,20 @@
 // cal.com, WhatsApp, or nothing).
 
 export interface Props {
-  /** Current article slug — supplied by article pages for page context. */
+  /** Current article slug - supplied by article pages for page context. */
   slug?: string;
+  locale?: 'nl' | 'en' | 'es';
 }
 
-const { slug = '' } = Astro.props;
+const { slug = '', locale = 'nl' } = Astro.props;
+const isEn = locale === 'en';
 ---
 
 <button
   type="button"
   class="ai-fab"
   id="aiFab"
-  aria-label="Stel een vraag"
+  aria-label={isEn ? 'Ask a question' : 'Stel een vraag'}
   data-slug={slug}
 >
   <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
@@ -32,7 +34,7 @@ const { slug = '' } = Astro.props;
       d="M12 3a9 9 0 0 0-9 9c0 1.6.42 3.1 1.15 4.4L3 21l4.7-1.13A8.97 8.97 0 0 0 12 21a9 9 0 1 0 0-18zm0 16.2c-1.36 0-2.66-.36-3.78-1.04l-.27-.16-2.8.67.69-2.72-.18-.28A7.2 7.2 0 1 1 12 19.2zM8.4 8.4h7.2v1.6H8.4zm0 2.8h7.2v1.6H8.4zm0 2.8h4.8v1.6H8.4z"
     />
   </svg>
-  <span>Stel een vraag</span>
+  <span>{isEn ? 'Ask a question' : 'Stel een vraag'}</span>
 </button>
 
 <aside
@@ -44,34 +46,43 @@ const { slug = '' } = Astro.props;
   aria-hidden="true"
 >
   <header>
-    <h3 id="aiPanelTitle">Stel uw vraag</h3>
-    <button type="button" class="ai-close" id="aiClose" aria-label="Sluiten">&times;</button>
+    <h3 id="aiPanelTitle">{isEn ? 'Ask your question' : 'Stel uw vraag'}</h3>
+    <button type="button" class="ai-close" id="aiClose" aria-label={isEn ? 'Close' : 'Sluiten'}>&times;</button>
   </header>
 
-  <p class="ai-intro">
-    Vraag de online-assistent over DIFC-testamenten of VAE-erfrecht. Antwoorden zijn gebaseerd op
-    onze artikelen — voor maatwerk kunt u altijd een gratis kennismaking inplannen.
-  </p>
-
-  <div class="ai-suggested" aria-label="Voorbeeldvragen">
-    <button type="button" class="ai-chip" data-q="Wat is een DIFC-testament?">Wat is een DIFC-testament?</button>
-    <button type="button" class="ai-chip" data-q="Wat kost een DIFC-testament?">Wat kost een DIFC-testament?</button>
-    <button type="button" class="ai-chip" data-q="Heb ik nog een Nederlands testament nodig?">
-      Nederlands testament nodig?
-    </button>
-  </div>
+  {isEn ? (
+    <p class="ai-intro">
+      Ask the online assistant about DIFC wills or UAE succession law. Answers are based on
+      our articles. For tailored advice you can always schedule a free consultation.
+    </p>
+    <div class="ai-suggested" aria-label="Example questions">
+      <button type="button" class="ai-chip" data-q="What is a DIFC will?">What is a DIFC will?</button>
+      <button type="button" class="ai-chip" data-q="What does a DIFC will cost?">What does a DIFC will cost?</button>
+      <button type="button" class="ai-chip" data-q="Do I still need a will in my home country?">Home-country will needed?</button>
+    </div>
+  ) : (
+    <p class="ai-intro">
+      Vraag de online-assistent over DIFC-testamenten of VAE-erfrecht. Antwoorden zijn gebaseerd op
+      onze artikelen - voor maatwerk kunt u altijd een gratis kennismaking inplannen.
+    </p>
+    <div class="ai-suggested" aria-label="Voorbeeldvragen">
+      <button type="button" class="ai-chip" data-q="Wat is een DIFC-testament?">Wat is een DIFC-testament?</button>
+      <button type="button" class="ai-chip" data-q="Wat kost een DIFC-testament?">Wat kost een DIFC-testament?</button>
+      <button type="button" class="ai-chip" data-q="Heb ik nog een Nederlands testament nodig?">Nederlands testament nodig?</button>
+    </div>
+  )}
 
   <form class="ai-form" id="aiForm" novalidate>
-    <label class="ai-sr-only" for="aiInput">Uw vraag</label>
+    <label class="ai-sr-only" for="aiInput">{isEn ? 'Your question' : 'Uw vraag'}</label>
     <textarea
       id="aiInput"
       name="question"
       rows="3"
       maxlength="600"
-      placeholder="Schrijf uw vraag in het Nederlands…"
+      placeholder={isEn ? 'Write your question in English...' : 'Schrijf uw vraag in het Nederlands…'}
       required
     ></textarea>
-    <button type="submit" id="aiSubmit">Verzenden</button>
+    <button type="submit" id="aiSubmit">{isEn ? 'Send' : 'Verzenden'}</button>
   </form>
 
   <div class="ai-answer" id="aiAnswer" hidden></div>

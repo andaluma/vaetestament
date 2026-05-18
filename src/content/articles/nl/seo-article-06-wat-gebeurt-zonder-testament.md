@@ -28,7 +28,7 @@ faq:
   - q: Hoe snel kan ik een DIFC-testament regelen?
     a: De voorbereiding duurt doorgaans 1 tot 2 weken. De DIFC-registratie zelf neemt 4 tot 8 weken in beslag. Het volledige proces verloopt op afstand. Zie het [stap-voor-stap overzicht](/artikelen/difc-will-registreren-vanuit-nederland/).
   - q: Wat kost een DIFC-testament via VAEtestament?
-    a: "VAEtestament werkt met vaste prijzen: EUR 497, EUR 797 of EUR 1.499, afhankelijk van uw situatie. Lees meer over de [pakketten en prijsstructuur](/artikelen/wat-kost-een-difc-will/)."
+    a: "VAEtestament werkt met vaste begeleidingstarieven: EUR 497, EUR 797 of EUR 1.499, afhankelijk van uw situatie. DIFC-registratiekosten apart. Lees meer over de [pakketten en prijsstructuur](/artikelen/wat-kost-een-difc-will/)."
 ---
 
 Zonder DIFC-testament heeft uw overlevende partner geen zekerheid over de verdeling van uw VAE-vastgoed. De autoriteiten kunnen lokale erfregels toepassen, ongeacht uw nationaliteit. Uw nabestaanden worden geconfronteerd met een kostbare en langdurige probate-procedure. Dit artikel beschrijft wat er concreet gebeurt, wat het kost en hoe u het voorkomt.

@@ -75,10 +75,12 @@ Het gehele proces verloopt op afstand. U hoeft niet fysiek aanwezig te zijn in d
 
 ## Wat kost het?
 
-VAEtestament werkt met vaste prijzen per tier:
+VAEtestament werkt met vaste begeleidingstarieven per tier:
 
 - **Tier 1 (Zelf & Zeker):** EUR 497. Voor eigenaren die het proces zelfstandig doorlopen met begeleiding.
 - **Tier 2 (Samen Registreren):** EUR 797. Met een persoonlijke sessie van 40 minuten.
 - **Tier 3 (Volledig Ontzorgd):** EUR 1.499. Met advocaatverwijzing voor complexere situaties.
+
+DIFC-registratiekosten worden apart, rechtstreeks aan de DIFC voldaan. Bij Tier 3 komt het honorarium van de DIFC-jurist daar nog bovenop.
 
 Ter vergelijking: een advocatenkantoor in Dubai rekent doorgaans EUR 2.000 tot EUR 5.000 of meer, met communicatie in het Engels.

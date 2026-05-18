@@ -5,7 +5,7 @@
 // Run:  node scripts/build-article-corpus.mjs
 // Output: scripts/article-corpus.generated.js
 //
-// We intentionally ship the FULL article body (not a summary) — Sonnet 4.6
+// We intentionally ship the FULL article body (not a summary) - Sonnet 4.6
 // reads ~32k tokens for 8 articles, well within budget, and answer quality
 // is dramatically higher with the full text. The first ~150 words of each
 // article get a separate `lede` field so the AI can favour them when
@@ -25,7 +25,7 @@ function splitFrontmatter(raw) {
   return { fmRaw: m[1], body: m[2].trim() };
 }
 
-// Minimal YAML parser — same as the D2 migration script.
+// Minimal YAML parser - same as the D2 migration script.
 function parseFm(fm) {
   const out = {};
   const lines = fm.split(/\r?\n/);
@@ -38,7 +38,7 @@ function parseFm(fm) {
       const key = m[1];
       let v = m[2];
       if (v === '' || v === undefined) {
-        // Inline block — collect indented children
+        // Inline block - collect indented children
         const arr = [];
         const objArr = [];
         let j = i + 1;

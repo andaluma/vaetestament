@@ -1,5 +1,5 @@
 ---
-// WhatsAppFab — sitewide floating button.
+// WhatsAppFab - sitewide floating button.
 //
 // Opens WhatsApp Web/app with the canonical business number (31616146007;
 // see HANDOVER_DAY_14.md "Locked platform facts"). Pre-fills a context-aware
@@ -11,14 +11,14 @@ export interface Props {
   slug?: string;
   /** Article title; included in the pre-filled WhatsApp message for context. */
   title?: string;
+  locale?: 'nl' | 'en' | 'es';
 }
 
-const { slug = '', title = '' } = Astro.props;
+const { slug = '', title = '', locale = 'nl' } = Astro.props;
 
-// Default greeting: warm, formal-u, no jargon.
-const greeting = title
-  ? `Hallo, ik heb een vraag naar aanleiding van het artikel "${title}".`
-  : 'Hallo, ik heb een vraag over een DIFC-testament.';
+const greeting = locale === 'en'
+  ? (title ? `Hello, I have a question about the article "${title}".` : 'Hello, I have a question about a DIFC will.')
+  : (title ? `Hallo, ik heb een vraag naar aanleiding van het artikel "${title}".` : 'Hallo, ik heb een vraag over een DIFC-testament.');
 
 const waUrl = `https://wa.me/31616146007?text=${encodeURIComponent(greeting)}`;
 ---
@@ -28,7 +28,7 @@ const waUrl = `https://wa.me/31616146007?text=${encodeURIComponent(greeting)}`;
   href={waUrl}
   target="_blank"
   rel="noopener"
-  aria-label="Stel uw vraag via WhatsApp"
+  aria-label={locale === 'en' ? 'Ask your question via WhatsApp' : 'Stel uw vraag via WhatsApp'}
   data-slug={slug}
 >
   <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">

@@ -1,9 +1,9 @@
 ---
-// BaseLayout — wraps every page with:
+// BaseLayout - wraps every page with:
 // - meta tags (title, description, OG, Twitter card)
 // - canonical link
 // - hreflang scaffolding (self-ref + x-default; cross-domain EN/ES added later)
-// - Google Fonts (Cormorant + Jost) — same families as live site
+// - Google Fonts (Cormorant + Jost) - same families as live site
 // - favicon
 // - global stylesheet
 //
@@ -28,23 +28,39 @@ export interface Props {
   author?: string;
   /** JSON-LD blocks to inject in <head> as raw <script type="application/ld+json">. */
   jsonLd?: Record<string, unknown>[];
-  /** Article slug — passed to the WhatsApp FAB for context-aware greeting. */
+  /** Article slug - passed to the WhatsApp FAB for context-aware greeting. */
   articleSlug?: string;
-  /** Article title — passed to the WhatsApp FAB for context-aware greeting. */
+  /** Article title - passed to the WhatsApp FAB for context-aware greeting. */
   articleTitle?: string;
-  /** Emit <meta name="robots" content="noindex,follow"> — for thin/utility pages. */
+  /** Emit <meta name="robots" content="noindex,follow"> - for thin/utility pages. */
   noindex?: boolean;
   /** Hide the fixed top nav (defaults to showing it). */
   hideNav?: boolean;
   /** Hide the site footer (defaults to showing it). */
   hideFooter?: boolean;
+  /** Page locale - controls lang attr, OG locale, and nav/footer chrome. */
+  locale?: 'nl' | 'en' | 'es';
+  /** Cross-locale alternates: { nl: '/path', en: '/path' }. Emits hreflang tags. */
+  alternates?: Record<string, string>;
 }
+
+const LOCALE_DOMAINS: Record<string, string> = {
+  nl: 'https://vaetestament.nl',
+  en: 'https://uaepropertywills.com',
+  es: 'https://PLACEHOLDER-ES-DOMAIN.com',
+};
+
+const OG_LOCALES: Record<string, string> = {
+  nl: 'nl_NL',
+  en: 'en_GB',
+  es: 'es_ES',
+};
 
 const {
   title,
   description,
-  canonical = Astro.url.href,
-  ogImage = 'https://vaetestament.nl/favicon.png',
+  canonical: canonicalProp,
+  ogImage: ogImageProp,
   ogType = 'website',
   publishDate,
   updatedDate,
@@ -53,13 +69,19 @@ const {
   noindex = false,
   hideNav = false,
   hideFooter = false,
+  locale = 'nl',
+  alternates = {},
 } = Astro.props;
 
-const siteName = 'VAEtestament';
+const localeDomain = LOCALE_DOMAINS[locale] || LOCALE_DOMAINS.nl;
+const canonical = canonicalProp || `${localeDomain}${Astro.url.pathname}`;
+const ogImage = ogImageProp || `${localeDomain}/og-default.png`;
+const siteName = locale === 'en' ? 'UAEpropertyWills' : 'VAEtestament';
+const ogLocale = OG_LOCALES[locale] || 'nl_NL';
 ---
 
 <!doctype html>
-<html lang="nl">
+<html lang={locale}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -70,9 +92,11 @@ const siteName = 'VAEtestament';
     {noindex && <meta name="robots" content="noindex,follow" />}
 
     <link rel="canonical" href={canonical} />
-    <link rel="alternate" hreflang="nl" href={canonical} />
-    <link rel="alternate" hreflang="x-default" href={canonical} />
-    {/* TODO: when EN/ES domains exist, emit hreflang="en" / "es" entries here. */}
+    <link rel="alternate" hreflang={locale} href={canonical} />
+    <link rel="alternate" hreflang="x-default" href={locale === 'nl' ? canonical : (alternates.nl ? `${LOCALE_DOMAINS.nl}${alternates.nl}` : `${LOCALE_DOMAINS.nl}${Astro.url.pathname}`)} />
+    {Object.entries(alternates).map(([lang, path]) => (
+      <link rel="alternate" hreflang={lang} href={`${LOCALE_DOMAINS[lang] || ''}${path}`} />
+    ))}
 
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -80,7 +104,7 @@ const siteName = 'VAEtestament';
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogImage} />
     <meta property="og:site_name" content={siteName} />
-    <meta property="og:locale" content="nl_NL" />
+    <meta property="og:locale" content={ogLocale} />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
@@ -95,25 +119,35 @@ const siteName = 'VAEtestament';
     )}
     {author && <meta name="author" content={author} />}
 
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type={locale === 'en' ? 'image/svg+xml' : 'image/png'} href={locale === 'en' ? '/favicon-en.svg' : '/favicon.png'} />
+    <link rel="apple-touch-icon" href={locale === 'en' ? '/favicon-en.svg' : '/favicon.png'} />
+    <meta name="theme-color" content="#0C4A45" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
+      as="style"
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
 
     {jsonLd.map((block) => (
       <script type="application/ld+json" set:html={JSON.stringify(block)} />
     ))}
   </head>
   <body>
-    {!hideNav && <SiteNav />}
+    {!hideNav && <SiteNav locale={locale} />}
     <slot />
-    {!hideFooter && <SiteFooter />}
+    {!hideFooter && <SiteFooter locale={locale} />}
     <TierCheckModal />
-    <AIAskPanel slug={Astro.props.articleSlug ?? ''} />
-    <WhatsAppFab slug={Astro.props.articleSlug ?? ''} title={Astro.props.articleTitle ?? ''} />
+    <AIAskPanel slug={Astro.props.articleSlug ?? ''} locale={locale} />
+    <WhatsAppFab slug={Astro.props.articleSlug ?? ''} title={Astro.props.articleTitle ?? ''} locale={locale} />
   </body>
 </html>

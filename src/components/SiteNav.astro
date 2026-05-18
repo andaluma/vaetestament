@@ -1,15 +1,25 @@
 ---
-// SiteNav — fixed teal navigation, matches the live homepage exactly.
+// SiteNav - fixed teal navigation, matches the live homepage exactly.
 // Renders on every Astro-built page via BaseLayout (opt-out via prop).
+
+interface Props { locale?: 'nl' | 'en' | 'es'; }
+const { locale = 'nl' } = Astro.props;
+
+const NAV_STRINGS: Record<string, { articles: string; articlesHref: string; login: string; cta: string; ctaHref: string }> = {
+  nl: { articles: 'Artikelen', articlesHref: '/artikelen/', login: 'Inloggen', cta: 'Plan gratis gesprek', ctaHref: '/#kennismaking' },
+  en: { articles: 'Articles', articlesHref: '/articles/', login: 'Log in', cta: 'Schedule free call', ctaHref: '/#consultation' },
+  es: { articles: 'Artículos', articlesHref: '/articulos/', login: 'Iniciar sesión', cta: 'Reservar llamada', ctaHref: '/#consulta' },
+};
+const t = NAV_STRINGS[locale] || NAV_STRINGS.nl;
 ---
 
 <nav class="site-nav">
   <div class="nav-inner">
-    <a href="/" class="site-logo" aria-label="VAEtestament home">VAE<span>testament</span></a>
+    <a href="/" class="site-logo" aria-label={locale === 'en' ? 'UAEpropertyWills home' : 'VAEtestament home'}>{locale === 'en' ? <Fragment>UAE<span>propertyWills</span></Fragment> : <Fragment>VAE<span>testament</span></Fragment>}</a>
     <div class="nav-actions">
-      <a href="/artikelen/" class="nav-link">Artikelen</a>
-      <a href="https://app.vaetestament.nl" class="nav-link nav-link--muted">Inloggen</a>
-      <a href="/#kennismaking" class="nav-cta">Plan gratis gesprek</a>
+      <a href={t.articlesHref} class="nav-link">{t.articles}</a>
+      <a href="https://app.vaetestament.nl" class="nav-link nav-link--muted">{t.login}</a>
+      <a href={t.ctaHref} class="nav-cta">{t.cta}</a>
     </div>
   </div>
 </nav>
@@ -62,7 +72,7 @@
     display: inline-block;
     padding: 9px 20px;
     background: var(--gold);
-    color: #181818;
+    color: var(--dark);
     font-family: var(--font-body);
     font-size: 0.85rem;
     font-weight: 500;

@@ -2,14 +2,19 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "vaetestament",
   "compatibility_date": "2026-04-23",
+  "main": "src/worker.js",
   "observability": {
     "enabled": true
   },
   // Astro builds the site (Markdown articles + .astro pages + public/*) into
-  // ./dist. Cloudflare Workers Static Assets serves it. Repo-root files like
+  // ./dist. Cloudflare Workers Static Assets serves it. The Worker script
+  // (src/worker.js) intercepts /r/<code> referral short-links; everything
+  // else falls through to env.ASSETS.fetch(). Repo-root files like
   // BARACA_*.html stay out of the build (per D1 flag) so they don't ship.
   "assets": {
-    "directory": "./dist"
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "run_worker_first": true
   },
   // Cloudflare's auto-deploy runs `npm install` + this build before uploading
   // ./dist. Local: `npm run deploy` (Astro build + wrangler deploy).

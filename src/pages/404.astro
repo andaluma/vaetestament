@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'Pagina niet gevonden - VAEtestament';
+const description = 'De pagina die u zoekt bestaat niet of is verplaatst.';
+---
+
+<BaseLayout title={title} description={description} noindex={true}>
+  <section style="min-height:70vh; display:flex; align-items:center; justify-content:center; text-align:center; padding:2rem;">
+    <div style="max-width:520px;">
+      <p style="font-size:5rem; font-weight:700; color:var(--gold); margin:0; line-height:1;">404</p>
+      <h1 style="font-family:var(--font-display); font-size:1.8rem; color:var(--teal); margin:0.5rem 0 1rem;">Pagina niet gevonden</h1>
+      <p style="color:var(--mid); line-height:1.6; margin-bottom:2rem;">
+        De pagina die u zoekt bestaat niet of is verplaatst. Mogelijk vindt u wat u zoekt via een van de links hieronder.
+      </p>
+      <div style="display:flex; flex-wrap:wrap; gap:12px; justify-content:center;">
+        <a href="/" class="btn btn-gold" style="display:inline-block; padding:12px 24px; background:var(--gold); color:var(--dark); text-decoration:none; border-radius:4px; font-weight:500;">Naar de homepage</a>
+        <a href="/artikelen/" style="display:inline-block; padding:12px 24px; border:1px solid var(--teal); color:var(--teal); text-decoration:none; border-radius:4px; font-weight:500;">Bekijk artikelen</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

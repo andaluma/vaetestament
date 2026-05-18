@@ -1,5 +1,5 @@
 ---
-// NewsletterSignup — Brevo nurture-list opt-in form.
+// NewsletterSignup - Brevo nurture-list opt-in form.
 //
 // POSTs to `https://api.vaetestament.nl/v1/newsletter/subscribe` (Worker
 // endpoint added in D4). Worker:
@@ -10,25 +10,27 @@
 //
 // On Stripe purchase, the existing `checkout.session.completed` webhook
 // (vaetestament-worker/src/handlers/stripe-webhook.js) also removes the
-// email from the nurture list — so paying customers don't get nurtured.
+// email from the nurture list - so paying customers don't get nurtured.
 //
 // Props:
-//   slug   — article slug, sent as ARTICLE_SLUG attribute
-//   variant — 'inline' (text + email + submit on one row) or 'card' (boxed)
+//   slug   - article slug, sent as ARTICLE_SLUG attribute
+//   variant - 'inline' (text + email + submit on one row) or 'card' (boxed)
 
 export interface Props {
   slug?: string;
   variant?: 'inline' | 'card';
   heading?: string;
   body?: string;
+  locale?: 'nl' | 'en';
 }
 
 const {
   slug = '',
   variant = 'card',
-  heading = 'Maandelijkse update over DIFC-testamenten',
-  body = 'Praktische uitleg over DIFC-testamenten en VAE-erfrecht. Geen verkooppraat, uitschrijven kan altijd.',
+  locale = 'nl',
 } = Astro.props;
+const heading = Astro.props.heading || (locale === 'en' ? 'Monthly update on DIFC wills' : 'Maandelijkse update over DIFC-testamenten');
+const body = Astro.props.body || (locale === 'en' ? 'Practical guides on DIFC wills and UAE succession law. No sales talk, unsubscribe any time.' : 'Praktische uitleg over DIFC-testamenten en VAE-erfrecht. Geen verkooppraat, uitschrijven kan altijd.');
 ---
 
 <aside class={`nl-block nl-block--${variant}`} aria-labelledby={`nl-heading-${slug || 'generic'}`}>
@@ -37,26 +39,26 @@ const {
     <p>{body}</p>
   </div>
 
-  <form class="nl-form" data-slug={slug} novalidate>
+  <form class="nl-form" data-slug={slug} data-locale={locale} novalidate>
     <label class="nl-honeypot" aria-hidden="true">
       {/* Honeypot: real users never fill this; spam bots usually do. */}
       Website
       <input type="text" name="website" tabindex="-1" autocomplete="off" />
     </label>
 
-    <label for={`nl-email-${slug || 'generic'}`} class="nl-sr-only">E-mailadres</label>
+    <label for={`nl-email-${slug || 'generic'}`} class="nl-sr-only">{locale === 'en' ? 'Email address' : 'E-mailadres'}</label>
     <input
       id={`nl-email-${slug || 'generic'}`}
       type="email"
       name="email"
       required
       autocomplete="email"
-      placeholder="uw@e-mailadres.nl"
+      placeholder={locale === 'en' ? 'your@email.com' : 'uw@e-mailadres.nl'}
     />
-    <button type="submit">Aanmelden</button>
+    <button type="submit">{locale === 'en' ? 'Subscribe' : 'Aanmelden'}</button>
 
     <p class="nl-status" role="status" aria-live="polite" hidden></p>
-    <p class="nl-fineprint">Wij sturen u een bevestigingse-mail. Door aan te melden gaat u akkoord met ons <a href="/privacybeleid">privacybeleid</a>.</p>
+    <p class="nl-fineprint">{locale === 'en' ? <Fragment>We will send you a confirmation email. By subscribing you agree to our <a href="/privacy-policy.html">privacy policy</a>.</Fragment> : <Fragment>Wij sturen u een bevestigingse-mail. Door aan te melden gaat u akkoord met ons <a href="/privacybeleid">privacybeleid</a>.</Fragment>}</p>
   </form>
 </aside>
 
@@ -157,20 +159,23 @@ const {
       var status = form.querySelector('.nl-status');
       var button = form.querySelector('button[type="submit"]');
 
+      var locale = form.getAttribute('data-locale') || 'nl';
+      var isEn = locale === 'en';
+
       form.addEventListener('submit', async function (e) {
         e.preventDefault();
         var fd = new FormData(form);
         if (fd.get('website')) return; // honeypot triggered, silently swallow
         var email = (fd.get('email') || '').toString().trim();
         if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-          status.textContent = 'Voer een geldig e-mailadres in.';
+          status.textContent = isEn ? 'Please enter a valid email address.' : 'Voer een geldig e-mailadres in.';
           status.className = 'nl-status err';
           status.hidden = false;
           return;
         }
 
         button.disabled = true;
-        status.textContent = 'Even geduld…';
+        status.textContent = isEn ? 'One moment...' : 'Even geduld…';
         status.className = 'nl-status';
         status.hidden = false;
 
@@ -181,15 +186,16 @@ const {
             body: JSON.stringify({
               email: email,
               slug: form.getAttribute('data-slug') || null,
+              locale: locale,
               source: 'article'
             })
           });
           if (!res.ok) throw new Error('subscribe ' + res.status);
-          status.textContent = 'Bedankt. We hebben u een bevestigingse-mail gestuurd — klik op de link om uw aanmelding af te ronden.';
+          status.textContent = isEn ? 'Thank you. We have sent you a confirmation email - click the link to complete your subscription.' : 'Bedankt. We hebben u een bevestigingse-mail gestuurd - klik op de link om uw aanmelding af te ronden.';
           status.className = 'nl-status ok';
           form.querySelector('input[type="email"]').value = '';
         } catch (err) {
-          status.textContent = 'Aanmelden lukte niet. Probeer het later opnieuw of mail naar support@vaetestament.nl.';
+          status.textContent = isEn ? 'Subscription failed. Please try again later or email support@vaetestament.nl.' : 'Aanmelden lukte niet. Probeer het later opnieuw of mail naar support@vaetestament.nl.';
           status.className = 'nl-status err';
         } finally {
           button.disabled = false;

@@ -1,0 +1,902 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const siteRoot = 'https://uaepropertywills.com';
+const title = 'UAEpropertyWills - DIFC will for foreign property owners in the UAE';
+const description = 'Protect your UAE property with a DIFC will. For foreign non-residents. Three clear options, transparent pricing.';
+const canonical = `${siteRoot}/`;
+const ogImage = `${siteRoot}/og-default.png`;
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": `${siteRoot}/#organization`,
+    "name": "UAEpropertyWills",
+    "legalName": "Andaluma OÜ",
+    "url": siteRoot + "/",
+    "logo": siteRoot + "/logo-nav-en.svg",
+    "description": "DIFC will guidance service for foreign property owners in the UAE. Protect your succession with a legally valid will.",
+    "founder": {
+      "@type": "Person",
+      "name": "André van Wijngaarden",
+      "url": siteRoot + "/about/"
+    },
+    "areaServed": ["AE"],
+    "inLanguage": "en",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "info@uaepropertywills.com",
+      "telephone": "+31616146007",
+      "contactType": "customer support",
+      "availableLanguage": ["en", "nl", "es"]
+    },
+    "sameAs": ["https://www.linkedin.com/in/adriaanvanwijngaarden"]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${siteRoot}/#website`,
+    "url": siteRoot + "/",
+    "name": "UAEpropertyWills",
+    "inLanguage": "en",
+    "publisher": { "@id": `${siteRoot}/#organization` }
+  },
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "name": "UAEpropertyWills",
+        "url": siteRoot,
+        "description": "DIFC will guidance for foreign owners of UAE property. Protect your succession with a legally registered will in the UAE.",
+        "founder": {
+          "@type": "Person",
+          "name": "André van Wijngaarden"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "United Arab Emirates"
+        },
+        "serviceType": "DIFC will registration guidance",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Self-Guided",
+            "price": "497",
+            "priceCurrency": "EUR",
+            "description": "Step-by-step portal guidance for independent DIFC will registration"
+          },
+          {
+            "@type": "Offer",
+            "name": "Guided Registration",
+            "price": "797",
+            "priceCurrency": "EUR",
+            "description": "40-minute guided portal session for DIFC will registration"
+          },
+          {
+            "@type": "Offer",
+            "name": "Fully Managed",
+            "price": "1499",
+            "priceCurrency": "EUR",
+            "description": "Fully guided DIFC will registration including referral to a certified lawyer"
+          }
+        ],
+        "sameAs": [
+          "https://cal.com/vaetestament.nl/15min"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Does Sharia law apply to me as a non-Muslim?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In many cases, yes. The UAE generally applies local inheritance law to assets within its territory upon death, regardless of your nationality or religion. For non-Muslims, this may mean that the default regime based on Sharia applies. A DIFC will allows non-Muslims to deviate from this through a legally registered will."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does my home-country will also cover my UAE property?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Generally not. A home-country will is not automatically recognised in the UAE for property on UAE soil. A DIFC will is in most cases required to legally distribute your UAE property."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens to my UAE property if I pass away without a will?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Without a valid will, your property is typically distributed based on applicable inheritance law. For non-Muslims, this may mean that your partner receives a limited share, and the remainder goes to other family members."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is a DIFC will complicated to arrange?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not with the right guidance. The process is fully digital via the official DIFC portal and requires no physical presence in Dubai. Preparation is typically completed within 1 to 2 weeks. The DIFC processing afterwards takes 4 to 8 weeks."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the total costs of a DIFC will?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Total costs consist of three components: our guidance fee (EUR 497 to EUR 1,499), DIFC registration fees (paid directly to the DIFC), plus lawyer fees for Tier 3. All DIFC rates are indicative."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does a UAE probate procedure cost without a local will?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Without a locally valid will, your surviving family must go through a full UAE probate procedure. This involves legalisation, sworn Arabic translations and local lawyers. Costs quickly reach EUR 10,000 or more, and the process typically takes 12 to 24 months."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I upgrade later if I need a different tier?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. You can upgrade to a higher tier at any time. You only pay the price difference. No hidden costs, no double payment."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a mirror will and do I need one?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A mirror will is a joint registration of two wills, for you and your partner, in one procedure. Each partner independently determines the beneficiaries, executors and distribution. For couples with joint UAE property, this is typically the most practical and cost-effective option."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I arrange a DIFC will if I do not live in Dubai?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The DIFC will is available to non-residents. The entire registration process is conducted remotely via a secure online portal. You do not need to visit the UAE."
+            }
+          }
+        ]
+      }
+    ]
+  }
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonical={canonical}
+  ogImage={ogImage}
+  jsonLd={jsonLd}
+  hideNav={true}
+  hideFooter={true}
+  locale="en"
+  alternates={{ nl: '/' }}
+>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/"><img src="/logo-nav-en.svg" alt="UAEpropertyWills" width="148" height="44" style="height:44px;width:auto;display:block;"></a>
+      <div style="display:flex;align-items:center;gap:16px;">
+        <a href="https://app.vaetestament.nl" class="nav-login" style="color:rgba(255,255,255,0.65);font-size:0.82rem;text-decoration:none;letter-spacing:0.03em;">Log in</a>
+        <a href="#consultation" class="btn btn-gold">Schedule free call</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <span class="hero-label fade-up">DIFC will for foreign property owners</span>
+        <h1 class="fade-up delay-1">
+          Your UAE property.<br>
+          Without <em>years</em> of hassle for your family.
+        </h1>
+        <p class="hero-sub fade-up delay-2">
+          Without a locally valid will, your family faces a UAE probate procedure of 12 to 24 months, involving legalisation, sworn Arabic translations and local lawyer costs that quickly exceed &euro;10,000. A DIFC will prevents this.
+        </p>
+        <div class="hero-actions fade-up delay-3">
+          <a href="#consultation" class="btn btn-gold btn-lg">Schedule free consultation</a>
+          <a href="#" class="btn btn-outline btn-lg" onclick="openTierCheck();return false;">Find your tier now</a>
+        </div>
+        <p class="hero-note fade-up delay-4">15 minutes &middot; No obligation</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAT STRIP -->
+  <div class="stat-strip">
+    <div class="container">
+      <div class="stat-item">
+        <span class="stat-num">12&ndash;24 months</span>
+        <span class="stat-label">Average duration of a UAE probate procedure without a local will</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">&euro;10,000+</span>
+        <span class="stat-label">Potential costs for legalisation, translation and local lawyers</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">All Emirates</span>
+        <span class="stat-label">A DIFC will covers property across the entire UAE</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROBLEM -->
+  <section class="problem">
+    <div class="container">
+      <div class="problem-left">
+        <p class="section-label">The problem</p>
+        <h2>Your home-country will is generally not recognised in the UAE</h2>
+        <p class="problem-subtitle">Your existing will typically does not cover your UAE property.</p>
+        <p>
+          You live abroad, and you own property in the UAE. Upon death, that property falls under the UAE legal system, not under the inheritance law of your home country. A will drafted at home is generally not recognised by the UAE authorities for property on UAE soil. This applies regardless of how carefully it was prepared.
+        </p>
+        <p>
+          Without a locally valid will, your surviving family must in many cases go through a UAE probate procedure: documents legalised via apostille, sworn Arabic translations, local lawyers engaged, and months of waiting before the property can be transferred. During that period, the property generally cannot be freely sold or rented.
+        </p>
+        <p>
+          A DIFC will is recognised by the UAE authorities and gives you control over who inherits your property. It is a separate legal structure, specifically designed for non-Muslims with assets in the UAE.
+        </p>
+      </div>
+      <div class="problem-right">
+        <span class="big-pct">0%</span>
+        <h3>This is how your home-country will is typically assessed in the UAE.</h3>
+        <div class="divider"></div>
+        <p>
+          The UAE generally applies local inheritance rules to property within its borders, regardless of your nationality or place of residence. A DIFC will is recognised and gives you control over who inherits your property.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUTION -->
+  <section class="solution">
+    <div class="container">
+      <div class="solution-inner">
+        <div>
+          <p class="section-label" style="color: var(--gold-light);">The solution</p>
+          <h2 style="color: var(--white);">What is a DIFC will, and why do you need one?</h2>
+        </div>
+        <div class="solution-text">
+          <p>
+            The Dubai International Financial Centre (DIFC) has a separate legal
+            structure that allows non-Muslims to register a will based on Western
+            succession principles. This will is valid for your property across the
+            entire UAE, in Dubai, Abu Dhabi and all other Emirates.
+          </p>
+          <p>
+            Registration takes place via an official online portal. You do not
+            need to be physically present in Dubai.
+          </p>
+          <ul class="solution-bullets">
+            <li>Your own distribution - you decide who inherits what</li>
+            <li>Fast settlement for your family, no lengthy succession process</li>
+            <li>No unexpected translation or lawyer costs for your family</li>
+            <li>Valid for property in all Emirates</li>
+            <li>Can be amended as long as you live</li>
+            <li>Fully digital, arranged from wherever you are</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKAGES -->
+  <section class="pakketten" id="packages">
+    <div class="container">
+      <div class="pakketten-header">
+        <p class="section-label">Our services</p>
+        <h2>Choose the approach that suits you.</h2>
+        <p>Three clear options - from fully self-guided to fully managed.
+        You pay only for what you need.</p>
+      </div>
+
+      <div class="cards">
+
+        <!-- Tier 1 -->
+        <div class="card" style="opacity:0.7;">
+          <p class="card-tier">Tier 1</p>
+          <h3 class="card-name">Self-Guided</h3>
+          <p class="card-tagline">Everything you need to register your DIFC will yourself, at your own pace.</p>
+          <div class="card-divider"></div>
+          <div class="card-price">
+            <span class="price-amount">&euro;497</span>
+            <span class="price-note">Our guidance fee &middot; DIFC costs separate*</span>
+          </div>
+          <ul class="card-features">
+            <li>Access to the UAEpropertyWills portal - five phases, step by step</li>
+            <li>Personal guide through the DIFC portal, with videos per section</li>
+            <li>Checklist: which documents you need, with file name suggestions</li>
+            <li>Support via the in-portal contact form (response time: 2 business days)</li>
+            <li>Up to 5 properties per will</li>
+          </ul>
+          <div class="card-cta">
+            <span class="btn btn-outline" style="pointer-events:none;opacity:0.5;">Coming soon</span>
+            <p class="card-cta-secondary"><a href="#consultation">Schedule a free consultation first &rarr;</a></p>
+          </div>
+        </div>
+
+        <!-- Tier 2 (featured) -->
+        <div class="card featured">
+          <div class="card-badge">Most chosen</div>
+          <p class="card-tier">Tier 2</p>
+          <h3 class="card-name">Guided Registration</h3>
+          <p class="card-tagline">We walk through the DIFC portal together in a personal 40-minute video session.</p>
+          <div class="card-divider"></div>
+          <div class="card-price">
+            <span class="price-amount">&euro;797</span>
+            <span class="price-note">Our guidance fee &middot; DIFC costs separate*</span>
+          </div>
+          <ul class="card-features">
+            <li>Everything from Tier 1 included</li>
+            <li>40-minute guided portal session (live video)</li>
+            <li>We walk through the registration together, in real time</li>
+            <li>WhatsApp support around your session</li>
+            <li>Up to 5 properties per will</li>
+          </ul>
+          <div class="card-cta">
+            <a href="https://buy.stripe.com/4gM28q12d1QddEV5XxbjW03" class="btn btn-gold">Get started</a>
+            <p class="card-cta-secondary"><a href="#consultation">Or schedule a free consultation first &rarr;</a></p>
+          </div>
+        </div>
+
+        <!-- Tier 3 -->
+        <div class="card">
+          <p class="card-tier">Tier 3</p>
+          <h3 class="card-name">Fully Managed</h3>
+          <p class="card-tagline">For situations beyond the standard DIFC Property Will: corporate structures, guardianship, or more than 5 properties.</p>
+          <div class="card-divider"></div>
+          <div class="card-price">
+            <span class="price-amount">&euro;1,499</span>
+            <span class="price-note">Our guidance fee &middot; DIFC AED 10,000&ndash;15,000 &middot; Lawyer fees quoted separately*</span>
+          </div>
+          <ul class="card-features">
+            <li>Intake call with Andr&eacute; + coordination of the entire process</li>
+            <li>Referral to a qualified DIFC lawyer for the legal work</li>
+            <li>WhatsApp support throughout your entire process</li>
+            <li>One included 15-minute advisory session (additional sessions &euro;69)</li>
+            <li>For: corporate ownership, non-real estate assets, guardianship, &gt;5 properties or bespoke provisions</li>
+          </ul>
+          <div class="card-cta">
+            <a href="https://buy.stripe.com/8x24gy3al0M91WdclVbjW04" class="btn btn-outline">Get started</a>
+            <p class="card-cta-secondary"><a href="#consultation">Or schedule a free consultation first &rarr;</a></p>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="reassurance-note" style="text-align:center; margin-top:24px; font-size:0.88rem; color:var(--mid); font-weight:300; max-width:640px; margin-left:auto; margin-right:auto;">
+        Not sure which tier fits best? You can always upgrade to a higher tier during the process - you only pay the difference. Want to know more? <a href="#consultation" style="color:var(--teal); text-decoration:underline;">Schedule a free consultation</a>.
+      </p>
+
+      <p class="costs-note">
+        * DIFC registration fees for Tier 1 &amp; 2: <strong>AED 7,500</strong> (single will) or <strong>AED 10,000</strong> (mirror will) + AED 20 admin. Tier 3: <strong>AED 10,000&ndash;15,000</strong> DIFC fees + lawyer fees <strong>AED 5,000&ndash;10,000</strong> depending on complexity. All DIFC rates are indicative and subject to change. Current costs are discussed during the consultation.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process">
+    <div class="container">
+      <div class="process-header">
+        <p class="section-label">How it works</p>
+        <h2>From consultation to registered will</h2>
+        <p>Preparation typically 1&ndash;2 weeks. DIFC processing afterwards 4&ndash;8 weeks.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Free consultation</h3>
+          <p>15 minutes. We determine together which package suits your situation.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Documents</h3>
+          <p>We send you a clear checklist. You gather the required documents.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Registration</h3>
+          <p>Self-guided or together - your will is submitted via the official DIFC portal.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h3>Confirmation</h3>
+          <p>You receive the official DIFC registration confirmation. Your succession is arranged.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <div class="container">
+      <div class="about-inner">
+        <div class="about-text">
+          <p class="section-label">Your guide</p>
+          <h2>Why UAEpropertyWills?</h2>
+          <p>
+            I am Andr&eacute; van Wijngaarden, founder of UAEpropertyWills and former
+            Head of Investor Services in the UAE real estate sector. With a background in
+            International Business and commercial experience across multiple countries, I have
+            spoken with numerous foreign investors who purchased UAE property as
+            an investment or as an anchor for their international lifestyle.
+          </p>
+          <p>
+            What kept striking me: virtually no one was aware of the inheritance law situation.
+            Not at the time of purchase, not afterwards. UAEpropertyWills exists to bridge that gap -
+            with clear information and direct support for the DIFC registration process.
+          </p>
+          <p>
+            For situations that require legal expertise, we refer you to
+            experienced DIFC lawyers from our network. This way you always have the right
+            guidance for your specific situation.
+          </p>
+          <div class="credentials">
+            <div class="cred-item">
+              <div class="cred-icon">&#10022;</div>
+              <div class="cred-text">
+                <strong>Former Head of Investor Services, UAE real estate sector</strong>
+                Guided numerous foreign property investors in the UAE
+              </div>
+            </div>
+            <div class="cred-item">
+              <div class="cred-icon">&#10022;</div>
+              <div class="cred-text">
+                <strong>Network of experienced DIFC lawyers</strong>
+                For complex situations we refer you to the right specialist
+              </div>
+            </div>
+            <div class="cred-item">
+              <div class="cred-icon">&#10022;</div>
+              <div class="cred-text">
+                <strong>Specialist for foreign non-residents</strong>
+                We understand your situation - you live abroad and invest in the UAE
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div style="margin-bottom:24px; text-align:center;">
+            <img src="/andre-photo.jpg"
+              alt="Andre van Wijngaarden"
+              width="180" height="180" loading="lazy"
+              style="width:180px; height:180px; object-fit:cover; object-position:center top; border-radius:50%; border:3px solid rgba(200,164,74,0.4); display:inline-block;">
+          </div>
+          <div class="about-card" style="margin-top:0;">
+            <blockquote>
+              "Most foreign investors only realise afterwards how vulnerable
+              their situation was. Arranging a DIFC will takes a few hours -
+              failing to do so can cost your heirs years."
+            </blockquote>
+            <cite>
+              <strong>Andr&eacute; van Wijngaarden</strong> - Founder UAEpropertyWills
+            </cite>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="container">
+      <div class="faq-header">
+        <p class="section-label">Frequently asked questions</p>
+        <h2>Answers to your questions.</h2>
+        <p>Everything you need to know before making a decision. For detailed explanations per topic: <a href="/articles/" style="color:var(--teal);text-decoration:underline;">view our articles &rarr;</a></p>
+      </div>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Does Sharia law apply to me as a non-Muslim?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            In many cases, yes. The UAE generally applies local inheritance law to assets within its territory upon death, regardless of your nationality or religion. For non-Muslims, this may mean that the default regime based on Sharia applies, which can lead to a distribution that does not match your wishes. A DIFC will allows non-Muslims to deviate from this through a legally registered will.
+            <p style="margin-top:0.75rem;"><a href="/articles/uae-inheritance-law-foreign-owners/" style="color:var(--teal);font-weight:500;">Read more: UAE inheritance law for foreign owners &rarr;</a></p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Does my home-country will also cover my UAE property?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Generally not. A home-country will is not automatically recognised in the UAE for property on UAE soil. A separate, locally registered document - such as a DIFC will - is in most cases required to legally distribute your UAE property. We always recommend consulting a legal adviser for your specific situation.
+            <p style="margin-top:0.75rem;"><a href="/articles/difc-will-vs-home-country-will/" style="color:var(--teal);font-weight:500;">Read more about combining two wills &rarr;</a></p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            What happens to my UAE property if I pass away without a will?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Without a valid will in the UAE, your property is typically distributed based on applicable inheritance law. For non-Muslims, this may mean that your partner receives only a limited share, and the remainder goes to other family members, regardless of your personal wishes. The exact distribution depends on your family situation.
+            <p style="margin-top:0.75rem;"><a href="/articles/dubai-property-without-will/" style="color:var(--teal);font-weight:500;">Read more: What happens without a will &rarr;</a></p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Is a DIFC will complicated to arrange?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Not with the right guidance. The process is fully digital via the official DIFC portal and requires no physical presence in Dubai. Preparation (gathering data, preparing documents, portal registration) is typically completed within 1 to 2 weeks. The DIFC processing afterwards - appointment, signing and official registration - takes 4 to 8 weeks.
+            <p style="margin-top:0.75rem;"><a href="/articles/register-difc-will-from-abroad/" style="color:var(--teal);font-weight:500;">Read more: Registering a DIFC will step by step &rarr;</a></p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            What is a mirror will and do I need one?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            A mirror will is a joint registration of two wills - for you and your partner - in one procedure. Each partner independently determines the beneficiaries, executors and distribution; the wills do not need to be identical. For couples with joint UAE property, this is typically the most practical and cost-effective option: the DIFC registration fees for a mirror will are lower than for two separate wills.
+            <p style="margin-top:0.75rem;"><a href="/articles/mirror-wills-couples-uae-property/" style="color:var(--teal);font-weight:500;">Read more: Mirror wills for couples &rarr;</a></p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            What are the total costs of a DIFC will?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Total costs consist of three components. Our guidance fee: &euro;497, &euro;797 or &euro;1,499 depending on the package. The official DIFC registration fees: AED 7,500 for a single will or AED 10,000 for a mirror will, plus an administrative closure of AED 20. For Tier 3, higher DIFC fees apply (AED 10,000 single / AED 15,000 mirror will) plus lawyer fees of typically AED 5,000&ndash;10,000. All DIFC rates are indicative and subject to change. During the free consultation you receive an up-to-date cost overview.
+            <p style="margin-top:0.75rem;"><a href="/articles/difc-will-costs-and-packages/" style="color:var(--teal);font-weight:500;">Read more: What does a DIFC will cost &rarr;</a></p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Can I arrange a DIFC will if I do not live in Dubai?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Yes. The DIFC will is specifically available to non-residents. The entire registration process is conducted remotely via a secure online portal. You do not need to visit the UAE.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            What does a UAE probate procedure cost without a local will?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Without a locally valid will, your surviving family must go through a full UAE probate procedure. This involves legalisation of documents via apostille, sworn Arabic translations, and engaging local lawyers. Costs quickly reach &euro;10,000 or more, and the process typically takes 12 to 24 months. During that period, the property cannot be freely sold or occupied, and rental income and linked bank accounts may be frozen.
+            <p style="margin-top:0.75rem;"><a href="/articles/probate-dubai-foreign-heirs/" style="color:var(--teal);font-weight:500;">Read more: Probate in Dubai for foreign heirs &rarr;</a></p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Can I upgrade later if I need a different tier?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            Yes. If during the process it turns out that your situation is better suited to a higher tier - for example because your property is registered through a company, or because you have more than five properties - you can upgrade at any time. You only pay the price difference. No hidden costs, no double payment.
+          </div>
+        </div>
+
+      </div>
+      <p class="faq-disclaimer">This information is intended for general informational purposes only and does not constitute legal advice. For personal advice and legally binding documents, a qualified legal professional should always be consulted.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="consultation">
+    <div class="container">
+      <span class="section-label">Free consultation</span>
+      <h2>Schedule a 15-minute call.<br>No obligation.</h2>
+      <p>
+        We discuss your situation and advise which package suits you best.
+        No commitments, no hidden costs.
+      </p>
+      <a href="https://cal.com/vaetestament.nl/15min" class="btn btn-gold btn-lg">
+        Schedule free call &rarr;
+      </a>
+      <p class="cta-meta">15 minutes &middot; Video or phone &middot; English, Dutch or Spanish</p>
+      <p style="margin-top:8px; color:rgba(255,255,255,0.45); font-size:0.9rem;">or</p>
+      <a href="https://wa.me/31616146007" target="_blank" rel="noopener" class="btn btn-outline btn-lg" style="margin-top:4px; display:inline-block;">
+        &#128172; Message us on WhatsApp
+      </a>
+
+      <div style="margin:28px auto 0; max-width:520px; padding:24px 28px; background:rgba(255,255,255,0.04); border:1px solid rgba(200,164,74,0.18); border-radius:4px;">
+        <p style="font-family:var(--font-sans); font-size:0.74rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold); font-weight:500; margin:0 0 10px;">Prefer to read first?</p>
+        <p style="color:rgba(255,255,255,0.7); font-size:0.92rem; line-height:1.55; margin:0 0 16px;">A monthly update on DIFC wills and UAE succession law. No sales talk.</p>
+        <form class="nl-form" data-slug="landing-cta" data-locale="en" novalidate style="display:flex; flex-wrap:wrap; gap:6px; margin:0;">
+          <label class="nl-honeypot" aria-hidden="true" style="position:absolute; left:-9999px;">Website<input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
+          <input type="email" name="email" required autocomplete="email" placeholder="your@email.com" style="flex:1 1 180px; min-width:0; padding:10px 12px; font-family:var(--font-sans); font-size:0.9rem; border:1px solid rgba(200,164,74,0.25); border-radius:3px; background:rgba(255,255,255,0.05); color:#fff;" />
+          <button type="submit" style="padding:10px 18px; background:var(--gold); color:var(--dark); border:none; border-radius:3px; font-family:var(--font-sans); font-size:0.85rem; font-weight:500; letter-spacing:0.04em; cursor:pointer;">Subscribe</button>
+          <p class="nl-status" role="status" aria-live="polite" hidden style="width:100%; margin:6px 0 0; font-size:0.85rem; color:rgba(255,255,255,0.85);"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">UAE<span>propertyWills</span></div>
+        <ul class="footer-links">
+          <li><a href="/articles/">Articles</a></li>
+          <li><a href="/about/">About Andr&eacute;</a></li>
+          <li><a href="/privacy-policy/">Privacy policy</a></li>
+          <li><a href="/terms/">Terms and conditions</a></li>
+          <li><a href="#consultation">Contact</a></li>
+        </ul>
+        <p class="footer-legal">
+          UAEpropertyWills is not a law firm and does not provide legal advice.
+          We guide you through the DIFC portal registration.
+          For legal advice we refer you to experienced DIFC lawyers.<br>
+          &copy; 2026 Andaluma O&Uuml; (Estonia), trading as UAEpropertyWills
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</BaseLayout>
+
+<style>
+  :global(.gold) { color: var(--gold); }
+  :global(.serif) { font-family: var(--font-display); }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(12, 74, 69, 0.97);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(200, 164, 74, 0.18);
+  }
+  .nav-inner {
+    max-width: var(--max); margin: 0 auto;
+    padding: 0 32px;
+    height: 68px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 11px 26px;
+    border-radius: var(--radius);
+    font-family: var(--font-body);
+    font-size: 0.88rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s ease;
+  }
+  .btn-gold { background: var(--gold); color: var(--dark); }
+  .btn-gold:hover { background: var(--gold-light); transform: translateY(-1px); }
+  .btn-outline { background: transparent; border: 1.5px solid var(--gold); color: var(--gold); }
+  .btn-outline:hover { background: var(--gold); color: var(--dark); }
+  .btn-lg { padding: 15px 36px; font-size: 0.95rem; }
+
+  .hero {
+    background: var(--teal); padding: 148px 0 100px; position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(ellipse 60% 50% at 80% 40%, rgba(200,164,74,0.08) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 60% at 10% 80%, rgba(30,114,104,0.3) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .hero-inner { position: relative; max-width: 760px; }
+  .hero-label {
+    display: inline-block; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--gold); margin-bottom: 24px;
+    border: 1px solid rgba(200,164,74,0.35); padding: 5px 14px; border-radius: 2px;
+  }
+  .hero h1 {
+    font-family: var(--font-display); font-size: clamp(2.6rem, 5.5vw, 4.2rem);
+    font-weight: 500; line-height: 1.1; color: var(--white); margin-bottom: 28px;
+  }
+  .hero h1 em { font-style: italic; color: var(--gold-light); }
+  .hero-sub {
+    font-size: 1.12rem; font-weight: 300; color: rgba(255,255,255,0.78);
+    max-width: 560px; margin-bottom: 44px; line-height: 1.7;
+  }
+  .hero-actions { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+  .hero-note { font-size: 0.82rem; color: rgba(255,255,255,0.45); margin-top: 20px; }
+
+  .stat-strip { background: var(--dark); padding: 40px 0; border-top: 1px solid rgba(200,164,74,0.15); border-bottom: 1px solid rgba(200,164,74,0.15); }
+  .stat-strip .container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; }
+  .stat-item { text-align: center; padding: 0 20px; border-right: 1px solid rgba(255,255,255,0.08); }
+  .stat-item:last-child { border-right: none; }
+  .stat-num { font-family: var(--font-display); font-size: clamp(2.2rem, 4vw, 3rem); font-weight: 600; color: var(--gold); line-height: 1; display: block; }
+  .stat-label { font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-top: 8px; display: block; font-weight: 300; }
+
+  .problem { padding: 100px 0; background: var(--cream); }
+  .problem .container { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+  .section-label { font-size: 0.76rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; }
+  .problem-left h2 { font-family: var(--font-display); font-size: clamp(2rem, 3.5vw, 2.8rem); font-weight: 500; line-height: 1.15; color: var(--dark); margin-bottom: 12px; }
+  .problem-subtitle { font-family: var(--font-display); font-size: clamp(1.15rem, 2vw, 1.4rem); font-weight: 400; color: var(--dark); line-height: 1.35; margin-bottom: 20px; opacity: 0.85; }
+  .problem-left p { color: var(--mid); font-size: 1rem; line-height: 1.8; margin-bottom: 16px; font-weight: 300; }
+  .problem-right { background: var(--teal); border-radius: 6px; padding: 56px 48px; position: relative; overflow: hidden; }
+  .problem-right::before { content: ''; position: absolute; top: -40px; right: -40px; width: 200px; height: 200px; background: radial-gradient(circle, rgba(200,164,74,0.12) 0%, transparent 70%); border-radius: 50%; }
+  .big-pct { font-family: var(--font-display); font-size: 5.5rem; font-weight: 600; color: var(--gold); line-height: 1; display: block; }
+  .problem-right h3 { font-family: var(--font-display); font-size: 1.4rem; font-weight: 500; color: var(--white); margin: 16px 0 16px; line-height: 1.3; }
+  .problem-right p { font-size: 0.92rem; color: rgba(255,255,255,0.65); line-height: 1.75; font-weight: 300; }
+  .problem-right .divider { width: 40px; height: 1px; background: var(--gold); opacity: 0.4; margin: 24px 0; }
+
+  .solution { background: var(--teal-mid); padding: 80px 0; }
+  .solution-inner { display: grid; grid-template-columns: 1fr 1.6fr; gap: 80px; align-items: center; }
+  .solution h2 { font-family: var(--font-display); font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 500; color: var(--white); line-height: 1.2; }
+  .solution-text p { font-size: 1rem; color: rgba(255,255,255,0.72); line-height: 1.8; margin-bottom: 14px; font-weight: 300; }
+  .solution-bullets { list-style: none; margin-top: 28px; display: flex; flex-direction: column; gap: 12px; }
+  .solution-bullets li { display: flex; align-items: flex-start; gap: 14px; font-size: 0.92rem; color: rgba(255,255,255,0.8); font-weight: 300; }
+  .solution-bullets li::before { content: '\2726'; color: var(--gold); font-size: 0.7rem; margin-top: 4px; flex-shrink: 0; }
+
+  .pakketten { padding: 100px 0; background: var(--cream-dark); }
+  .pakketten-header { text-align: center; max-width: 600px; margin: 0 auto 64px; }
+  .pakketten-header h2 { font-family: var(--font-display); font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 500; color: var(--dark); margin-bottom: 16px; }
+  .pakketten-header p { font-size: 1rem; color: var(--mid); font-weight: 300; line-height: 1.7; }
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: stretch; }
+  .card { background: var(--white); border-radius: 6px; padding: 44px 36px; position: relative; border: 1px solid rgba(0,0,0,0.06); transition: transform 0.25s ease, box-shadow 0.25s ease; display: flex; flex-direction: column; }
+  .card:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(0,0,0,0.08); }
+  .card.featured { background: var(--teal); border-color: var(--teal); transform: translateY(-8px); box-shadow: 0 20px 56px rgba(12,74,69,0.2); }
+  .card.featured:hover { transform: translateY(-12px); }
+  .card-badge { position: absolute; top: -12px; left: 36px; background: var(--gold); color: var(--dark); font-size: 0.72rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 12px; border-radius: 2px; }
+  .card-tier { font-size: 0.74rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+  .card.featured .card-tier { color: var(--gold-light); }
+  .card-name { font-family: var(--font-display); font-size: 1.65rem; font-weight: 500; color: var(--dark); margin-bottom: 8px; line-height: 1.15; }
+  .card.featured .card-name { color: var(--white); }
+  .card-tagline { font-size: 0.88rem; color: var(--light-text); font-weight: 300; margin-bottom: 28px; min-height: 40px; }
+  .card.featured .card-tagline { color: rgba(255,255,255,0.55); }
+  .card-divider { width: 32px; height: 1px; background: var(--gold); opacity: 0.3; margin: 0 0 28px; }
+  .card-price { margin-bottom: 28px; }
+  .price-amount { font-family: var(--font-display); font-size: 2.4rem; font-weight: 600; color: var(--dark); line-height: 1; }
+  .card.featured .price-amount { color: var(--gold); }
+  .price-note { display: block; font-size: 0.78rem; color: var(--light-text); margin-top: 6px; font-weight: 300; }
+  .card.featured .price-note { color: rgba(255,255,255,0.45); }
+  .card-features { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 36px; flex: 1; }
+  .card-cta { margin-top: auto; }
+  .card-cta-secondary { display: block; text-align: center; margin-top: 12px; font-size: 0.82rem; color: var(--light-text); font-weight: 300; }
+  .card-cta-secondary a { color: var(--teal); text-decoration: underline; text-underline-offset: 2px; }
+  .card.featured .card-cta-secondary a { color: var(--gold-light); }
+  .card-features li { font-size: 0.9rem; color: var(--mid); display: flex; gap: 12px; align-items: flex-start; font-weight: 300; line-height: 1.5; }
+  .card.featured .card-features li { color: rgba(255,255,255,0.75); }
+  .card-features li::before { content: '-'; color: var(--gold); flex-shrink: 0; margin-top: 1px; }
+  .card .btn { width: 100%; text-align: center; }
+  .card:not(.featured) .btn-outline { border-color: rgba(12,74,69,0.25); color: var(--teal); }
+  .card:not(.featured) .btn-outline:hover { background: var(--teal); color: var(--white); }
+  .costs-note { text-align: center; margin-top: 36px; font-size: 0.82rem; color: var(--light-text); font-weight: 300; }
+  .costs-note :global(strong) { color: var(--mid); font-weight: 500; }
+
+  .process { background: var(--cream); padding: 100px 0; }
+  .process-header { text-align: center; margin-bottom: 64px; }
+  .process-header h2 { font-family: var(--font-display); font-size: clamp(1.9rem, 3vw, 2.8rem); font-weight: 500; color: var(--dark); margin-bottom: 12px; }
+  .process-header p { color: var(--mid); font-weight: 300; font-size: 1rem; }
+  .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; position: relative; }
+  .steps::before { content: ''; position: absolute; top: 28px; left: 12.5%; right: 12.5%; height: 1px; background: linear-gradient(to right, transparent, var(--gold) 20%, var(--gold) 80%, transparent); opacity: 0.25; }
+  .step { text-align: center; padding: 0 20px; }
+  .step-num { width: 56px; height: 56px; border-radius: 50%; background: var(--teal); color: var(--gold); font-family: var(--font-display); font-size: 1.3rem; font-weight: 600; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; position: relative; z-index: 1; }
+  .step h3 { font-family: var(--font-display); font-size: 1.15rem; font-weight: 500; color: var(--dark); margin-bottom: 10px; }
+  .step p { font-size: 0.88rem; color: var(--mid); font-weight: 300; line-height: 1.7; }
+
+  .about { background: var(--dark); padding: 100px 0; }
+  .about-inner { display: grid; grid-template-columns: 1.3fr 1fr; gap: 80px; align-items: center; }
+  .about-text .section-label { color: var(--gold); }
+  .about-text h2 { font-family: var(--font-display); font-size: clamp(1.9rem, 3vw, 2.8rem); font-weight: 500; color: var(--white); margin-bottom: 24px; line-height: 1.15; }
+  .about-text p { font-size: 0.97rem; color: rgba(255,255,255,0.65); line-height: 1.85; margin-bottom: 16px; font-weight: 300; }
+  .credentials { margin-top: 36px; display: flex; flex-direction: column; gap: 14px; }
+  .cred-item { display: flex; gap: 14px; align-items: flex-start; }
+  .cred-icon { width: 36px; height: 36px; background: rgba(200,164,74,0.12); border: 1px solid rgba(200,164,74,0.25); border-radius: 3px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--gold); font-size: 0.9rem; }
+  .cred-text { font-size: 0.9rem; color: rgba(255,255,255,0.7); font-weight: 300; line-height: 1.5; }
+  .cred-text strong { display: block; color: rgba(255,255,255,0.9); font-weight: 500; margin-bottom: 2px; }
+  .about-visual { position: relative; }
+  .about-card { background: var(--teal); border-radius: 6px; padding: 48px 40px; border: 1px solid rgba(200,164,74,0.15); position: relative; overflow: hidden; }
+  .about-card::after { content: '\201C'; font-family: var(--font-display); font-size: 10rem; line-height: 1; color: rgba(200,164,74,0.08); position: absolute; top: -10px; right: 16px; }
+  .about-card blockquote { font-family: var(--font-display); font-size: 1.25rem; font-style: italic; color: rgba(255,255,255,0.85); line-height: 1.6; margin-bottom: 28px; position: relative; z-index: 1; }
+  .about-card cite { font-size: 0.82rem; color: rgba(255,255,255,0.45); font-style: normal; font-weight: 300; display: block; }
+  .about-card cite strong { color: var(--gold); font-weight: 500; }
+
+  .cta-section { background: linear-gradient(135deg, var(--teal) 0%, var(--teal-mid) 100%); padding: 72px 0; text-align: center; position: relative; overflow: hidden; }
+  .cta-section::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse 70% 80% at 50% 50%, rgba(200,164,74,0.06) 0%, transparent 70%); pointer-events: none; }
+  .cta-section .section-label { text-align: center; display: block; margin-bottom: 24px; }
+  .cta-section h2 { font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 500; color: var(--white); margin-bottom: 20px; line-height: 1.15; }
+  .cta-section p { font-size: 1.05rem; color: rgba(255,255,255,0.65); font-weight: 300; max-width: 500px; margin: 0 auto 28px; line-height: 1.7; }
+  .cta-meta { margin-top: 14px; font-size: 0.82rem; color: rgba(255,255,255,0.38); }
+
+  footer { background: var(--dark); padding: 48px 0; border-top: 1px solid rgba(255,255,255,0.05); }
+  .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+  .footer-logo { font-family: var(--font-display); font-size: 1.2rem; color: rgba(255,255,255,0.6); }
+  .footer-logo :global(span) { color: var(--gold); }
+  .footer-links { display: flex; gap: 28px; list-style: none; }
+  .footer-links :global(a) { font-size: 0.82rem; color: rgba(255,255,255,0.35); text-decoration: none; transition: color 0.2s; }
+  .footer-links :global(a:hover) { color: rgba(255,255,255,0.7); }
+  .footer-legal { font-size: 0.78rem; color: rgba(255,255,255,0.2); font-weight: 300; }
+
+  .faq { background: var(--cream); padding: 100px 0; }
+  .faq-header { text-align: center; margin-bottom: 56px; }
+  .faq-header h2 { font-family: var(--font-display); font-size: clamp(1.9rem, 3vw, 2.8rem); font-weight: 500; color: var(--dark); margin-bottom: 12px; }
+  .faq-header p { color: var(--mid); font-weight: 300; font-size: 1rem; }
+  .faq-list { max-width: 780px; margin: 0 auto; display: flex; flex-direction: column; gap: 0; }
+  .faq-item { border-bottom: 1px solid rgba(0,0,0,0.08); }
+  .faq-item:first-child { border-top: 1px solid rgba(0,0,0,0.08); }
+  .faq-question { width: 100%; background: none; border: none; padding: 24px 0; display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; cursor: pointer; text-align: left; font-family: var(--font-display); font-size: 1.15rem; font-weight: 500; color: var(--dark); line-height: 1.3; }
+  .faq-question:hover { color: var(--teal); }
+  .faq-icon { color: var(--gold); font-size: 1.4rem; line-height: 1; flex-shrink: 0; margin-top: 2px; transition: transform 0.2s ease; }
+  :global(.faq-item.open) .faq-icon { transform: rotate(45deg); }
+  .faq-answer { display: none; padding: 0 32px 24px 0; font-size: 0.97rem; color: var(--mid); font-weight: 300; line-height: 1.8; }
+  :global(.faq-item.open) .faq-answer { display: block; }
+  .faq-disclaimer { text-align: center; margin-top: 40px; font-size: 0.78rem; color: var(--light-text); font-weight: 300; max-width: 680px; margin-left: auto; margin-right: auto; }
+
+  @media (max-width: 900px) {
+    .problem .container, .solution-inner, .about-inner { grid-template-columns: 1fr; gap: 48px; }
+    .cards { grid-template-columns: 1fr; max-width: 440px; margin: 0 auto; }
+    .card.featured { transform: none; }
+    .steps { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+    .steps::before { display: none; }
+    .stat-strip .container { grid-template-columns: 1fr; gap: 28px; }
+    .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 28px; }
+    .stat-item:last-child { border-bottom: none; }
+  }
+  @media (max-width: 600px) {
+    .container { padding: 0 20px; }
+    .hero { padding: 100px 0 56px; }
+    .nav-inner { padding: 0 16px; height: 56px; }
+    .nav-inner .btn { padding: 8px 14px; font-size: 0.78rem; white-space: nowrap; }
+    :global(.nav-login) { display: none; }
+    .hero-actions { flex-direction: column; align-items: flex-start; }
+    .footer-inner { flex-direction: column; align-items: flex-start; }
+    .steps { grid-template-columns: 1fr; }
+    .problem, .process, .about, .pakketten, .faq { padding: 64px 0; }
+    .solution { padding: 56px 0; }
+    .problem .container { gap: 40px; }
+    .process-header { margin-bottom: 40px; }
+    .pakketten-header { margin: 0 auto 40px; }
+    .about-inner { gap: 40px; }
+  }
+</style>
+
+<script is:inline>
+  document.querySelectorAll('.faq-question').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = btn.parentElement;
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); });
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+
+  (function () {
+    var params = new URLSearchParams(window.location.search);
+    var ref = params.get('ref');
+    if (ref) {
+      sessionStorage.setItem('vt_ref', ref);
+      params.delete('ref');
+      var clean = window.location.pathname + (params.toString() ? '?' + params.toString() : '');
+      history.replaceState(null, '', clean);
+    }
+
+    document.addEventListener('click', function (e) {
+      var link = e.target.closest('a[href*="buy.stripe.com"]');
+      if (!link) return;
+      var storedRef = sessionStorage.getItem('vt_ref');
+      if (!storedRef) return;
+      e.preventDefault();
+      var url = new URL(link.href);
+      url.searchParams.set('client_reference_id', 'ref-' + storedRef);
+      window.open(url.toString(), '_blank');
+    });
+  })();
+</script>
