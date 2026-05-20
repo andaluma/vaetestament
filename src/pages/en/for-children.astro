@@ -1,0 +1,459 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const siteRoot = 'https://uaepropertywills.com';
+const title = 'Do your parents own property in the UAE? - UAEpropertyWills';
+const description = 'Your parents own property in the UAE. Without a local will, the inheritance could be locked for years. Help them arrange it now, together.';
+const canonical = `${siteRoot}/for-children/`;
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "For children of UAE property owners",
+  "description": description,
+  "url": canonical,
+  "publisher": { "@id": `${siteRoot}/#organization` }
+};
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonical={canonical}
+  jsonLd={[jsonLd]}
+>
+  <main class="page">
+
+    <!-- HERO -->
+    <section class="vk-hero">
+      <div class="container">
+        <span class="hero-eyebrow fade-up">Your initiative, their peace of mind</span>
+        <h1 class="fade-up delay-1">Do your parents own property in the UAE?<br>Then you should read this together.</h1>
+        <p class="vk-hero-sub fade-up delay-2">Their home-country will probably does not cover that property. Most owners do not know this. The agent who sold it did not mention it either. The good news: arranging it takes an afternoon. Not arranging it could cost your family years.</p>
+        <div class="vk-hero-actions fade-up delay-3">
+          <a href="https://cal.com/vaetestament.nl" class="btn btn-gold btn-lg">Schedule a free call (together or separately)</a>
+          <a href="#" class="btn btn-outline btn-lg" onclick="openTierCheck();return false;">Take the test: which will fits?</a>
+        </div>
+        <p class="vk-hero-note fade-up delay-4">15 minutes &middot; No obligation &middot; In English</p>
+      </div>
+    </section>
+
+    <!-- THE PROBLEM -->
+    <section class="vk-problem">
+      <div class="container">
+        <div class="vk-problem-inner">
+          <div class="vk-problem-left">
+            <p class="section-label">In short</p>
+            <h2>What is the problem?</h2>
+            <p>The UAE generally applies local succession law to property within its borders upon the owner's death. A will made in your parents' home country is typically not recognised for real estate on UAE soil. It does not matter how well that will is drafted.</p>
+            <p>Without a local will (a so-called DIFC will), the property can be locked after death. Your heirs would need to navigate a UAE probate process: legalising documents, arranging sworn translations, and hiring local lawyers. That takes 12 to 24 months and costs €10,000 or more.</p>
+            <p>With a DIFC will, your parents decide who inherits the property. The registration is fully digital and can be completed from anywhere in the world.</p>
+          </div>
+          <div class="vk-problem-right">
+            <div class="vk-stat-card">
+              <span class="vk-stat-num">12.5%</span>
+              <p>Without a local will, the surviving spouse may receive as little as 12.5% of the UAE property value. The remainder goes to other family members, regardless of the owner's wishes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOR PARENTS READING THIS -->
+    <section class="vk-parents">
+      <div class="container">
+        <p class="section-label" style="text-align:center;">Reading this with your child?</p>
+        <h2 style="text-align:center;">Then you are already ahead</h2>
+        <div class="vk-parents-grid">
+          <div class="vk-parents-card">
+            <h3>You do not need to travel to Dubai</h3>
+            <p>The entire registration is digital, via the official DIFC portal. You complete it from your own home.</p>
+          </div>
+          <div class="vk-parents-card">
+            <h3>You do not need to hire a lawyer</h3>
+            <p>For most situations (property in personal name, no corporate structures), a Property Will is sufficient. You can register it yourself, with our guidance.</p>
+          </div>
+          <div class="vk-parents-card">
+            <h3>It costs less than you think</h3>
+            <p>Our guidance starts at &euro;797. DIFC registration costs (AED 7,500 for a single will) are separate and paid directly to the DIFC. Many children pay for the guidance as a gift.</p>
+          </div>
+          <div class="vk-parents-card">
+            <h3>Personal support in your language</h3>
+            <p>The DIFC portal is in English, but we guide you through every step with videos, checklists, and personal support.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="vk-action">
+      <div class="container">
+        <p class="section-label" style="text-align:center;">How does it work?</p>
+        <h2 style="text-align:center;">From this moment to a registered will</h2>
+        <div class="vk-steps">
+          <div class="vk-step">
+            <div class="vk-step-num">1</div>
+            <h3>Free 15-minute call</h3>
+            <p>Call together or let your parents call on their own. We listen, ask a few questions, and honestly explain which will fits. No sales pitch.</p>
+          </div>
+          <div class="vk-step">
+            <div class="vk-step-num">2</div>
+            <h3>Gather documents</h3>
+            <p>We send a clear checklist. Your parents gather the required documents: passport, title deed, beneficiary details. Usually 1 to 2 weeks.</p>
+          </div>
+          <div class="vk-step">
+            <div class="vk-step-num">3</div>
+            <h3>Registration via the DIFC portal</h3>
+            <p>Together in a 40-minute video session (&euro;797), or fully managed for complex situations (&euro;1,499). The will is submitted to the DIFC.</p>
+          </div>
+          <div class="vk-step">
+            <div class="vk-step-num">4</div>
+            <h3>Confirmation</h3>
+            <p>After 4 to 8 weeks your parents receive the official DIFC registration confirmation. The succession is arranged. Peace of mind for the whole family.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCENARIOS -->
+    <section class="vk-scenarios">
+      <div class="container">
+        <p class="section-label" style="text-align:center;">Sound familiar?</p>
+        <h2 style="text-align:center;">Situations we see regularly</h2>
+        <div class="vk-scenario-grid">
+          <div class="vk-scenario-card">
+            <h3>"My parents have an apartment in Dubai Marina and think everything is arranged"</h3>
+            <p>They live abroad, rent out the property, and have a will at home with their notary. But that will typically does not cover UAE real estate.</p>
+            <a href="/situaties/echtpaar-1-appartement-dubai-marina/">Read the full scenario &rarr;</a>
+          </div>
+          <div class="vk-scenario-card">
+            <h3>"My father is single and owns a villa in Abu Dhabi"</h3>
+            <p>No partner, no local will. As an heir, you would face a lengthy legal process without a DIFC will.</p>
+            <a href="/situaties/single-1-villa-abu-dhabi/">Read the full scenario &rarr;</a>
+          </div>
+          <div class="vk-scenario-card">
+            <h3>"My parents own properties in multiple emirates"</h3>
+            <p>Dubai and Abu Dhabi, perhaps also Ras Al Khaimah. A DIFC will covers all emirates. But the distribution needs to be correct.</p>
+            <a href="/situaties/echtpaar-2-appartementen-dubai-abu-dhabi/">Read the full scenario &rarr;</a>
+          </div>
+          <div class="vk-scenario-card">
+            <h3>"I'm worried about guardianship for my younger sibling"</h3>
+            <p>If your parents have minor children, a Full Will is needed to arrange guardianship. We refer to a DIFC-certified lawyer for these cases.</p>
+            <a href="/situaties/gezin-minderjarige-kinderen-1-appartement/">Read the full scenario &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PW vs FW -->
+    <section class="vk-pwfw">
+      <div class="container">
+        <p class="section-label" style="text-align:center;">The key question</p>
+        <h2 style="text-align:center;">Property Will or Full Will?</h2>
+        <p style="text-align:center;max-width:680px;margin:0 auto 1rem;line-height:1.8;">A Property Will covers real estate. A Full Will covers everything: bank accounts, vehicles, and guardianship. Most foreign property owners in the UAE only need a Property Will.</p>
+        <p style="text-align:center;max-width:680px;margin:0 auto 2rem;line-height:1.8;">Not sure? Take the test together. Five questions and you will know which will fits your parents' situation.</p>
+        <div style="text-align:center;display:flex;flex-direction:column;align-items:center;gap:0.75rem;">
+          <a href="#" class="btn btn-gold btn-lg" onclick="openTierCheck();return false;">Take the test: which will fits?</a>
+          <a href="/en/conversation-guide/" style="font-size:0.9rem;color:var(--teal);text-decoration:underline;">Or download the free conversation guide (PDF, 12 pages)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEAD MAGNET -->
+    <section class="vk-leadmagnet">
+      <div class="container">
+        <div class="vk-lm-inner">
+          <div class="vk-lm-content">
+            <p class="section-label">Free download</p>
+            <h2>Talking to Your Parents About UAE Property</h2>
+            <p>A practical guide of 12 pages. With conversation techniques, answers to the five most common objections, and a checklist for after the conversation.</p>
+            <ul>
+              <li>How to open the conversation without resistance</li>
+              <li>"It's already arranged with our notary" and other objections</li>
+              <li>The gift idea: how to lower the barrier</li>
+              <li>Concrete next steps after the conversation</li>
+            </ul>
+          </div>
+          <div class="lm-form-card">
+            <h3>Download the free guide</h3>
+            <p>Enter your email address and receive the guide by email. You will also receive two short follow-up emails with practical tips. Unsubscribe at any time.</p>
+            <form class="lm-form" id="vkLmForm" novalidate>
+              <label class="lm-honeypot" aria-hidden="true">Website<input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
+              <input type="email" name="email" required autocomplete="email" placeholder="your@email.com" />
+              <button type="submit">Send me the guide</button>
+              <p class="lm-status" role="status" aria-live="polite" hidden></p>
+            </form>
+            <p class="lm-privacy">We respect your privacy. No spam. <a href="/privacybeleid.html">Privacy policy</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARTICLES -->
+    <section class="vk-articles">
+      <div class="container">
+        <p class="section-label" style="text-align:center;">Further reading</p>
+        <h2 style="text-align:center;">Written specifically for children of property owners</h2>
+        <div class="vk-articles-grid vk-articles-grid-4">
+          <a href="/articles/fc-01-nothing-arranged/" class="vk-article-card">
+            <span class="vk-article-label">The risk</span>
+            <h3>Your parents own property in Dubai. What happens if nothing is arranged?</h3>
+            <p>What happens when there is no local will, and why you as a child are the one who feels it.</p>
+          </a>
+          <a href="/articles/fc-02-difficult-conversation/" class="vk-article-card">
+            <span class="vk-article-label">The conversation</span>
+            <h3>How do I bring up the DIFC will with my parents?</h3>
+            <p>Practical conversation techniques, concrete openers, and how to handle resistance.</p>
+          </a>
+          <a href="/articles/fc-03-overcoming-objections/" class="vk-article-card">
+            <span class="vk-article-label">The objections</span>
+            <h3>My parents say "it'll be fine." How do I convince them?</h3>
+            <p>The five most common objections and how to respond constructively.</p>
+          </a>
+          <a href="/articles/fc-05-cost-of-no-will/" class="vk-article-card">
+            <span class="vk-article-label">The costs</span>
+            <h3>What does it cost when your parents don't have a will?</h3>
+            <p>Lawyer fees, court costs, translation costs. The bill for heirs, laid out clearly.</p>
+          </a>
+          <a href="/articles/fc-04-arranging-it-yourself/" class="vk-article-card">
+            <span class="vk-article-label">How</span>
+            <h3>Can I arrange the DIFC will for my parents?</h3>
+            <p>What you can do yourself and where the legal boundary lies. You coordinate, they sign.</p>
+          </a>
+          <a href="/articles/fc-06-diagnostic-checklist/" class="vk-article-card">
+            <span class="vk-article-label">Checklist</span>
+            <h3>How do I find out if my parents already have a will for their UAE property?</h3>
+            <p>A diagnostic checklist: what information do you need and where do you find it?</p>
+          </a>
+          <a href="/articles/fc-07-gift-idea/" class="vk-article-card">
+            <span class="vk-article-label">The gift</span>
+            <h3>A DIFC will as a gift for your parents</h3>
+            <p>Practical, valuable, and it gives peace of mind. How the gift idea works in practice.</p>
+          </a>
+          <a href="/articles/fc-08-bereaved-guide/" class="vk-article-card">
+            <span class="vk-article-label">Emergency</span>
+            <h3>Guide for the bereaved: what to do after a death</h3>
+            <p>The steps you need to take when the unexpected happens. With and without a will.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="vk-pricing">
+      <div class="container">
+        <p class="section-label" style="text-align:center;">What does it cost?</p>
+        <h2 style="text-align:center;">Many children pay for this as a gift</h2>
+        <p style="text-align:center;max-width:680px;margin:0 auto 2rem;line-height:1.8;color:var(--mid);">Practical, valuable, and it gives the whole family peace of mind. Here is an overview of the costs.</p>
+        <div class="vk-price-table">
+          <div class="vk-price-row vk-price-header">
+            <span></span>
+            <span>Guidance</span>
+            <span>DIFC costs</span>
+            <span>Suited for</span>
+          </div>
+          <div class="vk-price-row vk-price-featured">
+            <span class="vk-price-tier">Tier 2</span>
+            <span>&euro;797</span>
+            <span>AED 7,500 / 10,000</span>
+            <span>Guided together in a 40-minute video session</span>
+          </div>
+          <div class="vk-price-row">
+            <span class="vk-price-tier">Tier 3</span>
+            <span>&euro;1,499</span>
+            <span>AED 10,000-15,000 + lawyer</span>
+            <span>Complex situations: corporate structures, guardianship, 5+ properties</span>
+          </div>
+        </div>
+        <p class="vk-price-note">Our guidance fees and DIFC registration costs are separate. DIFC costs are paid directly to the DIFC. All amounts are indicative. Current costs are discussed during the free consultation.</p>
+      </div>
+    </section>
+
+    <!-- PORTAL ACKNOWLEDGMENT -->
+    <section style="background:var(--teal-mid);padding:48px 0;">
+      <div class="container" style="max-width:var(--max-prose);text-align:center;">
+        <p style="color:rgba(255,255,255,0.9);font-style:italic;line-height:1.8;font-size:1.05rem;">Yes, the DIFC portal exists and you can do it yourself. But the portal requires legal choices without context and offers no telephone support. We make that path accessible, with personal guidance in your language.</p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="vk-cta">
+      <div class="container">
+        <h2>Start with a 15-minute conversation</h2>
+        <p>Call together, or let your parents call on their own. We listen, ask a few questions, and honestly explain which will fits. No obligation, no sales pitch.</p>
+        <a href="https://cal.com/vaetestament.nl" class="btn btn-gold btn-lg">Schedule a free call</a>
+        <p class="vk-cta-sub">Or share this page with your parents.</p>
+        <div class="vk-share-btns">
+          <a href="https://wa.me/?text=Do%20you%20have%20a%20DIFC%20will%20for%20the%20UAE%20property%3F%20Read%20this%3A%20https%3A%2F%2Fuaepropertywills.com%2Ffor-children%2F" target="_blank" rel="noopener" class="vk-share-btn">Share via WhatsApp</a>
+          <a href="mailto:?subject=DIFC%20will%20for%20your%20UAE%20property&body=I%20came%20across%20this%20and%20thought%20it%20might%20be%20relevant%20for%20your%20situation%3A%20https%3A%2F%2Fuaepropertywills.com%2Ffor-children%2F" class="vk-share-btn">Share via email</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</BaseLayout>
+
+<style>
+  /* HERO */
+  .vk-hero {
+    background: linear-gradient(170deg, var(--teal) 0%, var(--teal-mid) 100%);
+    color: var(--cream);
+    padding: 120px 0 80px;
+    text-align: center;
+  }
+  .vk-hero .hero-eyebrow { display: inline-block; font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+  .vk-hero h1 { font-family: var(--font-display); font-size: clamp(1.8rem, 4.5vw, 2.6rem); font-weight: 400; line-height: 1.2; margin: 0 auto 1.25rem; max-width: 780px; color: var(--cream); }
+  .vk-hero-sub { font-size: 1.05rem; line-height: 1.7; color: rgba(246,241,231,0.88); max-width: 640px; margin: 0 auto 2rem; }
+  .vk-hero-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+  .vk-hero-note { margin-top: 1rem; font-size: 0.82rem; color: rgba(246,241,231,0.7); letter-spacing: 0.04em; }
+  .vk-hero .btn-outline { border-color: var(--gold); color: var(--gold); }
+  .vk-hero .btn-outline:hover { background: var(--gold); color: var(--dark); }
+
+  /* PROBLEM */
+  .vk-problem { padding: 80px 0; background: var(--cream); }
+  .vk-problem-inner { display: grid; grid-template-columns: 1.4fr 1fr; gap: 3rem; align-items: start; }
+  .vk-problem-left h2 { font-family: var(--font-display); font-size: 1.8rem; color: var(--teal); margin-bottom: 1.25rem; }
+  .vk-problem-left p { line-height: 1.75; margin-bottom: 1rem; color: var(--mid); }
+  .vk-stat-card { background: #fff; border: 1px solid var(--cream-dark); border-radius: 8px; padding: 2.5rem 2rem; text-align: center; }
+  .vk-stat-num { font-family: var(--font-display); font-size: 3.5rem; font-weight: 400; color: var(--teal); display: block; margin-bottom: 1rem; }
+  .vk-stat-card p { font-size: 0.9rem; line-height: 1.65; color: var(--mid); }
+
+  /* PARENTS */
+  .vk-parents { padding: 80px 0; }
+  .vk-parents h2 { font-family: var(--font-display); font-size: 1.8rem; color: var(--teal); margin-bottom: 2.5rem; }
+  .vk-parents-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; max-width: 820px; margin: 0 auto; }
+  .vk-parents-card { padding: 1.75rem; border: 1px solid var(--cream-dark); border-radius: 8px; background: var(--cream); }
+  .vk-parents-card h3 { font-family: var(--font-display); font-size: 1.05rem; color: var(--teal); margin-bottom: 0.5rem; line-height: 1.35; }
+  .vk-parents-card p { font-size: 0.88rem; line-height: 1.6; color: var(--mid); }
+
+  /* ACTION STEPS */
+  .vk-action { padding: 80px 0; background: var(--cream); }
+  .vk-action h2 { font-family: var(--font-display); font-size: 1.8rem; color: var(--teal); margin-bottom: 2.5rem; }
+  .vk-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+  .vk-step { padding: 1.75rem; border: 1px solid var(--cream-dark); border-radius: 8px; background: #fff; }
+  .vk-step-num { width: 36px; height: 36px; border-radius: 50%; background: var(--teal); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 0.9rem; margin-bottom: 1rem; }
+  .vk-step h3 { font-family: var(--font-display); font-size: 1.05rem; color: var(--teal); margin-bottom: 0.5rem; }
+  .vk-step p { font-size: 0.85rem; line-height: 1.65; color: var(--mid); }
+
+  /* SCENARIOS */
+  .vk-scenarios { padding: 80px 0; }
+  .vk-scenarios h2 { font-family: var(--font-display); font-size: 1.8rem; color: var(--teal); margin-bottom: 2.5rem; }
+  .vk-scenario-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+  .vk-scenario-card { background: var(--cream); border: 1px solid var(--cream-dark); border-radius: 8px; padding: 1.75rem; }
+  .vk-scenario-card h3 { font-family: var(--font-display); font-size: 1.05rem; color: var(--teal); margin-bottom: 0.5rem; line-height: 1.35; font-style: italic; }
+  .vk-scenario-card p { font-size: 0.88rem; line-height: 1.6; color: var(--mid); margin-bottom: 0.75rem; }
+  .vk-scenario-card a { font-size: 0.85rem; color: var(--teal); font-weight: 500; }
+
+  /* PW vs FW */
+  .vk-pwfw { padding: 80px 0; background: var(--cream); }
+  .vk-pwfw h2 { font-family: var(--font-display); font-size: 1.8rem; color: var(--teal); margin-bottom: 1.5rem; }
+
+  /* LEAD MAGNET */
+  .vk-leadmagnet { padding: 80px 0; }
+  .vk-lm-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; max-width: 820px; margin: 0 auto; }
+  .vk-lm-content h2 { font-family: var(--font-display); font-size: 1.6rem; color: var(--teal); margin-bottom: 1rem; }
+  .vk-lm-content > p { font-size: 0.92rem; color: var(--mid); line-height: 1.65; margin-bottom: 1rem; }
+  .vk-lm-content ul { list-style: none; padding: 0; }
+  .vk-lm-content li { padding: 0.4rem 0 0.4rem 1.5rem; position: relative; font-size: 0.9rem; color: var(--mid); line-height: 1.6; }
+  .vk-lm-content li::before { content: '\2713'; position: absolute; left: 0; color: var(--teal); font-weight: 600; }
+  .lm-form-card { background: var(--cream); border: 1px solid var(--cream-dark); border-radius: 8px; padding: 2rem; }
+  .lm-form-card h3 { font-family: var(--font-display); font-size: 1.3rem; color: var(--teal); margin-bottom: 0.5rem; }
+  .lm-form-card > p { font-size: 0.85rem; color: var(--mid); line-height: 1.6; margin-bottom: 1.25rem; }
+  .lm-form { display: flex; flex-direction: column; gap: 0.75rem; }
+  .lm-honeypot { position: absolute; left: -9999px; }
+  .lm-form input[type="email"] { padding: 12px 14px; font-family: var(--font-body); font-size: 0.95rem; border: 1px solid var(--cream-dark); border-radius: 4px; background: #fff; }
+  .lm-form input[type="email"]:focus { outline: 2px solid var(--gold); outline-offset: 1px; }
+  .lm-form button { padding: 14px; background: var(--teal); color: #fff; border: none; border-radius: 4px; font-family: var(--font-body); font-size: 0.95rem; font-weight: 500; cursor: pointer; transition: background 0.15s; }
+  .lm-form button:hover { background: var(--teal-mid); }
+  .lm-form button:disabled { opacity: 0.6; cursor: wait; }
+  .lm-status { font-size: 0.88rem; margin: 0; }
+  .lm-status.ok { color: var(--teal); }
+  .lm-status.err { color: #B33A3A; }
+  .lm-privacy { font-size: 0.78rem; color: var(--mid); margin-top: 0.75rem; }
+  .lm-privacy a { color: var(--teal); }
+
+  /* ARTICLES */
+  .vk-articles { padding: 80px 0; background: var(--cream); }
+  .vk-articles h2 { font-family: var(--font-display); font-size: 1.8rem; color: var(--teal); margin-bottom: 2.5rem; }
+  .vk-articles-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; max-width: 820px; margin: 0 auto; }
+  .vk-articles-grid-4 { max-width: 100%; grid-template-columns: repeat(4, 1fr); }
+  .vk-article-card { display: block; padding: 1.75rem; border: 1px solid var(--cream-dark); border-radius: 8px; background: #fff; text-decoration: none; transition: border-color 0.15s, box-shadow 0.15s; }
+  .vk-article-card:hover { border-color: var(--teal); box-shadow: 0 2px 12px rgba(12,74,69,0.08); }
+  .vk-article-label { display: inline-block; font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); font-weight: 600; margin-bottom: 0.5rem; }
+  .vk-article-card h3 { font-family: var(--font-display); font-size: 1.05rem; color: var(--teal); margin-bottom: 0.5rem; line-height: 1.35; }
+  .vk-article-card p { font-size: 0.85rem; line-height: 1.6; color: var(--mid); }
+
+  /* PRICING */
+  .vk-pricing { padding: 80px 0; }
+  .vk-pricing h2 { font-family: var(--font-display); font-size: 1.8rem; color: var(--teal); margin-bottom: 0.5rem; }
+  .vk-price-table { max-width: 820px; margin: 0 auto; }
+  .vk-price-row { display: grid; grid-template-columns: 80px 100px 160px 1fr; gap: 1rem; padding: 1rem 1.25rem; align-items: center; font-size: 0.9rem; color: var(--mid); border-bottom: 1px solid var(--cream-dark); }
+  .vk-price-header { font-weight: 600; color: var(--dark); font-size: 0.82rem; letter-spacing: 0.04em; text-transform: uppercase; border-bottom: 2px solid var(--teal); }
+  .vk-price-featured { background: rgba(12,74,69,0.04); border-radius: 4px; }
+  .vk-price-tier { font-weight: 600; color: var(--teal); }
+  .vk-price-note { max-width: 820px; margin: 1.25rem auto 0; font-size: 0.8rem; color: var(--mid); line-height: 1.55; }
+
+  /* CTA */
+  .vk-cta { padding: 80px 0; text-align: center; }
+  .vk-cta h2 { font-family: var(--font-display); font-size: 2rem; color: var(--teal); margin-bottom: 1rem; }
+  .vk-cta > .container > p:first-of-type { max-width: 600px; margin: 0 auto 2rem; line-height: 1.7; color: var(--mid); }
+  .vk-cta-sub { margin-top: 1.5rem; font-size: 0.9rem; color: var(--mid); }
+  .vk-share-btns { display: flex; gap: 1rem; justify-content: center; margin-top: 1rem; flex-wrap: wrap; }
+  .vk-share-btn { display: inline-block; padding: 10px 20px; border: 1px solid var(--teal); border-radius: 4px; color: var(--teal); font-size: 0.85rem; font-weight: 500; text-decoration: none; transition: background 0.15s, color 0.15s; }
+  .vk-share-btn:hover { background: var(--teal); color: #fff; }
+
+  /* RESPONSIVE */
+  @media (max-width: 1024px) { .vk-articles-grid-4 { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 768px) {
+    .vk-hero { padding: 80px 0 60px; }
+    .vk-problem-inner { grid-template-columns: 1fr; gap: 2rem; }
+    .vk-parents-grid { grid-template-columns: 1fr; }
+    .vk-steps { grid-template-columns: 1fr; }
+    .vk-scenario-grid { grid-template-columns: 1fr; }
+    .vk-articles-grid { grid-template-columns: 1fr; }
+    .vk-articles-grid-4 { grid-template-columns: 1fr; }
+    .vk-lm-inner { grid-template-columns: 1fr; gap: 2rem; }
+    .vk-price-row { grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+    .vk-price-header { display: none; }
+    .vk-price-row span:nth-child(4) { grid-column: 1 / -1; font-size: 0.82rem; }
+  }
+</style>
+
+<script is:inline>
+  (function () {
+    var form = document.getElementById('vkLmForm');
+    if (!form) return;
+    var status = form.querySelector('.lm-status');
+    var button = form.querySelector('button[type="submit"]');
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      var fd = new FormData(form);
+      if (fd.get('website')) return;
+      var email = (fd.get('email') || '').toString().trim();
+      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        status.textContent = 'Please enter a valid email address.';
+        status.className = 'lm-status err';
+        status.hidden = false;
+        return;
+      }
+      button.disabled = true;
+      status.textContent = 'One moment…';
+      status.className = 'lm-status';
+      status.hidden = false;
+      try {
+        var res = await fetch('https://api.vaetestament.nl/v1/newsletter/subscribe', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email: email, slug: 'conversation-guide', source: 'leadmagnet-kinderen', locale: 'en' })
+        });
+        if (!res.ok) throw new Error('subscribe ' + res.status);
+        status.textContent = 'Thank you! Check your inbox for a confirmation email. After confirmation you will receive the guide.';
+        status.className = 'lm-status ok';
+        form.querySelector('input[type="email"]').value = '';
+      } catch (err) {
+        status.textContent = 'Something went wrong. Please try again or email support@uaepropertywills.com.';
+        status.className = 'lm-status err';
+      } finally { button.disabled = false; }
+    });
+  })();
+</script>

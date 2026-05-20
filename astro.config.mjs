@@ -19,7 +19,8 @@ export default defineConfig({
         !page.includes('/bedankt') &&
         !page.includes('/aanmelding-bevestigd') &&
         !page.includes('/baraca') &&
-        !page.includes('/BARACA_'),
+        !page.includes('/BARACA_') &&
+        !page.includes('-download'),
       changefreq: 'weekly',
       priority: 0.7,
       lastmod: new Date(),

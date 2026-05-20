@@ -1,0 +1,59 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const siteRoot = 'https://uaepropertywills.com';
+const canonical = `${siteRoot}/conversation-guide-download/`;
+---
+
+<BaseLayout
+  title="Your conversation guide is ready - UAEpropertyWills"
+  description="Download the free conversation guide: talking to your parents about UAE property."
+  canonical={canonical}
+  noindex
+>
+  <main class="page">
+    <section class="article-hero has-image" style="--hero-image: url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1600&q=85&auto=format&fit=crop')">
+      <div class="container">
+        <span class="hero-eyebrow fade-up">Thank you for signing up</span>
+        <h1 class="fade-up delay-1">Your conversation guide is ready</h1>
+        <p class="lede fade-up delay-2">Click the button below to download the guide.</p>
+      </div>
+    </section>
+
+    <section class="dl-body">
+      <div class="dl-card">
+        <h2>Talking to Your Parents About UAE Property</h2>
+        <p>12 pages. Written for children, not for lawyers.</p>
+        <a href="/assets/leadmagnet-conversation-guide.pdf" download class="dl-btn">Download the guide (PDF)</a>
+        <p class="dl-note">The guide has also been sent to the email address you used to sign up.</p>
+      </div>
+
+      <div class="dl-next">
+        <h3>What now?</h3>
+        <ul>
+          <li><strong>Read through the guide</strong> and mark the objections you expect from your parents.</li>
+          <li><strong>Choose the right moment</strong> for the conversation. Calm, without time pressure.</li>
+          <li><strong>Consider the gift idea</strong>: "I looked into it, I'll pay for it, you just need to participate."</li>
+          <li><strong>Still unsure?</strong> <a href="https://cal.com/vaetestament.nl">Schedule a free 15-minute call</a>. With your parents or on your own first.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .dl-body { max-width: var(--max-prose); margin: 0 auto; padding: 3rem 1.5rem 4rem; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+  .dl-card { background: var(--cream); border: 1px solid var(--cream-dark); border-radius: 8px; padding: 2rem; text-align: center; }
+  .dl-card h2 { font-family: var(--font-display); font-size: 1.4rem; color: var(--teal); margin-bottom: 0.5rem; }
+  .dl-card > p { font-size: 0.9rem; color: var(--mid); line-height: 1.6; margin-bottom: 1.25rem; }
+  .dl-btn { display: inline-block; padding: 14px 28px; background: var(--teal); color: #fff; border: none; border-radius: 4px; font-family: var(--font-body); font-size: 0.95rem; font-weight: 500; text-decoration: none; letter-spacing: 0.04em; transition: background 0.15s; }
+  .dl-btn:hover { background: var(--teal-mid); }
+  .dl-note { margin-top: 1rem; font-size: 0.8rem; color: var(--mid); font-style: italic; }
+  .dl-next h3 { font-family: var(--font-display); font-size: 1.3rem; color: var(--teal); margin-bottom: 1rem; }
+  .dl-next ul { list-style: none; padding: 0; }
+  .dl-next li { padding: 0.75rem 0 0.75rem 1.5rem; position: relative; font-size: 0.92rem; color: var(--mid); line-height: 1.6; border-bottom: 1px solid var(--cream-dark); }
+  .dl-next li::before { content: '\2192'; position: absolute; left: 0; color: var(--gold); font-weight: 600; }
+  .dl-next li strong { color: var(--dark); }
+  .dl-next li a { color: var(--teal); }
+  @media (max-width: 768px) { .dl-body { grid-template-columns: 1fr; gap: 2rem; padding: 2rem 1.25rem 3rem; } }
+</style>

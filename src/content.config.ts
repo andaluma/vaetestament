@@ -59,4 +59,22 @@ const articles_en = defineCollection({
   schema: articleSchema,
 });
 
-export const collections = { articles_nl, articles_en };
+const situatieSchema = z.object({
+  title: z.string(),
+  slug: z.string().optional(),
+  meta_description: z.string().max(160),
+  keywords: z.array(z.string()).default([]),
+  publish_date: z.coerce.date(),
+  status: z.enum(['draft', 'published']).default('draft'),
+  author: z.string().default('André van Wijngaarden'),
+  schema_type: z.enum(['Article', 'FAQPage']).default('Article'),
+  related: z.array(z.string()).default([]),
+  result: z.string().optional(),
+});
+
+const situaties = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/situaties' }),
+  schema: situatieSchema,
+});
+
+export const collections = { articles_nl, articles_en, situaties };

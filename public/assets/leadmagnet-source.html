@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Property Will of Full Will: beslissingsgids</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4; margin: 24mm 20mm 28mm 20mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 10.5pt;
+    line-height: 1.75;
+    color: #1a1a1a;
+    background: #fff;
+  }
+  h1, h2, h3, h4 { font-family: 'Cormorant', serif; font-weight: 500; line-height: 1.2; color: #0C4A45; }
+  h2 { font-size: 20pt; margin-bottom: 12pt; page-break-after: avoid; }
+  h3 { font-size: 14pt; margin-bottom: 8pt; margin-top: 18pt; page-break-after: avoid; }
+  h4 { font-size: 11pt; margin-bottom: 4pt; margin-top: 12pt; color: #C8A44A; font-family: 'Jost', sans-serif; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; }
+  p { margin-bottom: 10pt; }
+  strong { font-weight: 500; }
+  a { color: #0C4A45; }
+  ul, ol { margin-bottom: 10pt; padding-left: 18pt; }
+  li { margin-bottom: 4pt; }
+  .page-break { page-break-before: always; }
+
+  /* Cover page */
+  .cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    background: #0C4A45;
+    color: #fff;
+    margin: -24mm -20mm -28mm -20mm;
+    padding: 40mm 30mm;
+    page-break-after: always;
+  }
+  .cover-label {
+    font-family: 'Jost', sans-serif;
+    font-size: 8pt;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #C8A44A;
+    border: 1px solid rgba(200,164,74,0.4);
+    padding: 4pt 12pt;
+    margin-bottom: 28pt;
+    display: inline-block;
+  }
+  .cover h1 {
+    font-family: 'Cormorant', serif;
+    font-size: 32pt;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 16pt;
+    line-height: 1.15;
+  }
+  .cover .subtitle {
+    font-size: 12pt;
+    font-weight: 300;
+    color: rgba(255,255,255,0.75);
+    max-width: 380pt;
+    margin: 0 auto 36pt;
+    line-height: 1.7;
+  }
+  .cover .brand {
+    font-family: 'Cormorant', serif;
+    font-size: 14pt;
+    color: #C8A44A;
+    margin-top: 24pt;
+  }
+  .cover .url {
+    font-size: 9pt;
+    color: rgba(255,255,255,0.45);
+    margin-top: 8pt;
+  }
+
+  /* TOC */
+  .toc { page-break-after: always; padding-top: 20pt; }
+  .toc h2 { margin-bottom: 20pt; }
+  .toc-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 6pt 0;
+    border-bottom: 1px dotted #ddd;
+    font-size: 10.5pt;
+  }
+  .toc-item span:first-child { color: #0C4A45; font-weight: 400; }
+  .toc-item span:last-child { color: #999; font-size: 9pt; }
+
+  /* Section styling */
+  .section { page-break-inside: avoid; margin-bottom: 18pt; }
+  .intro-box {
+    background: #F6F1E7;
+    border-left: 3pt solid #C8A44A;
+    padding: 14pt 18pt;
+    margin: 14pt 0;
+    font-size: 10pt;
+    page-break-inside: avoid;
+  }
+  .highlight-box {
+    background: #0C4A45;
+    color: #fff;
+    padding: 18pt 22pt;
+    border-radius: 4pt;
+    margin: 16pt 0;
+    page-break-inside: avoid;
+  }
+  .highlight-box h3 { color: #C8A44A; margin-top: 0; }
+  .highlight-box p { color: rgba(255,255,255,0.85); }
+  .highlight-box strong { color: #fff; font-weight: 500; }
+
+  /* Comparison table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14pt 0;
+    font-size: 9.5pt;
+    page-break-inside: avoid;
+  }
+  th, td { padding: 8pt 10pt; text-align: left; vertical-align: top; }
+  th {
+    background: #0C4A45;
+    color: #fff;
+    font-weight: 500;
+    font-size: 9pt;
+    letter-spacing: 0.04em;
+  }
+  td { border-bottom: 1px solid #e8e8e8; }
+  tr:last-child td { border-bottom: none; }
+  .check { color: #0C4A45; font-weight: 600; }
+  .cross { color: #999; }
+
+  /* Checklist */
+  .checklist {
+    list-style: none;
+    padding-left: 0;
+    margin: 12pt 0;
+  }
+  .checklist li {
+    padding: 8pt 0 8pt 28pt;
+    position: relative;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .checklist li::before {
+    content: '\2610';
+    position: absolute;
+    left: 0;
+    top: 8pt;
+    font-size: 14pt;
+    color: #0C4A45;
+  }
+
+  /* Scenario cards */
+  .scenario {
+    background: #F6F1E7;
+    padding: 14pt 18pt;
+    border-radius: 4pt;
+    margin: 10pt 0;
+    page-break-inside: avoid;
+  }
+  .scenario-title {
+    font-family: 'Cormorant', serif;
+    font-size: 12pt;
+    font-weight: 500;
+    color: #0C4A45;
+    margin-bottom: 4pt;
+  }
+  .scenario-result {
+    display: inline-block;
+    background: #C8A44A;
+    color: #fff;
+    font-size: 7.5pt;
+    font-weight: 500;
+    padding: 2pt 8pt;
+    border-radius: 2pt;
+    margin-bottom: 6pt;
+    letter-spacing: 0.04em;
+  }
+  .scenario p { font-size: 9.5pt; margin-bottom: 4pt; }
+
+  /* FAQ */
+  .faq-item { margin-bottom: 14pt; page-break-inside: avoid; }
+  .faq-q { font-weight: 500; color: #0C4A45; margin-bottom: 3pt; }
+  .faq-a { font-size: 10pt; color: #444; }
+
+  /* CTA page */
+  .cta-page {
+    text-align: center;
+    padding-top: 60pt;
+  }
+  .cta-page h2 { font-size: 24pt; margin-bottom: 16pt; }
+  .cta-page p { max-width: 360pt; margin: 0 auto 10pt; font-size: 10.5pt; }
+  .cta-box {
+    background: #0C4A45;
+    color: #fff;
+    padding: 24pt 30pt;
+    border-radius: 6pt;
+    margin: 24pt auto;
+    max-width: 380pt;
+  }
+  .cta-box p { color: rgba(255,255,255,0.8); margin-bottom: 8pt; }
+  .cta-box .cta-link {
+    display: inline-block;
+    background: #C8A44A;
+    color: #0C4A45;
+    padding: 10pt 24pt;
+    border-radius: 3pt;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 10pt;
+    margin-top: 8pt;
+  }
+
+  /* Footer on each page */
+  .page-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 7.5pt;
+    color: #bbb;
+    padding: 8pt 0;
+  }
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="cover">
+  <span class="cover-label">Gratis beslissingsgids</span>
+  <h1>Property Will of Full Will?</h1>
+  <p class="subtitle">De beslissingsgids voor Nederlandse vastgoedeigenaren in de VAE. Ontdek welk DIFC-testament bij uw situatie past, wat het kost en wanneer u een advocaat nodig heeft.</p>
+  <div class="brand">VAEtestament</div>
+  <div class="url">vaetestament.nl</div>
+</div>
+
+<!-- TOC -->
+<div class="toc">
+  <h2>Inhoud</h2>
+  <div class="toc-item"><span>1. Waarom deze gids?</span><span>3</span></div>
+  <div class="toc-item"><span>2. Wat is een DIFC-testament?</span><span>4</span></div>
+  <div class="toc-item"><span>3. Property Will: wat dekt het?</span><span>5</span></div>
+  <div class="toc-item"><span>4. Full Will: wat dekt het?</span><span>6</span></div>
+  <div class="toc-item"><span>5. Het verschil in een overzicht</span><span>7</span></div>
+  <div class="toc-item"><span>6. De checklist: past een Property Will bij u?</span><span>8</span></div>
+  <div class="toc-item"><span>7. Vijf situaties uit de praktijk</span><span>10</span></div>
+  <div class="toc-item"><span>8. Kostenvergelijking</span><span>13</span></div>
+  <div class="toc-item"><span>9. Heeft u een advocaat nodig?</span><span>14</span></div>
+  <div class="toc-item"><span>10. Het DIFC-portaal: wat kunt u verwachten?</span><span>15</span></div>
+  <div class="toc-item"><span>11. Veelgestelde vragen</span><span>17</span></div>
+  <div class="toc-item"><span>12. Over VAEtestament</span><span>19</span></div>
+  <div class="toc-item"><span>13. Uw volgende stap</span><span>20</span></div>
+</div>
+
+<!-- CHAPTER 1 -->
+<div class="page-break"></div>
+<h4>Hoofdstuk 1</h4>
+<h2>Waarom deze gids?</h2>
+
+<p>U bent Nederlander en u bezit vastgoed in de Verenigde Arabische Emiraten. Misschien een appartement in Dubai Marina, een villa in Abu Dhabi, of meerdere investeringsobjecten verspreid over de emiraten.</p>
+
+<p>Wat veel eigenaren niet weten: uw Nederlandse testament wordt in de VAE doorgaans niet erkend voor vastgoed dat zich op VAE-grondgebied bevindt. Bij overlijden valt dat vastgoed onder het lokale rechtssysteem, niet onder het Nederlandse erfrecht.</p>
+
+<p>Een DIFC-testament lost dit op. Maar welk type DIFC-testament heeft u nodig? Daar gaat deze gids over.</p>
+
+<div class="intro-box">
+<strong>Het verschil in het kort:</strong> Een Property Will dekt uitsluitend onroerend goed op persoonlijke naam. Een Full Will dekt alles, inclusief bankrekeningen, voertuigen, voogdij en vastgoed via bedrijfsstructuren. De meeste Nederlandse vastgoedeigenaren hebben genoeg aan een Property Will.
+</div>
+
+<p>In deze gids leest u:</p>
+<ul>
+  <li>Wat het exacte verschil is tussen een Property Will en een Full Will</li>
+  <li>Hoe u in vier vragen bepaalt welk testament bij u past</li>
+  <li>Wat de kosten zijn, uitgesplitst per onderdeel</li>
+  <li>Wanneer u wel en wanneer u geen advocaat nodig heeft</li>
+  <li>Vijf concrete situaties uit de praktijk</li>
+  <li>Hoe het DIFC-portaal werkt</li>
+</ul>
+
+<p>Wij zijn VAEtestament. Wij begeleiden Nederlandse vastgoedeigenaren bij de registratie van DIFC-testamenten. Wij vertellen u eerlijk welk testament bij uw situatie past. Geen verkooppraatje, geen upsell. Als een Property Will volstaat, zeggen wij dat. Als u een Full Will nodig heeft, leggen wij uit waarom.</p>
+
+<!-- CHAPTER 2 -->
+<div class="page-break"></div>
+<h4>Hoofdstuk 2</h4>
+<h2>Wat is een DIFC-testament?</h2>
+
+<p>Het Dubai International Financial Centre (DIFC) is een economische vrije zone in Dubai met een eigen rechtssysteem, gebaseerd op het Engelse common law. Het DIFC heeft een Wills Service Centre dat niet-moslims de mogelijkheid biedt een testament te registreren voor hun bezittingen in de VAE.</p>
+
+<p>Een DIFC-testament is rechtsgeldig in alle zeven emiraten: Dubai, Abu Dhabi, Sharjah, Ajman, Umm Al Quwain, Ras Al Khaimah en Fujairah. Het is specifiek ontworpen voor niet-moslims die bezittingen in de VAE hebben.</p>
+
+<h3>Waarom is het nodig?</h3>
+
+<p>Zonder een lokaal geldig testament worden uw bezittingen in de VAE bij overlijden doorgaans verdeeld op basis van het lokale erfrecht. Voor niet-moslims kan dit betekenen dat de verdeling niet overeenkomt met uw wensen. Uw partner ontvangt mogelijk slechts een beperkt deel, en de rest gaat naar andere familieleden.</p>
+
+<p>Daarnaast moeten uw nabestaanden zonder lokaal testament een volledige VAE-erfprocedure doorlopen. Dit omvat legalisatie van documenten via apostille, beedigde Arabische vertalingen en het inschakelen van lokale advocaten. De kosten lopen snel op tot EUR 10.000 of meer, en het proces duurt doorgaans 12 tot 24 maanden.</p>
+
+<p>Een DIFC-testament voorkomt dit. U bepaalt zelf wie wat erft, en uw nabestaanden kunnen het vastgoed relatief snel en eenvoudig overdragen.</p>
+
+<h3>Twee typen DIFC-testamenten</h3>
+
+<p>Het DIFC biedt twee typen testamenten aan:</p>
+
+<ol>
+  <li><strong>Property Will</strong> - dekt uitsluitend onroerend goed op persoonlijke naam</li>
+  <li><strong>Full Will</strong> - dekt alle bezittingen, inclusief vastgoed, bankrekeningen, voertuigen, en kan voogdijbepalingen bevatten</li>
+</ol>
+
+<p>Beide typen zijn rechtsgeldig geregistreerd bij het DIFC. Het verschil zit niet in de juridische geldigheid, maar in de reikwijdte.</p>
+
+<!-- CHAPTER 3 -->
+<div class="page-break"></div>
+<h4>Hoofdstuk 3</h4>
+<h2>Property Will: wat dekt het?</h2>
+
+<p>Een DIFC Property Will dekt uitsluitend onroerend goed dat op uw persoonlijke naam staat. Dit omvat:</p>
+
+<ul>
+  <li>Appartementen</li>
+  <li>Villa's</li>
+  <li>Commercieel vastgoed</li>
+  <li>Grondpercelen</li>
+</ul>
+
+<p>Het vastgoed mag zich bevinden in elk van de zeven emiraten. Een Property Will is niet beperkt tot Dubai.</p>
+
+<h3>Wat dekt een Property Will niet?</h3>
+
+<ul>
+  <li>Vastgoed dat op naam staat van een bedrijf, BV, holding of free zone company</li>
+  <li>Bankrekeningen in de VAE</li>
+  <li>Beleggingen of effectenrekeningen</li>
+  <li>Voertuigen geregistreerd in de VAE</li>
+  <li>Voogdijbepalingen voor minderjarige kinderen</li>
+  <li>Andere niet-onroerend bezit</li>
+</ul>
+
+<h3>Single will en mirror will</h3>
+
+<p>Een Property Will kan worden geregistreerd als:</p>
+
+<ul>
+  <li><strong>Single will</strong> - een testament voor een persoon</li>
+  <li><strong>Mirror will</strong> - twee testamenten, voor u en uw partner, in een procedure</li>
+</ul>
+
+<p>Bij een mirror will bepaalt elke partner zelfstandig de begunstigden en verdeling. De testamenten hoeven niet identiek te zijn. De DIFC-registratiekosten voor een mirror will zijn lager dan voor twee afzonderlijke single wills.</p>
+
+<h3>Maximaal 5 vastgoedobjecten</h3>
+
+<p>Een Property Will dekt tot 5 vastgoedobjecten per testament. Bij meer dan 5 objecten is de verdeling complex genoeg om juridische begeleiding te rechtvaardigen, en is een Full Will aanbevolen.</p>
+
+<!-- CHAPTER 4 -->
+<div class="page-break"></div>
+<h4>Hoofdstuk 4</h4>
+<h2>Full Will: wat dekt het?</h2>
+
+<p>Een DIFC Full Will dekt alles wat een Property Will dekt, plus:</p>
+
+<ul>
+  <li>Vastgoed via bedrijfsstructuren (BV, holding, free zone company)</li>
+  <li>Bankrekeningen en deposito's in de VAE</li>
+  <li>Beleggingen en effectenrekeningen</li>
+  <li>Voertuigen geregistreerd in de VAE</li>
+  <li>Voogdijbepalingen voor minderjarige kinderen</li>
+  <li>Andere bezittingen in de VAE</li>
+  <li>Meer dan 5 vastgoedobjecten</li>
+</ul>
+
+<h3>Wanneer is een Full Will noodzakelijk?</h3>
+
+<p>Een Full Will is noodzakelijk als een van de volgende situaties op u van toepassing is:</p>
+
+<p><strong>1. Vastgoed via een bedrijfsstructuur.</strong> Als uw vastgoed op naam staat van een BV, holding, free zone company of andere rechtspersoon, valt het buiten het bereik van een Property Will. Bij een bedrijfsstructuur erven uw nabestaanden niet het vastgoed zelf, maar het belang in de rechtspersoon. Dat is juridisch een andere constructie.</p>
+
+<p><strong>2. Niet-vastgoed bezittingen.</strong> Als u naast vastgoed ook bankrekeningen, beleggingen of voertuigen in de VAE wilt opnemen in uw testament, heeft u een Full Will nodig.</p>
+
+<p><strong>3. Voogdij voor minderjarige kinderen.</strong> Als u wilt vastleggen wie de voogdij krijgt over uw minderjarige kinderen als beide ouders overlijden, kan dat alleen via een Full Will.</p>
+
+<p><strong>4. Meer dan 5 vastgoedobjecten.</strong> Bij meer dan 5 panden is de verdeling over meerdere begunstigden met vervangende begunstigden complex genoeg om fouten te riskeren bij zelf invullen.</p>
+
+<h3>Juridische begeleiding vereist</h3>
+
+<p>Een Full Will vereist altijd betrokkenheid van een DIFC-gecertificeerde jurist. Deze jurist beoordeelt uw eigendomsstructuur, stelt het testament op en zorgt dat de bepalingen juridisch correct zijn geformuleerd. Dit is een vereiste van het DIFC.</p>
+
+<!-- CHAPTER 5 -->
+<div class="page-break"></div>
+<h4>Hoofdstuk 5</h4>
+<h2>Het verschil in een overzicht</h2>
+
+<table>
+  <tr>
+    <th style="width:40%;">Kenmerk</th>
+    <th style="width:30%;">Property Will</th>
+    <th style="width:30%;">Full Will</th>
+  </tr>
+  <tr>
+    <td>Vastgoed op persoonlijke naam</td>
+    <td class="check">Ja</td>
+    <td class="check">Ja</td>
+  </tr>
+  <tr>
+    <td>Vastgoed via bedrijfsstructuur</td>
+    <td class="cross">Nee</td>
+    <td class="check">Ja</td>
+  </tr>
+  <tr>
+    <td>Bankrekeningen / beleggingen</td>
+    <td class="cross">Nee</td>
+    <td class="check">Ja</td>
+  </tr>
+  <tr>
+    <td>Voertuigen</td>
+    <td class="cross">Nee</td>
+    <td class="check">Ja</td>
+  </tr>
+  <tr>
+    <td>Voogdijbepalingen</td>
+    <td class="cross">Nee</td>
+    <td class="check">Ja</td>
+  </tr>
+  <tr>
+    <td>Max. vastgoedobjecten</td>
+    <td>5</td>
+    <td>Onbeperkt</td>
+  </tr>
+  <tr>
+    <td>Advocaat vereist?</td>
+    <td class="check">Nee</td>
+    <td>Ja</td>
+  </tr>
+  <tr>
+    <td>Geldig in alle emiraten?</td>
+    <td class="check">Ja</td>
+    <td class="check">Ja</td>
+  </tr>
+  <tr>
+    <td>Mirror will mogelijk?</td>
+    <td class="check">Ja</td>
+    <td class="check">Ja</td>
+  </tr>
+</table>
+
+<div class="highlight-box">
+  <h3>De vuistregel</h3>
+  <p>Als u uitsluitend vastgoed bezit op persoonlijke naam, zonder bedrijfsstructuren, zonder voogdij en met maximaal 5 objecten, is een <strong>Property Will</strong> de juiste keuze. In alle andere gevallen heeft u een <strong>Full Will</strong> nodig.</p>
+</div>
+
+<!-- CHAPTER 6 -->
+<div class="page-break"></div>
+<h4>Hoofdstuk 6</h4>
+<h2>De checklist: past een Property Will bij u?</h2>
+
+<p>Beantwoord de volgende vier vragen. Als u op alle vier "ja" kunt antwoorden, is een Property Will vrijwel zeker voldoende voor uw situatie.</p>
+
+<ul class="checklist">
+  <li>
+    <strong>Staat uw vastgoed op uw persoonlijke naam?</strong><br>
+    Controleer het eigendomsbewijs (title deed). Als uw naam erop staat als eigenaar, is het antwoord ja. Als het vastgoed op naam staat van een bedrijf, BV, holding of free zone company, is het antwoord nee.
+  </li>
+  <li>
+    <strong>Heeft u maximaal 5 vastgoedobjecten in de VAE?</strong><br>
+    Tel alle appartementen, villa's en andere vastgoedobjecten, in alle emiraten. Tot en met 5 objecten past een Property Will.
+  </li>
+  <li>
+    <strong>Wilt u uitsluitend vastgoed opnemen in het testament?</strong><br>
+    Als u ook bankrekeningen, beleggingen, voertuigen of andere bezittingen in de VAE wilt opnemen, heeft u een Full Will nodig.
+  </li>
+  <li>
+    <strong>Heeft u geen voogdijbepalingen nodig?</strong><br>
+    Als u minderjarige kinderen heeft en wilt vastleggen wie de voogdij krijgt bij overlijden van beide ouders, kan dat alleen via een Full Will.
+  </li>
+</ul>
+
+<div class="intro-box">
+<strong>Vier keer ja?</strong> Dan volstaat een Property Will. U hoeft geen advocaat in te schakelen. U kunt het testament zelf registreren via het DIFC-portaal, met of zonder begeleiding van VAEtestament.
+</div>
+
+<p><strong>Een of meer keer nee?</strong> Dan heeft u een Full Will nodig. Dit vereist juridische begeleiding via een DIFC-gecertificeerde jurist. VAEtestament coordineert dit traject via ons Tier 3-pakket.</p>
+
+<h3>Veelgemaakte beoordelingsfouten</h3>
+
+<p><strong>"Ik heb twee appartementen, dus ik heb vast een Full Will nodig."</strong><br>
+Nee. Een Property Will dekt tot 5 vastgoedobjecten. Twee appartementen op persoonlijke naam is de meest voorkomende situatie en past uitstekend bij een Property Will.</p>
+
+<p><strong>"Mijn vastgoed is gekocht via een makelaar, dus het staat niet op mijn naam."</strong><br>
+In verreweg de meeste gevallen staat het vastgoed na aankoop op uw persoonlijke naam, ook als u het via een makelaar heeft gekocht. Controleer het title deed.</p>
+
+<p><strong>"Ik wil mijn partner als begunstigde aanwijzen. Dat is toch complex?"</strong><br>
+Nee. De meest voorkomende verdeling (alles naar partner, met kinderen als vervangende begunstigden) is standaard en past prima bij een Property Will.</p>
+
+<!-- CHAPTER 7 -->
+<div class="page-break"></div>
+<h4>Hoofdstuk 7</h4>
+<h2>Vijf situaties uit de praktijk</h2>
+
+<p>Hieronder vijf concrete situaties van Nederlandse vastgoedeigenaren in de VAE, met per situatie het advies.</p>
+
+<div class="scenario">
+  <span class="scenario-result">Property Will</span>
+  <div class="scenario-title">1. Echtpaar met 1 appartement in Dubai Marina</div>
+  <p>Jan en Petra bezitten samen een appartement in Dubai Marina op hun beider naam. Zij willen dat de langstlevende partner alles erft, met hun twee volwassen kinderen als vervangende begunstigden.</p>
+  <p><strong>Advies:</strong> Mirror will via een Property Will. Elk registreert een eigen testament. DIFC-registratiekosten: AED 10.000 voor de mirror will.</p>
+</div>
+
+<div class="scenario">
+  <span class="scenario-result">Property Will</span>
+  <div class="scenario-title">2. Alleenstaande met 1 villa in Abu Dhabi</div>
+  <p>Thomas is ongehuwd en bezit een villa in Abu Dhabi op zijn persoonlijke naam. Hij wil dat zijn broer de villa erft.</p>
+  <p><strong>Advies:</strong> Single Property Will. DIFC-registratiekosten: AED 7.500.</p>
+</div>
+
+<div class="scenario">
+  <span class="scenario-result">Full Will nodig</span>
+  <div class="scenario-title">3. Gezin met minderjarige kinderen</div>
+  <p>Marco en Lisa hebben een appartement in Dubai en twee minderjarige kinderen. Zij willen vastleggen dat Lisa's zus de voogdij krijgt als beide ouders overlijden.</p>
+  <p><strong>Advies:</strong> Full Will via Tier 3. Een voogdijbepaling kan alleen in een Full Will worden opgenomen.</p>
+</div>
+
+<div class="page-break"></div>
+
+<div class="scenario">
+  <span class="scenario-result">Full Will nodig</span>
+  <div class="scenario-title">4. Vastgoed via een Nederlandse BV</div>
+  <p>Willem bezit twee appartementen in Dubai via zijn Nederlandse BV. Het vastgoed staat formeel op naam van de BV, niet op Willems persoonlijke naam.</p>
+  <p><strong>Advies:</strong> Full Will via Tier 3. Een Property Will dekt uitsluitend vastgoed op persoonlijke naam. Bij een BV-structuur erft uw partner de aandelen, niet het vastgoed. Dat vereist specifieke juridische bepalingen.</p>
+</div>
+
+<div class="scenario">
+  <span class="scenario-result">Full Will nodig</span>
+  <div class="scenario-title">5. Ondernemer met bankrekeningen en voertuig</div>
+  <p>Sophie bezit een appartement in Abu Dhabi en heeft daarnaast een bankrekening bij een lokale bank en een auto op haar naam staan.</p>
+  <p><strong>Advies:</strong> Full Will via Tier 3. Het vastgoed valt onder een Property Will, maar de bankrekening en auto niet. Om alles in een testament af te dekken is een Full Will nodig.</p>
+</div>
+
+<div class="intro-box">
+<strong>Staat uw situatie er niet bij?</strong> Op vaetestament.nl/situaties vindt u negen volledige scenario's met gedetailleerd advies per situatie.
+</div>
+
+<!-- CHAPTER 8 -->
+<div class="page-break"></div>
+<h4>Hoofdstuk 8</h4>
+<h2>Kostenvergelijking</h2>
+
+<p>De kosten van een DIFC-testament bestaan uit twee onderdelen: de begeleidingsvergoeding en de DIFC-registratiekosten. Bij een Full Will komen daar advocaatkosten bij.</p>
+
+<h3>Property Will (Tier 1 of Tier 2)</h3>
+
+<table>
+  <tr>
+    <th>Onderdeel</th>
+    <th>Tier 1 (zelfstandig)</th>
+    <th>Tier 2 (begeleid)</th>
+  </tr>
+  <tr>
+    <td>Begeleidingsvergoeding</td>
+    <td>EUR 497</td>
+    <td>EUR 797</td>
+  </tr>
+  <tr>
+    <td>DIFC single will</td>
+    <td>AED 7.500</td>
+    <td>AED 7.500</td>
+  </tr>
+  <tr>
+    <td>DIFC mirror will</td>
+    <td>AED 10.000</td>
+    <td>AED 10.000</td>
+  </tr>
+  <tr>
+    <td>DIFC admin</td>
+    <td>AED 20</td>
+    <td>AED 20</td>
+  </tr>
+  <tr>
+    <td>Advocaat</td>
+    <td>Niet nodig</td>
+    <td>Niet nodig</td>
+  </tr>
+</table>
+
+<h3>Full Will (Tier 3)</h3>
+
+<table>
+  <tr>
+    <th>Onderdeel</th>
+    <th>Kosten</th>
+  </tr>
+  <tr>
+    <td>Begeleidingsvergoeding</td>
+    <td>EUR 1.499</td>
+  </tr>
+  <tr>
+    <td>DIFC-registratiekosten</td>
+    <td>AED 10.000 tot AED 15.000</td>
+  </tr>
+  <tr>
+    <td>Honorarium DIFC-jurist</td>
+    <td>AED 5.000 tot AED 10.000</td>
+  </tr>
+</table>
+
+<p style="font-size:9pt; color:#777; margin-top:8pt;">Alle DIFC-tarieven zijn indicatief en onder voorbehoud van wijziging. DIFC-registratiekosten worden rechtstreeks aan het DIFC betaald, niet aan VAEtestament. Actuele kosten bespreken wij tijdens de gratis kennismaking.</p>
+
+<div class="highlight-box">
+  <h3>Het verschil in totale kosten</h3>
+  <p>Een Property Will via Tier 2 (de meest gekozen optie) kost indicatief <strong>EUR 797 + AED 10.000</strong> (mirror will). Een Full Will via Tier 3 kost indicatief <strong>EUR 1.499 + AED 10.000-15.000 + AED 5.000-10.000</strong> advocaatkosten. Betaal niet voor een Full Will als een Property Will uw situatie dekt.</p>
+</div>
+
+<!-- CHAPTER 9 -->
+<div class="page-break"></div>
+<h4>Hoofdstuk 9</h4>
+<h2>Heeft u een advocaat nodig?</h2>
+
+<p>Het korte antwoord: voor een Property Will niet. Voor een Full Will wel.</p>
+
+<h3>Property Will: geen advocaat nodig</h3>
+
+<p>Het DIFC staat expliciet toe dat u een Property Will zelf registreert via het online portaal. U kiest uw begunstigden, uw executeur en de verdeling van uw vastgoed. Er is geen wettelijke verplichting om een advocaat in te schakelen.</p>
+
+<p>Een begeleidingsdienst zoals VAEtestament helpt u door het portaal, controleert uw documenten en zorgt dat alles correct is ingevuld. Wij geven geen juridisch advies en stellen geen testament op. Dat is ook niet nodig bij een Property Will.</p>
+
+<h3>Full Will: advocaat vereist</h3>
+
+<p>Bij een Full Will is betrokkenheid van een DIFC-gecertificeerde jurist vereist. De jurist:</p>
+
+<ul>
+  <li>Beoordeelt uw eigendomsstructuur</li>
+  <li>Stelt het testament op met de juiste juridische bepalingen</li>
+  <li>Zorgt dat voogdijbepalingen correct zijn geformuleerd</li>
+  <li>Controleert dat de constructie de gewenste erfopvolging afdekt</li>
+</ul>
+
+<p>VAEtestament werkt samen met een netwerk van DIFC-gecertificeerde advocaten. Wij coordineren het gehele traject: van intake tot registratie.</p>
+
+<h3>Wat doet VAEtestament precies?</h3>
+
+<p>VAEtestament is geen advocatenkantoor en verleent geen juridisch advies. Wij begeleiden u door het registratieproces:</p>
+
+<ol>
+  <li><strong>Kennismaking</strong> - in 15 minuten bepalen wij welk testament bij u past</li>
+  <li><strong>Documenten</strong> - wij sturen een heldere checklist met alle benodigde stukken</li>
+  <li><strong>Portaalbegeleiding</strong> - wij leiden u door het DIFC-portaal, live of op uw eigen tempo</li>
+  <li><strong>Controle</strong> - wij controleren of alles correct en compleet is ingevuld</li>
+</ol>
+
+<p>Als u een Full Will nodig heeft, verwijzen wij u door naar een DIFC-gecertificeerde jurist. Wij coordineren het proces zodat u een vast aanspreekpunt heeft.</p>
+
+<!-- CHAPTER 10 -->
+<div class="page-break"></div>
+<h4>Hoofdstuk 10</h4>
+<h2>Het DIFC-portaal: wat kunt u verwachten?</h2>
+
+<p>De registratie van uw DIFC-testament verloopt via het online portaal van het DIFC Wills Service Centre. U hoeft niet naar Dubai. Het proces is volledig digitaal.</p>
+
+<h3>Wat u tegenkomt</h3>
+
+<p><strong>Volledig Engelstalig.</strong> Het portaal is uitsluitend in het Engels. Alle velden, instructies en juridische termen zijn in het Engels. Er is geen Nederlandse versie.</p>
+
+<p><strong>Juridische keuzes.</strong> Het portaal vraagt u beslissingen te nemen die juridische kennis veronderstellen: wie wordt executeur, welk recht is van toepassing, wat als uw begunstigde voor u overlijdt? Het portaal biedt minimale toelichting.</p>
+
+<p><strong>Specifieke documentvereisten.</strong> Paspoorten moeten de fotopagina tonen, in kleur. Eigendomsbewijzen moeten recent zijn. Bestanden moeten voldoen aan bepaalde specificaties.</p>
+
+<h3>Het registratieproces in stappen</h3>
+
+<ol>
+  <li><strong>Account aanmaken</strong> op het DIFC Wills Service Centre portaal</li>
+  <li><strong>Type testament kiezen</strong> (Property Will of Full Will, single of mirror)</li>
+  <li><strong>Persoonlijke gegevens</strong> invullen (naam, geboortedatum, nationaliteit, adres)</li>
+  <li><strong>Vastgoed opgeven</strong> per object (adres, type, titeldeednummer)</li>
+  <li><strong>Begunstigden en executeur</strong> aanwijzen met verdeling</li>
+  <li><strong>Documenten uploaden</strong> (paspoorten, eigendomsbewijzen)</li>
+  <li><strong>Controleren en indienen</strong></li>
+  <li><strong>Afspraak en registratie</strong> via een online sessie met het DIFC</li>
+</ol>
+
+<h3>Tijdlijn</h3>
+
+<p><strong>Voorbereiding:</strong> 1 tot 2 weken (documenten verzamelen, gegevens invullen, portaal doorlopen).</p>
+
+<p><strong>DIFC-afhandeling:</strong> 4 tot 8 weken na indiening (beoordeling, afspraak, ondertekening, registratie).</p>
+
+<h3>Waar gaat het vaak mis?</h3>
+
+<ul>
+  <li>Verkeerde bestandsnamen of formaten bij het uploaden</li>
+  <li>Naam-spelling die niet overeenkomt met het paspoort</li>
+  <li>Onduidelijkheid over executeur en begunstigden</li>
+  <li>Titeldeednummers die niet kloppen</li>
+  <li>Verkeerd type testament gekozen</li>
+</ul>
+
+<p>Deze fouten kosten tijd. Met de juiste voorbereiding en begeleiding zijn ze te voorkomen.</p>
+
+<!-- CHAPTER 11 -->
+<div class="page-break"></div>
+<h4>Hoofdstuk 11</h4>
+<h2>Veelgestelde vragen</h2>
+
+<div class="faq-item">
+  <p class="faq-q">Geldt de Sharia ook voor mij als niet-moslim?</p>
+  <p class="faq-a">In veel gevallen wel. De VAE past bij overlijden in de regel lokaal erfrecht toe op bezittingen die zich op haar grondgebied bevinden, ongeacht uw nationaliteit of religie. Een DIFC-testament biedt niet-moslims de mogelijkheid om hier vooraf van af te wijken.</p>
+</div>
+
+<div class="faq-item">
+  <p class="faq-q">Dekt mijn Nederlandse testament mijn VAE-vastgoed ook?</p>
+  <p class="faq-a">Doorgaans niet. Een Nederlands testament wordt in de VAE niet automatisch erkend voor vastgoed op VAE-grondgebied. Een DIFC-testament is in de meeste gevallen nodig als aanvulling op uw Nederlandse testament.</p>
+</div>
+
+<div class="faq-item">
+  <p class="faq-q">Kan ik een DIFC-testament regelen als ik niet in Dubai woon?</p>
+  <p class="faq-a">Ja. Het volledige registratieproces verloopt digitaal via het DIFC-portaal. U hoeft de VAE niet te bezoeken. De online afspraak met het DIFC vindt ook op afstand plaats.</p>
+</div>
+
+<div class="faq-item">
+  <p class="faq-q">Wat is een mirror will en heb ik er een nodig?</p>
+  <p class="faq-a">Een mirror will is een gezamenlijke registratie van twee testamenten, voor u en uw partner, in een procedure. Elke partner bepaalt zelfstandig de begunstigden en verdeling. Voor stellen met gezamenlijk VAE-vastgoed is dit doorgaans de meest praktische en voordeligste optie.</p>
+</div>
+
+<div class="faq-item">
+  <p class="faq-q">Kan ik later upgraden van Property Will naar Full Will?</p>
+  <p class="faq-a">Ja, maar het betreft dan een nieuwe registratie bij het DIFC met bijbehorende kosten. Als u twijfelt, bespreken wij dit tijdens de gratis kennismaking zodat u meteen de juiste keuze maakt.</p>
+</div>
+
+<div class="faq-item">
+  <p class="faq-q">Hoe lang is een DIFC-testament geldig?</p>
+  <p class="faq-a">Een DIFC-testament blijft geldig zolang u leeft of totdat u het laat herroepen of wijzigen. Er is geen verlooptermijn. Wij raden aan het testament te herzien bij ingrijpende wijzigingen in uw persoonlijke of financiele situatie.</p>
+</div>
+
+<div class="faq-item">
+  <p class="faq-q">Wat kost een VAE-erfprocedure zonder lokaal testament?</p>
+  <p class="faq-a">Zonder een lokaal geldig testament moeten uw nabestaanden een volledige VAE-erfprocedure doorlopen. De kosten lopen snel op tot EUR 10.000 of meer, en het proces duurt doorgaans 12 tot 24 maanden. Een DIFC-testament voorkomt dit.</p>
+</div>
+
+<!-- CHAPTER 12 -->
+<div class="page-break"></div>
+<h4>Hoofdstuk 12</h4>
+<h2>Over VAEtestament</h2>
+
+<p>VAEtestament is opgericht door Andre van Wijngaarden, voormalig Head of Investor Services in de VAE-vastgoedsector. Met een achtergrond in International Business en commerciele ervaring in meerdere landen sprak hij met tal van Nederlandse investeerders die VAE-vastgoed kochten.</p>
+
+<p>Wat bleef opvallen: vrijwel niemand wist van de erfrechtsituatie. Niet bij aankoop, niet daarna. VAEtestament bestaat om dat gat te dichten, met heldere informatie en directe ondersteuning bij de DIFC-registratie.</p>
+
+<h3>Wat wij doen</h3>
+
+<ul>
+  <li>Wij begeleiden Nederlandse vastgoedeigenaren bij de registratie van DIFC-testamenten</li>
+  <li>Wij vertellen u eerlijk welk testament bij uw situatie past</li>
+  <li>Wij leiden u door het DIFC-portaal, in het Nederlands</li>
+  <li>Voor situaties die juridische expertise vereisen, verwijzen wij door naar DIFC-gecertificeerde advocaten</li>
+</ul>
+
+<h3>Wat wij niet doen</h3>
+
+<ul>
+  <li>Wij zijn geen advocatenkantoor en verlenen geen juridisch advies</li>
+  <li>Wij stellen geen testamenten op</li>
+  <li>Wij doen geen upsell naar duurdere opties als die niet nodig zijn</li>
+</ul>
+
+<div class="intro-box">
+<strong>Belangrijk:</strong> de informatie in deze gids is bedoeld ter algemene informatie en vormt geen juridisch advies. Voor persoonlijk advies en juridisch bindende documenten dient altijd een gekwalificeerde juridische professional te worden geraadpleegd.
+</div>
+
+<!-- CHAPTER 13 -->
+<div class="page-break"></div>
+<div class="cta-page">
+  <h4>Uw volgende stap</h4>
+  <h2>Ontdek welk testament bij u past</h2>
+
+  <p>In een gratis gesprek van 15 minuten bespreken wij uw situatie en adviseren wij welk testament bij u past. Geen verkooppraatje, geen verplichtingen.</p>
+
+  <div class="cta-box">
+    <p><strong style="color:#C8A44A;">Plan een gratis kennismaking</strong></p>
+    <p>15 minuten. Video of telefoon. In het Nederlands.</p>
+    <a href="https://cal.com/vaetestament.nl" class="cta-link">cal.com/vaetestament.nl</a>
+  </div>
+
+  <p style="margin-top:24pt;">Of doe de online test op <strong>vaetestament.nl</strong> en ontdek in vijf vragen welk testament bij u past.</p>
+
+  <p style="margin-top:36pt; font-size:9pt; color:#999;">
+    VAEtestament is een handelsnaam van Andaluma OU (Estland).<br>
+    vaetestament.nl | support@vaetestament.nl | +31 6 1614 6007
+  </p>
+</div>
+
+</body>
+</html>

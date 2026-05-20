@@ -5,10 +5,10 @@
 interface Props { locale?: 'nl' | 'en' | 'es'; }
 const { locale = 'nl' } = Astro.props;
 
-const NAV_STRINGS: Record<string, { articles: string; articlesHref: string; login: string; cta: string; ctaHref: string }> = {
-  nl: { articles: 'Artikelen', articlesHref: '/artikelen/', login: 'Inloggen', cta: 'Plan gratis gesprek', ctaHref: '/#kennismaking' },
-  en: { articles: 'Articles', articlesHref: '/articles/', login: 'Log in', cta: 'Schedule free call', ctaHref: '/#consultation' },
-  es: { articles: 'Artículos', articlesHref: '/articulos/', login: 'Iniciar sesión', cta: 'Reservar llamada', ctaHref: '/#consulta' },
+const NAV_STRINGS: Record<string, { articles: string; articlesHref: string; login: string; loginHref: string; cta: string; ctaHref: string }> = {
+  nl: { articles: 'Artikelen', articlesHref: '/artikelen/', login: 'Inloggen', loginHref: 'https://app.vaetestament.nl', cta: 'Plan gratis gesprek', ctaHref: '/#kennismaking' },
+  en: { articles: 'Articles', articlesHref: '/articles/', login: 'Log in', loginHref: 'https://app.uaepropertywills.com', cta: 'Schedule free call', ctaHref: '/#consultation' },
+  es: { articles: 'Artículos', articlesHref: '/articulos/', login: 'Iniciar sesión', loginHref: 'https://app.vaetestament.nl', cta: 'Reservar llamada', ctaHref: '/#consulta' },
 };
 const t = NAV_STRINGS[locale] || NAV_STRINGS.nl;
 ---
@@ -18,7 +18,7 @@ const t = NAV_STRINGS[locale] || NAV_STRINGS.nl;
     <a href="/" class="site-logo" aria-label={locale === 'en' ? 'UAEpropertyWills home' : 'VAEtestament home'}>{locale === 'en' ? <Fragment>UAE<span>propertyWills</span></Fragment> : <Fragment>VAE<span>testament</span></Fragment>}</a>
     <div class="nav-actions">
       <a href={t.articlesHref} class="nav-link">{t.articles}</a>
-      <a href="https://app.vaetestament.nl" class="nav-link nav-link--muted">{t.login}</a>
+      <a href={t.loginHref} class="nav-link nav-link--muted">{t.login}</a>
       <a href={t.ctaHref} class="nav-cta">{t.cta}</a>
     </div>
   </div>

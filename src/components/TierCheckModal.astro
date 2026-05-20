@@ -1,15 +1,13 @@
 ---
-// TierCheckModal - singleton modal that the rest of the site triggers via
-// `window.openTierCheck()`. Ported verbatim (logic-wise) from the original
-// inline implementation in index.html so the UX is identical on landing
-// page and inside articles.
+// TierCheckModal - "Property Will of Full Will?" decision tool
+// 5 questions → Property Will (T1/T2) or Full Will (T3)
+// i18n NL/EN. EN hides T1.
 //
-// Inclusion contract: BaseLayout renders <TierCheckModal /> once per page
-// so any <TierCheckButton> on the page can call the global opener.
+// Inclusion: BaseLayout renders <TierCheckModal /> once per page.
+// Any page can call window.openTierCheck(slug?) to launch.
 //
-// Locked tier prices/Stripe links live here. If a Stripe Payment Link
-// rotates, update both this file AND phase4-renderer/phase4.js in the
-// platform repo (see HANDOVER_DAY_14.md § 1.4).
+// Stripe links are locked here. If a link rotates, also update
+// phase4-renderer/phase4.js in the platform repo.
 ---
 
 <div class="tc-overlay" id="tcOverlay" role="dialog" aria-modal="true" aria-labelledby="tcTitle">
@@ -21,69 +19,69 @@
     </div>
 
     <div class="tc-step active" data-step="0">
-      <h3 id="tcTitle">Wat is uw budget voor de begeleiding?</h3>
-      <p>Dit is exclusief de DIFC-registratiekosten die u rechtstreeks aan het DIFC betaalt.</p>
+      <h3 id="tcTitle"></h3>
+      <p></p>
       <div class="tc-options">
-        <button class="tc-opt" type="button" data-q="0" data-v="laag">Tot €500</button>
-        <button class="tc-opt" type="button" data-q="0" data-v="midden">€500 – €1.000</button>
-        <button class="tc-opt" type="button" data-q="0" data-v="hoog">Meer dan €1.000</button>
+        <button class="tc-opt" type="button" data-q="0" data-v="1"></button>
+        <button class="tc-opt" type="button" data-q="0" data-v="2-5"></button>
+        <button class="tc-opt" type="button" data-q="0" data-v="5+"></button>
       </div>
     </div>
 
     <div class="tc-step" data-step="1">
-      <h3>Hoeveel panden in de UAE wilt u opnemen?</h3>
-      <p>Tel alle appartementen, villa's en andere vastgoedobjecten.</p>
+      <h3></h3>
+      <p></p>
       <div class="tc-options">
-        <button class="tc-opt" type="button" data-q="1" data-v="1">1 pand</button>
-        <button class="tc-opt" type="button" data-q="1" data-v="2-5">2 t/m 5 panden</button>
-        <button class="tc-opt" type="button" data-q="1" data-v="5+">Meer dan 5 panden</button>
+        <button class="tc-opt" type="button" data-q="1" data-v="personal"></button>
+        <button class="tc-opt" type="button" data-q="1" data-v="corporate"></button>
       </div>
     </div>
 
     <div class="tc-step" data-step="2">
-      <h3>Is het vastgoed (deels) in een bedrijfsstructuur ondergebracht?</h3>
-      <p>Denk aan een LLC, holding of free-zone company.</p>
+      <h3></h3>
+      <p></p>
       <div class="tc-options">
-        <button class="tc-opt" type="button" data-q="2" data-v="nee">Nee, alles op eigen naam</button>
-        <button class="tc-opt" type="button" data-q="2" data-v="ja">Ja, geheel of gedeeltelijk</button>
+        <button class="tc-opt" type="button" data-q="2" data-v="nee"></button>
+        <button class="tc-opt" type="button" data-q="2" data-v="ja"></button>
       </div>
     </div>
 
     <div class="tc-step" data-step="3">
-      <h3>Wilt u ook andere UAE-bezittingen opnemen?</h3>
-      <p>Bijvoorbeeld bankrekeningen, beleggingen of voertuigen in de UAE.</p>
+      <h3></h3>
+      <p></p>
       <div class="tc-options">
-        <button class="tc-opt" type="button" data-q="3" data-v="nee">Nee, alleen vastgoed</button>
-        <button class="tc-opt" type="button" data-q="3" data-v="ja">Ja, ook andere bezittingen</button>
+        <button class="tc-opt" type="button" data-q="3" data-v="nee"></button>
+        <button class="tc-opt" type="button" data-q="3" data-v="ja"></button>
       </div>
     </div>
 
     <div class="tc-step" data-step="4">
-      <h3>Registreert u alleen of samen met uw partner?</h3>
-      <p>Bij een mirror will registreren beide partners tegelijk, elk met een eigen testament.</p>
+      <h3></h3>
+      <p></p>
       <div class="tc-options">
-        <button class="tc-opt" type="button" data-q="4" data-v="alleen">Alleen (single will)</button>
-        <button class="tc-opt" type="button" data-q="4" data-v="samen">Samen met partner (mirror will)</button>
+        <button class="tc-opt" type="button" data-q="4" data-v="ja"></button>
+        <button class="tc-opt" type="button" data-q="4" data-v="nee"></button>
       </div>
     </div>
 
     <div class="tc-result" id="tcResult">
-      <div class="tc-result-card">
-        <span class="tc-tier-name" id="tcTierName"></span>
-        <div class="tc-tier-price" id="tcTierPrice"></div>
-        <p class="tc-tier-desc" id="tcTierDesc"></p>
+      <div class="tc-result-card" id="tcResultCard">
+        <span class="tc-result-badge" id="tcBadge"></span>
+        <h3 id="tcResultHeading"></h3>
+        <p id="tcResultDesc"></p>
+        <p class="tc-dutch-note" id="tcDutchNote"></p>
       </div>
-      <a class="tc-buy" id="tcBuyLink" href="#">Nu beginnen &rarr;</a>
-      <a class="tc-consult" href="https://cal.com/vaetestament.nl/15min?utm_source=tier-check&amp;utm_medium=modal" target="_blank" rel="noopener">Liever eerst overleggen? Plan een gratis kennismaking &rarr;</a>
+      <div id="tcTierBtns" class="tc-tier-btns"></div>
+      <p class="tc-price-note" id="tcPriceNote"></p>
+      <a class="tc-consult" id="tcConsultLink" href="https://cal.com/vaetestament.nl/15min" target="_blank" rel="noopener"></a>
 
-      <!-- Newsletter placement 1: third row, captures non-converters with intent signal -->
       <div class="tc-newsletter">
-        <p class="tc-newsletter-label">Nog niet klaar om te beslissen?</p>
-        <p class="tc-newsletter-body">Krijg eens per maand een korte DIFC-update - praktisch, geen verkooppraat.</p>
+        <p class="tc-newsletter-label" id="tcNLLabel"></p>
+        <p class="tc-newsletter-body" id="tcNLBody"></p>
         <form class="nl-form tc-newsletter-form" data-slug="tier-check" novalidate>
           <label class="nl-honeypot" aria-hidden="true">Website<input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
-          <input type="email" name="email" required autocomplete="email" placeholder="uw@e-mailadres.nl" />
-          <button type="submit">Aanmelden</button>
+          <input type="email" name="email" required autocomplete="email" id="tcNLEmail" />
+          <button type="submit" id="tcNLSubmit"></button>
           <p class="nl-status" role="status" aria-live="polite" hidden></p>
         </form>
       </div>
@@ -167,6 +165,7 @@
   }
   .tc-opt:hover { border-color: var(--teal); background: #fafafa; }
   .tc-opt.selected { border-color: var(--teal); background: var(--cream); }
+
   .tc-result { display: none; text-align: center; padding: 20px 0 0; }
   .tc-result.active { display: block; }
   .tc-result-card {
@@ -175,40 +174,114 @@
     padding: 28px 24px;
     margin-bottom: 20px;
   }
-  .tc-result .tc-tier-name {
-    display: block;
+  .tc-result-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 3px;
+    margin-bottom: 12px;
+  }
+  .tc-result-card.tc-pw .tc-result-badge {
+    background: var(--teal);
+    color: #fff;
+  }
+  .tc-result-card.tc-fw .tc-result-badge {
+    background: var(--gold);
+    color: #fff;
+  }
+  .tc-result-card h3 {
     font-size: 1.2rem;
     font-weight: 700;
     color: var(--ink);
-    margin-bottom: 4px;
+    margin-bottom: 8px;
   }
-  .tc-result .tc-tier-price {
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: var(--teal);
-    margin-bottom: 12px;
-  }
-  .tc-result .tc-tier-desc {
+  .tc-result-card p {
     font-size: 0.88rem;
     color: var(--muted);
     line-height: 1.6;
   }
-  .tc-result .tc-buy,
-  .tc-result .tc-consult {
-    display: block;
-    background: var(--teal);
-    color: #fff;
-    padding: 16px 32px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.05rem;
-    transition: background 0.2s;
+  .tc-dutch-note {
+    font-size: 0.82rem;
+    color: var(--teal);
+    font-style: italic;
+    margin-top: 8px;
   }
-  .tc-result .tc-consult { margin-top: 10px; }
-  .tc-result .tc-buy:hover,
-  .tc-result .tc-consult:hover { background: var(--teal-mid); }
-  /* Newsletter row on result screen */
+  .tc-dutch-note:empty { display: none; }
+
+  .tc-tier-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+  .tc-tier-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 0.15s, box-shadow 0.15s;
+    cursor: pointer;
+  }
+  .tc-tier-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  }
+  .tc-tier-btn-outline {
+    background: #fff;
+    border: 2px solid var(--teal);
+    color: var(--teal);
+  }
+  .tc-tier-btn-gold {
+    background: var(--teal);
+    border: 2px solid var(--teal);
+    color: #fff;
+  }
+  .tc-tier-btn-left {
+    text-align: left;
+  }
+  .tc-tier-btn-name {
+    display: block;
+    font-weight: 600;
+    font-size: 0.95rem;
+    font-family: var(--font-body);
+  }
+  .tc-tier-btn-desc {
+    display: block;
+    font-size: 0.78rem;
+    opacity: 0.7;
+    margin-top: 2px;
+  }
+  .tc-tier-btn-price {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-left: 16px;
+  }
+  .tc-tier-btn-gold .tc-tier-btn-price { color: var(--gold); }
+
+  .tc-price-note {
+    font-size: 0.75rem;
+    color: var(--muted);
+    margin-bottom: 16px;
+    font-style: italic;
+  }
+
+  .tc-consult {
+    display: block;
+    font-size: 0.92rem;
+    color: var(--teal);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    margin-bottom: 8px;
+  }
+  .tc-consult:hover { color: var(--teal-mid); }
+
   .tc-newsletter {
     margin-top: 20px;
     padding-top: 18px;
@@ -282,36 +355,190 @@
 
 <script is:inline>
   (function () {
-    if (window.__tcInit) return; // singleton guard
+    if (window.__tcInit) return;
     window.__tcInit = true;
 
     var answers = [];
     var step = 0;
     var totalSteps = 5;
-    // Article slug, set by openTierCheck() - appended to the result CTAs as
-    // utm_content so we can attribute conversions back to the originating piece.
     var sourceSlug = null;
+    var locale = 'nl';
 
-    var tiers = {
-      t1: {
-        name: 'Zelf & Zeker',
-        price: '€497',
-        desc: 'Eén DIFC-testament voor één persoon met maximaal 5 vastgoedobjecten op eigen naam.',
-        link: 'https://buy.stripe.com/4gM28q9yJcuReIZ4TtbjW02'
+    var links = {
+      t1: 'https://buy.stripe.com/4gM28q9yJcuReIZ4TtbjW02',
+      t2: 'https://buy.stripe.com/4gM28q12d1QddEV5XxbjW03',
+      t3: 'https://buy.stripe.com/8x24gy3al0M91WdclVbjW04'
+    };
+
+    var S = {
+      nl: {
+        q: [
+          ['Hoeveel panden in de VAE wilt u opnemen?', 'Tel alle appartementen, villa\'s en andere vastgoedobjecten.', ['1 pand', '2 t/m 5 panden', 'Meer dan 5 panden']],
+          ['Staat het vastgoed op uw persoonlijke naam?', 'Of op naam van een BV, holding, free zone company of andere rechtspersoon?', ['Ja, op mijn persoonlijke naam', 'Nee, via een bedrijf of holding']],
+          ['Wilt u ook andere VAE-bezittingen opnemen?', 'Bijvoorbeeld bankrekeningen, beleggingen of voertuigen in de VAE.', ['Nee, alleen vastgoed', 'Ja, ook andere bezittingen']],
+          ['Heeft u minderjarige kinderen waarvoor u voogdij wilt regelen?', 'Een voogdijbepaling kan alleen via een Full Will worden vastgelegd.', ['Nee', 'Ja, ik wil voogdij regelen']],
+          ['Heeft u al een Nederlands testament?', 'Dit heeft geen invloed op uw DIFC-testament, maar helpt ons bij het advies.', ['Ja, ik heb een Nederlands testament', 'Nee, ik heb geen Nederlands testament']]
+        ],
+        pwBadge: 'Property Will',
+        pwTitle: 'Een Property Will dekt uw situatie.',
+        pwDesc: 'Uw vastgoed staat op persoonlijke naam, zonder bedrijfsstructuren, voogdij of niet-onroerend bezit. Een DIFC Property Will is de juiste keuze.',
+        pwDutchYes: 'Uw DIFC-testament werkt aanvullend op uw bestaande Nederlandse testament.',
+        pwDutchNo: 'Tip: overweeg ook een Nederlands testament voor uw bezittingen in Nederland.',
+        fwBadge: 'Full Will nodig',
+        fwTitle: 'Uw situatie vereist een Full Will.',
+        fwReasons: {
+          '5+': 'U heeft meer dan 5 vastgoedobjecten. Dit vereist juridische begeleiding via ons Tier 3-traject.',
+          corporate: 'Uw vastgoed staat op naam van een bedrijf of holding. Een Property Will dekt dit niet.',
+          assets: 'U wilt naast vastgoed ook andere bezittingen in de VAE opnemen. Dit vereist een Full Will.',
+          guardianship: 'U wilt voogdij regelen voor minderjarige kinderen. Dit kan alleen via een Full Will.'
+        },
+        t1: ['Zelf & Zeker', '€497', 'Zelf registreren via ons portal, op uw eigen tempo', 'Kies Zelf & Zeker'],
+        t2: ['Samen Registreren', '€797', '40 minuten begeleide portaalsessie (live video)', 'Kies Samen Registreren'],
+        t3: ['Volledig Ontzorgd', '€1.499', 'Intake call + DIFC-jurist + volledige procesbegeleiding', 'Kies Volledig Ontzorgd'],
+        priceNote: 'Begeleidingsvergoeding. DIFC-registratiekosten apart.',
+        consult: 'Liever eerst overleggen? Plan een gratis gesprek →',
+        fwConsult: 'Plan een gratis gesprek om uw situatie te bespreken →',
+        nlLabel: 'Nog niet klaar om te beslissen?',
+        nlBody: 'Krijg eens per maand een korte DIFC-update. Geen verkooppraat.',
+        nlPlaceholder: 'uw@e-mailadres.nl',
+        nlSubmit: 'Aanmelden'
       },
-      t2: {
-        name: 'Samen Registreren',
-        price: '€797',
-        desc: 'Twee DIFC-testamenten: voor u én uw partner, elk een eigen testament met maximaal 5 vastgoedobjecten op eigen naam.',
-        link: 'https://buy.stripe.com/4gM28q12d1QddEV5XxbjW03'
-      },
-      t3: {
-        name: 'Volledig Ontzorgd',
-        price: '€1.499',
-        desc: 'Voor situaties met meer dan 5 panden, bedrijfsstructuren of aanvullende bezittingen. Inclusief persoonlijke begeleiding.',
-        link: 'https://buy.stripe.com/8x24gy3al0M91WdclVbjW04'
+      en: {
+        q: [
+          ['How many properties in the UAE do you want to include?', 'Count all apartments, villas and other real estate.', ['1 property', '2 to 5 properties', 'More than 5 properties']],
+          ['Is the property in your personal name?', 'Or held through an LLC, holding company, free zone entity or other legal structure?', ['Yes, in my personal name', 'No, through a company or holding']],
+          ['Do you also want to include other UAE assets?', 'For example bank accounts, investments or vehicles in the UAE.', ['No, only real estate', 'Yes, other assets too']],
+          ['Do you have minor children for whom you want to arrange guardianship?', 'Guardianship provisions can only be included through a Full Will.', ['No', 'Yes, I want to arrange guardianship']],
+          ['Do you have a will in your home country?', 'This does not affect your DIFC will, but helps us advise you.', ['Yes, I have a home-country will', 'No, I do not have one']]
+        ],
+        pwBadge: 'Property Will',
+        pwTitle: 'A Property Will covers your situation.',
+        pwDesc: 'Your property is in your personal name, with no corporate structures, guardianship needs or non-real estate assets. A DIFC Property Will is the right choice.',
+        pwDutchYes: 'Your DIFC will works alongside your existing home-country will.',
+        pwDutchNo: 'Tip: consider also arranging a will in your home country for assets held there.',
+        fwBadge: 'Full Will needed',
+        fwTitle: 'Your situation requires a Full Will.',
+        fwReasons: {
+          '5+': 'You have more than 5 properties. This requires legal guidance via our Tier 3 service.',
+          corporate: 'Your property is held through a company or holding. A Property Will does not cover this.',
+          assets: 'You want to include non-real estate assets in the UAE. This requires a Full Will.',
+          guardianship: 'You want to arrange guardianship for minor children. This can only be done through a Full Will.'
+        },
+        t2: ['Guided Registration', '€797', '40-minute guided portal session (live video)', 'Choose Guided Registration'],
+        t3: ['Fully Managed', '€1,499', 'Intake call + DIFC lawyer + full process coordination', 'Choose Fully Managed'],
+        priceNote: 'Guidance fee. DIFC registration costs separate.',
+        consult: 'Prefer to discuss first? Schedule a free call →',
+        fwConsult: 'Schedule a free call to discuss your situation →',
+        nlLabel: 'Not ready to decide?',
+        nlBody: 'Get a monthly DIFC update. No sales talk.',
+        nlPlaceholder: 'your@email.com',
+        nlSubmit: 'Subscribe'
       }
     };
+
+    function detectLocale() {
+      var lang = (document.documentElement.lang || '').substring(0, 2);
+      if (lang === 'en') return 'en';
+      if (window.location.pathname.indexOf('/en/') === 0) return 'en';
+      return 'nl';
+    }
+
+    function t() { return S[locale]; }
+
+    function populateText() {
+      var s = t();
+      for (var i = 0; i < totalSteps; i++) {
+        var stepEl = document.querySelector('.tc-step[data-step="' + i + '"]');
+        if (!stepEl) continue;
+        stepEl.querySelector('h3').textContent = s.q[i][0];
+        stepEl.querySelector('p').textContent = s.q[i][1];
+        var opts = stepEl.querySelectorAll('.tc-opt');
+        for (var j = 0; j < opts.length; j++) {
+          opts[j].textContent = s.q[i][2][j] || '';
+        }
+      }
+      document.getElementById('tcNLLabel').textContent = s.nlLabel;
+      document.getElementById('tcNLBody').textContent = s.nlBody;
+      document.getElementById('tcNLEmail').placeholder = s.nlPlaceholder;
+      document.getElementById('tcNLSubmit').textContent = s.nlSubmit;
+    }
+
+    function makeTierBtn(tierKey, featured) {
+      var s = t();
+      var tier = s[tierKey];
+      if (!tier) return null;
+      var a = document.createElement('a');
+      a.href = links[tierKey];
+      a.className = 'tc-tier-btn ' + (featured ? 'tc-tier-btn-gold' : 'tc-tier-btn-outline');
+      a.innerHTML =
+        '<div class="tc-tier-btn-left">' +
+          '<span class="tc-tier-btn-name">' + tier[0] + '</span>' +
+          '<span class="tc-tier-btn-desc">' + tier[2] + '</span>' +
+        '</div>' +
+        '<span class="tc-tier-btn-price">' + tier[1] + '</span>';
+      return a;
+    }
+
+    function showPropertyWill() {
+      var s = t();
+      var card = document.getElementById('tcResultCard');
+      card.className = 'tc-result-card tc-pw';
+      document.getElementById('tcBadge').textContent = s.pwBadge;
+      document.getElementById('tcResultHeading').textContent = s.pwTitle;
+      document.getElementById('tcResultDesc').textContent = s.pwDesc;
+
+      var dutchNote = document.getElementById('tcDutchNote');
+      if (answers[4] === 'ja') {
+        dutchNote.textContent = s.pwDutchYes;
+      } else if (answers[4] === 'nee') {
+        dutchNote.textContent = s.pwDutchNo;
+      } else {
+        dutchNote.textContent = '';
+      }
+
+      var btns = document.getElementById('tcTierBtns');
+      btns.innerHTML = '';
+      if (locale === 'nl' && s.t1) {
+        btns.appendChild(makeTierBtn('t1', false));
+      }
+      btns.appendChild(makeTierBtn('t2', true));
+
+      document.getElementById('tcPriceNote').textContent = s.priceNote;
+      document.getElementById('tcConsultLink').textContent = s.consult;
+      document.getElementById('tcConsultLink').href =
+        'https://cal.com/vaetestament.nl/15min?utm_source=tier-check&utm_medium=modal' +
+        (sourceSlug ? '&utm_content=' + sourceSlug : '');
+
+      finishResult();
+    }
+
+    function showFullWill(reason) {
+      var s = t();
+      var card = document.getElementById('tcResultCard');
+      card.className = 'tc-result-card tc-fw';
+      document.getElementById('tcBadge').textContent = s.fwBadge;
+      document.getElementById('tcResultHeading').textContent = s.fwTitle;
+      document.getElementById('tcResultDesc').textContent = s.fwReasons[reason] || '';
+      document.getElementById('tcDutchNote').textContent = '';
+
+      var btns = document.getElementById('tcTierBtns');
+      btns.innerHTML = '';
+      btns.appendChild(makeTierBtn('t3', true));
+
+      document.getElementById('tcPriceNote').textContent = s.priceNote;
+      document.getElementById('tcConsultLink').textContent = s.fwConsult;
+      document.getElementById('tcConsultLink').href =
+        'https://cal.com/vaetestament.nl/15min?utm_source=tier-check&utm_medium=modal&utm_content=full-will' +
+        (sourceSlug ? '-' + sourceSlug : '');
+
+      finishResult();
+    }
+
+    function finishResult() {
+      document.querySelectorAll('.tc-step').forEach(function (s) { s.classList.remove('active'); });
+      document.querySelectorAll('#tcProgress span').forEach(function (b) { b.classList.add('done'); });
+      document.getElementById('tcResult').classList.add('active');
+    }
 
     function updateProgress() {
       var bars = document.querySelectorAll('#tcProgress span');
@@ -320,29 +547,27 @@
       }
     }
 
-    function showResult(tier) {
+    function advanceTo(nextStep) {
+      step = nextStep;
       document.querySelectorAll('.tc-step').forEach(function (s) { s.classList.remove('active'); });
-      document.querySelectorAll('#tcProgress span').forEach(function (b) { b.classList.add('done'); });
-      var t = tiers[tier];
-      document.getElementById('tcTierName').textContent = t.name;
-      document.getElementById('tcTierPrice').textContent = t.price;
-      document.getElementById('tcTierDesc').textContent = t.desc;
-      // Stripe ignores arbitrary query params; we keep the link clean.
-      // Attribution lives in the cal.com link + the AI-button analytics.
-      document.getElementById('tcBuyLink').href = t.link;
-      document.getElementById('tcResult').classList.add('active');
+      document.querySelector('.tc-step[data-step="' + step + '"]').classList.add('active');
+      updateProgress();
     }
 
     window.openTierCheck = function (slug) {
       sourceSlug = typeof slug === 'string' ? slug : null;
+      locale = detectLocale();
       answers = [];
       step = 0;
+
+      populateText();
+
       document.querySelectorAll('.tc-step').forEach(function (s) { s.classList.remove('active'); });
       document.querySelector('.tc-step[data-step="0"]').classList.add('active');
       document.getElementById('tcResult').classList.remove('active');
-      // Reset selected state
       document.querySelectorAll('.tc-opt.selected').forEach(function (o) { o.classList.remove('selected'); });
       updateProgress();
+
       document.getElementById('tcOverlay').classList.add('open');
       document.body.style.overflow = 'hidden';
     };
@@ -363,44 +588,34 @@
         var v = btn.getAttribute('data-v');
         answers[q] = v;
 
-        // highlight selected
         document
           .querySelectorAll('.tc-step[data-step="' + q + '"] .tc-opt')
           .forEach(function (o) { o.classList.remove('selected'); });
         btn.classList.add('selected');
 
         setTimeout(function () {
-          // Routing rules (locked):
-          //   Q2 (index 1): >5 panden → T3
-          //   Q3-Q4 (index 2,3): any "ja" → T3
-          //   Otherwise: Q5 'samen' → T2; 'alleen' → T1
-          if (v === '5+') return showResult('t3');
-          if ((q === 2 || q === 3) && v === 'ja') return showResult('t3');
+          // T3 triggers: >5 properties, corporate, other assets, guardianship
+          if (q === 0 && v === '5+') return showFullWill('5+');
+          if (q === 1 && v === 'corporate') return showFullWill('corporate');
+          if (q === 2 && v === 'ja') return showFullWill('assets');
+          if (q === 3 && v === 'ja') return showFullWill('guardianship');
 
-          if (q < totalSteps - 1) {
-            step = q + 1;
-            document.querySelectorAll('.tc-step').forEach(function (s) { s.classList.remove('active'); });
-            document.querySelector('.tc-step[data-step="' + step + '"]').classList.add('active');
-            updateProgress();
-          } else {
-            showResult(answers[4] === 'samen' ? 't2' : 't1');
-          }
+          // Last question answered -> Property Will
+          if (q === totalSteps - 1) return showPropertyWill();
+
+          // Advance to next question
+          advanceTo(q + 1);
         }, 300);
       });
     });
 
-    // Esc closes the modal
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && document.getElementById('tcOverlay').classList.contains('open')) {
         window.closeTierCheck();
       }
     });
 
-    // Newsletter form binding. TierCheckModal is rendered on every page via
-    // BaseLayout, so it's the one place where the form is guaranteed to exist
-    // independent of whether <NewsletterSignup> happens to be on the page.
-    // The same selector + idempotent guard is used by NewsletterSignup.astro,
-    // so dual-binding is safe.
+    // Newsletter form binding (shared with NewsletterSignup.astro)
     document.querySelectorAll('.nl-form:not([data-nl-bound])').forEach(function (form) {
       form.setAttribute('data-nl-bound', 'true');
       var status = form.querySelector('.nl-status');
@@ -411,13 +626,13 @@
         if (fd.get('website')) return;
         var email = (fd.get('email') || '').toString().trim();
         if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-          status.textContent = 'Voer een geldig e-mailadres in.';
+          status.textContent = locale === 'en' ? 'Please enter a valid email address.' : 'Voer een geldig e-mailadres in.';
           status.className = 'nl-status err';
           status.hidden = false;
           return;
         }
         button.disabled = true;
-        status.textContent = 'Even geduld…';
+        status.textContent = locale === 'en' ? 'One moment…' : 'Even geduld…';
         status.className = 'nl-status';
         status.hidden = false;
         try {
@@ -427,15 +642,19 @@
             body: JSON.stringify({
               email: email,
               slug: form.getAttribute('data-slug') || null,
-              source: form.getAttribute('data-slug') === 'tier-check' ? 'tier-check' : 'article'
+              source: 'tier-check'
             })
           });
           if (!res.ok) throw new Error('subscribe ' + res.status);
-          status.textContent = 'Bedankt. Check uw inbox voor een bevestigingse-mail.';
+          status.textContent = locale === 'en'
+            ? 'Thank you. Check your inbox for a confirmation email.'
+            : 'Bedankt. Check uw inbox voor een bevestigingse-mail.';
           status.className = 'nl-status ok';
           form.querySelector('input[type="email"]').value = '';
         } catch (err) {
-          status.textContent = 'Aanmelden lukte niet. Probeer het later opnieuw of mail support@vaetestament.nl.';
+          status.textContent = locale === 'en'
+            ? 'Subscription failed. Please try again later.'
+            : 'Aanmelden lukte niet. Probeer het later opnieuw of mail support@vaetestament.nl.';
           status.className = 'nl-status err';
         } finally {
           button.disabled = false;

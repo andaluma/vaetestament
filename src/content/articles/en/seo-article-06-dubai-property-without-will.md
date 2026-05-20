@@ -28,7 +28,7 @@ faq:
   - q: How quickly can I arrange a DIFC will?
     a: Preparation typically takes 1 to 2 weeks. The DIFC registration itself takes 4 to 8 weeks. The entire process is conducted remotely. See the [step-by-step overview](/articles/register-difc-will-from-abroad/).
   - q: What does a DIFC will cost via VAEtestament?
-    a: "VAEtestament works with fixed guidance fees: EUR 497, EUR 797 or EUR 1,499, depending on your situation. DIFC registration fees are separate. Read more about the [packages and pricing structure](/articles/difc-will-costs-and-packages/)."
+    a: "VAEtestament works with fixed guidance fees: €797 or €1,499, depending on your situation. DIFC registration fees are separate. Read more about the [packages and pricing structure](/articles/difc-will-costs-and-packages/)."
 ---
 
 Without a DIFC will, your surviving partner has no certainty about the distribution of your UAE property. The authorities may apply local inheritance rules, regardless of your nationality. Your surviving family faces a costly and lengthy probate procedure. This article describes what happens in concrete terms, what it costs and how you prevent it.
@@ -55,7 +55,7 @@ Without a local will, your heirs start a probate procedure at the UAE court. Thi
 
 ### The costs
 
-The total costs of this process typically exceed EUR 10,000. This includes:
+The total costs of this process typically exceed €10,000. This includes:
 
 - Apostilles and sworn translations (multiple documents, multiple languages).
 - Local legal representation in the UAE.
@@ -92,7 +92,7 @@ In concrete terms:
 | | Without DIFC will | With DIFC will |
 |---|---|---|
 | **Distribution** | Uncertain, dependent on applicable local rules | Determined by you |
-| **Costs for surviving family** | EUR 10,000+ | No additional costs |
+| **Costs for surviving family** | €10,000+ | No additional costs |
 | **Timeline** | 12 to 24 months | Significantly shorter via DIFC system |
 | **Language barrier** | Arabic, sworn translations required | English |
 | **Property frozen** | Yes, for the entire procedure | No |

@@ -24,7 +24,7 @@ faq:
   - q: Can I speed up the process?
     a: You can speed up the preparation phase by having your documents and decisions ready quickly. The DIFC processing time (4 to 8 weeks) is fixed.
   - q: What if my situation is complex (corporate structure, more than 5 properties)?
-    a: Then you fall under Tier 3 (EUR 1,499), including a referral to a DIFC-certified lawyer from VAEtestament's network. Read more about the [packages and pricing structure](/articles/difc-will-costs-and-packages/).
+    a: Then you fall under Tier 3 (€1,499), including a referral to a DIFC-certified lawyer from VAEtestament's network. Read more about the [packages and pricing structure](/articles/difc-will-costs-and-packages/).
   - q: In what language is the will drafted?
     a: The DIFC will is in English. Guidance from VAEtestament is available in English and Dutch.
   - q: Can I amend my DIFC will later?
@@ -68,7 +68,7 @@ This is the part where most owners spend the longest. You need to determine:
 - **Guardianship** (if applicable). Who receives care of minor children?
 - **Substitute beneficiaries.** What if your primary beneficiary predeceases you?
 
-With Tier 2, you discuss these decisions in a personal 40-minute session with André van Wijngaarden. With Tier 1, you receive a structured working document to work through the decisions independently.
+With Tier 2, you discuss these decisions in a personal 40-minute session with André van Wijngaarden.
 
 ### Step 4: drafting the will
 

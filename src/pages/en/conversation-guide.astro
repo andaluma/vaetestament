@@ -1,0 +1,139 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const siteRoot = 'https://uaepropertywills.com';
+const canonical = `${siteRoot}/conversation-guide/`;
+---
+
+<BaseLayout
+  title="Free guide: talking to your parents about UAE property - UAEpropertyWills"
+  description="Download the free guide for adult children of foreign UAE property owners. Practical tips to raise the will conversation, without guilt."
+  canonical={canonical}
+>
+  <main class="page">
+    <section class="article-hero has-image" style="--hero-image: url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1600&q=85&auto=format&fit=crop')">
+      <div class="container">
+        <span class="hero-eyebrow fade-up">Free download</span>
+        <h1 class="fade-up delay-1">Talking to Your Parents About UAE Property</h1>
+        <p class="lede fade-up delay-2">A practical guide for adult children. How to raise the topic, handle objections, and take the next step.</p>
+      </div>
+    </section>
+
+    <section class="lm-body">
+      <div class="lm-content">
+        <h2>What is inside the guide?</h2>
+        <ul>
+          <li>Why a home-country will does not cover UAE property</li>
+          <li>Three conversation techniques that reduce resistance</li>
+          <li>Answers to the five most common objections</li>
+          <li>The gift idea: how to lower the barrier</li>
+          <li>A practical checklist for after the conversation</li>
+          <li>When you do and do not need a lawyer</li>
+        </ul>
+        <p class="lm-note">12 pages. Written for children, not for lawyers.</p>
+      </div>
+
+      <div class="lm-form-card">
+        <h3>Download the free guide</h3>
+        <p>Enter your email address and receive the guide by email. You will also receive two short follow-up emails with practical tips. Unsubscribe at any time.</p>
+        <form class="lm-form" id="lmForm" novalidate>
+          <label class="lm-honeypot" aria-hidden="true">Website<input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
+          <input type="email" name="email" required autocomplete="email" placeholder="your@email.com" />
+          <button type="submit">Send me the guide</button>
+          <p class="lm-status" role="status" aria-live="polite" hidden></p>
+        </form>
+        <p class="lm-privacy">We respect your privacy. No spam. <a href="/privacybeleid.html">Privacy policy</a></p>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .lm-body {
+    max-width: var(--max-prose);
+    margin: 0 auto;
+    padding: 3rem 1.5rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+  .lm-content h2 {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    color: var(--teal);
+    margin-bottom: 1rem;
+  }
+  .lm-content ul { list-style: none; padding: 0; }
+  .lm-content li {
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    position: relative;
+    font-size: 0.95rem;
+    color: var(--mid);
+    line-height: 1.6;
+    border-bottom: 1px solid var(--cream-dark);
+  }
+  .lm-content li::before {
+    content: '\2713';
+    position: absolute;
+    left: 0;
+    color: var(--teal);
+    font-weight: 600;
+  }
+  .lm-note { margin-top: 1rem; font-size: 0.85rem; color: var(--mid); font-style: italic; }
+  .lm-form-card { background: var(--cream); border: 1px solid var(--cream-dark); border-radius: 8px; padding: 2rem; }
+  .lm-form-card h3 { font-family: var(--font-display); font-size: 1.3rem; color: var(--teal); margin-bottom: 0.5rem; }
+  .lm-form-card > p { font-size: 0.88rem; color: var(--mid); line-height: 1.6; margin-bottom: 1.25rem; }
+  .lm-form { display: flex; flex-direction: column; gap: 0.75rem; }
+  .lm-honeypot { position: absolute; left: -9999px; }
+  .lm-form input[type="email"] { padding: 12px 14px; font-family: var(--font-body); font-size: 0.95rem; border: 1px solid var(--cream-dark); border-radius: 4px; background: #fff; }
+  .lm-form input[type="email"]:focus { outline: 2px solid var(--gold); outline-offset: 1px; }
+  .lm-form button { padding: 14px; background: var(--teal); color: #fff; border: none; border-radius: 4px; font-family: var(--font-body); font-size: 0.95rem; font-weight: 500; cursor: pointer; transition: background 0.15s; }
+  .lm-form button:hover { background: var(--teal-mid); }
+  .lm-form button:disabled { opacity: 0.6; cursor: wait; }
+  .lm-status { font-size: 0.88rem; margin: 0; }
+  .lm-status.ok { color: var(--teal); }
+  .lm-status.err { color: #B33A3A; }
+  .lm-privacy { font-size: 0.78rem; color: var(--mid); margin-top: 0.75rem; }
+  .lm-privacy a { color: var(--teal); }
+  @media (max-width: 768px) { .lm-body { grid-template-columns: 1fr; gap: 2rem; padding: 2rem 1.25rem 3rem; } }
+</style>
+
+<script is:inline>
+  (function () {
+    var form = document.getElementById('lmForm');
+    if (!form) return;
+    var status = form.querySelector('.lm-status');
+    var button = form.querySelector('button[type="submit"]');
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      var fd = new FormData(form);
+      if (fd.get('website')) return;
+      var email = (fd.get('email') || '').toString().trim();
+      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        status.textContent = 'Please enter a valid email address.';
+        status.className = 'lm-status err';
+        status.hidden = false;
+        return;
+      }
+      button.disabled = true;
+      status.textContent = 'One moment…';
+      status.className = 'lm-status';
+      status.hidden = false;
+      try {
+        var res = await fetch('https://api.vaetestament.nl/v1/newsletter/subscribe', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email: email, slug: 'conversation-guide', source: 'leadmagnet-kinderen', locale: 'en' })
+        });
+        if (!res.ok) throw new Error('subscribe ' + res.status);
+        status.textContent = 'Thank you! Check your inbox for a confirmation email. After confirmation you will receive the guide.';
+        status.className = 'lm-status ok';
+        form.querySelector('input[type="email"]').value = '';
+      } catch (err) {
+        status.textContent = 'Something went wrong. Please try again or email support@uaepropertywills.com.';
+        status.className = 'lm-status err';
+      } finally { button.disabled = false; }
+    });
+  })();
+</script>

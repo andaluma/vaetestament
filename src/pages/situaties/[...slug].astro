@@ -1,0 +1,154 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BookCallButton from '../../components/BookCallButton.astro';
+
+const DEFAULT_HERO =
+  'https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1600&q=85&auto=format&fit=crop';
+
+export async function getStaticPaths() {
+  const situaties = await getCollection('situaties');
+  return situaties.map((entry) => ({
+    params: { slug: entry.id.replace(/\.(md|mdx)$/, '') },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+
+const data = entry.data;
+const slug = entry.id.replace(/\.(md|mdx)$/, '');
+const canonical = `https://vaetestament.nl/situaties/${slug}/`;
+
+const bodyText = entry.body ?? '';
+const wordCount = bodyText.split(/\s+/).filter(Boolean).length;
+const readMinutes = Math.max(1, Math.round(wordCount / 200));
+
+const allSituaties = await getCollection('situaties');
+const slugIndex = new Map(
+  allSituaties.map((a) => [a.id.replace(/\.(md|mdx)$/, ''), a]),
+);
+const relatedEntries = (data.related ?? [])
+  .map((s) => slugIndex.get(s))
+  .filter((a): a is NonNullable<typeof a> => Boolean(a));
+
+const articleJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': data.schema_type,
+  headline: data.title,
+  description: data.meta_description,
+  datePublished: data.publish_date.toISOString(),
+  author: {
+    '@type': 'Person',
+    name: data.author,
+    url: 'https://vaetestament.nl/over-andre',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'VAEtestament',
+    url: 'https://vaetestament.nl',
+  },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+  keywords: data.keywords.join(', '),
+  inLanguage: 'nl-NL',
+};
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://vaetestament.nl/' },
+    { '@type': 'ListItem', position: 2, name: 'Situaties', item: 'https://vaetestament.nl/situaties/' },
+    { '@type': 'ListItem', position: 3, name: data.title, item: canonical },
+  ],
+};
+
+const jsonLd = [articleJsonLd, breadcrumbJsonLd];
+
+const resultLabel = data.result ?? null;
+
+const publishDateFmt = data.publish_date.toLocaleDateString('nl-NL', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+---
+
+<BaseLayout
+  title={`${data.title} - VAEtestament`}
+  description={data.meta_description}
+  canonical={canonical}
+  ogType="article"
+  publishDate={data.publish_date}
+  author={data.author}
+  jsonLd={jsonLd}
+>
+  <main class="page">
+    <section class="article-hero has-image" style={`--hero-image: url('${DEFAULT_HERO}')`}>
+      <div class="container">
+        <span class="hero-eyebrow fade-up">Situatie</span>
+        <h1 class="fade-up delay-1">{data.title}</h1>
+        <p class="lede fade-up delay-2">{data.meta_description}</p>
+        <p class="meta fade-up delay-3">
+          <span>Door <a href="/over-andre/" rel="author">{data.author}</a></span>
+          <span aria-hidden="true">·</span>
+          <time datetime={data.publish_date.toISOString()}>{publishDateFmt}</time>
+          <span aria-hidden="true">·</span>
+          <span>{readMinutes} min lezen</span>
+        </p>
+        {resultLabel && (
+          <p class="fade-up delay-3" style="margin-top:0.75rem;">
+            <span style="display:inline-block;background:var(--gold);color:#fff;padding:0.3rem 0.8rem;border-radius:4px;font-family:var(--font-body);font-size:0.85rem;font-weight:500;">{resultLabel}</span>
+          </p>
+        )}
+      </div>
+    </section>
+
+    <nav class="breadcrumbs" aria-label="Broodkruimels">
+      <a href="/">Home</a>
+      <span aria-hidden="true"> › </span>
+      <a href="/situaties/">Situaties</a>
+      <span aria-hidden="true"> › </span>
+      <span aria-current="page">{data.title}</span>
+    </nav>
+
+    <article class="article-body">
+      <Content />
+    </article>
+
+    <section class="cta-block" aria-labelledby="cta-heading">
+      <p class="section-label">Volgende stap</p>
+      <h2 id="cta-heading">Past uw situatie hierbij?</h2>
+      <p>Doe de test en ontdek in vijf vragen welk testament bij u past. Of plan een vrijblijvend gesprek van vijftien minuten.</p>
+      <div class="cta-row">
+        <button
+          type="button"
+          class="btn btn-gold btn-lg"
+          onclick={`openTierCheck(${JSON.stringify(slug)})`}
+        >Welk testament past bij u?</button>
+        <BookCallButton slug={slug} variant="subtle" />
+      </div>
+    </section>
+
+    {relatedEntries.length > 0 && (
+      <section class="related-block" aria-labelledby="related-heading">
+        <p class="section-label" style="text-align:center;display:block;">Vergelijkbare situaties</p>
+        <h2 id="related-heading">Bekijk ook</h2>
+        <ul class="related-list">
+          {relatedEntries.map((rel) => {
+            const relSlug = rel.id.replace(/\.(md|mdx)$/, '');
+            return (
+              <li>
+                <a href={`/situaties/${relSlug}/`}>
+                  <strong>{rel.data.title}</strong>
+                  <span>{rel.data.meta_description}</span>
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+    )}
+  </main>
+</BaseLayout>

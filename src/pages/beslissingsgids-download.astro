@@ -1,0 +1,128 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const canonical = 'https://vaetestament.nl/beslissingsgids-download/';
+---
+
+<BaseLayout
+  title="Uw beslissingsgids staat klaar - VAEtestament"
+  description="Download de gratis beslissingsgids: Property Will of Full Will?"
+  canonical={canonical}
+  noindex
+>
+  <main class="page">
+    <section class="article-hero has-image" style="--hero-image: url('https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1600&q=85&auto=format&fit=crop')">
+      <div class="container">
+        <span class="hero-eyebrow fade-up">Bedankt voor uw aanmelding</span>
+        <h1 class="fade-up delay-1">Uw beslissingsgids staat klaar</h1>
+        <p class="lede fade-up delay-2">Klik op de knop hieronder om de gids te downloaden.</p>
+      </div>
+    </section>
+
+    <section class="dl-body">
+      <div class="dl-card">
+        <h2>Property Will of Full Will?</h2>
+        <p>20 pagina's. Helder geschreven. Geen juridisch jargon.</p>
+        <a href="/assets/leadmagnet-property-vs-full-will.pdf" download class="dl-btn">Download de gids (PDF)</a>
+        <p class="dl-note">De gids is ook per e-mail verstuurd naar het adres waarmee u zich heeft aangemeld.</p>
+      </div>
+
+      <div class="dl-next">
+        <h3>Wat nu?</h3>
+        <ul>
+          <li><strong>Lees de gids</strong> en bepaal of een Property Will bij uw situatie past.</li>
+          <li><strong>Gebruik de checklist</strong> op pagina 8 om uw situatie te toetsen.</li>
+          <li><strong>Twijfelt u?</strong> <a href="https://cal.com/vaetestament.nl">Plan een gratis gesprek van 15 minuten</a>. Geen verkooppraatje.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .dl-body {
+    max-width: var(--max-prose);
+    margin: 0 auto;
+    padding: 3rem 1.5rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+  .dl-card {
+    background: var(--cream);
+    border: 1px solid var(--cream-dark);
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+  }
+  .dl-card h2 {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    color: var(--teal);
+    margin-bottom: 0.5rem;
+  }
+  .dl-card > p {
+    font-size: 0.9rem;
+    color: var(--mid);
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+  }
+  .dl-btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: var(--teal);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    transition: background 0.15s;
+  }
+  .dl-btn:hover { background: var(--teal-mid); }
+  .dl-note {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: var(--mid);
+    font-style: italic;
+  }
+
+  .dl-next h3 {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    color: var(--teal);
+    margin-bottom: 1rem;
+  }
+  .dl-next ul {
+    list-style: none;
+    padding: 0;
+  }
+  .dl-next li {
+    padding: 0.75rem 0 0.75rem 1.5rem;
+    position: relative;
+    font-size: 0.92rem;
+    color: var(--mid);
+    line-height: 1.6;
+    border-bottom: 1px solid var(--cream-dark);
+  }
+  .dl-next li::before {
+    content: '\2192';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-weight: 600;
+  }
+  .dl-next li strong { color: var(--dark); }
+  .dl-next li a { color: var(--teal); }
+
+  @media (max-width: 768px) {
+    .dl-body {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      padding: 2rem 1.25rem 3rem;
+    }
+  }
+</style>

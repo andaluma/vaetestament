@@ -87,7 +87,7 @@ If you have no assets in your home country (for example, because you live perman
 - **Property in a corporate structure:** if your property is held by a holding, LLC or trust, a standard Property Will is not sufficient.
 - **Property in more than two countries:** with an international portfolio (for example, your home country, the UAE and Indonesia), you need a separate instrument per country. This requires coordination between multiple advisers.
 
-For these situations, VAEtestament offers Tier 3 (EUR 1,499), including a referral to a DIFC-certified lawyer.
+For these situations, UAE Property Wills offers Tier 3 (€1,499), including a referral to a DIFC-certified lawyer.
 
 ## The practical steps
 

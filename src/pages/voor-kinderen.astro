@@ -1,0 +1,858 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = 'Bezitten uw ouders vastgoed in Dubai? - VAEtestament';
+const description = 'Uw ouders bezitten een appartement of villa in de VAE. Zonder lokaal testament kan de erfenis vastlopen. Help ze het nu te regelen, samen.';
+const canonical = 'https://vaetestament.nl/voor-kinderen/';
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Voor kinderen van VAE-vastgoedeigenaren",
+  "description": description,
+  "url": canonical,
+  "publisher": { "@id": "https://vaetestament.nl/#organization" }
+};
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  canonical={canonical}
+  jsonLd={[jsonLd]}
+>
+  <main class="page">
+
+    <!-- HERO -->
+    <section class="vk-hero">
+      <div class="container">
+        <span class="hero-eyebrow fade-up">Uw initiatief, hun gemoedsrust</span>
+        <h1 class="fade-up delay-1">Hebben uw ouders een appartement in Dubai?<br>Dan moet u dit even samen lezen.</h1>
+        <p class="vk-hero-sub fade-up delay-2">Hun Nederlandse testament dekt dat vastgoed waarschijnlijk niet. Dat weten de meeste eigenaren niet. En de makelaar die het verkocht heeft het niet verteld. Het goede nieuws: het regelen kost een middag. Niet regelen kan uw familie jaren kosten.</p>
+        <div class="vk-hero-actions fade-up delay-3">
+          <a href="https://cal.com/vaetestament.nl" class="btn btn-gold btn-lg">Plan een gratis gesprek (samen of apart)</a>
+          <a href="#" class="btn btn-outline btn-lg" onclick="openTierCheck();return false;">Doe de test: welk testament past?</a>
+        </div>
+        <p class="vk-hero-note fade-up delay-4">15 minuten &middot; Vrijblijvend &middot; In het Nederlands</p>
+      </div>
+    </section>
+
+    <!-- HET PROBLEEM -->
+    <section class="vk-problem">
+      <div class="container">
+        <div class="vk-problem-inner">
+          <div class="vk-problem-left">
+            <p class="section-label">Kort gezegd</p>
+            <h2>Wat is het probleem?</h2>
+            <p>De VAE past bij overlijden in de regel lokaal erfrecht toe op vastgoed binnen haar grenzen. Een Nederlands notarieel testament wordt daar doorgaans niet erkend. Dat geldt ongeacht hoe goed dat testament is opgesteld.</p>
+            <p>Zonder een lokaal testament (een zogeheten DIFC-testament) kan het vastgoed na overlijden vastlopen. Uw nabestaanden moeten dan een VAE-erfprocedure doorlopen: documenten laten legaliseren, beedigde Arabische vertalingen regelen, en lokale advocaten inschakelen. Dat duurt 12 tot 24 maanden en kost al snel &euro;10.000 of meer.</p>
+            <p>Met een DIFC-testament bepalen uw ouders zelf wie het vastgoed erft. De registratie verloopt volledig digitaal vanuit Nederland.</p>
+          </div>
+          <div class="vk-problem-right">
+            <div class="vk-stat-card">
+              <span class="vk-stat-num">12,5%</span>
+              <p>Zonder lokaal testament ontvangt de langstlevende partner in veel gevallen slechts 12,5% van het VAE-vastgoed. De rest gaat naar andere familieleden, ongeacht wat de eigenaar had gewild.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VOOR OUDERS DIE DIT NU LEZEN -->
+    <section class="vk-parents">
+      <div class="container">
+        <p class="section-label" style="text-align:center;">Leest u dit samen met uw kind?</p>
+        <h2 style="text-align:center;">Dan heeft u al een voorsprong</h2>
+        <div class="vk-parents-grid">
+          <div class="vk-parents-card">
+            <h3>U hoeft niet naar Dubai</h3>
+            <p>De hele registratie verloopt digitaal via het officiele DIFC-portaal. U doet het vanuit uw eigen woonkamer.</p>
+          </div>
+          <div class="vk-parents-card">
+            <h3>U hoeft geen advocaat in te schakelen</h3>
+            <p>Voor de meeste situaties (vastgoed op persoonlijke naam, geen bedrijfsstructuren) volstaat een Property Will. Die kunt u zelf registreren, met onze begeleiding.</p>
+          </div>
+          <div class="vk-parents-card">
+            <h3>Het kost minder dan u denkt</h3>
+            <p>Onze begeleiding start bij &euro;497. Daar komen de DIFC-registratiekosten bij (AED 7.500 voor een enkelvoudig testament). Veel kinderen betalen dit als cadeau.</p>
+          </div>
+          <div class="vk-parents-card">
+            <h3>Alles is in het Nederlands</h3>
+            <p>Het DIFC-portaal is in het Engels, maar wij begeleiden u volledig in het Nederlands. Met video's, checklists en persoonlijke ondersteuning.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOE HET WERKT -->
+    <section class="vk-action">
+      <div class="container">
+        <p class="section-label" style="text-align:center;">Hoe werkt het?</p>
+        <h2 style="text-align:center;">Van dit moment tot een geregistreerd testament</h2>
+        <div class="vk-steps">
+          <div class="vk-step">
+            <div class="vk-step-num">1</div>
+            <h3>Gratis gesprek van 15 minuten</h3>
+            <p>Bel samen of laat uw ouders zelf bellen. Wij luisteren naar de situatie en vertellen eerlijk welk testament past. Geen verkooppraatje.</p>
+          </div>
+          <div class="vk-step">
+            <div class="vk-step-num">2</div>
+            <h3>Documenten verzamelen</h3>
+            <p>Wij sturen een heldere checklist. Uw ouders verzamelen de benodigde stukken: paspoort, eigendomsbewijs, gegevens van begunstigden. Doorgaans 1 tot 2 weken.</p>
+          </div>
+          <div class="vk-step">
+            <div class="vk-step-num">3</div>
+            <h3>Registratie via het DIFC-portaal</h3>
+            <p>Zelfstandig met onze stap-voor-stapbegeleiding (&euro;497), of samen in een videosessie van 40 minuten (&euro;797). Het testament wordt ingediend bij het DIFC.</p>
+          </div>
+          <div class="vk-step">
+            <div class="vk-step-num">4</div>
+            <h3>Bevestiging</h3>
+            <p>Na 4 tot 8 weken ontvangen uw ouders de officiele DIFC-registratiebevestiging. De erfopvolging is geregeld. Rust voor het hele gezin.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HERKENBAAR? -->
+    <section class="vk-scenarios">
+      <div class="container">
+        <p class="section-label" style="text-align:center;">Herkenbaar?</p>
+        <h2 style="text-align:center;">Situaties die wij regelmatig tegenkomen</h2>
+        <div class="vk-scenario-grid">
+          <div class="vk-scenario-card">
+            <h3>"Mijn ouders hebben een appartement in Dubai Marina en denken dat alles geregeld is"</h3>
+            <p>Ze wonen in Nederland, verhuren het pand, en hebben een Nederlands testament bij de notaris. Maar dat dekt het VAE-vastgoed doorgaans niet.</p>
+            <a href="/situaties/echtpaar-1-appartement-dubai-marina/">Lees het volledige scenario &rarr;</a>
+          </div>
+          <div class="vk-scenario-card">
+            <h3>"Mijn vader is alleenstaand en bezit een villa in Abu Dhabi"</h3>
+            <p>Geen partner, geen lokaal testament. Als erfgenaam zou u zonder DIFC-testament een langdurig juridisch traject ingaan.</p>
+            <a href="/situaties/single-1-villa-abu-dhabi/">Lees het volledige scenario &rarr;</a>
+          </div>
+          <div class="vk-scenario-card">
+            <h3>"Mijn ouders hebben panden in meerdere emiraten"</h3>
+            <p>Dubai en Abu Dhabi, misschien ook Ras Al Khaimah. Een DIFC-testament dekt alle emiraten. Maar de verdeling moet goed staan.</p>
+            <a href="/situaties/echtpaar-2-appartementen-dubai-abu-dhabi/">Lees het volledige scenario &rarr;</a>
+          </div>
+          <div class="vk-scenario-card">
+            <h3>"Ik maak me zorgen over de voogdij van mijn jongere broertje of zusje"</h3>
+            <p>Als uw ouders minderjarige kinderen hebben, is een Full Will nodig om de voogdij te regelen. Wij verwijzen door naar een DIFC-gecertificeerde advocaat.</p>
+            <a href="/situaties/gezin-minderjarige-kinderen-1-appartement/">Lees het volledige scenario &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PW vs FW -->
+    <section class="vk-pwfw">
+      <div class="container">
+        <p class="section-label" style="text-align:center;">De belangrijkste vraag</p>
+        <h2 style="text-align:center;">Property Will of Full Will?</h2>
+        <p style="text-align:center;max-width:680px;margin:0 auto 1rem;line-height:1.8;">Een Property Will dekt het vastgoed. Een Full Will dekt alles: ook bankrekeningen, voertuigen en voogdij. De meeste Nederlandse vastgoedeigenaren in de VAE hebben genoeg aan een Property Will.</p>
+        <p style="text-align:center;max-width:680px;margin:0 auto 2rem;line-height:1.8;">Weet u het niet zeker? Doe samen de test. In vijf vragen weet u welk testament bij de situatie van uw ouders past.</p>
+        <div style="text-align:center;display:flex;flex-direction:column;align-items:center;gap:0.75rem;">
+          <a href="#" class="btn btn-gold btn-lg" onclick="openTierCheck();return false;">Doe de test: welk testament past?</a>
+          <a href="/gespreksgids/" style="font-size:0.9rem;color:var(--teal);text-decoration:underline;">Of download de gratis gespreksgids voor kinderen (PDF, 14 pagina's)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GESPREKSGIDS LEAD MAGNET -->
+    <section class="vk-leadmagnet">
+      <div class="container">
+        <div class="vk-lm-inner">
+          <div class="vk-lm-content">
+            <p class="section-label">Gratis download</p>
+            <h2>Het gesprek met uw ouders over UAE-vastgoed</h2>
+            <p>Een praktische gids van 14 pagina's. Met gesprekstechnieken, antwoorden op de vijf meest voorkomende bezwaren, en een checklist voor na het gesprek.</p>
+            <ul>
+              <li>Hoe u het gesprek opent zonder weerstand</li>
+              <li>"Het is al geregeld bij de notaris" en andere bezwaren</li>
+              <li>Het cadeau-idee: hoe u de drempel verlaagt</li>
+              <li>Concrete volgende stappen na het gesprek</li>
+            </ul>
+          </div>
+          <div class="lm-form-card">
+            <h3>Download de gratis gids</h3>
+            <p>Vul uw e-mailadres in en ontvang de gids per e-mail. U ontvangt daarna nog twee korte e-mails met praktische tips. Uitschrijven kan altijd.</p>
+            <form class="lm-form" id="vkLmForm" novalidate>
+              <label class="lm-honeypot" aria-hidden="true">Website<input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
+              <input type="email" name="email" required autocomplete="email" placeholder="uw@e-mailadres.nl" />
+              <button type="submit">Verstuur de gids</button>
+              <p class="lm-status" role="status" aria-live="polite" hidden></p>
+            </form>
+            <p class="lm-privacy">Wij respecteren uw privacy. Geen spam. <a href="/privacybeleid.html">Privacybeleid</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARTIKELEN -->
+    <section class="vk-articles">
+      <div class="container">
+        <p class="section-label" style="text-align:center;">Verder lezen</p>
+        <h2 style="text-align:center;">Speciaal geschreven voor kinderen van vastgoedeigenaren</h2>
+        <div class="vk-articles-grid vk-articles-grid-4">
+          <a href="/artikelen/vk-01-niets-geregeld/" class="vk-article-card">
+            <span class="vk-article-label">Het risico</span>
+            <h3>Uw ouders hebben niets geregeld voor hun vastgoed in Dubai. Wat nu?</h3>
+            <p>Wat er gebeurt als er geen lokaal testament is, en waarom u als kind degene bent die het merkt.</p>
+          </a>
+          <a href="/artikelen/vk-02-lastige-gesprek/" class="vk-article-card">
+            <span class="vk-article-label">Het gesprek</span>
+            <h3>Hoe bespreek ik het DIFC-testament met mijn ouders?</h3>
+            <p>Praktische gesprekstechnieken, concrete openingen, en hoe u omgaat met weerstand.</p>
+          </a>
+          <a href="/artikelen/vk-03-overtuigen/" class="vk-article-card">
+            <span class="vk-article-label">De bezwaren</span>
+            <h3>Mijn ouders zeggen "het komt wel goed." Hoe overtuig ik ze?</h3>
+            <p>De vijf meest voorkomende bezwaren en hoe u er constructief mee omgaat.</p>
+          </a>
+          <a href="/artikelen/vk-05-kosten-geen-testament/" class="vk-article-card">
+            <span class="vk-article-label">De kosten</span>
+            <h3>Wat kost het als uw ouders geen testament hebben?</h3>
+            <p>Advocaatkosten, gerechtskosten, vertaalkosten. De rekening voor nabestaanden op een rij.</p>
+          </a>
+          <a href="/artikelen/vk-04-zelf-regelen/" class="vk-article-card">
+            <span class="vk-article-label">Hoe</span>
+            <h3>Kan ik het DIFC-testament voor mijn ouders regelen?</h3>
+            <p>Wat u zelf kunt doen en waar de juridische grens ligt. U coordineert, zij tekenen.</p>
+          </a>
+          <a href="/artikelen/vk-06-uitzoeken/" class="vk-article-card">
+            <span class="vk-article-label">Checklist</span>
+            <h3>Wat moet ik uitzoeken voordat mijn ouders een testament laten maken?</h3>
+            <p>Een diagnostische checklist: welke informatie heeft u nodig en waar vindt u die?</p>
+          </a>
+          <a href="/artikelen/vk-07-cadeau/" class="vk-article-card">
+            <span class="vk-article-label">Het cadeau</span>
+            <h3>Een DIFC-testament als cadeau voor uw ouders</h3>
+            <p>Praktisch, waardevol, en het geeft rust. Hoe het cadeau-idee werkt in de praktijk.</p>
+          </a>
+          <a href="/artikelen/vk-08-handleiding-nabestaanden/" class="vk-article-card">
+            <span class="vk-article-label">Noodgeval</span>
+            <h3>Handleiding voor nabestaanden: wat te doen bij overlijden</h3>
+            <p>De stappen die u moet nemen als het onverwachte gebeurt. Met en zonder testament.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- KOSTEN -->
+    <section class="vk-pricing">
+      <div class="container">
+        <p class="section-label" style="text-align:center;">Wat kost het?</p>
+        <h2 style="text-align:center;">Veel kinderen betalen dit als cadeau</h2>
+        <p style="text-align:center;max-width:680px;margin:0 auto 2rem;line-height:1.8;color:var(--mid);">Praktisch, waardevol, en het geeft rust aan het hele gezin. Hieronder een overzicht van de kosten.</p>
+        <div class="vk-price-table">
+          <div class="vk-price-row vk-price-header">
+            <span></span>
+            <span>Begeleiding</span>
+            <span>DIFC-kosten</span>
+            <span>Geschikt voor</span>
+          </div>
+          <div class="vk-price-row">
+            <span class="vk-price-tier">Tier 1</span>
+            <span>&euro;497</span>
+            <span>AED 7.500 / 10.000</span>
+            <span>Zelf doen, op eigen tempo, met video's en checklists</span>
+          </div>
+          <div class="vk-price-row vk-price-featured">
+            <span class="vk-price-tier">Tier 2</span>
+            <span>&euro;797</span>
+            <span>AED 7.500 / 10.000</span>
+            <span>Samen doorlopen in een videosessie van 40 minuten</span>
+          </div>
+          <div class="vk-price-row">
+            <span class="vk-price-tier">Tier 3</span>
+            <span>&euro;1.499</span>
+            <span>AED 10.000-15.000 + advocaat</span>
+            <span>Complexe situaties: bedrijfsstructuren, voogdij, &gt;5 panden</span>
+          </div>
+        </div>
+        <p class="vk-price-note">Onze vergoeding en DIFC-registratiekosten zijn gescheiden. DIFC-kosten worden rechtstreeks aan het DIFC betaald. Alle bedragen zijn indicatief. Actuele kosten bespreken wij tijdens het gratis gesprek.</p>
+      </div>
+    </section>
+
+    <!-- PORTAL ACKNOWLEDGMENT -->
+    <section style="background:var(--teal-mid);padding:48px 0;">
+      <div class="container" style="max-width:var(--max-prose);text-align:center;">
+        <p style="color:rgba(255,255,255,0.9);font-style:italic;line-height:1.8;font-size:1.05rem;">Ja, het DIFC-portaal bestaat en u kunt het zelf doen. Maar het portaal is volledig in het Engels, vraagt juridische keuzes zonder context, en biedt geen telefonische ondersteuning. Wij maken die weg toegankelijk, in helder Nederlands.</p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="vk-cta">
+      <div class="container">
+        <h2>Begin met een gesprek van 15 minuten</h2>
+        <p>Bel samen, of laat uw ouders zelf bellen. Wij luisteren, stellen een paar vragen, en vertellen eerlijk welk testament past. Geen verplichting, geen verkooppraatje.</p>
+        <a href="https://cal.com/vaetestament.nl" class="btn btn-gold btn-lg">Plan een gratis gesprek</a>
+        <p class="vk-cta-sub">Of stuur deze pagina door naar uw ouders.</p>
+        <div class="vk-share-btns">
+          <a href="https://wa.me/?text=Hebben%20jullie%20een%20DIFC-testament%20voor%20het%20vastgoed%20in%20Dubai%3F%20Lees%20dit%20even%3A%20https%3A%2F%2Fvaetestament.nl%2Fvoor-kinderen%2F" target="_blank" rel="noopener" class="vk-share-btn">Deel via WhatsApp</a>
+          <a href="mailto:?subject=DIFC-testament%20voor%20jullie%20vastgoed%20in%20de%20VAE&body=Ik%20kwam%20dit%20tegen%20en%20dacht%20dat%20het%20relevant%20is%20voor%20jullie%20situatie%3A%20https%3A%2F%2Fvaetestament.nl%2Fvoor-kinderen%2F" class="vk-share-btn">Deel via e-mail</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</BaseLayout>
+
+<style>
+  /* HERO */
+  .vk-hero {
+    background: linear-gradient(170deg, var(--teal) 0%, var(--teal-mid) 100%);
+    color: var(--cream);
+    padding: 120px 0 80px;
+    text-align: center;
+  }
+  .vk-hero .hero-eyebrow {
+    display: inline-block;
+    font-size: 0.78rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+  }
+  .vk-hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 4.5vw, 2.6rem);
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0 auto 1.25rem;
+    max-width: 780px;
+    color: var(--cream);
+  }
+  .vk-hero-sub {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: rgba(246,241,231,0.88);
+    max-width: 640px;
+    margin: 0 auto 2rem;
+  }
+  .vk-hero-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .vk-hero-note {
+    margin-top: 1rem;
+    font-size: 0.82rem;
+    color: rgba(246,241,231,0.7);
+    letter-spacing: 0.04em;
+  }
+  .vk-hero .btn-outline {
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+  .vk-hero .btn-outline:hover {
+    background: var(--gold);
+    color: var(--dark);
+  }
+
+  /* PROBLEM */
+  .vk-problem {
+    padding: 80px 0;
+    background: var(--cream);
+  }
+  .vk-problem-inner {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+  .vk-problem-left h2 {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    color: var(--teal);
+    margin-bottom: 1.25rem;
+  }
+  .vk-problem-left p {
+    line-height: 1.75;
+    margin-bottom: 1rem;
+    color: var(--mid);
+  }
+  .vk-stat-card {
+    background: #fff;
+    border: 1px solid var(--cream-dark);
+    border-radius: 8px;
+    padding: 2.5rem 2rem;
+    text-align: center;
+  }
+  .vk-stat-num {
+    font-family: var(--font-display);
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: var(--teal);
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .vk-stat-card p {
+    font-size: 0.9rem;
+    line-height: 1.65;
+    color: var(--mid);
+  }
+
+  /* PARENTS SECTION */
+  .vk-parents {
+    padding: 80px 0;
+  }
+  .vk-parents h2 {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    color: var(--teal);
+    margin-bottom: 2.5rem;
+  }
+  .vk-parents-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    max-width: 820px;
+    margin: 0 auto;
+  }
+  .vk-parents-card {
+    padding: 1.75rem;
+    border: 1px solid var(--cream-dark);
+    border-radius: 8px;
+    background: var(--cream);
+  }
+  .vk-parents-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    color: var(--teal);
+    margin-bottom: 0.5rem;
+    line-height: 1.35;
+  }
+  .vk-parents-card p {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: var(--mid);
+  }
+
+  /* ACTION STEPS */
+  .vk-action {
+    padding: 80px 0;
+    background: var(--cream);
+  }
+  .vk-action h2 {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    color: var(--teal);
+    margin-bottom: 2.5rem;
+  }
+  .vk-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+  .vk-step {
+    padding: 1.75rem;
+    border: 1px solid var(--cream-dark);
+    border-radius: 8px;
+    background: #fff;
+  }
+  .vk-step-num {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--teal);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  .vk-step h3 {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    color: var(--teal);
+    margin-bottom: 0.5rem;
+  }
+  .vk-step p {
+    font-size: 0.85rem;
+    line-height: 1.65;
+    color: var(--mid);
+  }
+
+  /* SCENARIOS */
+  .vk-scenarios {
+    padding: 80px 0;
+  }
+  .vk-scenarios h2 {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    color: var(--teal);
+    margin-bottom: 2.5rem;
+  }
+  .vk-scenario-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .vk-scenario-card {
+    background: var(--cream);
+    border: 1px solid var(--cream-dark);
+    border-radius: 8px;
+    padding: 1.75rem;
+  }
+  .vk-scenario-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    color: var(--teal);
+    margin-bottom: 0.5rem;
+    line-height: 1.35;
+    font-style: italic;
+  }
+  .vk-scenario-card p {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: var(--mid);
+    margin-bottom: 0.75rem;
+  }
+  .vk-scenario-card a {
+    font-size: 0.85rem;
+    color: var(--teal);
+    font-weight: 500;
+  }
+
+  /* PW vs FW */
+  .vk-pwfw {
+    padding: 80px 0;
+    background: var(--cream);
+  }
+  .vk-pwfw h2 {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    color: var(--teal);
+    margin-bottom: 1.5rem;
+  }
+
+  /* LEAD MAGNET */
+  .vk-leadmagnet {
+    padding: 80px 0;
+    background: var(--cream);
+  }
+  .vk-lm-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+    max-width: 820px;
+    margin: 0 auto;
+  }
+  .vk-lm-content h2 {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    color: var(--teal);
+    margin-bottom: 1rem;
+  }
+  .vk-lm-content > p {
+    font-size: 0.92rem;
+    color: var(--mid);
+    line-height: 1.65;
+    margin-bottom: 1rem;
+  }
+  .vk-lm-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  .vk-lm-content li {
+    padding: 0.4rem 0 0.4rem 1.5rem;
+    position: relative;
+    font-size: 0.9rem;
+    color: var(--mid);
+    line-height: 1.6;
+  }
+  .vk-lm-content li::before {
+    content: '\2713';
+    position: absolute;
+    left: 0;
+    color: var(--teal);
+    font-weight: 600;
+  }
+  .lm-form-card {
+    background: #fff;
+    border: 1px solid var(--cream-dark);
+    border-radius: 8px;
+    padding: 2rem;
+  }
+  .lm-form-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    color: var(--teal);
+    margin-bottom: 0.5rem;
+  }
+  .lm-form-card > p {
+    font-size: 0.85rem;
+    color: var(--mid);
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+  }
+  .lm-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .lm-honeypot {
+    position: absolute;
+    left: -9999px;
+  }
+  .lm-form input[type="email"] {
+    padding: 12px 14px;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    border: 1px solid var(--cream-dark);
+    border-radius: 4px;
+    background: #fff;
+  }
+  .lm-form input[type="email"]:focus {
+    outline: 2px solid var(--gold);
+    outline-offset: 1px;
+  }
+  .lm-form button {
+    padding: 14px;
+    background: var(--teal);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  .lm-form button:hover { background: var(--teal-mid); }
+  .lm-form button:disabled { opacity: 0.6; cursor: wait; }
+  .lm-status { font-size: 0.88rem; margin: 0; }
+  .lm-status.ok { color: var(--teal); }
+  .lm-status.err { color: #B33A3A; }
+  .lm-privacy {
+    font-size: 0.78rem;
+    color: var(--mid);
+    margin-top: 0.75rem;
+  }
+  .lm-privacy a { color: var(--teal); }
+
+  /* ARTICLES */
+  .vk-articles {
+    padding: 80px 0;
+  }
+  .vk-articles h2 {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    color: var(--teal);
+    margin-bottom: 2.5rem;
+  }
+  .vk-articles-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    max-width: 820px;
+    margin: 0 auto;
+  }
+  .vk-articles-grid-4 {
+    max-width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .vk-article-card {
+    display: block;
+    padding: 1.75rem;
+    border: 1px solid var(--cream-dark);
+    border-radius: 8px;
+    background: var(--cream);
+    text-decoration: none;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .vk-article-card:hover {
+    border-color: var(--teal);
+    box-shadow: 0 2px 12px rgba(12,74,69,0.08);
+  }
+  .vk-article-label {
+    display: inline-block;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .vk-article-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    color: var(--teal);
+    margin-bottom: 0.5rem;
+    line-height: 1.35;
+  }
+  .vk-article-card p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: var(--mid);
+  }
+
+  /* PRICING */
+  .vk-pricing {
+    padding: 80px 0;
+    background: var(--cream);
+  }
+  .vk-pricing h2 {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    color: var(--teal);
+    margin-bottom: 0.5rem;
+  }
+  .vk-price-table {
+    max-width: 820px;
+    margin: 0 auto;
+  }
+  .vk-price-row {
+    display: grid;
+    grid-template-columns: 80px 100px 160px 1fr;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    align-items: center;
+    font-size: 0.9rem;
+    color: var(--mid);
+    border-bottom: 1px solid var(--cream-dark);
+  }
+  .vk-price-header {
+    font-weight: 600;
+    color: var(--dark);
+    font-size: 0.82rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--teal);
+  }
+  .vk-price-featured {
+    background: rgba(12,74,69,0.04);
+    border-radius: 4px;
+  }
+  .vk-price-tier {
+    font-weight: 600;
+    color: var(--teal);
+  }
+  .vk-price-note {
+    max-width: 820px;
+    margin: 1.25rem auto 0;
+    font-size: 0.8rem;
+    color: var(--mid);
+    line-height: 1.55;
+  }
+
+  /* CTA */
+  .vk-cta {
+    padding: 80px 0;
+    text-align: center;
+  }
+  .vk-cta h2 {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    color: var(--teal);
+    margin-bottom: 1rem;
+  }
+  .vk-cta > .container > p:first-of-type {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    line-height: 1.7;
+    color: var(--mid);
+  }
+  .vk-cta-sub {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--mid);
+  }
+  .vk-share-btns {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+  .vk-share-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid var(--teal);
+    border-radius: 4px;
+    color: var(--teal);
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s;
+  }
+  .vk-share-btn:hover {
+    background: var(--teal);
+    color: #fff;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 1024px) {
+    .vk-articles-grid-4 { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 768px) {
+    .vk-hero { padding: 80px 0 60px; }
+    .vk-problem-inner { grid-template-columns: 1fr; gap: 2rem; }
+    .vk-parents-grid { grid-template-columns: 1fr; }
+    .vk-steps { grid-template-columns: 1fr; }
+    .vk-scenario-grid { grid-template-columns: 1fr; }
+    .vk-articles-grid { grid-template-columns: 1fr; }
+    .vk-articles-grid-4 { grid-template-columns: 1fr; }
+    .vk-lm-inner { grid-template-columns: 1fr; gap: 2rem; }
+    .vk-price-row {
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+    }
+    .vk-price-header { display: none; }
+    .vk-price-row span:nth-child(4) {
+      grid-column: 1 / -1;
+      font-size: 0.82rem;
+    }
+  }
+</style>
+
+<script is:inline>
+  (function () {
+    var form = document.getElementById('vkLmForm');
+    if (!form) return;
+    var status = form.querySelector('.lm-status');
+    var button = form.querySelector('button[type="submit"]');
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+      var fd = new FormData(form);
+      if (fd.get('website')) return;
+      var email = (fd.get('email') || '').toString().trim();
+      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        status.textContent = 'Voer een geldig e-mailadres in.';
+        status.className = 'lm-status err';
+        status.hidden = false;
+        return;
+      }
+      button.disabled = true;
+      status.textContent = 'Even geduld…';
+      status.className = 'lm-status';
+      status.hidden = false;
+      try {
+        var res = await fetch('https://api.vaetestament.nl/v1/newsletter/subscribe', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            email: email,
+            slug: 'gespreksgids',
+            source: 'leadmagnet-kinderen'
+          })
+        });
+        if (!res.ok) throw new Error('subscribe ' + res.status);
+        status.textContent = 'Bedankt! Check uw inbox voor een bevestigingse-mail. Na bevestiging ontvangt u de gids.';
+        status.className = 'lm-status ok';
+        form.querySelector('input[type="email"]').value = '';
+      } catch (err) {
+        status.textContent = 'Aanmelden lukte niet. Probeer het later opnieuw of mail support@vaetestament.nl.';
+        status.className = 'lm-status err';
+      } finally {
+        button.disabled = false;
+      }
+    });
+  })();
+</script>

@@ -1,0 +1,99 @@
+<!--
+  /thank-you page - landing after a base-tier Stripe Payment Link (EN).
+  EN equivalent of /bedankt.html.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow">
+  <title>Thank you - UAE Property Wills</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon-en.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --teal: #0C4A45; --gold: #C8A44A;
+      --cream: #F6F1E7; --cream-dark: #EDE6D6; --off-white: #FAF7F0;
+      --dark: #181818; --mid: #4B4B4B;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; padding: 0;
+      font-family: 'Jost', system-ui, sans-serif; color: var(--dark);
+      background: var(--cream);
+      min-height: 100vh;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .bedankt-card {
+      max-width: 580px; width: 100%;
+      background: #FFFFFF; border: 1px solid var(--cream-dark);
+      padding: 3rem 2.5rem; margin: 2rem 1rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .bedankt-accent {
+      width: 60px; height: 4px; background: var(--gold);
+      margin-bottom: 1.75rem;
+    }
+    .bedankt-h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.25rem; line-height: 1.2; font-weight: 600;
+      color: var(--teal); margin: 0 0 1.25rem;
+    }
+    .bedankt-p {
+      font-size: 1.02rem; line-height: 1.7; color: var(--dark);
+      margin: 0 0 1.1rem;
+    }
+    .bedankt-p--muted { color: var(--mid); font-size: 0.92rem; }
+    .bedankt-list {
+      list-style: none; padding: 0; margin: 1.5rem 0;
+      border-left: 3px solid var(--gold);
+      padding-left: 1.25rem;
+    }
+    .bedankt-list li {
+      font-size: 0.96rem; line-height: 1.6; color: var(--dark);
+      margin-bottom: 0.6rem;
+    }
+    .bedankt-list li:last-child { margin-bottom: 0; }
+    .bedankt-list strong { color: var(--teal); font-weight: 600; }
+    .bedankt-divider {
+      border: none; border-top: 1px solid var(--cream-dark);
+      margin: 1.75rem 0;
+    }
+    .bedankt-footer {
+      font-size: 0.85rem; line-height: 1.6; color: var(--mid);
+    }
+    .bedankt-footer a { color: var(--teal); }
+    @media (max-width: 600px) {
+      .bedankt-card { padding: 2rem 1.5rem; }
+      .bedankt-h1 { font-size: 1.85rem; }
+    }
+  </style>
+</head>
+<body>
+
+<article class="bedankt-card">
+  <div class="bedankt-accent"></div>
+  <h1 class="bedankt-h1">Thank you for your purchase</h1>
+
+  <p class="bedankt-p">
+    Your payment has been received. You will receive an email from UAE Property Wills within a few minutes with your login details and next steps.
+  </p>
+
+  <ul class="bedankt-list">
+    <li><strong>Next step:</strong> log in to your personal portal and complete Phase 1 - Welcome &amp; Orientation.</li>
+    <li><strong>Nothing received after 30 minutes?</strong> Check your spam folder, or send a message to <a href="mailto:support@uaepropertywills.com">support@uaepropertywills.com</a>.</li>
+    <li><strong>Have a question?</strong> Reply to the welcome email or email <a href="mailto:support@uaepropertywills.com">support@uaepropertywills.com</a> directly. We respond within 2 working days.</li>
+  </ul>
+
+  <hr class="bedankt-divider" />
+
+  <p class="bedankt-footer">
+    A DIFC will covers only your real estate in the UAE. It does not replace your existing will in your home country.<br/>
+    UAE Property Wills is not a law firm. We provide guidance and coordination, not legal advice.<br/>
+    <a href="/privacy-policy.html" style="color:#0C4A45;">Privacy policy</a> &middot; <a href="/terms.html" style="color:#0C4A45;">Terms and conditions</a>
+  </p>
+</article>
+
+</body>
+</html>

@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Het gesprek met uw ouders over UAE-vastgoed</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --teal: #0C4A45;
+      --gold: #C8A44A;
+      --cream: #F6F1E7;
+      --text: #2D2D2D;
+      --text-light: #5A5A5A;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Jost', sans-serif;
+      font-weight: 400;
+      font-size: 11pt;
+      line-height: 1.7;
+      color: var(--text);
+      background: #fff;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Cormorant Garamond', serif;
+      color: var(--teal);
+      font-weight: 600;
+    }
+
+    h1 { font-size: 28pt; line-height: 1.2; }
+    h2 { font-size: 20pt; line-height: 1.3; margin-bottom: 16pt; }
+    h3 { font-size: 14pt; line-height: 1.4; margin-bottom: 8pt; }
+    h4 { font-size: 12pt; line-height: 1.4; margin-bottom: 6pt; color: var(--gold); }
+
+    p { margin-bottom: 10pt; }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      padding: 25mm 25mm 30mm 25mm;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    /* ─── Cover ─── */
+    .cover {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: var(--teal);
+      color: #fff;
+      min-height: 297mm;
+      padding: 30mm 30mm;
+    }
+
+    .cover-accent {
+      width: 80px;
+      height: 3px;
+      background: var(--gold);
+      margin: 0 auto 24pt auto;
+    }
+
+    .cover h1 {
+      color: #fff;
+      font-size: 30pt;
+      margin-bottom: 16pt;
+      max-width: 480px;
+    }
+
+    .cover .subtitle {
+      font-family: 'Jost', sans-serif;
+      font-size: 12pt;
+      font-weight: 300;
+      color: rgba(255,255,255,0.85);
+      max-width: 420px;
+      margin: 0 auto 32pt auto;
+      line-height: 1.6;
+    }
+
+    .cover .author {
+      font-family: 'Jost', sans-serif;
+      font-size: 10pt;
+      font-weight: 500;
+      color: var(--gold);
+      letter-spacing: 0.5pt;
+      text-transform: uppercase;
+      margin-bottom: 6pt;
+    }
+
+    .cover .brand {
+      font-family: 'Jost', sans-serif;
+      font-size: 9pt;
+      font-weight: 300;
+      color: rgba(255,255,255,0.6);
+      letter-spacing: 1pt;
+    }
+
+    /* ─── TOC ─── */
+    .toc {
+      background: var(--cream);
+    }
+
+    .toc h2 {
+      margin-bottom: 24pt;
+    }
+
+    .toc-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .toc-list li {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 8pt 0;
+      border-bottom: 1px solid rgba(12,74,69,0.1);
+      font-size: 11pt;
+    }
+
+    .toc-list li .toc-chapter {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      color: var(--teal);
+      font-size: 12pt;
+    }
+
+    .toc-list li .toc-page {
+      font-size: 10pt;
+      color: var(--gold);
+      font-weight: 500;
+    }
+
+    /* ─── Chapter header ─── */
+    .chapter-header {
+      border-left: 4px solid var(--gold);
+      padding-left: 16pt;
+      margin-bottom: 20pt;
+    }
+
+    .chapter-number {
+      font-family: 'Jost', sans-serif;
+      font-size: 9pt;
+      font-weight: 500;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 1.5pt;
+      margin-bottom: 4pt;
+    }
+
+    /* ─── Approach cards ─── */
+    .approach-card {
+      background: var(--cream);
+      border-radius: 6px;
+      padding: 14pt 18pt;
+      margin-bottom: 14pt;
+    }
+
+    .approach-card .approach-label {
+      font-family: 'Jost', sans-serif;
+      font-size: 9pt;
+      font-weight: 500;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 1pt;
+      margin-bottom: 4pt;
+    }
+
+    .approach-card h4 {
+      color: var(--teal);
+      margin-bottom: 6pt;
+    }
+
+    .approach-card .example-text {
+      font-style: italic;
+      color: var(--text-light);
+      border-left: 2px solid var(--gold);
+      padding-left: 12pt;
+      margin: 8pt 0;
+      font-size: 10.5pt;
+    }
+
+    /* ─── Objection blocks ─── */
+    .objection-block {
+      margin-bottom: 18pt;
+      padding-bottom: 14pt;
+      border-bottom: 1px solid rgba(12,74,69,0.08);
+    }
+
+    .objection-quote {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 13pt;
+      font-weight: 600;
+      color: var(--teal);
+      margin-bottom: 6pt;
+    }
+
+    .objection-quote::before {
+      content: "\201C";
+      color: var(--gold);
+      font-size: 18pt;
+      margin-right: 2pt;
+    }
+
+    .objection-quote::after {
+      content: "\201D";
+      color: var(--gold);
+      font-size: 18pt;
+      margin-left: 2pt;
+    }
+
+    .objection-response {
+      padding-left: 16pt;
+      border-left: 2px solid var(--gold);
+    }
+
+    .objection-response .response-label {
+      font-size: 9pt;
+      font-weight: 500;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 1pt;
+      margin-bottom: 2pt;
+    }
+
+    /* ─── Steps ─── */
+    .step {
+      display: flex;
+      gap: 16pt;
+      margin-bottom: 18pt;
+      align-items: flex-start;
+    }
+
+    .step-number {
+      flex-shrink: 0;
+      width: 36pt;
+      height: 36pt;
+      background: var(--teal);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 16pt;
+      font-weight: 700;
+    }
+
+    .step-content h4 {
+      color: var(--teal);
+    }
+
+    /* ─── Checklist ─── */
+    .checklist-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12pt;
+    }
+
+    .checklist-table th {
+      background: var(--teal);
+      color: #fff;
+      font-family: 'Jost', sans-serif;
+      font-weight: 500;
+      font-size: 10pt;
+      text-align: left;
+      padding: 8pt 12pt;
+    }
+
+    .checklist-table td {
+      padding: 8pt 12pt;
+      border-bottom: 1px solid rgba(12,74,69,0.1);
+      font-size: 10.5pt;
+      vertical-align: top;
+    }
+
+    .checklist-table tr:nth-child(even) td {
+      background: var(--cream);
+    }
+
+    .checkbox {
+      display: inline-block;
+      width: 12pt;
+      height: 12pt;
+      border: 1.5px solid var(--teal);
+      border-radius: 2px;
+      margin-right: 6pt;
+      vertical-align: middle;
+    }
+
+    /* ─── CTA section ─── */
+    .cta-box {
+      background: var(--teal);
+      color: #fff;
+      border-radius: 8px;
+      padding: 24pt 28pt;
+      text-align: center;
+      margin-top: 24pt;
+    }
+
+    .cta-box h3 {
+      color: var(--gold);
+      font-size: 16pt;
+      margin-bottom: 10pt;
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.85);
+      font-size: 11pt;
+    }
+
+    .cta-box .cta-link {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--teal);
+      font-weight: 600;
+      font-size: 11pt;
+      padding: 10pt 28pt;
+      border-radius: 4px;
+      text-decoration: none;
+      margin-top: 14pt;
+      letter-spacing: 0.3pt;
+    }
+
+    /* ─── Highlight box ─── */
+    .highlight-box {
+      background: var(--cream);
+      border-left: 4px solid var(--gold);
+      padding: 14pt 18pt;
+      margin: 16pt 0;
+      border-radius: 0 6px 6px 0;
+    }
+
+    .highlight-box p {
+      margin-bottom: 0;
+      font-size: 10.5pt;
+    }
+
+    /* ─── Footer ─── */
+    .page-footer {
+      position: absolute;
+      bottom: 15mm;
+      left: 25mm;
+      right: 25mm;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 8pt;
+      color: var(--text-light);
+      border-top: 1px solid rgba(12,74,69,0.1);
+      padding-top: 8pt;
+    }
+
+    .page-footer .footer-brand {
+      color: var(--teal);
+      font-weight: 500;
+    }
+
+    /* ─── Print / PDF ─── */
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .page {
+        page-break-after: always;
+        min-height: 297mm;
+        width: 210mm;
+      }
+
+      .page:last-child {
+        page-break-after: auto;
+      }
+
+      .cover {
+        page-break-after: always;
+      }
+    }
+
+    .page-break {
+      page-break-before: always;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════════ -->
+  <!-- COVER PAGE                                  -->
+  <!-- ════════════════════════════════════════════ -->
+  <div class="page cover">
+    <div class="cover-accent"></div>
+    <h1>Het gesprek met uw ouders over UAE-vastgoed</h1>
+    <p class="subtitle">Een praktische gids voor volwassen kinderen van Nederlandse vastgoedeigenaren in de VAE</p>
+    <div class="cover-accent" style="margin-top: 24pt;"></div>
+    <p class="author">Andre van Wijngaarden</p>
+    <p class="brand">Oprichter VAEtestament</p>
+    <p class="brand" style="margin-top: 16pt;">vaetestament.nl</p>
+  </div>
+
+  <!-- ════════════════════════════════════════════ -->
+  <!-- INHOUDSOPGAVE                               -->
+  <!-- ════════════════════════════════════════════ -->
+  <div class="page toc page-break">
+    <div class="chapter-header">
+      <h2>Inhoudsopgave</h2>
+    </div>
+    <ul class="toc-list">
+      <li>
+        <span class="toc-chapter">1. Waarom dit gesprek nu, niet later</span>
+        <span class="toc-page">3</span>
+      </li>
+      <li>
+        <span class="toc-chapter">2. Vijf manieren om het onderwerp aan te kaarten</span>
+        <span class="toc-page">5</span>
+      </li>
+      <li>
+        <span class="toc-chapter">3. Acht veelgehoorde bezwaren en hoe daarmee om te gaan</span>
+        <span class="toc-page">7</span>
+      </li>
+      <li>
+        <span class="toc-chapter">4. Wat te doen als uw ouders ja zeggen</span>
+        <span class="toc-page">10</span>
+      </li>
+      <li>
+        <span class="toc-chapter">5. Wat te doen als uw ouders nee blijven zeggen</span>
+        <span class="toc-page">12</span>
+      </li>
+      <li>
+        <span class="toc-chapter">6. Praktische bijlage: documentchecklist</span>
+        <span class="toc-page">13</span>
+      </li>
+      <li>
+        <span class="toc-chapter">7. Over VAEtestament</span>
+        <span class="toc-page">14</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- ════════════════════════════════════════════ -->
+  <!-- HOOFDSTUK 1                                 -->
+  <!-- ════════════════════════════════════════════ -->
+  <div class="page page-break">
+    <div class="chapter-header">
+      <div class="chapter-number">Hoofdstuk 1</div>
+      <h2>Waarom dit gesprek nu, niet later</h2>
+    </div>
+
+    <p>Uw ouders hebben een appartement of villa in Dubai of een ander emiraat gekocht. Misschien als investering, misschien als vakantiehuis, misschien als toekomstig pensioenverblijf. Wat het motief ook is: die aankoop heeft juridische gevolgen waar de meeste Nederlandse families zich niet van bewust zijn.</p>
+
+    <p>De kern van het probleem is eenvoudig. Een Nederlands testament heeft geen rechtskracht over onroerend goed in de Verenigde Arabische Emiraten. De UAE is geen partij bij het Haags Erfrechtverdrag, en lokale wetgeving bepaalt dat vastgoed vererft volgens de regels van het land waar het zich bevindt.</p>
+
+    <h3>Wat betekent dit in de praktijk?</h3>
+
+    <p>Bij overlijden van een eigenaar worden bankrekeningen en vastgoed in de UAE bevroren. Zonder een geldig DIFC-testament (Dubai International Financial Centre) begint een lang, kostbaar en onzeker traject. De Sharia-verdeling kan van toepassing zijn, en die wijkt fundamenteel af van wat Nederlandse families verwachten.</p>
+
+    <div class="highlight-box">
+      <p><strong>Elk jaar zonder een DIFC-testament is een jaar van onnodig risico.</strong> Het is niet de vraag of dit geregeld moet worden. Het is de vraag wanneer. En "later" is een antwoord dat families duizenden euro's en maanden aan stress kan kosten.</p>
+    </div>
+
+    <h3>Waarom u degene bent die dit gesprek start</h3>
+
+    <p>Ouders stellen dit onderwerp uit. Dat is menselijk. Nadenken over testamenten voelt als nadenken over het einde. Maar als volwassen kind bent u degene die de gevolgen draagt als het niet geregeld is. U hoeft geen juridisch expert te zijn. U hoeft alleen het gesprek te openen.</p>
+
+    <p>Deze gids helpt u daarbij. Stap voor stap, met concrete zinnen die u kunt gebruiken, antwoorden op bezwaren die u kunt verwachten, en een helder plan voor wat er daarna gebeurt.</p>
+
+    <div class="page-footer">
+      <span class="footer-brand">VAEtestament</span>
+      <span>3</span>
+    </div>
+  </div>
+
+  <div class="page">
+    <h3>De risico's op een rij</h3>
+
+    <p><strong>Bevroren tegoeden.</strong> Na overlijden blokkeert de bank alle rekeningen van de overledene in de UAE. Zonder geldig lokaal testament kan het maanden duren voordat erfgenamen toegang krijgen.</p>
+
+    <p><strong>Sharia-verdeling.</strong> Zonder DIFC-testament kan de UAE-rechtbank de islamitische erfrechtregels toepassen. Dat betekent vaste verdeelsleutels tussen echtgenoot, kinderen en andere familieleden, ongeacht de wens van de overledene.</p>
+
+    <p><strong>Hoge kosten.</strong> Het achteraf regelen via de rechtbank (probate zonder testament) kost een veelvoud van wat een DIFC-testament vooraf kost. Tel daar advocaatkosten, vertaalkosten en reiskosten bij op.</p>
+
+    <p><strong>Emotionele belasting.</strong> Rouw en bureaucratie gaan slecht samen. Families die dit vooraf regelen, besparen zichzelf een enorme emotionele last op het moeilijkste moment.</p>
+
+    <div class="highlight-box">
+      <p>Het goede nieuws: het DIFC Wills Service Centre is opgezet precies voor deze situatie. Het biedt niet-moslims de mogelijkheid om via een erkend registratieportaal een testament te laten opstellen en registreren dat rechtsgeldig is voor UAE-vastgoed. Het proces is helder, en met de juiste begeleiding binnen enkele weken afgerond.</p>
+    </div>
+
+    <div class="page-footer">
+      <span class="footer-brand">VAEtestament</span>
+      <span>4</span>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════ -->
+  <!-- HOOFDSTUK 2                                 -->
+  <!-- ════════════════════════════════════════════ -->
+  <div class="page page-break">
+    <div class="chapter-header">
+      <div class="chapter-number">Hoofdstuk 2</div>
+      <h2>Vijf manieren om het onderwerp aan te kaarten zonder dat het zwaar wordt</h2>
+    </div>
+
+    <p>Het lastigste is niet het regelen van het testament. Het lastigste is het eerste gesprek. Hieronder vindt u vijf bewezen benaderingen. Kies de aanpak die het beste past bij uw relatie met uw ouders.</p>
+
+    <div class="approach-card">
+      <div class="approach-label">Aanpak 1</div>
+      <h4>De informatieve opener</h4>
+      <p>Begin vanuit nieuwsgierigheid, niet vanuit bezorgdheid. Presenteer het als iets wat u toevallig tegenkwam.</p>
+      <div class="example-text">
+        "Ik las iets interessants over vastgoed in Dubai en testamenten. Wisten jullie dat een Nederlands testament niet automatisch geldt voor het appartement daar? Ik vond het de moeite waard om even te delen."
+      </div>
+      <p>Deze aanpak werkt goed bij ouders die graag zelf onderzoek doen en niet het gevoel willen hebben dat ze iets wordt opgedrongen.</p>
+    </div>
+
+    <div class="approach-card">
+      <div class="approach-label">Aanpak 2</div>
+      <h4>De praktische opener</h4>
+      <p>Stel een directe vraag waarop uw ouders waarschijnlijk het antwoord niet weten. Dat opent het gesprek op een natuurlijke manier.</p>
+      <div class="example-text">
+        "Weten jullie eigenlijk of jullie Nederlandse testament ook geldt voor het appartement in Dubai? Ik hoorde dat dat niet vanzelfsprekend is."
+      </div>
+      <p>Geschikt voor ouders die houden van concrete, zakelijke gesprekken zonder omwegen.</p>
+    </div>
+
+    <div class="approach-card">
+      <div class="approach-label">Aanpak 3</div>
+      <h4>De beschermende opener</h4>
+      <p>Benadruk dat u dit doet uit zorg voor hen, niet voor uzelf.</p>
+      <div class="example-text">
+        "Ik wil graag dat jullie weten dat ik het beste voor jullie wil regelen. Ik heb mij ingelezen in wat er juridisch nodig is voor vastgoed in de UAE, en ik denk dat het goed is om hier samen naar te kijken."
+      </div>
+      <p>Ideaal voor ouders die gevoeliger zijn en sneller het gevoel kunnen hebben dat het gesprek over erfenis "te vroeg" komt.</p>
+    </div>
+
+    <div class="page-footer">
+      <span class="footer-brand">VAEtestament</span>
+      <span>5</span>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="approach-card">
+      <div class="approach-label">Aanpak 4</div>
+      <h4>Via een derde</h4>
+      <p>Soms is het makkelijker om het gesprek niet zelf te voeren, maar een betrouwbare bron het werk te laten doen.</p>
+      <div class="example-text">
+        "Ik stuur jullie een link naar een website die precies uitlegt hoe dit werkt. Lees het even door wanneer het jullie uitkomt, dan kunnen we er daarna over praten."
+      </div>
+      <p>Stuur bijvoorbeeld de pagina vaetestament.nl/voor-kinderen/ door. Deze is specifiek geschreven voor deze situatie. Uw ouders kunnen in hun eigen tempo lezen, zonder druk.</p>
+    </div>
+
+    <div class="approach-card">
+      <div class="approach-label">Aanpak 5</div>
+      <h4>Het cadeau-aanbod</h4>
+      <p>Neem de drempel volledig weg door aan te bieden het zelf te regelen en te bekostigen.</p>
+      <div class="example-text">
+        "Ik wil dit graag voor jullie regelen als cadeau. Het kost niet veel, het scheelt jullie een hoop werk, en het geeft ons allemaal rust."
+      </div>
+      <p>Dit is een krachtige aanpak omdat het twee veelvoorkomende bezwaren (kosten en moeite) tegelijk wegneemt. Veel kinderen kiezen uiteindelijk voor deze route.</p>
+    </div>
+
+    <div class="highlight-box">
+      <p><strong>Tip:</strong> kies het juiste moment. Na een vakantie in Dubai, bij een gesprek over financiele planning, of na een nieuwsbericht over vastgoed in de regio. Vermijd het onderwerp tijdens feestdagen of emotionele momenten.</p>
+    </div>
+
+    <div class="page-footer">
+      <span class="footer-brand">VAEtestament</span>
+      <span>6</span>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════ -->
+  <!-- HOOFDSTUK 3                                 -->
+  <!-- ════════════════════════════════════════════ -->
+  <div class="page page-break">
+    <div class="chapter-header">
+      <div class="chapter-number">Hoofdstuk 3</div>
+      <h2>Acht veelgehoorde bezwaren en hoe daarmee om te gaan</h2>
+    </div>
+
+    <p>Zelfs met de beste aanpak kunt u weerstand verwachten. Dat is normaal. Hieronder vindt u de acht meest voorkomende bezwaren, met een rustig en feitelijk antwoord dat u kunt gebruiken.</p>
+
+    <div class="objection-block">
+      <div class="objection-quote">Het is al geregeld in mijn Nederlandse testament</div>
+      <div class="objection-response">
+        <div class="response-label">Uw antwoord</div>
+        <p>Dat is goed dat jullie een Nederlands testament hebben. Maar een Nederlands testament heeft helaas geen rechtskracht in de VAE. De UAE erkent alleen testamenten die lokaal zijn geregistreerd, bijvoorbeeld via het DIFC Wills Service Centre. Het Nederlandse testament blijft gewoon geldig voor al het bezit in Nederland, maar voor het vastgoed in Dubai is een apart, lokaal testament nodig.</p>
+      </div>
+    </div>
+
+    <div class="objection-block">
+      <div class="objection-quote">We gaan nog niet dood</div>
+      <div class="objection-response">
+        <div class="response-label">Uw antwoord</div>
+        <p>Gelukkig niet, en hopelijk duurt dat nog heel lang. Maar dat is juist het punt: nu regelen betekent dat het van de lijst af is. Het kost een paar uur en daarna hoeft er jaren niets meer te gebeuren. Het is hetzelfde als een verzekering afsluiten. Je hoopt dat je het nooit nodig hebt, maar je bent blij dat het er is.</p>
+      </div>
+    </div>
+
+    <div class="objection-block">
+      <div class="objection-quote">Het is te ingewikkeld</div>
+      <div class="objection-response">
+        <div class="response-label">Uw antwoord</div>
+        <p>Dat begrijp ik. Het voelt ingewikkeld omdat het in een ander land is met andere regels. Maar het proces zelf is goed georganiseerd. Het DIFC heeft een erkend registratieportaal dat specifiek is ontworpen voor expats en buitenlandse vastgoedeigenaren. Met begeleiding van iemand die dit dagelijks doet, is het binnen enkele weken geregeld.</p>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span class="footer-brand">VAEtestament</span>
+      <span>7</span>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="objection-block">
+      <div class="objection-quote">Het is te duur</div>
+      <div class="objection-response">
+        <div class="response-label">Uw antwoord</div>
+        <p>De begeleidingskosten beginnen bij EUR 497. Daar komen de DIFC-registratiekosten nog bij, die rechtstreeks aan het DIFC worden betaald. Vergelijk dat met de kosten van een probate-procedure achteraf: die loopt al snel op tot duizenden euro's, plus maanden wachttijd en advocaatkosten. Vooraf regelen is een fractie van wat het achteraf kost.</p>
+      </div>
+    </div>
+
+    <div class="objection-block">
+      <div class="objection-quote">We regelen het later</div>
+      <div class="objection-response">
+        <div class="response-label">Uw antwoord</div>
+        <p>Dat snap ik. Maar "later" is precies het probleem waar de meeste families tegenaan lopen. Het voelt nooit als het juiste moment, en ondertussen loopt het risico door. Het hoeft niet vandaag afgerond te zijn. Maar een eerste verkennend gesprek van vijftien minuten, vrijblijvend en kosteloos, is een concrete eerste stap die weinig moeite kost.</p>
+      </div>
+    </div>
+
+    <div class="objection-block">
+      <div class="objection-quote">De makelaar heeft dit toch geregeld?</div>
+      <div class="objection-response">
+        <div class="response-label">Uw antwoord</div>
+        <p>Een makelaar regelt de aankoop van vastgoed, niet de juridische bescherming bij overlijden. Sommige makelaars wijzen kopers op de noodzaak van een DIFC-testament, maar zij stellen het niet op en registreren het niet. Een testament vereist een gespecialiseerde dienstverlener die werkt met het DIFC Wills Service Centre.</p>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span class="footer-brand">VAEtestament</span>
+      <span>8</span>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="objection-block">
+      <div class="objection-quote">We vertrouwen erop dat jullie het onderling regelen</div>
+      <div class="objection-response">
+        <div class="response-label">Uw antwoord</div>
+        <p>Dat vertrouwen is mooi, en wij willen dat ook. Maar het probleem is niet de onderlinge verstandhouding. Het probleem is dat zonder een DIFC-testament de UAE-overheid bepaalt wie wat krijgt, ongeacht de afspraken die wij als familie hebben gemaakt. Een testament zorgt ervoor dat jullie wens ook juridisch wordt uitgevoerd. Het beschermt precies die onderlinge afspraken die jullie belangrijk vinden.</p>
+      </div>
+    </div>
+
+    <div class="objection-block">
+      <div class="objection-quote">Ik wil er niet over nadenken</div>
+      <div class="objection-response">
+        <div class="response-label">Uw antwoord</div>
+        <p>Dat begrijp ik helemaal. Het is geen prettig onderwerp. Maar het regelen ervan kost minder tijd dan u denkt, en daarna is het gedaan. U hoeft er niet uitgebreid bij stil te staan. Ziet u het als een administratieve handeling, net als het verlengen van een paspoort of het afsluiten van een reisverzekering. Het geeft rust, juist omdat het dan van de lijst af is.</p>
+      </div>
+    </div>
+
+    <div class="highlight-box">
+      <p><strong>Belangrijk:</strong> reageer altijd rustig en zonder oordeel. Het doel is niet om het gesprek te "winnen", maar om de deur open te houden. Als uw ouders nu niet willen, respecteer dat. U kunt het onderwerp later opnieuw ter sprake brengen.</p>
+    </div>
+
+    <div class="page-footer">
+      <span class="footer-brand">VAEtestament</span>
+      <span>9</span>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════ -->
+  <!-- HOOFDSTUK 4                                 -->
+  <!-- ════════════════════════════════════════════ -->
+  <div class="page page-break">
+    <div class="chapter-header">
+      <div class="chapter-number">Hoofdstuk 4</div>
+      <h2>Wat te doen als uw ouders ja zeggen</h2>
+    </div>
+
+    <p>Gefeliciteerd. Het moeilijkste deel is achter de rug. Nu is het zaak om snel door te schakelen naar concrete actie, voordat het momentum verdwijnt. Hieronder vindt u drie stappen die u direct kunt zetten.</p>
+
+    <div class="step">
+      <div class="step-number">1</div>
+      <div class="step-content">
+        <h4>Plan samen een gratis kennismakingsgesprek van 15 minuten</h4>
+        <p>Ga naar <strong>cal.com/vaetestament.nl</strong> en kies een moment dat voor uw ouders past. In dit gesprek wordt de situatie kort doorgenomen en krijgen uw ouders een helder beeld van wat er nodig is. Er zijn geen verplichtingen.</p>
+        <p>Tip: plan het gesprek binnen een week. Hoe korter de tijd tussen "ja" en actie, hoe groter de kans dat het ook daadwerkelijk gebeurt.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-number">2</div>
+      <div class="step-content">
+        <h4>Verzamel de basisdocumenten</h4>
+        <p>Voor het opstellen van een DIFC-testament zijn een aantal documenten nodig. U kunt deze alvast verzamelen zodat het proces snel kan verlopen. Zie de documentchecklist in de bijlage van deze gids voor een volledig overzicht.</p>
+        <p>De belangrijkste documenten zijn: een kopie van het paspoort van de eigenaar, de title deed van het vastgoed, en de gegevens van de beoogde begunstigden.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-number">3</div>
+      <div class="step-content">
+        <h4>Kies de aanpak die past</h4>
+        <p>VAEtestament biedt twee vormen van begeleiding:</p>
+        <p><strong>Zelf met begeleiding (EUR 497):</strong> u ontvangt persoonlijke begeleiding bij het volledige proces. U vult de documenten zelf in, met ondersteuning op elk moment via e-mail of telefoon.</p>
+        <p><strong>Samen in een videosessie (EUR 797):</strong> u doorloopt het hele proces samen met een specialist in een of meerdere videosessies. Ideaal als uw ouders het prettig vinden om alles stap voor stap samen door te nemen.</p>
+        <p style="color: var(--text-light); font-size: 10pt; margin-top: 8pt;">Beide bedragen zijn begeleidingstarieven. De DIFC-registratiekosten worden apart en rechtstreeks aan het DIFC betaald.</p>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span class="footer-brand">VAEtestament</span>
+      <span>10</span>
+    </div>
+  </div>
+
+  <div class="page">
+    <h3>Hoe het proces verloopt</h3>
+
+    <p>Na het kennismakingsgesprek verloopt het proces in vier fasen:</p>
+
+    <p><strong>1. Intake en documentverzameling.</strong> De benodigde gegevens worden verzameld en gecontroleerd. Dit kan vaak binnen een week.</p>
+
+    <p><strong>2. Opstellen van het testament.</strong> Op basis van de wensen van uw ouders wordt een concept-testament opgesteld dat voldoet aan de DIFC-vereisten.</p>
+
+    <p><strong>3. Controle en goedkeuring.</strong> Uw ouders beoordelen het concept en geven hun akkoord. Eventuele aanpassingen worden direct verwerkt.</p>
+
+    <p><strong>4. Registratie bij het DIFC.</strong> Het definitieve testament wordt ingediend bij het DIFC Wills Service Centre via het registratieportaal. Na registratie is het testament direct rechtsgeldig.</p>
+
+    <div class="highlight-box">
+      <p><strong>Gemiddelde doorlooptijd:</strong> de meeste trajecten zijn binnen twee tot vier weken volledig afgerond, inclusief registratie bij het DIFC.</p>
+    </div>
+
+    <div class="page-footer">
+      <span class="footer-brand">VAEtestament</span>
+      <span>11</span>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════ -->
+  <!-- HOOFDSTUK 5                                 -->
+  <!-- ════════════════════════════════════════════ -->
+  <div class="page page-break">
+    <div class="chapter-header">
+      <div class="chapter-number">Hoofdstuk 5</div>
+      <h2>Wat te doen als uw ouders nee blijven zeggen</h2>
+    </div>
+
+    <p>Niet elk gesprek leidt tot actie. Soms zeggen ouders nee, ondanks uw beste inspanningen. Dat is hun recht, en het is belangrijk om dat te respecteren. Maar u kunt uzelf wel zo goed mogelijk voorbereiden als toekomstige erfgenaam.</p>
+
+    <p>De onderstaande stappen zijn geen juridisch advies. Het zijn praktische maatregelen die u kunt nemen om beter voorbereid te zijn op een situatie die u liever had voorkomen.</p>
+
+    <h3>Documenteer wat u weet</h3>
+    <p>Noteer alles wat u weet over het vastgoed: het adres, de naam op de title deed, de ontwikkelaar, de beheermaatschappij. Bewaar kopieën van documenten die u heeft gezien. Hoe meer u weet, hoe sneller een advocaat u later kan helpen als dat nodig is.</p>
+
+    <h3>Bewaar contactgegevens van gespecialiseerde partijen</h3>
+    <p>Zoek nu alvast de contactgegevens van DIFC-gecertificeerde advocaten en dienstverleners die gespecialiseerd zijn in nalatenschapsrecht in de UAE. In een crisissituatie wilt u niet hoeven zoeken. VAEtestament kunt u altijd benaderen, ook als uw ouders eerder hebben afgezien van een testament.</p>
+
+    <h3>Begrijp het probate-proces</h3>
+    <p>Lees u in in hoe de nalatenschapsprocedure (probate) werkt in de UAE als er geen DIFC-testament is. Begrip van het proces voorkomt verrassingen. De belangrijkste punten: bankrekeningen worden bevroren, vastgoed kan niet worden verkocht of overgedragen zonder gerechtelijke uitspraak, en de procedure kan maanden tot meer dan een jaar duren.</p>
+
+    <h3>Blijf de deur openhouden</h3>
+    <p>Breng het onderwerp periodiek opnieuw ter sprake, zonder druk. Omstandigheden veranderen. Een nieuwsbericht, een ervaring van vrienden, of een verandering in de gezondheid kan het moment creëren waarop uw ouders er anders over denken. Wees er dan klaar voor.</p>
+
+    <div class="page-footer">
+      <span class="footer-brand">VAEtestament</span>
+      <span>12</span>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════ -->
+  <!-- HOOFDSTUK 6: CHECKLIST                      -->
+  <!-- ════════════════════════════════════════════ -->
+  <div class="page page-break">
+    <div class="chapter-header">
+      <div class="chapter-number">Bijlage</div>
+      <h2>Praktische documentchecklist</h2>
+    </div>
+
+    <p>Onderstaande documenten zijn nodig of nuttig bij het opstellen van een DIFC-testament. U kunt deze checklist gebruiken om samen met uw ouders te controleren wat al beschikbaar is.</p>
+
+    <table class="checklist-table">
+      <thead>
+        <tr>
+          <th style="width: 30px;"></th>
+          <th>Document</th>
+          <th>Toelichting</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="checkbox"></span></td>
+          <td><strong>Paspoort eigenaar</strong></td>
+          <td>Kopie van het geldige paspoort van de eigenaar van het vastgoed</td>
+        </tr>
+        <tr>
+          <td><span class="checkbox"></span></td>
+          <td><strong>Title deed</strong></td>
+          <td>Het eigendomsbewijs van het vastgoed in de UAE, uitgegeven door het Dubai Land Department of de relevante autoriteit</td>
+        </tr>
+        <tr>
+          <td><span class="checkbox"></span></td>
+          <td><strong>Bestaand testament (NL)</strong></td>
+          <td>Kopie van het huidige Nederlandse testament, indien aanwezig. Dit helpt bij het afstemmen van de wensen.</td>
+        </tr>
+        <tr>
+          <td><span class="checkbox"></span></td>
+          <td><strong>Bestaand DIFC-testament</strong></td>
+          <td>Indien eerder een DIFC-testament is opgesteld, de huidige versie ter controle</td>
+        </tr>
+        <tr>
+          <td><span class="checkbox"></span></td>
+          <td><strong>Huwelijkse voorwaarden</strong></td>
+          <td>Indien van toepassing. Relevant voor de verdeling en de positie van de partner.</td>
+        </tr>
+        <tr>
+          <td><span class="checkbox"></span></td>
+          <td><strong>Gegevens begunstigden</strong></td>
+          <td>Volledige naam, geboortedatum, paspoortnummer en relatie tot de eigenaar van alle beoogde erfgenamen</td>
+        </tr>
+        <tr>
+          <td><span class="checkbox"></span></td>
+          <td><strong>Gegevens executeur</strong></td>
+          <td>Naam en contactgegevens van de gewenste executeur-testamentair (degene die het testament uitvoert)</td>
+        </tr>
+        <tr>
+          <td><span class="checkbox"></span></td>
+          <td><strong>Emirates ID (indien beschikbaar)</strong></td>
+          <td>Kopie van de Emirates ID van de eigenaar, als die beschikbaar is</td>
+        </tr>
+        <tr>
+          <td><span class="checkbox"></span></td>
+          <td><strong>Overzicht overige UAE-bezittingen</strong></td>
+          <td>Bankrekeningen, voertuigen of andere bezittingen in de UAE die eventueel in het testament moeten worden opgenomen</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="highlight-box" style="margin-top: 20pt;">
+      <p><strong>Tip:</strong> u hoeft niet alles direct compleet te hebben. Begin met de drie belangrijkste documenten: paspoort, title deed, en gegevens van de begunstigden. De rest kan tijdens het traject worden aangevuld.</p>
+    </div>
+
+    <div class="page-footer">
+      <span class="footer-brand">VAEtestament</span>
+      <span>13</span>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════ -->
+  <!-- HOOFDSTUK 7: OVER + CTA                     -->
+  <!-- ════════════════════════════════════════════ -->
+  <div class="page page-break">
+    <div class="chapter-header">
+      <div class="chapter-number">Tot slot</div>
+      <h2>Over VAEtestament</h2>
+    </div>
+
+    <p>VAEtestament is opgericht door Andre van Wijngaarden met een helder doel: Nederlandse vastgoedeigenaren in de VAE helpen om hun nalatenschap goed te regelen. Niet met juridisch jargon, maar met duidelijke begeleiding in het Nederlands, van begin tot registratie.</p>
+
+    <p>Wij begeleiden u of uw ouders door het volledige proces: van de eerste oriëntatie tot de registratie van het testament bij het DIFC Wills Service Centre. Elke situatie is anders, en daarom begint elk traject met een persoonlijk gesprek.</p>
+
+    <h3>Wat ons onderscheidt</h3>
+
+    <p><strong>Nederlandstalige begeleiding.</strong> Het hele traject verloopt in het Nederlands. Geen taalbarrière, geen misverstanden.</p>
+
+    <p><strong>Ervaring met Nederlandse families.</strong> Wij begrijpen de vragen en zorgen die spelen bij Nederlandse eigenaren van UAE-vastgoed, en bij hun kinderen.</p>
+
+    <p><strong>Transparante tarieven.</strong> De begeleidingskosten zijn vooraf duidelijk. DIFC-registratiekosten worden apart en rechtstreeks aan het DIFC betaald, zodat u altijd weet wat waarvoor is.</p>
+
+    <p><strong>Persoonlijke aanpak.</strong> Geen massaproductie. Elk testament wordt individueel opgesteld en afgestemd op de specifieke wensen en situatie van uw familie.</p>
+
+    <div class="cta-box">
+      <h3>Zet de eerste stap</h3>
+      <p>Plan een gratis en vrijblijvend kennismakingsgesprek van 15 minuten. Wij bespreken de situatie, beantwoorden uw vragen, en vertellen u precies wat er nodig is.</p>
+      <a href="https://cal.com/vaetestament.nl" class="cta-link">Plan een gesprek</a>
+      <p style="margin-top: 14pt; font-size: 10pt;">Of bezoek <strong>vaetestament.nl/voor-kinderen/</strong> voor meer informatie</p>
+    </div>
+
+    <div style="text-align: center; margin-top: 28pt; color: var(--text-light); font-size: 9pt;">
+      <p>VAEtestament &middot; vaetestament.nl &middot; info@vaetestament.nl</p>
+      <p style="margin-top: 4pt;">&copy; VAEtestament. Alle rechten voorbehouden.</p>
+    </div>
+
+    <div class="page-footer">
+      <span class="footer-brand">VAEtestament</span>
+      <span>14</span>
+    </div>
+  </div>
+
+</body>
+</html>

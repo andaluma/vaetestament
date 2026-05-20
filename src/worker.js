@@ -91,6 +91,26 @@ export default {
       return Response.redirect(canonical + url.pathname + url.search, 301);
     }
 
+    // Serve domain-specific robots.txt so each domain references its own sitemap
+    if (url.pathname === '/robots.txt') {
+      const domain = LOCALE_DOMAINS[locale] || LOCALE_DOMAINS.nl;
+      const body = [
+        'User-agent: *',
+        'Allow: /',
+        '',
+        'Sitemap: ' + domain + '/sitemap-index.xml',
+        '',
+        'Disallow: /baraca-1pager.html',
+        'Disallow: /BARACA_OVEREENKOMST.html',
+        'Disallow: /BARACA_VOORSTEL.html',
+        'Disallow: /bedankt',
+      ].join('\n');
+      return new Response(body, {
+        status: 200,
+        headers: { 'Content-Type': 'text/plain; charset=utf-8', 'Cache-Control': 'public, max-age=86400' },
+      });
+    }
+
     // EN domain: serve the EN homepage (built at /en/) when visiting /
     if (locale === 'en' && (url.pathname === '/' || url.pathname === '')) {
       return env.ASSETS.fetch(

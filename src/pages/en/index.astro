@@ -5,7 +5,7 @@ const siteRoot = 'https://uaepropertywills.com';
 const title = 'UAEpropertyWills - DIFC will for foreign property owners in the UAE';
 const description = 'Protect your UAE property with a DIFC will. For foreign non-residents. Three clear options, transparent pricing.';
 const canonical = `${siteRoot}/`;
-const ogImage = `${siteRoot}/og-default.png`;
+const ogImage = `${siteRoot}/og-default-en.png`;
 
 const jsonLd = [
   {
@@ -60,13 +60,6 @@ const jsonLd = [
         },
         "serviceType": "DIFC will registration guidance",
         "offers": [
-          {
-            "@type": "Offer",
-            "name": "Self-Guided",
-            "price": "497",
-            "priceCurrency": "EUR",
-            "description": "Step-by-step portal guidance for independent DIFC will registration"
-          },
           {
             "@type": "Offer",
             "name": "Guided Registration",
@@ -126,7 +119,7 @@ const jsonLd = [
             "name": "What are the total costs of a DIFC will?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Total costs consist of three components: our guidance fee (EUR 497 to EUR 1,499), DIFC registration fees (paid directly to the DIFC), plus lawyer fees for Tier 3. All DIFC rates are indicative."
+              "text": "Total costs consist of three components: our guidance fee (€797 or €1,499), DIFC registration fees (paid directly to the DIFC), plus lawyer fees for Tier 3. All DIFC rates are indicative."
             }
           },
           {
@@ -134,7 +127,7 @@ const jsonLd = [
             "name": "What does a UAE probate procedure cost without a local will?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Without a locally valid will, your surviving family must go through a full UAE probate procedure. This involves legalisation, sworn Arabic translations and local lawyers. Costs quickly reach EUR 10,000 or more, and the process typically takes 12 to 24 months."
+              "text": "Without a locally valid will, your surviving family must go through a full UAE probate procedure. This involves legalisation, sworn Arabic translations and local lawyers. Costs quickly reach €10,000 or more, and the process typically takes 12 to 24 months."
             }
           },
           {
@@ -183,9 +176,9 @@ const jsonLd = [
   <!-- NAV -->
   <nav>
     <div class="nav-inner">
-      <a href="/"><img src="/logo-nav-en.svg" alt="UAEpropertyWills" width="148" height="44" style="height:44px;width:auto;display:block;"></a>
+      <a href="/"><img src="/logo-nav-en.svg" alt="UAEpropertyWills" width="230" height="68" style="height:68px;width:auto;display:block;"></a>
       <div style="display:flex;align-items:center;gap:16px;">
-        <a href="https://app.vaetestament.nl" class="nav-login" style="color:rgba(255,255,255,0.65);font-size:0.82rem;text-decoration:none;letter-spacing:0.03em;">Log in</a>
+        <a href="https://app.uaepropertywills.com" class="nav-login" style="color:rgba(255,255,255,0.65);font-size:0.82rem;text-decoration:none;letter-spacing:0.03em;">Log in</a>
         <a href="#consultation" class="btn btn-gold">Schedule free call</a>
       </div>
     </div>
@@ -197,11 +190,11 @@ const jsonLd = [
       <div class="hero-inner">
         <span class="hero-label fade-up">DIFC will for foreign property owners</span>
         <h1 class="fade-up delay-1">
-          Your UAE property.<br>
-          Without <em>years</em> of hassle for your family.
+          We do one thing: DIFC Property Wills<br>
+          for foreign non-resident property owners.
         </h1>
         <p class="hero-sub fade-up delay-2">
-          Without a locally valid will, your family faces a UAE probate procedure of 12 to 24 months, involving legalisation, sworn Arabic translations and local lawyer costs that quickly exceed &euro;10,000. A DIFC will prevents this.
+          For most property owners, a Property Will is sufficient, not a Full Will. We tell you honestly whether that applies to you.
         </p>
         <div class="hero-actions fade-up delay-3">
           <a href="#consultation" class="btn btn-gold btn-lg">Schedule free consultation</a>
@@ -296,34 +289,11 @@ const jsonLd = [
       <div class="pakketten-header">
         <p class="section-label">Our services</p>
         <h2>Choose the approach that suits you.</h2>
-        <p>Three clear options - from fully self-guided to fully managed.
+        <p>Two clear options - from guided to fully managed.
         You pay only for what you need.</p>
       </div>
 
-      <div class="cards">
-
-        <!-- Tier 1 -->
-        <div class="card" style="opacity:0.7;">
-          <p class="card-tier">Tier 1</p>
-          <h3 class="card-name">Self-Guided</h3>
-          <p class="card-tagline">Everything you need to register your DIFC will yourself, at your own pace.</p>
-          <div class="card-divider"></div>
-          <div class="card-price">
-            <span class="price-amount">&euro;497</span>
-            <span class="price-note">Our guidance fee &middot; DIFC costs separate*</span>
-          </div>
-          <ul class="card-features">
-            <li>Access to the UAEpropertyWills portal - five phases, step by step</li>
-            <li>Personal guide through the DIFC portal, with videos per section</li>
-            <li>Checklist: which documents you need, with file name suggestions</li>
-            <li>Support via the in-portal contact form (response time: 2 business days)</li>
-            <li>Up to 5 properties per will</li>
-          </ul>
-          <div class="card-cta">
-            <span class="btn btn-outline" style="pointer-events:none;opacity:0.5;">Coming soon</span>
-            <p class="card-cta-secondary"><a href="#consultation">Schedule a free consultation first &rarr;</a></p>
-          </div>
-        </div>
+      <div class="cards cards-2col">
 
         <!-- Tier 2 (featured) -->
         <div class="card featured">
@@ -337,7 +307,7 @@ const jsonLd = [
             <span class="price-note">Our guidance fee &middot; DIFC costs separate*</span>
           </div>
           <ul class="card-features">
-            <li>Everything from Tier 1 included</li>
+            <li>Structured preparation with videos and checklists</li>
             <li>40-minute guided portal session (live video)</li>
             <li>We walk through the registration together, in real time</li>
             <li>WhatsApp support around your session</li>
@@ -379,7 +349,7 @@ const jsonLd = [
       </p>
 
       <p class="costs-note">
-        * DIFC registration fees for Tier 1 &amp; 2: <strong>AED 7,500</strong> (single will) or <strong>AED 10,000</strong> (mirror will) + AED 20 admin. Tier 3: <strong>AED 10,000&ndash;15,000</strong> DIFC fees + lawyer fees <strong>AED 5,000&ndash;10,000</strong> depending on complexity. All DIFC rates are indicative and subject to change. Current costs are discussed during the consultation.
+        * DIFC registration fees for Tier 2: <strong>AED 7,500</strong> (single will) or <strong>AED 10,000</strong> (mirror will) + AED 20 admin. Tier 3: <strong>AED 10,000&ndash;15,000</strong> DIFC fees + lawyer fees <strong>AED 5,000&ndash;10,000</strong> depending on complexity. All DIFC rates are indicative and subject to change. Current costs are discussed during the consultation.
       </p>
     </div>
   </section>
@@ -487,6 +457,28 @@ const jsonLd = [
     </div>
   </section>
 
+  <!-- PROPERTY WILL VS FULL WILL -->
+  <section class="pw-vs-fw" style="background:var(--cream-dark);padding:80px 0;">
+    <div class="container" style="max-width:var(--max-prose);">
+      <p class="section-label" style="text-align:center;">The key question</p>
+      <h2 style="font-family:var(--font-display);font-size:2rem;text-align:center;margin-bottom:2rem;color:var(--teal);">Do you need a Property Will or a Full Will?</h2>
+      <p style="margin-bottom:1.25rem;line-height:1.8;">Many foreign property owners in the UAE pay for a Full Will when a Property Will would suffice. The difference? A Property Will covers your real estate. A Full Will covers everything, including bank accounts, vehicles and guardianship.</p>
+      <p style="margin-bottom:1.25rem;line-height:1.8;">If you only own property in your personal name, without minor children in the UAE and without corporate structures, a Property Will is almost always the right choice.</p>
+      <p style="margin-bottom:2rem;line-height:1.8;">We help you make that assessment. No sales pitch, no upsell. If a Property Will is sufficient, we say so. If you need a Full Will, we explain why.</p>
+      <div style="text-align:center;display:flex;flex-direction:column;align-items:center;gap:0.75rem;">
+        <a href="#" class="btn btn-gold btn-lg" onclick="openTierCheck();return false;">Take the test: which will fits your situation?</a>
+        <a href="/beslissingsgids/" style="font-size:0.9rem;color:var(--teal);text-decoration:underline;">Or download our free decision guide</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTAL ACKNOWLEDGMENT -->
+  <section style="background:var(--teal-mid);padding:48px 0;">
+    <div class="container" style="max-width:var(--max-prose);text-align:center;">
+      <p style="color:rgba(255,255,255,0.9);font-style:italic;line-height:1.8;font-size:1.05rem;">Yes, the DIFC portal exists. This is what doing it yourself looks like in practice: English legal terminology, decisions you must make without context, weeks of research, and no one to call when you get stuck. We make that process accessible.</p>
+    </div>
+  </section>
+
   <!-- FAQ -->
   <section class="faq">
     <div class="container">
@@ -558,7 +550,7 @@ const jsonLd = [
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-answer">
-            Total costs consist of three components. Our guidance fee: &euro;497, &euro;797 or &euro;1,499 depending on the package. The official DIFC registration fees: AED 7,500 for a single will or AED 10,000 for a mirror will, plus an administrative closure of AED 20. For Tier 3, higher DIFC fees apply (AED 10,000 single / AED 15,000 mirror will) plus lawyer fees of typically AED 5,000&ndash;10,000. All DIFC rates are indicative and subject to change. During the free consultation you receive an up-to-date cost overview.
+            Total costs consist of three components. Our guidance fee: &euro;797 or &euro;1,499 depending on the package. The official DIFC registration fees: AED 7,500 for a single will or AED 10,000 for a mirror will, plus an administrative closure of AED 20. For Tier 3, higher DIFC fees apply (AED 10,000 single / AED 15,000 mirror will) plus lawyer fees of typically AED 5,000&ndash;10,000. All DIFC rates are indicative and subject to change. During the free consultation you receive an up-to-date cost overview.
             <p style="margin-top:0.75rem;"><a href="/articles/difc-will-costs-and-packages/" style="color:var(--teal);font-weight:500;">Read more: What does a DIFC will cost &rarr;</a></p>
           </div>
         </div>
@@ -750,6 +742,7 @@ const jsonLd = [
   .pakketten-header h2 { font-family: var(--font-display); font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 500; color: var(--dark); margin-bottom: 16px; }
   .pakketten-header p { font-size: 1rem; color: var(--mid); font-weight: 300; line-height: 1.7; }
   .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: stretch; }
+  .cards-2col { grid-template-columns: repeat(2, 1fr); max-width: 860px; margin: 0 auto; }
   .card { background: var(--white); border-radius: 6px; padding: 44px 36px; position: relative; border: 1px solid rgba(0,0,0,0.06); transition: transform 0.25s ease, box-shadow 0.25s ease; display: flex; flex-direction: column; }
   .card:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(0,0,0,0.08); }
   .card.featured { background: var(--teal); border-color: var(--teal); transform: translateY(-8px); box-shadow: 0 20px 56px rgba(12,74,69,0.2); }
@@ -843,6 +836,7 @@ const jsonLd = [
   @media (max-width: 900px) {
     .problem .container, .solution-inner, .about-inner { grid-template-columns: 1fr; gap: 48px; }
     .cards { grid-template-columns: 1fr; max-width: 440px; margin: 0 auto; }
+    .cards-2col { max-width: 440px; }
     .card.featured { transform: none; }
     .steps { grid-template-columns: repeat(2, 1fr); gap: 40px; }
     .steps::before { display: none; }

@@ -55,7 +55,7 @@ It does not matter in which emirate your property is located. A DIFC will covers
 
 Without a local will, the UAE authorities may apply local inheritance rules to property on UAE soil, regardless of your nationality or faith. Recent changes to UAE legislation have adjusted these rules, but the exact application to foreign non-residents is currently unclear.
 
-In practical terms: your surviving family cannot know with certainty how the property will be divided. On top of that, a probate procedure (comparable to settling an estate through the courts) typically costs more than EUR 10,000 and takes 12 to 24 months. That includes apostilles, sworn Arabic translations and local lawyers.
+In practical terms: your surviving family cannot know with certainty how the property will be divided. On top of that, a probate procedure (comparable to settling an estate through the courts) typically costs more than €10,000 and takes 12 to 24 months. That includes apostilles, sworn Arabic translations and local lawyers.
 
 With a DIFC will, you decide who inherits your property. The registration process is entirely digital. You do not need to travel to Dubai.
 
@@ -75,12 +75,11 @@ The entire process is conducted remotely. You do not need to be physically prese
 
 ## What does it cost?
 
-VAEtestament works with fixed guidance fees per tier:
+UAE Property Wills works with fixed guidance fees per tier:
 
-- **Tier 1 (Self-Guided):** EUR 497. For owners who go through the process independently with structured support.
-- **Tier 2 (Guided Registration):** EUR 797. Including a personal 40-minute session.
-- **Tier 3 (Fully Managed):** EUR 1,499. Including a referral to a DIFC-certified lawyer for complex situations.
+- **Tier 2 (Guided Registration):** €797. Including a personal 40-minute session.
+- **Tier 3 (Fully Managed):** €1,499. Including a referral to a DIFC-certified lawyer for complex situations.
 
 DIFC registration fees are paid separately, directly to the DIFC. For Tier 3, the lawyer's fee is an additional cost.
 
-For comparison: a law firm in Dubai typically charges EUR 2,000 to EUR 5,000 or more, with all communication in English.
+For comparison: a law firm in Dubai typically charges €2,000 to €5,000 or more, with all communication in English.

@@ -20,7 +20,7 @@ related:
 linked_landing_faq: mirror-will-couples
 faq:
   - q: Is a mirror will cheaper than two separate wills?
-    a: Yes. At VAEtestament, a mirror will is EUR 797 (Tier 2). Two separate Tier 1 registrations would cost EUR 994, without a personal session.
+    a: Yes. At VAEtestament, a mirror will is €797 (Tier 2), which includes a personal session.
   - q: Do both partners have to choose the same beneficiaries?
     a: No. Each partner decides independently. The wills are registered simultaneously, but the content can differ.
   - q: What if we later divorce?
@@ -53,7 +53,7 @@ A mirror will is suitable when:
 - One partner is the owner, but the other needs to be protected as the surviving spouse.
 - The couple wants to handle the registration in one process, at a lower cost than two separate procedures.
 
-At VAEtestament, a mirror will falls under Tier 2 (EUR 797 total), including a personal 40-minute session.
+At VAEtestament, a mirror will falls under Tier 2 (€797 total), including a personal 40-minute session.
 
 ## Common scenarios
 
@@ -86,7 +86,7 @@ It is advisable to inform your local notary or solicitor about the existence of 
 A mirror will is not the best option in all situations:
 
 - **Property in a corporate structure:** if the property is held by an LLC, holding or trust, a standard DIFC Property Will is not sufficient. You need Tier 3 with a lawyer referral.
-- **More than 5 properties:** Tier 1 and 2 cover a maximum of 5 properties in personal name. Beyond that, Tier 3 is required.
+- **More than 5 properties:** Tier 2 covers a maximum of 5 properties in personal name. Beyond that, Tier 3 is required.
 - **Non-property assets:** bank accounts, shares or vehicles in the UAE require a more comprehensive DIFC will variant.
 - **Complex family situations:** stepchildren, divorced partners with shared property, or situations involving multiple jurisdictions may require tailored legal work.
 
