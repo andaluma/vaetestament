@@ -1,6 +1,7 @@
 ---
 title: "Kan ik het testament voor mijn ouders regelen? Wat mag wel en wat niet?"
 slug: vk-04-zelf-regelen
+en_slug: fc-04-arranging-it-yourself
 meta_description: "Wilt u het DIFC-testament voor uw ouders regelen? Lees wat u als kind zelf kunt doen en waar de juridische grens ligt."
 keywords:
   - DIFC-testament regelen voor ouders

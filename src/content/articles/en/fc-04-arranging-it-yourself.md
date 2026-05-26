@@ -1,6 +1,7 @@
 ---
 title: "Can I arrange the DIFC will for my parents? What you can and cannot do"
 slug: fc-04-arranging-it-yourself
+nl_slug: vk-04-zelf-regelen
 meta_description: "You want to help your parents arrange a DIFC will for their Dubai property. Learn what you can do on their behalf and where the legal boundary lies."
 keywords:
   - arrange DIFC will for parents

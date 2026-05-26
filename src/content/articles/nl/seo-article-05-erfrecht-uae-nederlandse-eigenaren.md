@@ -1,6 +1,7 @@
 ---
 title: "Erfrecht in Dubai en de Emiraten: wat Nederlandse vastgoedeigenaren moeten weten"
 slug: erfrecht-vae-nederlandse-vastgoedeigenaren
+en_slug: uae-inheritance-law-foreign-owners
 meta_description: "Hoe werkt erfrecht in Dubai en de VAE voor Nederlandse eigenaren? Recente regelwijzigingen, onduidelijkheden en waarom een DIFC-testament essentieel is."
 keywords:
   - erfrecht VAE Nederlandse
@@ -43,11 +44,13 @@ Dit is het punt dat de meeste Nederlandse eigenaren missen. Zij hebben doorgaans
 
 ## Recente regelwijzigingen en hun gevolgen
 
-De VAE heeft in de afgelopen jaren meerdere aanpassingen doorgevoerd in het erfrecht voor buitenlandse eigenaren. Deze wijzigingen zijn bedoeld om het land aantrekkelijker te maken voor internationale investeerders.
+De VAE heeft in de afgelopen jaren meerdere aanpassingen doorgevoerd in het erfrecht voor buitenlandse eigenaren, bedoeld om het land aantrekkelijker te maken voor internationale investeerders.
 
-De exacte toepassing van deze nieuwe regels op Nederlandse non-residenten is op dit moment niet eenduidig. De regelgeving is in beweging, en de praktijk wijst uit dat de interpretatie per emiraat en per geval kan verschillen.
+De meest recente en ingrijpende wijziging is Federal Decree-Law No. 51 of 2024, dat op 1 januari 2026 in werking is getreden. Deze wet bepaalt dat alle VAE-bezittingen van overledenen zonder testament en zonder identificeerbare erfgenamen permanent worden overgedragen aan een charitatief Waqf-fonds. De wet geldt in alle zeven emiraten.
 
-Concreet betekent dit voor u als Nederlandse eigenaar: u kunt niet met zekerheid voorspellen hoe uw vastgoed verdeeld zal worden als u overlijdt zonder lokaal testament. De onzekerheid zelf is het risico.
+Voor Nederlandse eigenaren met partner en kinderen is het directe Waqf-risico beperkt - zij hebben identificeerbare erfgenamen. Maar de exacte toepassing van de nieuwe regels op Nederlandse non-residenten is niet eenduidig. De regelgeving is in beweging, en de praktijk wijst uit dat de interpretatie per emiraat en per geval kan verschillen.
+
+Concreet betekent dit voor u als Nederlandse eigenaar: u kunt niet met zekerheid voorspellen hoe uw vastgoed verdeeld zal worden als u overlijdt zonder lokaal testament. De onzekerheid zelf is het risico. En voor alleenstaanden of eigenaren met een ongehuwde partner is het risico nog groter: zonder aantoonbare erfgenamen kan het vastgoed definitief naar een staatsfonds gaan.
 
 ## Het samenspel met Nederlands erfrecht
 

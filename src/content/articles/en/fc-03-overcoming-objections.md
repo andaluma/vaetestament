@@ -1,6 +1,7 @@
 ---
 title: "My parents say 'it'll be fine.' How do I convince them?"
 slug: fc-03-overcoming-objections
+nl_slug: vk-03-overtuigen
 meta_description: "Your parents think their UAE property inheritance is covered. Here are 5 common objections to a DIFC will and clear, respectful responses to each one."
 keywords:
   - parents refuse DIFC will

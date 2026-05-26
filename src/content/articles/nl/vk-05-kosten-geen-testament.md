@@ -1,6 +1,7 @@
 ---
 title: "Wat kost het om géén testament te hebben in de VAE? Een rekenvoorbeeld vanuit het perspectief van de erven."
 slug: vk-05-kosten-geen-testament
+en_slug: fc-05-cost-of-no-will
 meta_description: Geen DIFC-testament voor UAE-vastgoed? Uw nabestaanden betalen al snel EUR 10.000-15.000+ aan juridische kosten. Dit rekenvoorbeeld laat zien wat u bespaart.
 keywords:
   - kosten geen testament Dubai

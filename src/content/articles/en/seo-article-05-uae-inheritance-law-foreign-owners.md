@@ -1,6 +1,7 @@
 ---
 title: "Inheritance law in Dubai and the Emirates: what foreign property owners need to know"
 slug: uae-inheritance-law-foreign-owners
+nl_slug: erfrecht-vae-nederlandse-vastgoedeigenaren
 meta_description: "How does inheritance law in Dubai and the UAE work for foreign owners? Recent rule changes, uncertainties and why a DIFC will is essential."
 keywords:
   - UAE inheritance law foreign owner

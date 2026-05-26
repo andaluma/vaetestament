@@ -1,6 +1,7 @@
 ---
 title: "Settling an estate in Dubai as a foreign heir: costs, steps and timeline"
 slug: probate-dubai-foreign-heirs
+nl_slug: probate-dubai-nederlandse-erfgenamen
 meta_description: "What does the probate process in Dubai look like for foreign heirs? Steps, documents, costs (€10,000+) and timeline (12-24 months)."
 keywords:
   - probate Dubai foreign heirs
@@ -72,7 +73,7 @@ A local lawyer submits the probate application to the competent court. The choic
 
 ### Step 5: court procedure
 
-The court reviews the submitted documents, establishes the heirs and decides on the distribution of the property. Recent changes to UAE legislation have adjusted the default inheritance rules for foreign owners, but application may vary by case and by emirate.
+The court reviews the submitted documents, establishes the heirs and decides on the distribution of the property. Recent changes to UAE legislation have adjusted the default inheritance rules for foreign owners, but application may vary by case and by emirate. Under Federal Decree-Law No. 51 of 2024 (in effect since 1 January 2026), assets of deceased persons without identifiable heirs are moreover transferred to a charitable Waqf foundation.
 
 **Timeline:** 3 to 12 months (from submission). Delays due to additional documentation requests are common.
 

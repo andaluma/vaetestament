@@ -1,6 +1,7 @@
 ---
 title: "How to bring up the DIFC will with your parents"
 slug: fc-02-difficult-conversation
+nl_slug: vk-02-lastige-gesprek
 meta_description: "Talking to your parents about a will for their Dubai property can feel awkward. Three proven conversation openers and practical tips to make it easier."
 keywords:
   - talk to parents about DIFC will

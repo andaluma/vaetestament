@@ -1,6 +1,7 @@
 ---
 title: "Mijn ouders zeggen 'het komt wel goed.' Hoe overtuig ik ze dat dit nu geregeld moet worden?"
 slug: vk-03-overtuigen
+en_slug: fc-03-overcoming-objections
 meta_description: "Uw ouders stellen het DIFC-testament uit. Lees hoe u veelgehoorde bezwaren weerlegt en hen helpt om actie te ondernemen, zonder schuldgevoel."
 keywords:
   - ouders overtuigen testament Dubai

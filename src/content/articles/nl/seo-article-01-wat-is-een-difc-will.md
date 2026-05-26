@@ -1,6 +1,7 @@
 ---
 title: "Uw vastgoed in de Emiraten beschermen: waarom een Nederlands testament niet genoeg is"
 slug: wat-is-een-difc-will
+en_slug: what-is-a-difc-will
 meta_description: "Een DIFC-testament beschermt uw vastgoed in Dubai, Abu Dhabi en de andere Emiraten. Lees wat het is, voor wie het geldt en wanneer u het moet regelen."
 keywords:
   - DIFC-testament Nederland

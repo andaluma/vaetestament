@@ -1,6 +1,7 @@
 ---
 title: "Joint property in the Emirates? Which will suits you as a couple"
 slug: mirror-wills-couples-uae-property
+nl_slug: mirror-wills-echtparen-uae-vastgoed
 meta_description: "Mirror will for property in Dubai or the Emirates as a couple? What it is, when it applies, limitations and how to arrange it remotely."
 keywords:
   - mirror will Dubai couple

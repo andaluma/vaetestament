@@ -1,6 +1,7 @@
 ---
 title: Wat gebeurt er met mijn Dubai-vastgoed als ik geen testament heb?
 slug: wat-gebeurt-dubai-vastgoed-zonder-testament
+en_slug: dubai-property-without-will
 meta_description: Geen DIFC-testament voor uw VAE-vastgoed? Uw nabestaanden krijgen te maken met onzekere verdeling, hoge kosten en een probate-procedure van 12 tot 24 maanden.
 keywords:
   - overlijden Dubai vastgoed zonder testament
@@ -39,6 +40,8 @@ Vastgoed op VAE-grond valt onder de jurisdictie van de VAE. Als u overlijdt zond
 
 Recente wijzigingen in de VAE-regelgeving hebben de standaard erfregels voor buitenlandse eigenaren aangepast. De exacte toepassing op Nederlandse non-residenten is op dit moment niet eenduidig. Dat klinkt abstract, maar de praktische consequentie is concreet: uw overlevende partner weet niet met zekerheid welk deel van het vastgoed hij of zij ontvangt. De verdeling wordt bepaald door een systeem waar u als eigenaar geen invloed op had.
 
+Sinds 1 januari 2026 is daar een extra risico bijgekomen. Onder Federal Decree-Law No. 51 of 2024 worden alle VAE-bezittingen van overledenen zonder identificeerbare erfgenamen permanent overgedragen aan een door de staat beheerd charitatief fonds (Waqf). Voor eigenaren met een partner en kinderen is het directe Waqf-risico beperkt - zij hebben identificeerbare erfgenamen. Maar het aantonen van dat erfgenaamschap vanuit Nederland, in het Arabisch, via een buitenlands rechtssysteem, is een traject dat maanden duurt en duizenden euro's kost. Voor alleenstaanden of eigenaren met een ongehuwde partner is het risico direct: een ongehuwde partner geldt niet als wettelijke erfgenaam onder VAE-recht.
+
 Een DIFC-testament elimineert die onzekerheid. U bepaalt zelf wie wat erft, en het DIFC-rechtssysteem handhaaft dat.
 
 ## Wat de nabestaanden te wachten staat: de probate-procedure
@@ -75,6 +78,19 @@ Dan overlijdt een van beiden onverwacht.
 Het Nederlandse testament heeft geen rechtskracht voor vastgoed op VAE-grond. De overlevende partner ontdekt dat het appartement niet automatisch overgaat. In plaats daarvan begint een procedure die maanden duurt, duizenden euro's kost, en waarbij de uitkomst niet vaststaat.
 
 Dit is geen hypothetisch scenario. Het is de situatie waar de meerderheid van de Nederlandse VAE-vastgoedeigenaren zich in bevindt, zonder het te weten.
+
+## Het Waqf-risico: wie loopt direct gevaar?
+
+Sinds 1 januari 2026 geldt Federal Decree-Law No. 51 of 2024 in alle zeven emiraten. De wet bepaalt dat bezittingen van overledenen zonder testament en zonder identificeerbare erfgenamen worden overgedragen aan een charitatief Waqf-fonds.
+
+Dit treft niet iedereen gelijk:
+
+- **Alleenstaanden zonder partner of kinderen:** het Waqf-risico is direct en concreet. Zonder testament en zonder aantoonbare erfgenamen gaat het vastgoed naar het fonds.
+- **Eigenaren met een ongehuwde partner:** een ongehuwde partner is onder VAE-recht geen wettelijke erfgenaam. Zonder testament erft de partner niets.
+- **Eigenaren met familie in het buitenland:** als de VAE-autoriteiten de erfgenamen niet snel kunnen identificeren, bestaat het risico dat de bezittingen als 'erfgenaamloos' worden geclassificeerd.
+- **Echtparen met kinderen:** het directe Waqf-risico is beperkt, omdat er identificeerbare erfgenamen zijn. Het risico zit in het langdurige en kostbare traject om dat erfgenaamschap te bewijzen vanuit het buitenland.
+
+Een geregistreerd DIFC-testament elimineert al deze risico's. Het benoemt de erfgenamen vooraf, in een Engelstalig systeem dat de VAE-autoriteiten direct erkennen.
 
 ## Wat een DIFC-testament verandert
 

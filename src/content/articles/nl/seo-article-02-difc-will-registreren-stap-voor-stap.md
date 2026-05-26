@@ -1,6 +1,7 @@
 ---
 title: "Testament voor uw Dubai-vastgoed regelen vanuit Nederland: het volledige proces"
 slug: difc-will-registreren-vanuit-nederland
+en_slug: register-difc-will-from-abroad
 meta_description: "DIFC-testament regelen vanuit Nederland: documenten, tijdlijn (5-10 weken), kosten en wat u zelf doet versus wat begeleid wordt."
 keywords:
   - DIFC testament registreren Nederland

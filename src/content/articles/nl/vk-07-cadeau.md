@@ -1,6 +1,7 @@
 ---
 title: "Cadeau voor uw ouders: een goed geregelde erfenis voor hun UAE-vastgoed"
 slug: vk-07-cadeau
+en_slug: fc-07-gift-idea
 meta_description: Geef uw ouders gemoedsrust als cadeau. Regel de begeleiding voor hun DIFC-testament. Praktisch, persoonlijk en waardevol voor het hele gezin.
 keywords:
   - cadeau ouders DIFC-testament

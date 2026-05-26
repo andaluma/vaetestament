@@ -47,6 +47,9 @@ const articleSchema = z.object({
   linked_landing_faq: z.string().optional(),
 
   hero_image: z.string().url().optional(),
+
+  nl_slug: z.string().optional(),
+  en_slug: z.string().optional(),
 });
 
 const articles_nl = defineCollection({

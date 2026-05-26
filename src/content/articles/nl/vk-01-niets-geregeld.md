@@ -1,6 +1,7 @@
 ---
 title: "Uw ouders hebben een appartement in Dubai. Wat gebeurt er als er niets geregeld is?"
 slug: vk-01-niets-geregeld
+en_slug: fc-01-nothing-arranged
 meta_description: "Wat gebeurt er met het Dubai-vastgoed van uw ouders als zij geen DIFC-testament hebben? Lees welke gevolgen u als erfgenaam kunt verwachten."
 keywords:
   - erfgenaam Dubai vastgoed
@@ -45,7 +46,7 @@ Vervolgens begint een procedure die in de praktijk 12 tot 24 maanden duurt. In s
 
 **Juridische vertegenwoordiging in de VAE regelen.** U heeft een lokale advocaat nodig die namens u de procedure voert bij de rechtbank. Dat is een advocaat in een ander rechtssysteem, in een andere taal, in een andere tijdzone.
 
-**Wachten op de rechtbank.** De lokale rechter bepaalt hoe het vastgoed wordt verdeeld. Zonder testament past de rechter het Emiratische erfrecht toe. Dat betekent dat uw moeder als langstlevende partner mogelijk slechts 12,5% van de waarde van het vastgoed ontvangt. De rest wordt verdeeld onder kinderen en eventueel andere familieleden, volgens regels die vastliggen in de lokale wetgeving.
+**Wachten op de rechtbank.** De lokale rechter bepaalt hoe het vastgoed wordt verdeeld. Zonder testament past de rechter het Emiratische erfrecht toe. Dat betekent dat uw moeder als langstlevende partner mogelijk slechts 12,5% van de waarde van het vastgoed ontvangt. De rest wordt verdeeld onder kinderen en eventueel andere familieleden, volgens regels die vastliggen in de lokale wetgeving. Sinds 1 januari 2026 geldt bovendien Federal Decree-Law No. 51 of 2024: als er geen identificeerbare erfgenamen zijn, worden de bezittingen permanent overgedragen aan een charitatief Waqf-fonds. Voor uw ouders, met kinderen, is dat directe risico beperkt - maar het bewijzen van erfgenaamschap vanuit Nederland is het echte obstakel.
 
 ## De kosten lopen snel op
 

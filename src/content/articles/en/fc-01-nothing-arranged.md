@@ -1,6 +1,7 @@
 ---
 title: "Your parents own property in Dubai. What happens if nothing is arranged?"
 slug: fc-01-nothing-arranged
+nl_slug: vk-01-niets-geregeld
 meta_description: "If your parents own UAE property without a DIFC will, you could face frozen assets, 12-24 months of probate and €10,000+ in costs. Learn what is at stake."
 keywords:
   - parents Dubai property no will
@@ -63,6 +64,7 @@ Under these default rules:
 - A surviving spouse may receive only 12.5% of the property value if there are children.
 - The remainder is divided among children and other relatives according to a fixed formula.
 - The distribution is not something the family can negotiate or adjust after the fact.
+- Since 1 January 2026, Federal Decree-Law No. 51 of 2024 adds a further risk: assets of deceased persons without identifiable heirs are permanently transferred to a state-managed Waqf foundation. For your parents, with children, the direct Waqf risk is limited - but proving heirship from abroad remains the real obstacle.
 
 Your parents likely assumed that their home-country will covers everything. But a will drafted in Europe, North America or elsewhere has no automatic legal standing in the UAE. A separate, locally registered will is needed to ensure their wishes are respected.
 

@@ -1,6 +1,7 @@
 ---
 title: "Nalatenschap in Dubai afwikkelen als Nederlandse erfgenaam: kosten, stappen en tijdlijn"
 slug: probate-dubai-nederlandse-erfgenamen
+en_slug: probate-dubai-foreign-heirs
 meta_description: "Wat doorloopt u als Nederlandse erfgenaam bij probate in Dubai? Stappen, documenten, kosten (EUR 10.000+) en tijdlijn (12-24 maanden)."
 keywords:
   - probate Dubai Nederlands
@@ -72,7 +73,7 @@ Een lokale advocaat dient de probate-aanvraag in bij de bevoegde rechtbank. De k
 
 ### Stap 5: rechtbankprocedure
 
-De rechtbank beoordeelt de ingediende documenten, stelt de erfgenamen vast en beslist over de verdeling van het vastgoed. Recente wijzigingen in de VAE-regelgeving hebben de standaard erfregels voor buitenlandse eigenaren aangepast, maar de toepassing kan per geval en per emiraat verschillen.
+De rechtbank beoordeelt de ingediende documenten, stelt de erfgenamen vast en beslist over de verdeling van het vastgoed. Recente wijzigingen in de VAE-regelgeving hebben de standaard erfregels voor buitenlandse eigenaren aangepast, maar de toepassing kan per geval en per emiraat verschillen. Onder Federal Decree-Law No. 51 of 2024 (in werking sinds 1 januari 2026) worden bezittingen van overledenen zonder identificeerbare erfgenamen bovendien overgedragen aan een charitatief Waqf-fonds.
 
 **Doorlooptijd:** 3 tot 12 maanden (vanaf indiening). Vertragingen door aanvullende documentatieverzoeken zijn gebruikelijk.
 

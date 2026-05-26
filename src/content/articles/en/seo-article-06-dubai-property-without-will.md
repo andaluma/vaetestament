@@ -1,6 +1,7 @@
 ---
 title: What happens to my Dubai property if I have no will?
 slug: dubai-property-without-will
+nl_slug: wat-gebeurt-dubai-vastgoed-zonder-testament
 meta_description: No DIFC will for your UAE property? Your surviving family faces uncertain distribution, high costs and a probate procedure of 12 to 24 months.
 keywords:
   - Dubai property no will consequences
@@ -39,6 +40,8 @@ Property on UAE soil falls under the jurisdiction of the UAE. If you pass away w
 
 Recent changes to UAE legislation have adjusted the default inheritance rules for foreign owners. The exact application to foreign non-residents is currently not straightforward. That sounds abstract, but the practical consequence is concrete: your surviving partner does not know with certainty which part of the property he or she will receive. The distribution is determined by a system over which you, as the owner, had no influence.
 
+Since 1 January 2026, a further risk applies. Under Federal Decree-Law No. 51 of 2024, all UAE assets of deceased persons with no identifiable heirs are permanently transferred to a state-managed charitable foundation (Waqf). For owners with a spouse and children, the direct Waqf risk is limited - they have identifiable heirs. But proving that heirship from abroad, in Arabic, through a foreign legal system, is a process that takes months and costs thousands. For single owners or those with an unmarried partner, the risk is direct: an unmarried partner is not a legal heir under UAE law.
+
 A DIFC will eliminates that uncertainty. You determine who inherits what, and the DIFC court system enforces it.
 
 ## What your surviving family faces: the probate procedure
@@ -75,6 +78,19 @@ Then one of them passes away unexpectedly.
 The home-country will has no legal force for property on UAE soil. The surviving partner discovers that the apartment does not automatically transfer. Instead, a procedure begins that lasts months, costs thousands and has an uncertain outcome.
 
 This is not a hypothetical scenario. It is the situation the majority of foreign UAE property owners are in, without knowing it.
+
+## The Waqf risk: who is directly affected?
+
+Since 1 January 2026, Federal Decree-Law No. 51 of 2024 applies across all seven Emirates. The law provides that assets of deceased persons without a will and without identifiable heirs are transferred to a charitable Waqf foundation.
+
+This does not affect everyone equally:
+
+- **Single owners with no spouse or children:** the Waqf risk is direct and concrete. Without a will and without demonstrable heirs, the property goes to the foundation.
+- **Owners with an unmarried partner:** an unmarried partner is not a legal heir under UAE law. Without a will, the partner inherits nothing.
+- **Owners with family abroad:** if the UAE authorities cannot quickly identify the heirs, there is a risk that the assets are classified as 'heirless'.
+- **Married couples with children:** the direct Waqf risk is limited, because identifiable heirs exist. The risk lies in the lengthy and costly process of proving that heirship from abroad.
+
+A registered DIFC will eliminates all of these risks. It names the heirs in advance, in an English-language system that the UAE authorities directly recognise.
 
 ## What a DIFC will changes
 

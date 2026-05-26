@@ -121,7 +121,7 @@ const publishDateFmt = data.publish_date.toLocaleDateString('en-GB', {
   articleSlug={slug}
   articleTitle={data.title}
   locale="en"
-  alternates={{ nl: `/artikelen/${data.slug || slug}/` }}
+  alternates={data.nl_slug ? { nl: `/artikelen/${data.nl_slug}/` } : {}}
 >
   <main class="page">
     <section

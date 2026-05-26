@@ -1,6 +1,7 @@
 ---
 title: "Samen vastgoed in de Emiraten? Welk testament past bij u als echtpaar"
 slug: mirror-wills-echtparen-uae-vastgoed
+en_slug: mirror-wills-couples-uae-property
 meta_description: "Mirror will voor vastgoed in Dubai of de Emiraten als echtpaar? Wat het is, wanneer het past, beperkingen en hoe u het regelt vanuit Nederland."
 keywords:
   - mirror will Dubai echtpaar

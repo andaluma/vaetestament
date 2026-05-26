@@ -1,6 +1,7 @@
 ---
 title: "A DIFC will as a gift for your parents"
 slug: fc-07-gift-idea
+nl_slug: vk-07-cadeau
 meta_description: "Give your parents the gift of certainty. A DIFC will for their UAE property protects your family and takes only a few weeks to arrange, entirely from abroad."
 keywords:
   - DIFC will gift idea
