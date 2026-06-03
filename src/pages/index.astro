@@ -195,11 +195,11 @@ const jsonLd = [
       <div class="hero-inner">
         <span class="hero-label fade-up">DIFC-testament voor Nederlanders</span>
         <h1 class="fade-up delay-1">
-          Wij doen &eacute;&eacute;n ding: DIFC Property Wills<br>
-          voor Nederlandse niet-residenten.
+          Uw Nederlandse testament wordt in de VAE<br>
+          doorgaans niet erkend.
         </h1>
         <p class="hero-sub fade-up delay-2">
-          Voor veel vastgoedeigenaren is een Property Will voldoende, niet een Full Will. Wij vertellen u eerlijk of dat ook voor u geldt.
+          Een DIFC-testament biedt de oplossing, en voor de meeste vastgoedeigenaren volstaat een Property Will. Wij vertellen u eerlijk of dat ook voor u geldt.
         </p>
         <div class="hero-actions fade-up delay-3">
           <a href="#kennismaking" class="btn btn-gold btn-lg">Plan gratis kennismaking</a>
@@ -222,8 +222,8 @@ const jsonLd = [
         <span class="stat-label">Mogelijke kosten voor legalisatie, vertaling en lokale advocaten</span>
       </div>
       <div class="stat-item">
-        <span class="stat-num">Alle emiraten</span>
-        <span class="stat-label">Een DIFC-testament geldt voor vastgoed in de hele VAE</span>
+        <span class="stat-num">Bevroren</span>
+        <span class="stat-label">Uw vastgoed kan tijdens de erfprocedure niet verkocht of verhuurd worden</span>
       </div>
     </div>
   </div>
@@ -231,10 +231,9 @@ const jsonLd = [
   <!-- PROBLEEM -->
   <section class="problem">
     <div class="container">
-      <div class="problem-left">
+      <div class="problem-full">
         <p class="section-label">Het probleem</p>
-        <h2>Uw Nederlands testament wordt in de VAE doorgaans niet erkend</h2>
-        <p class="problem-subtitle">Uw notarieel testament dekt uw VAE-vastgoed doorgaans niet.</p>
+        <h2>Wat betekent dat voor u en uw nabestaanden?</h2>
         <p>
           U bent Nederlander, woont in Nederland, en heeft vastgoed gekocht in de VAE. Bij overlijden valt dat vastgoed in de regel onder het rechtssysteem van de VAE, niet onder het Nederlandse erfrecht. Een notarieel Nederlands testament wordt door de VAE-autoriteiten doorgaans niet erkend voor vastgoed op VAE-grond. Dat geldt ongeacht of u het bij een Nederlandse notaris heeft laten opstellen of hoe zorgvuldig het is opgesteld.
         </p>
@@ -243,14 +242,6 @@ const jsonLd = [
         </p>
         <p>
           Een DIFC-testament wordt wel erkend door de VAE-autoriteiten en geeft u controle over wie uw vastgoed erft. Het is een aparte juridische structuur, speciaal bedoeld voor niet-moslims met bezittingen in de VAE.
-        </p>
-      </div>
-      <div class="problem-right">
-        <span class="big-pct">0%</span>
-        <h3>Zo wordt uw Nederlandse testament doorgaans beoordeeld in de VAE.</h3>
-        <div class="divider"></div>
-        <p>
-          De VAE past in de regel lokale erfregels toe op vastgoed binnen haar grenzen, ongeacht uw nationaliteit of woonplaats. Een DIFC-testament wordt wel erkend en geeft u controle over wie uw vastgoed erft.
         </p>
       </div>
     </div>
@@ -285,6 +276,28 @@ const jsonLd = [
           </ul>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- PROPERTY WILL VS FULL WILL -->
+  <section class="pw-vs-fw" style="background:var(--cream-dark);padding:80px 0;">
+    <div class="container" style="max-width:var(--max-prose);">
+      <p class="section-label" style="text-align:center;">De belangrijkste vraag</p>
+      <h2 style="font-family:var(--font-display);font-size:2rem;text-align:center;margin-bottom:2rem;color:var(--teal);">Heeft u een Property Will of een Full Will nodig?</h2>
+      <p style="margin-bottom:1.25rem;line-height:1.8;">Veel Nederlandse vastgoedeigenaren in de VAE betalen voor een Full Will terwijl een Property Will volstaat. Het verschil? Een Property Will dekt uw onroerend goed. Een Full Will dekt alles, inclusief bankrekeningen, voertuigen en voogdij.</p>
+      <p style="margin-bottom:1.25rem;line-height:1.8;">Als u uitsluitend vastgoed bezit op persoonlijke naam, zonder minderjarige kinderen in de VAE en zonder holdings of bedrijfsstructuren, dan is een Property Will vrijwel altijd de juiste keuze.</p>
+      <p style="margin-bottom:2rem;line-height:1.8;">Wij helpen u die afweging te maken. Geen verkooppraatje, geen upsell. Als een Property Will volstaat, zeggen wij dat. Als u een Full Will nodig heeft, leggen wij uit waarom.</p>
+      <div style="text-align:center;display:flex;flex-direction:column;align-items:center;gap:0.75rem;">
+        <a href="#" class="btn btn-gold btn-lg" onclick="openTierCheck();return false;">Doe de test: welk testament past bij u?</a>
+        <a href="/beslissingsgids/" style="font-size:0.9rem;color:var(--teal);text-decoration:underline;">Of download onze gratis beslissingsgids</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTAL ACKNOWLEDGMENT -->
+  <section style="background:var(--teal-mid);padding:48px 0;">
+    <div class="container" style="max-width:var(--max-prose);text-align:center;">
+      <p style="color:rgba(255,255,255,0.9);font-style:italic;line-height:1.8;font-size:1.05rem;">Ja, het DIFC-portaal bestaat. Dit is wat zelf doen in de praktijk inhoudt: Engelse juridische terminologie, beslissingen die u zelf moet nemen zonder context, weken onderzoek, en niemand om te bellen als u vastloopt. Wij maken die weg toegankelijk.</p>
     </div>
   </section>
 
@@ -485,28 +498,6 @@ const jsonLd = [
     </div>
   </section>
 
-
-  <!-- PROPERTY WILL VS FULL WILL -->
-  <section class="pw-vs-fw" style="background:var(--cream-dark);padding:80px 0;">
-    <div class="container" style="max-width:var(--max-prose);">
-      <p class="section-label" style="text-align:center;">De belangrijkste vraag</p>
-      <h2 style="font-family:var(--font-display);font-size:2rem;text-align:center;margin-bottom:2rem;color:var(--teal);">Heeft u een Property Will of een Full Will nodig?</h2>
-      <p style="margin-bottom:1.25rem;line-height:1.8;">Veel Nederlandse vastgoedeigenaren in de VAE betalen voor een Full Will terwijl een Property Will volstaat. Het verschil? Een Property Will dekt uw onroerend goed. Een Full Will dekt alles, inclusief bankrekeningen, voertuigen en voogdij.</p>
-      <p style="margin-bottom:1.25rem;line-height:1.8;">Als u uitsluitend vastgoed bezit op persoonlijke naam, zonder minderjarige kinderen in de VAE en zonder holdings of bedrijfsstructuren, dan is een Property Will vrijwel altijd de juiste keuze.</p>
-      <p style="margin-bottom:2rem;line-height:1.8;">Wij helpen u die afweging te maken. Geen verkooppraatje, geen upsell. Als een Property Will volstaat, zeggen wij dat. Als u een Full Will nodig heeft, leggen wij uit waarom.</p>
-      <div style="text-align:center;display:flex;flex-direction:column;align-items:center;gap:0.75rem;">
-        <a href="#" class="btn btn-gold btn-lg" onclick="openTierCheck();return false;">Doe de test: welk testament past bij u?</a>
-        <a href="/beslissingsgids/" style="font-size:0.9rem;color:var(--teal);text-decoration:underline;">Of download onze gratis beslissingsgids</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- PORTAL ACKNOWLEDGMENT -->
-  <section style="background:var(--teal-mid);padding:48px 0;">
-    <div class="container" style="max-width:var(--max-prose);text-align:center;">
-      <p style="color:rgba(255,255,255,0.9);font-style:italic;line-height:1.8;font-size:1.05rem;">Ja, het DIFC-portaal bestaat. Dit is wat zelf doen in de praktijk inhoudt: Engelse juridische terminologie, beslissingen die u zelf moet nemen zonder context, weken onderzoek, en niemand om te bellen als u vastloopt. Wij maken die weg toegankelijk.</p>
-    </div>
-  </section>
 
   <!-- FAQ -->
   <section class="faq">
@@ -822,10 +813,7 @@ const jsonLd = [
     background: var(--cream);
   }
   .problem .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: center;
+    max-width: var(--max-prose, 740px);
   }
   .section-label {
     font-size: 0.76rem;
@@ -835,72 +823,20 @@ const jsonLd = [
     color: var(--gold);
     margin-bottom: 20px;
   }
-  .problem-left h2 {
+  .problem-full h2 {
     font-family: var(--font-display);
     font-size: clamp(2rem, 3.5vw, 2.8rem);
     font-weight: 500;
     line-height: 1.15;
     color: var(--dark);
-    margin-bottom: 12px;
-  }
-  .problem-subtitle {
-    font-family: var(--font-display);
-    font-size: clamp(1.15rem, 2vw, 1.4rem);
-    font-weight: 400;
-    color: var(--dark);
-    line-height: 1.35;
     margin-bottom: 20px;
-    opacity: 0.85;
   }
-  .problem-left p {
+  .problem-full p {
     color: var(--mid);
     font-size: 1rem;
     line-height: 1.8;
     margin-bottom: 16px;
     font-weight: 300;
-  }
-  .problem-right {
-    background: var(--teal);
-    border-radius: 6px;
-    padding: 56px 48px;
-    position: relative;
-    overflow: hidden;
-  }
-  .problem-right::before {
-    content: '';
-    position: absolute;
-    top: -40px; right: -40px;
-    width: 200px; height: 200px;
-    background: radial-gradient(circle, rgba(200,164,74,0.12) 0%, transparent 70%);
-    border-radius: 50%;
-  }
-  .big-pct {
-    font-family: var(--font-display);
-    font-size: 5.5rem;
-    font-weight: 600;
-    color: var(--gold);
-    line-height: 1;
-    display: block;
-  }
-  .problem-right h3 {
-    font-family: var(--font-display);
-    font-size: 1.4rem;
-    font-weight: 500;
-    color: var(--white);
-    margin: 16px 0 16px;
-    line-height: 1.3;
-  }
-  .problem-right p {
-    font-size: 0.92rem;
-    color: rgba(255,255,255,0.65);
-    line-height: 1.75;
-    font-weight: 300;
-  }
-  .problem-right .divider {
-    width: 40px; height: 1px;
-    background: var(--gold);
-    opacity: 0.4;
-    margin: 24px 0;
   }
 
   /* ── SOLUTION ────────────────────────────── */
@@ -1456,7 +1392,7 @@ const jsonLd = [
 
   /* ── RESPONSIVE ──────────────────────────── */
   @media (max-width: 900px) {
-    .problem .container, .solution-inner, .about-inner {
+    .solution-inner, .about-inner {
       grid-template-columns: 1fr;
       gap: 48px;
     }
@@ -1479,7 +1415,6 @@ const jsonLd = [
     .steps { grid-template-columns: 1fr; }
     .problem, .process, .about, .pakketten, .faq { padding: 64px 0; }
     .solution { padding: 56px 0; }
-    .problem .container { gap: 40px; }
     .process-header { margin-bottom: 40px; }
     .pakketten-header { margin: 0 auto 40px; }
     .about-inner { gap: 40px; }

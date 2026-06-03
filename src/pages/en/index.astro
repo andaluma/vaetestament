@@ -190,11 +190,11 @@ const jsonLd = [
       <div class="hero-inner">
         <span class="hero-label fade-up">DIFC will for foreign property owners</span>
         <h1 class="fade-up delay-1">
-          We do one thing: DIFC Property Wills<br>
-          for foreign non-resident property owners.
+          Your home-country will is generally<br>
+          not recognised in the UAE.
         </h1>
         <p class="hero-sub fade-up delay-2">
-          For most property owners, a Property Will is sufficient, not a Full Will. We tell you honestly whether that applies to you.
+          A DIFC will offers the solution, and for most property owners a Property Will is sufficient. We tell you honestly whether that applies to you.
         </p>
         <div class="hero-actions fade-up delay-3">
           <a href="#consultation" class="btn btn-gold btn-lg">Schedule free consultation</a>
@@ -217,8 +217,8 @@ const jsonLd = [
         <span class="stat-label">Potential costs for legalisation, translation and local lawyers</span>
       </div>
       <div class="stat-item">
-        <span class="stat-num">All Emirates</span>
-        <span class="stat-label">A DIFC will covers property across the entire UAE</span>
+        <span class="stat-num">Frozen</span>
+        <span class="stat-label">Your property cannot be sold or rented during the probate process</span>
       </div>
     </div>
   </div>
@@ -226,10 +226,9 @@ const jsonLd = [
   <!-- PROBLEM -->
   <section class="problem">
     <div class="container">
-      <div class="problem-left">
+      <div class="problem-full">
         <p class="section-label">The problem</p>
-        <h2>Your home-country will is generally not recognised in the UAE</h2>
-        <p class="problem-subtitle">Your existing will typically does not cover your UAE property.</p>
+        <h2>What does that mean for you and your family?</h2>
         <p>
           You live abroad, and you own property in the UAE. Upon death, that property falls under the UAE legal system, not under the inheritance law of your home country. A will drafted at home is generally not recognised by the UAE authorities for property on UAE soil. This applies regardless of how carefully it was prepared.
         </p>
@@ -238,14 +237,6 @@ const jsonLd = [
         </p>
         <p>
           A DIFC will is recognised by the UAE authorities and gives you control over who inherits your property. It is a separate legal structure, specifically designed for non-Muslims with assets in the UAE.
-        </p>
-      </div>
-      <div class="problem-right">
-        <span class="big-pct">0%</span>
-        <h3>This is how your home-country will is typically assessed in the UAE.</h3>
-        <div class="divider"></div>
-        <p>
-          The UAE generally applies local inheritance rules to property within its borders, regardless of your nationality or place of residence. A DIFC will is recognised and gives you control over who inherits your property.
         </p>
       </div>
     </div>
@@ -280,6 +271,28 @@ const jsonLd = [
           </ul>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- PROPERTY WILL VS FULL WILL -->
+  <section class="pw-vs-fw" style="background:var(--cream-dark);padding:80px 0;">
+    <div class="container" style="max-width:var(--max-prose);">
+      <p class="section-label" style="text-align:center;">The key question</p>
+      <h2 style="font-family:var(--font-display);font-size:2rem;text-align:center;margin-bottom:2rem;color:var(--teal);">Do you need a Property Will or a Full Will?</h2>
+      <p style="margin-bottom:1.25rem;line-height:1.8;">Many foreign property owners in the UAE pay for a Full Will when a Property Will would suffice. The difference? A Property Will covers your real estate. A Full Will covers everything, including bank accounts, vehicles and guardianship.</p>
+      <p style="margin-bottom:1.25rem;line-height:1.8;">If you only own property in your personal name, without minor children in the UAE and without corporate structures, a Property Will is almost always the right choice.</p>
+      <p style="margin-bottom:2rem;line-height:1.8;">We help you make that assessment. No sales pitch, no upsell. If a Property Will is sufficient, we say so. If you need a Full Will, we explain why.</p>
+      <div style="text-align:center;display:flex;flex-direction:column;align-items:center;gap:0.75rem;">
+        <a href="#" class="btn btn-gold btn-lg" onclick="openTierCheck();return false;">Take the test: which will fits your situation?</a>
+        <a href="/en/conversation-guide/" style="font-size:0.9rem;color:var(--teal);text-decoration:underline;">Or download our free conversation guide</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTAL ACKNOWLEDGMENT -->
+  <section style="background:var(--teal-mid);padding:48px 0;">
+    <div class="container" style="max-width:var(--max-prose);text-align:center;">
+      <p style="color:rgba(255,255,255,0.9);font-style:italic;line-height:1.8;font-size:1.05rem;">Yes, the DIFC portal exists. This is what doing it yourself looks like in practice: English legal terminology, decisions you must make without context, weeks of research, and no one to call when you get stuck. We make that process accessible.</p>
     </div>
   </section>
 
@@ -454,28 +467,6 @@ const jsonLd = [
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- PROPERTY WILL VS FULL WILL -->
-  <section class="pw-vs-fw" style="background:var(--cream-dark);padding:80px 0;">
-    <div class="container" style="max-width:var(--max-prose);">
-      <p class="section-label" style="text-align:center;">The key question</p>
-      <h2 style="font-family:var(--font-display);font-size:2rem;text-align:center;margin-bottom:2rem;color:var(--teal);">Do you need a Property Will or a Full Will?</h2>
-      <p style="margin-bottom:1.25rem;line-height:1.8;">Many foreign property owners in the UAE pay for a Full Will when a Property Will would suffice. The difference? A Property Will covers your real estate. A Full Will covers everything, including bank accounts, vehicles and guardianship.</p>
-      <p style="margin-bottom:1.25rem;line-height:1.8;">If you only own property in your personal name, without minor children in the UAE and without corporate structures, a Property Will is almost always the right choice.</p>
-      <p style="margin-bottom:2rem;line-height:1.8;">We help you make that assessment. No sales pitch, no upsell. If a Property Will is sufficient, we say so. If you need a Full Will, we explain why.</p>
-      <div style="text-align:center;display:flex;flex-direction:column;align-items:center;gap:0.75rem;">
-        <a href="#" class="btn btn-gold btn-lg" onclick="openTierCheck();return false;">Take the test: which will fits your situation?</a>
-        <a href="/beslissingsgids/" style="font-size:0.9rem;color:var(--teal);text-decoration:underline;">Or download our free decision guide</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- PORTAL ACKNOWLEDGMENT -->
-  <section style="background:var(--teal-mid);padding:48px 0;">
-    <div class="container" style="max-width:var(--max-prose);text-align:center;">
-      <p style="color:rgba(255,255,255,0.9);font-style:italic;line-height:1.8;font-size:1.05rem;">Yes, the DIFC portal exists. This is what doing it yourself looks like in practice: English legal terminology, decisions you must make without context, weeks of research, and no one to call when you get stuck. We make that process accessible.</p>
     </div>
   </section>
 
@@ -717,17 +708,10 @@ const jsonLd = [
   .stat-label { font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-top: 8px; display: block; font-weight: 300; }
 
   .problem { padding: 100px 0; background: var(--cream); }
-  .problem .container { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+  .problem .container { max-width: var(--max-prose, 740px); }
   .section-label { font-size: 0.76rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; }
-  .problem-left h2 { font-family: var(--font-display); font-size: clamp(2rem, 3.5vw, 2.8rem); font-weight: 500; line-height: 1.15; color: var(--dark); margin-bottom: 12px; }
-  .problem-subtitle { font-family: var(--font-display); font-size: clamp(1.15rem, 2vw, 1.4rem); font-weight: 400; color: var(--dark); line-height: 1.35; margin-bottom: 20px; opacity: 0.85; }
-  .problem-left p { color: var(--mid); font-size: 1rem; line-height: 1.8; margin-bottom: 16px; font-weight: 300; }
-  .problem-right { background: var(--teal); border-radius: 6px; padding: 56px 48px; position: relative; overflow: hidden; }
-  .problem-right::before { content: ''; position: absolute; top: -40px; right: -40px; width: 200px; height: 200px; background: radial-gradient(circle, rgba(200,164,74,0.12) 0%, transparent 70%); border-radius: 50%; }
-  .big-pct { font-family: var(--font-display); font-size: 5.5rem; font-weight: 600; color: var(--gold); line-height: 1; display: block; }
-  .problem-right h3 { font-family: var(--font-display); font-size: 1.4rem; font-weight: 500; color: var(--white); margin: 16px 0 16px; line-height: 1.3; }
-  .problem-right p { font-size: 0.92rem; color: rgba(255,255,255,0.65); line-height: 1.75; font-weight: 300; }
-  .problem-right .divider { width: 40px; height: 1px; background: var(--gold); opacity: 0.4; margin: 24px 0; }
+  .problem-full h2 { font-family: var(--font-display); font-size: clamp(2rem, 3.5vw, 2.8rem); font-weight: 500; line-height: 1.15; color: var(--dark); margin-bottom: 20px; }
+  .problem-full p { color: var(--mid); font-size: 1rem; line-height: 1.8; margin-bottom: 16px; font-weight: 300; }
 
   .solution { background: var(--teal-mid); padding: 80px 0; }
   .solution-inner { display: grid; grid-template-columns: 1fr 1.6fr; gap: 80px; align-items: center; }
@@ -834,7 +818,7 @@ const jsonLd = [
   .faq-disclaimer { text-align: center; margin-top: 40px; font-size: 0.78rem; color: var(--light-text); font-weight: 300; max-width: 680px; margin-left: auto; margin-right: auto; }
 
   @media (max-width: 900px) {
-    .problem .container, .solution-inner, .about-inner { grid-template-columns: 1fr; gap: 48px; }
+    .solution-inner, .about-inner { grid-template-columns: 1fr; gap: 48px; }
     .cards { grid-template-columns: 1fr; max-width: 440px; margin: 0 auto; }
     .cards-2col { max-width: 440px; }
     .card.featured { transform: none; }
@@ -855,7 +839,7 @@ const jsonLd = [
     .steps { grid-template-columns: 1fr; }
     .problem, .process, .about, .pakketten, .faq { padding: 64px 0; }
     .solution { padding: 56px 0; }
-    .problem .container { gap: 40px; }
+
     .process-header { margin-bottom: 40px; }
     .pakketten-header { margin: 0 auto 40px; }
     .about-inner { gap: 40px; }
