@@ -16,7 +16,7 @@ author: André van Wijngaarden
 schema_type: Article
 cluster: keuze
 related:
-  - difc-will-registreren-vanuit-nederland
+  - difc-testament-een-appartement-moeite-waard
   - difc-will-of-nederlands-testament
   - mirror-wills-echtparen-uae-vastgoed
 linked_landing_faq: wat-kost-difc-will
@@ -49,7 +49,7 @@ Voor eigenaren die het proces zelfstandig willen doorlopen met structurele begel
 - Begeleiding in het Nederlands gedurende het hele traject.
 - Dekking voor maximaal 5 eigendommen op persoonlijke naam.
 
-**Voor wie:** eigenaren met een overzichtelijke situatie (één of enkele eigendommen, duidelijke wensen over wie wat erft) die geen persoonlijke sessie nodig hebben.
+**Voor wie:** eigenaren met een overzichtelijke situatie (één of enkele eigendommen, duidelijke wensen over wie wat erft) die geen persoonlijke sessie nodig hebben. Twijfelt u of het de moeite waard is voor één appartement? Lees [is een DIFC-testament de moeite waard bij één appartement?](/artikelen/difc-testament-een-appartement-moeite-waard/)
 
 ### Tier 2: Samen Registreren (EUR 797)
 
