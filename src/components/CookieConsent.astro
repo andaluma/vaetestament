@@ -1,0 +1,140 @@
+---
+// Cookie consent banner — GDPR compliant, Dutch language.
+// Tracking only loads after explicit "Alles accepteren" click.
+// Choice stored in localStorage under 'cookie_consent' = 'all' | 'necessary'.
+---
+
+<div id="cookie-banner" style="display:none" role="dialog" aria-label="Cookiemelding">
+  <p>
+    Wij gebruiken cookies om het websitebezoek te analyseren en relevante advertenties te tonen.
+    Noodzakelijke cookies zijn altijd actief.
+    <a href="/privacybeleid" style="color:#C8A44A">Meer informatie</a>
+  </p>
+  <div class="cb-buttons">
+    <button id="cb-necessary" type="button">Alleen noodzakelijk</button>
+    <button id="cb-accept" type="button">Alles accepteren</button>
+  </div>
+</div>
+
+<style>
+  #cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background: #0C4A45;
+    color: #F6F1E7;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.9rem;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  #cookie-banner p {
+    margin: 0;
+    flex: 1;
+    min-width: 200px;
+    line-height: 1.5;
+  }
+  .cb-buttons {
+    display: flex;
+    gap: 0.75rem;
+    flex-shrink: 0;
+  }
+  #cb-necessary {
+    background: transparent;
+    color: #F6F1E7;
+    border: 1px solid #F6F1E7;
+    padding: 0.5rem 1.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+  #cb-accept {
+    background: #C8A44A;
+    color: #0C4A45;
+    border: none;
+    padding: 0.5rem 1.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  #cb-necessary:hover { background: rgba(255,255,255,0.1); }
+  #cb-accept:hover { background: #b8943e; }
+</style>
+
+<script is:inline>
+  (function () {
+    var CONSENT_KEY = 'cookie_consent';
+
+    function loadGA4() {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-P2NDF2W2N4';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      window.gtag = gtag;
+      gtag('js', new Date());
+      gtag('config', 'G-P2NDF2W2N4');
+    }
+
+    function loadPixel() {
+      !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return; n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+        n.queue = []; t = b.createElement(e); t.async = !0;
+        t.src = v; s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1361034515943477');
+      fbq('track', 'PageView');
+    }
+
+    function loadTracking() {
+      loadGA4();
+      loadPixel();
+    }
+
+    function hideBanner() {
+      var banner = document.getElementById('cookie-banner');
+      if (banner) banner.style.display = 'none';
+    }
+
+    // Check existing consent
+    var stored = localStorage.getItem(CONSENT_KEY);
+    if (stored === 'all') {
+      loadTracking();
+    } else if (stored === 'necessary') {
+      // do nothing, banner stays hidden
+    } else {
+      // Show banner on next paint
+      document.addEventListener('DOMContentLoaded', function () {
+        var banner = document.getElementById('cookie-banner');
+        if (banner) banner.style.display = 'flex';
+
+        document.getElementById('cb-accept').addEventListener('click', function () {
+          localStorage.setItem(CONSENT_KEY, 'all');
+          hideBanner();
+          loadTracking();
+        });
+
+        document.getElementById('cb-necessary').addEventListener('click', function () {
+          localStorage.setItem(CONSENT_KEY, 'necessary');
+          hideBanner();
+        });
+      });
+    }
+  })();
+</script>

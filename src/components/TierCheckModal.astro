@@ -365,9 +365,16 @@
     var locale = 'nl';
 
     var links = {
-      t1: 'https://buy.stripe.com/4gM28q9yJcuReIZ4TtbjW02',
-      t2: 'https://buy.stripe.com/4gM28q12d1QddEV5XxbjW03',
-      t3: 'https://buy.stripe.com/8x24gy3al0M91WdclVbjW04'
+      nl: {
+        t1: 'https://buy.stripe.com/bJe7sD8tma2R9s2d6Z0Jq00',
+        t2: 'https://buy.stripe.com/dRmfZ9eRK0sh0Vw8QJ0Jq02',
+        t3: 'https://buy.stripe.com/fZu5kvfVOdf37jU8QJ0Jq04'
+      },
+      en: {
+        t1: 'https://buy.stripe.com/bJe7sDbFy2Ap6fQc2V0Jq01',
+        t2: 'https://buy.stripe.com/dRmdR15ha7UJgUud6Z0Jq03',
+        t3: 'https://buy.stripe.com/5kQdR19xqcaZ6fQ6IB0Jq05'
+      }
     };
 
     var S = {
@@ -468,7 +475,7 @@
       var tier = s[tierKey];
       if (!tier) return null;
       var a = document.createElement('a');
-      a.href = links[tierKey];
+      a.href = links[locale][tierKey];
       a.className = 'tc-tier-btn ' + (featured ? 'tc-tier-btn-gold' : 'tc-tier-btn-outline');
       a.innerHTML =
         '<div class="tc-tier-btn-left">' +

@@ -16,6 +16,7 @@ import SiteFooter from '../components/SiteFooter.astro';
 import TierCheckModal from '../components/TierCheckModal.astro';
 import WhatsAppFab from '../components/WhatsAppFab.astro';
 import AIAskPanel from '../components/AIAskPanel.astro';
+import CookieConsent from '../components/CookieConsent.astro';
 
 export interface Props {
   title: string;
@@ -142,23 +143,7 @@ const ogLocale = OG_LOCALES[locale] || 'nl_NL';
       <script type="application/ld+json" set:html={JSON.stringify(block)} />
     ))}
 
-    <!-- Meta Pixel -->
-    <script is:inline>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '1144948355623769');
-      fbq('track', 'PageView');
-    </script>
-    <noscript>
-      <img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=1144948355623769&ev=PageView&noscript=1" />
-    </noscript>
+    <!-- Tracking loads only after cookie consent (see CookieConsent.astro) -->
   </head>
   <body>
     {!hideNav && <SiteNav locale={locale} />}
@@ -167,5 +152,6 @@ const ogLocale = OG_LOCALES[locale] || 'nl_NL';
     <TierCheckModal />
     <AIAskPanel slug={Astro.props.articleSlug ?? ''} locale={locale} />
     <WhatsAppFab slug={Astro.props.articleSlug ?? ''} title={Astro.props.articleTitle ?? ''} locale={locale} />
+    <CookieConsent />
   </body>
 </html>
