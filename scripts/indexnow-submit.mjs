@@ -26,7 +26,10 @@ async function fetchSitemapUrls() {
 }
 
 const explicit = process.argv.slice(2).filter((a) => a.startsWith('http'));
-const urlList = explicit.length ? explicit : await fetchSitemapUrls();
+// The sitemap is cross-domain (nl + en). IndexNow rejects the whole batch
+// (422) if any URL is off the verified host, so keep only this host's URLs.
+const urlList = (explicit.length ? explicit : await fetchSitemapUrls())
+  .filter((u) => new URL(u).host === HOST);
 
 console.log(`Submitting ${urlList.length} URLs to IndexNow:`);
 urlList.forEach((u) => console.log('  ' + u));
