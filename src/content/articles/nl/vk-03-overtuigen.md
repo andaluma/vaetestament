@@ -71,4 +71,4 @@ Bied aan om het praktische werk te doen. Zoek de informatie uit, plan het oriën
 
 Plan een gratis oriëntatiegesprek. Dat kan samen met uw ouders, of eerst alleen om uw vragen te stellen. In 15 minuten weet u wat er nodig is.
 
-[Plan een gratis oriëntatiegesprek](https://cal.com/vaetestament.nl) en zet de eerste stap voor uw familie.
+[Plan een gratis oriëntatiegesprek](https://cal.com/vaetestament.nl/15min) en zet de eerste stap voor uw familie.

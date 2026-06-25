@@ -10,7 +10,7 @@ keywords:
   - testament Dubai vastgoed
   - DIFC registratie Nederland
 publish_date: 2026-05-19
-status: draft
+status: published
 author: André van Wijngaarden
 schema_type: Article
 cluster: waarom

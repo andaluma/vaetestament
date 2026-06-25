@@ -101,4 +101,4 @@ Dit rekenvoorbeeld is geen uitzonderlijk scenario. Het is de realiteit waarmee N
 
 U kunt dit voorkomen. Niet later, maar nu.
 
-[Plan een gratis gesprek](https://cal.com/vaetestament.nl). Wij bespreken uw situatie en leggen uit welke stappen nodig zijn om uw ouders en uw familie te beschermen.
+[Plan een gratis gesprek](https://cal.com/vaetestament.nl/15min). Wij bespreken uw situatie en leggen uit welke stappen nodig zijn om uw ouders en uw familie te beschermen.

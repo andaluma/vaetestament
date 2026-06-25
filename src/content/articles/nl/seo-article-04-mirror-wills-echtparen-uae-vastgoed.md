@@ -10,7 +10,7 @@ keywords:
   - echtparen testament Dubai
   - DIFC-testament koppels
 publish_date: 2026-06-30
-status: draft
+status: published
 author: André van Wijngaarden
 schema_type: Article
 cluster: keuze

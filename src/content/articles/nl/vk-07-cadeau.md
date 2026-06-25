@@ -83,4 +83,4 @@ Veel kinderen vinden het lastig om dit onderwerp aan te snijden. Dat begrijpen w
 
 Wilt u weten of dit cadeau past bij de situatie van uw ouders? Wij bespreken het graag met u.
 
-[Plan een gratis gesprek](https://cal.com/vaetestament.nl). Wij bespreken samen hoe wij uw ouders het beste kunnen benaderen.
+[Plan een gratis gesprek](https://cal.com/vaetestament.nl/15min). Wij bespreken samen hoe wij uw ouders het beste kunnen benaderen.

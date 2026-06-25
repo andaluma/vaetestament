@@ -85,4 +85,4 @@ Dat is geen betutteling. Dat is zorgzaamheid.
 
 Wilt u het traject voor uw ouders in gang zetten? Begin met een gratis oriëntatiegesprek.
 
-[Plan een gratis oriëntatiegesprek](https://cal.com/vaetestament.nl) en ontdek wat er voor de situatie van uw ouders nodig is.
+[Plan een gratis oriëntatiegesprek](https://cal.com/vaetestament.nl/15min) en ontdek wat er voor de situatie van uw ouders nodig is.

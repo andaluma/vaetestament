@@ -10,7 +10,7 @@ keywords:
   - testament Dubai en Nederland
   - erfrecht twee landen
 publish_date: 2026-07-07
-status: draft
+status: published
 author: André van Wijngaarden
 schema_type: Article
 cluster: keuze

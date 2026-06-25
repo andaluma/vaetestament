@@ -10,7 +10,7 @@ keywords:
   - testament Dubai registreren vanuit Nederland
   - DIFC-testament proces
 publish_date: 2026-06-02
-status: draft
+status: published
 author: André van Wijngaarden
 schema_type: Article
 cluster: hoe

@@ -114,4 +114,4 @@ Het DIFC-portaal is functioneel maar niet intuintief. Het is in het Engels, vraa
 
 Wij maken dat proces toegankelijk. In het Nederlands, met heldere uitleg bij elke stap en controle van uw documenten voordat u indient.
 
-[Plan een gratis gesprek van 15 minuten](https://cal.com/vaetestament.nl)
+[Plan een gratis gesprek van 15 minuten](https://cal.com/vaetestament.nl/15min)

@@ -115,4 +115,4 @@ Wij begrijpen dat dit een overweldigend moment is. De combinatie van verlies en 
 
 Neem contact op. Wij kunnen u niet de juridische procedure uit handen nemen, maar wij kunnen u doorverwijzen naar de juiste partijen en u helpen om overzicht te krijgen.
 
-[Plan een gesprek](https://cal.com/vaetestament.nl). Wij bespreken uw situatie en wijzen u de weg.
+[Plan een gesprek](https://cal.com/vaetestament.nl/15min). Wij bespreken uw situatie en wijzen u de weg.

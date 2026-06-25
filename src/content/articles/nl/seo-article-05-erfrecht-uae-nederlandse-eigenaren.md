@@ -10,7 +10,7 @@ keywords:
   - VAE erfrecht buitenlanders
   - DIFC-testament erfrecht
 publish_date: 2026-06-09
-status: draft
+status: published
 author: André van Wijngaarden
 schema_type: Article
 cluster: waarom

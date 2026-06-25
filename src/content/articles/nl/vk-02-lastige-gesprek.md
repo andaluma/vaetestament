@@ -81,4 +81,4 @@ Wacht niet op het perfecte moment. Dat moment komt niet. Wat wel komt, is het on
 
 Uw ouders zullen u dankbaar zijn. Niet vandaag misschien, maar zeker als ze begrijpen wat het alternatief is.
 
-[Plan een gratis oriëntatiegesprek](https://cal.com/vaetestament.nl) en ontdek samen met uw ouders wat er voor hun situatie nodig is.
+[Plan een gratis oriëntatiegesprek](https://cal.com/vaetestament.nl/15min) en ontdek samen met uw ouders wat er voor hun situatie nodig is.

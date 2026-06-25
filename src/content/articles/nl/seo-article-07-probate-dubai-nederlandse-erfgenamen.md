@@ -10,7 +10,7 @@ keywords:
   - probate VAE tijdlijn
   - erfgenaam Dubai vastgoed
 publish_date: 2026-06-23
-status: draft
+status: published
 author: André van Wijngaarden
 schema_type: Article
 cluster: hoe

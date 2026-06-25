@@ -86,8 +86,8 @@ Als blijkt dat u een Full Will nodig heeft, verwijzen wij u door naar een DIFC-g
 
 De beslissing is eenvoudiger dan het lijkt. De meeste Nederlandse vastgoedeigenaren in de VAE bezitten een of twee appartementen op persoonlijke naam. Voor hen volstaat een Property Will zonder advocaat.
 
-[Doe de test: Property Will of Full Will?](javascript:void(0))
+[Doe de test: Property Will of Full Will?](/beslissingsgids/)
 
 Twijfelt u? Plan een gratis gesprek. Wij vertellen u eerlijk of u een advocaat nodig heeft.
 
-[Plan een gratis gesprek van 15 minuten](https://cal.com/vaetestament.nl)
+[Plan een gratis gesprek van 15 minuten](https://cal.com/vaetestament.nl/15min)

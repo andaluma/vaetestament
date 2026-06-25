@@ -68,4 +68,4 @@ Het registratieproces is volledig digitaal. Uw ouders hoeven niet naar Dubai te 
 
 Het goede nieuws: dit is op te lossen. En u hoeft het niet zelf te doen. Maar u kunt wel degene zijn die het onderwerp bespreekbaar maakt. Informeer uzelf, deel dit artikel met uw ouders, of plan samen een vrijblijvend oriëntatiegesprek.
 
-[Plan een gratis oriëntatiegesprek](https://cal.com/vaetestament.nl) en ontdek in 15 minuten wat er voor de situatie van uw ouders nodig is.
+[Plan een gratis oriëntatiegesprek](https://cal.com/vaetestament.nl/15min) en ontdek in 15 minuten wat er voor de situatie van uw ouders nodig is.

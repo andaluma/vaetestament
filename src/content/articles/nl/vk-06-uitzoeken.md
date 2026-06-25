@@ -90,4 +90,4 @@ Het uitzoeken of uw ouders een DIFC-testament hebben is de eerste stap. Soms is 
 
 In beide gevallen helpt het om te weten waar u staat.
 
-[Plan een gratis gesprek](https://cal.com/vaetestament.nl). Wij bespreken uw situatie en helpen u bepalen welke stappen nodig zijn.
+[Plan een gratis gesprek](https://cal.com/vaetestament.nl/15min). Wij bespreken uw situatie en helpen u bepalen welke stappen nodig zijn.

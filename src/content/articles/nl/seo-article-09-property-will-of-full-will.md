@@ -90,8 +90,8 @@ Het verschil in totale kosten is aanzienlijk. Betaal niet voor een Full Will als
 
 De snelste manier is onze beslissingstool. In vijf vragen bepalen wij of een Property Will uw situatie dekt of dat u een Full Will nodig heeft.
 
-[Doe de test: welk testament past bij u?](javascript:void(0))
+[Doe de test: welk testament past bij u?](/beslissingsgids/)
 
 Liever persoonlijk advies? In een gratis gesprek van 15 minuten bespreken wij uw situatie en adviseren wij eerlijk welk testament bij u past. Geen verkooppraatje, geen upsell.
 
-[Plan een gratis gesprek van 15 minuten](https://cal.com/vaetestament.nl)
+[Plan een gratis gesprek van 15 minuten](https://cal.com/vaetestament.nl/15min)

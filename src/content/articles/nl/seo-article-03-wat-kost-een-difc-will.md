@@ -10,7 +10,8 @@ keywords:
   - prijs testament Dubai
   - VAEtestament pakketten
 publish_date: 2026-06-16
-status: draft
+updated_date: 2026-06-25
+status: published
 author: André van Wijngaarden
 schema_type: Article
 cluster: keuze
@@ -32,7 +33,9 @@ faq:
     a: "Neem contact op via [VAEtestament.nl](https://vaetestament.nl) om de mogelijkheden te bespreken."
 ---
 
-De begeleidingstarieven van VAEtestament zijn EUR 497, EUR 797 of EUR 1.499, afhankelijk van uw situatie. Vooraf bekend, zonder uurtarieven. DIFC-registratiekosten worden apart, rechtstreeks aan de DIFC voldaan. Dit artikel beschrijft wat elk pakket omvat, voor wie het bedoeld is en hoe de kosten zich verhouden tot de alternatieven.
+De meeste Nederlanders die ons benaderen, bezitten een of twee appartementen in de VAE, gekocht als investering. Vaak zonder dat ze er ooit zelf zijn geweest. De eerste vraag is bijna altijd dezelfde: wat kost het om dit goed te regelen, en is dat de moeite waard voor mijn situatie?
+
+De begeleidingstarieven van VAEtestament zijn EUR 497, EUR 797 of EUR 1.499, afhankelijk van uw situatie. Vooraf bekend, zonder uurtarieven. De DIFC-registratiekosten worden apart, rechtstreeks aan de DIFC voldaan, en zijn dus niet in deze tarieven inbegrepen. Dit artikel beschrijft wat elk pakket omvat, voor wie het bedoeld is en hoe de kosten zich verhouden tot de alternatieven.
 
 ## De drie pakketten
 

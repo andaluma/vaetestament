@@ -10,7 +10,7 @@ keywords:
   - probate Dubai kosten
   - DIFC-testament noodzaak
 publish_date: 2026-05-26
-status: draft
+status: published
 author: André van Wijngaarden
 schema_type: Article
 cluster: waarom
