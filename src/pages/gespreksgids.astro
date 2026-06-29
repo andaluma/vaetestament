@@ -195,6 +195,7 @@ const canonical = 'https://vaetestament.nl/gespreksgids/';
         if (!res.ok) throw new Error('subscribe ' + res.status);
         status.textContent = 'Bedankt! Check uw inbox voor een bevestigingse-mail. Na bevestiging ontvangt u de gids.';
         status.className = 'lm-status ok';
+        if (window.vaeTrack) window.vaeTrack('Lead', { content_name: 'gespreksgids' });
         form.querySelector('input[type="email"]').value = '';
       } catch (err) {
         status.textContent = 'Aanmelden lukte niet. Probeer het later opnieuw of mail support@vaetestament.nl.';

@@ -100,7 +100,21 @@
       }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
       fbq('init', '1361034515943477');
       fbq('track', 'PageView');
+
+      // ViewContent on the pricing (homepage) and article pages. The static
+      // site re-runs this script on every page load, so path detection is
+      // enough; no per-page wiring needed.
+      var path = window.location.pathname;
+      if (path === '/' || path.indexOf('/artikelen/') === 0) {
+        fbq('track', 'ViewContent');
+      }
     }
+
+    // Consent-safe tracker. Callers can fire events anywhere; this no-ops
+    // until the visitor has accepted marketing cookies and the pixel loaded.
+    window.vaeTrack = function (event, params) {
+      if (window.fbq) fbq('track', event, params || {});
+    };
 
     function loadTracking() {
       loadGA4();
@@ -136,5 +150,23 @@
         });
       });
     }
+
+    // Delegated funnel events. Attached on every page regardless of consent;
+    // vaeTrack no-ops until the pixel is loaded, so these are consent-safe.
+    document.addEventListener('click', function (e) {
+      // InitiateCheckout: any Stripe payment link. Optional data-value (EUR)
+      // on the anchor adds purchase value; falls back to no value.
+      var stripe = e.target.closest('a[href*="buy.stripe.com"]');
+      if (stripe) {
+        var params = { currency: 'EUR' };
+        var v = parseFloat(stripe.getAttribute('data-value'));
+        if (!isNaN(v)) params.value = v;
+        window.vaeTrack('InitiateCheckout', params);
+        return;
+      }
+      // Lead: cal.com booking link click (intent; not a confirmed booking).
+      var cal = e.target.closest('a[href*="cal.com"]');
+      if (cal) window.vaeTrack('Lead', { content_name: 'consultation' });
+    });
   })();
 </script>

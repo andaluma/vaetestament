@@ -193,6 +193,7 @@ const body = Astro.props.body || (locale === 'en' ? 'Practical guides on DIFC wi
           if (!res.ok) throw new Error('subscribe ' + res.status);
           status.textContent = isEn ? 'Thank you. We have sent you a confirmation email - click the link to complete your subscription.' : 'Bedankt. We hebben u een bevestigingse-mail gestuurd - klik op de link om uw aanmelding af te ronden.';
           status.className = 'nl-status ok';
+          if (window.vaeTrack) window.vaeTrack('Lead', { content_name: 'newsletter' });
           form.querySelector('input[type="email"]').value = '';
         } catch (err) {
           status.textContent = isEn ? 'Subscription failed. Please try again later or email support@vaetestament.nl.' : 'Aanmelden lukte niet. Probeer het later opnieuw of mail naar support@vaetestament.nl.';
