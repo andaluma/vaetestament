@@ -164,9 +164,12 @@
         window.vaeTrack('InitiateCheckout', params);
         return;
       }
-      // Lead: cal.com booking link click (intent; not a confirmed booking).
+      // Schedule: cal.com booking-link click. This is booking INTENT, not a
+      // confirmed booking, so it uses the standard Schedule event rather than
+      // Lead. Lead stays reserved for confirmed conversions (newsletter). True
+      // booking-success -> Lead needs cal.com's server-side/Meta integration.
       var cal = e.target.closest('a[href*="cal.com"]');
-      if (cal) window.vaeTrack('Lead', { content_name: 'consultation' });
+      if (cal) window.vaeTrack('Schedule', { content_name: 'consultation' });
     });
   })();
 </script>
