@@ -1,18 +1,19 @@
 ---
-// Cookie consent banner — GDPR compliant, Dutch language.
-// Tracking only loads after explicit "Alles accepteren" click.
+// Cookie consent banner. GDPR compliant, Dutch language.
+// Tracking only loads after an explicit "Accepteren" click.
 // Choice stored in localStorage under 'cookie_consent' = 'all' | 'necessary'.
 ---
 
-<div id="cookie-banner" style="display:none" role="dialog" aria-label="Cookiemelding">
-  <p>
-    Wij gebruiken cookies om het websitebezoek te analyseren en relevante advertenties te tonen.
-    Noodzakelijke cookies zijn altijd actief.
-    <a href="/privacybeleid" style="color:#C8A44A">Meer informatie</a>
-  </p>
-  <div class="cb-buttons">
-    <button id="cb-necessary" type="button">Alleen noodzakelijk</button>
-    <button id="cb-accept" type="button">Alles accepteren</button>
+<div id="cookie-banner" style="display:none" role="region" aria-label="Cookiemelding" tabindex="-1">
+  <div class="cb-inner">
+    <div class="cb-text">
+      <p class="cb-value">Wij gebruiken cookies van Meta en Google om u relevante inhoud te tonen en ons websitebereik te meten.</p>
+      <a class="cb-privacy" href="/privacybeleid.html">Privacybeleid</a>
+    </div>
+    <div class="cb-actions">
+      <button id="cb-accept" type="button">Accepteren</button>
+      <button id="cb-necessary" type="button">Alleen noodzakelijk</button>
+    </div>
   </div>
 </div>
 
@@ -23,53 +24,101 @@
     left: 0;
     right: 0;
     z-index: 9999;
-    background: #0C4A45;
-    color: #F6F1E7;
+    background: #F6F1E7;
+    border-top: 2px solid #C8A44A;
+    box-shadow: 0 -2px 14px rgba(12, 74, 69, 0.10);
     font-family: 'Jost', sans-serif;
-    font-size: 0.9rem;
-    padding: 1rem 1.5rem;
+    justify-content: center; /* JS sets display:flex when shown */
+  }
+  .cb-inner {
+    width: 100%;
+    max-width: 1100px;
+    padding: 0.9rem 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 1.5rem;
     flex-wrap: wrap;
   }
-  #cookie-banner p {
+  .cb-text {
+    flex: 1 1 260px;
+    min-width: 0;
+  }
+  .cb-value {
     margin: 0;
-    flex: 1;
-    min-width: 200px;
+    color: #0C4A45;
+    font-size: 0.92rem;
     line-height: 1.5;
   }
-  .cb-buttons {
+  .cb-privacy {
+    display: inline-block;
+    margin-top: 0.3rem;
+    color: #0C4A45;
+    font-size: 0.8rem;
+    text-decoration: underline;
+    opacity: 0.7;
+  }
+  .cb-privacy:hover { opacity: 1; }
+  .cb-actions {
     display: flex;
-    gap: 0.75rem;
+    align-items: center;
+    gap: 1rem;
     flex-shrink: 0;
   }
-  #cb-necessary {
-    background: transparent;
-    color: #F6F1E7;
-    border: 1px solid #F6F1E7;
-    padding: 0.5rem 1.1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: 'Jost', sans-serif;
-    font-size: 0.85rem;
-    white-space: nowrap;
-  }
   #cb-accept {
-    background: #C8A44A;
-    color: #0C4A45;
+    background: #0C4A45;
+    color: #fff;
     border: none;
-    padding: 0.5rem 1.1rem;
+    padding: 0.7rem 1.9rem;
     border-radius: 4px;
-    cursor: pointer;
     font-family: 'Jost', sans-serif;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     font-weight: 600;
+    letter-spacing: 0.02em;
+    cursor: pointer;
     white-space: nowrap;
   }
-  #cb-necessary:hover { background: rgba(255,255,255,0.1); }
-  #cb-accept:hover { background: #b8943e; }
+  #cb-accept:hover { background: #0a3d39; }
+  #cb-necessary {
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    color: #6B6B6B;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.85rem;
+    text-decoration: underline;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  #cb-necessary:hover { color: #0C4A45; }
+  #cookie-banner:focus { outline: 2px solid #0C4A45; outline-offset: -2px; }
+
+  @media (max-width: 640px) {
+    .cb-inner {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0.85rem;
+      padding: 1rem 1.1rem 1.15rem;
+    }
+    .cb-text {
+      flex: 0 0 auto; /* avoid basis becoming a tall height in column layout */
+    }
+    .cb-actions {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0.55rem;
+    }
+    #cb-accept {
+      width: 100%;
+      padding: 0.9rem;
+      font-size: 0.98rem;
+    }
+    #cb-necessary {
+      width: 100%;
+      text-align: center;
+      padding: 0.65rem;
+    }
+  }
 </style>
 
 <script is:inline>
@@ -121,10 +170,63 @@
       loadPixel();
     }
 
+    function onKeydown(e) {
+      // ESC dismisses to necessary-only.
+      if (e.key === 'Escape' || e.keyCode === 27) chooseNecessary();
+    }
+
     function hideBanner() {
       var banner = document.getElementById('cookie-banner');
       if (banner) banner.style.display = 'none';
+      document.removeEventListener('keydown', onKeydown);
     }
+
+    function chooseAll() {
+      localStorage.setItem(CONSENT_KEY, 'all');
+      hideBanner();
+      loadTracking();
+    }
+
+    function chooseNecessary() {
+      localStorage.setItem(CONSENT_KEY, 'necessary');
+      hideBanner();
+    }
+
+    var wired = false;
+    function showBanner() {
+      var banner = document.getElementById('cookie-banner');
+      if (!banner) return;
+      if (!wired) {
+        wired = true;
+        document.getElementById('cb-accept').addEventListener('click', chooseAll);
+        document.getElementById('cb-necessary').addEventListener('click', chooseNecessary);
+      }
+      banner.style.display = 'flex';
+      document.addEventListener('keydown', onKeydown);
+      // Focus moves to the banner on appearance.
+      if (typeof banner.focus === 'function') banner.focus();
+    }
+
+    // First-visit reveal: delayed 4s OR on first scroll, whichever comes first.
+    function armFirstVisit() {
+      var shown = false;
+      function trigger() {
+        if (shown) return;
+        shown = true;
+        window.removeEventListener('scroll', trigger);
+        showBanner();
+      }
+      setTimeout(trigger, 4000);
+      window.addEventListener('scroll', trigger, { passive: true });
+    }
+
+    // Public: footer "Cookievoorkeuren" link reopens the banner and resets choice.
+    window.openCookieSettings = function () {
+      localStorage.removeItem(CONSENT_KEY);
+      if (document.getElementById('cookie-banner')) showBanner();
+      else document.addEventListener('DOMContentLoaded', showBanner);
+      return false;
+    };
 
     // Check existing consent
     var stored = localStorage.getItem(CONSENT_KEY);
@@ -132,23 +234,10 @@
       loadTracking();
     } else if (stored === 'necessary') {
       // do nothing, banner stays hidden
+    } else if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', armFirstVisit);
     } else {
-      // Show banner on next paint
-      document.addEventListener('DOMContentLoaded', function () {
-        var banner = document.getElementById('cookie-banner');
-        if (banner) banner.style.display = 'flex';
-
-        document.getElementById('cb-accept').addEventListener('click', function () {
-          localStorage.setItem(CONSENT_KEY, 'all');
-          hideBanner();
-          loadTracking();
-        });
-
-        document.getElementById('cb-necessary').addEventListener('click', function () {
-          localStorage.setItem(CONSENT_KEY, 'necessary');
-          hideBanner();
-        });
-      });
+      armFirstVisit();
     }
 
     // Delegated funnel events. Attached on every page regardless of consent;

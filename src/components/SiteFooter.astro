@@ -11,6 +11,7 @@ const FOOTER_STRINGS: Record<string, {
   privacy: string; privacyHref: string;
   terms: string; termsHref: string;
   contact: string; contactHref: string;
+  cookies: string;
   legal: string;
 }> = {
   nl: {
@@ -20,6 +21,7 @@ const FOOTER_STRINGS: Record<string, {
     privacy: 'Privacybeleid', privacyHref: '/privacybeleid.html',
     terms: 'Algemene voorwaarden', termsHref: '/algemene-voorwaarden.html',
     contact: 'Contact', contactHref: '/#kennismaking',
+    cookies: 'Cookievoorkeuren',
     legal: 'VAEtestament is geen advocatenkantoor en verleent geen juridisch advies. Wij begeleiden u bij de DIFC-portaalregistratie. Voor juridisch advies verwijzen wij u door naar ervaren DIFC-advocaten.',
   },
   en: {
@@ -28,6 +30,7 @@ const FOOTER_STRINGS: Record<string, {
     privacy: 'Privacy policy', privacyHref: '/privacy-policy.html',
     terms: 'Terms and conditions', termsHref: '/terms-and-conditions.html',
     contact: 'Contact', contactHref: '/#consultation',
+    cookies: 'Cookie preferences',
     legal: 'UAEpropertyWills is not a law firm and does not provide legal advice. We guide you through the DIFC portal registration. For legal advice, we refer you to experienced DIFC lawyers.',
   },
   es: {
@@ -36,6 +39,7 @@ const FOOTER_STRINGS: Record<string, {
     privacy: 'Política de privacidad', privacyHref: '/politica-de-privacidad.html',
     terms: 'Términos y condiciones', termsHref: '/terminos-y-condiciones.html',
     contact: 'Contacto', contactHref: '/#consulta',
+    cookies: 'Preferencias de cookies',
     legal: 'VAEtestament no es un bufete de abogados y no ofrece asesoramiento legal. Le guiamos en el registro del portal DIFC. Para asesoramiento legal, le derivamos a abogados DIFC experimentados.',
   },
 };
@@ -52,6 +56,7 @@ const t = FOOTER_STRINGS[locale] || FOOTER_STRINGS.nl;
       <li><a href={t.privacyHref}>{t.privacy}</a></li>
       <li><a href={t.termsHref}>{t.terms}</a></li>
       <li><a href={t.contactHref}>{t.contact}</a></li>
+      <li><a href="#" onclick="return window.openCookieSettings ? window.openCookieSettings() : true;">{t.cookies}</a></li>
     </ul>
     <p class="footer-legal">
       {t.legal}<br>
