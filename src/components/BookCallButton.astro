@@ -1,8 +1,5 @@
 ---
-// BookCallButton - cal.com /vaetestament/kennismaking (free intro call).
-// Appends UTM params so cal.com surfaces the originating article in the
-// booking notification + your analytics. Locked: per Day 15 decision we
-// use ONE event and rely on UTM for attribution (not per-cluster events).
+// BookCallButton - Google Calendar appointment page (free 15-min intro call).
 //
 // Props:
 //   slug    - article slug → utm_content
@@ -24,14 +21,10 @@ const {
   variant = 'subtle',
 } = Astro.props;
 
-const baseUrl = 'https://cal.com/vaetestament.nl/15min';
-const params = new URLSearchParams({
-  utm_source: 'article',
-  utm_medium: 'cta',
-  ...(slug && { utm_content: slug }),
-  ...(cluster && { utm_campaign: cluster }),
-});
-const href = `${baseUrl}?${params.toString()}`;
+const baseUrl = 'https://calendar.app.google/JEkbAtZfuJSrK8JSA';
+// Google appointment links ignore UTM params, so the clean URL is used.
+// Click attribution comes from the Meta 'Schedule' event in CookieConsent.
+const href = baseUrl;
 ---
 
 <a href={href} target="_blank" rel="noopener" class={`vae-cta vae-cta--${variant}`}>

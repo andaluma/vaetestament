@@ -102,4 +102,4 @@ Most parents appreciate that their children care enough to ask.
 
 If you have identified that your parents need a DIFC will, or if you are unsure about their situation, we can help you assess the next steps. The process can be completed entirely from abroad, and your parents do not need to travel to the UAE.
 
-[Schedule a free consultation](https://cal.com/vaetestament.nl) to discuss your family's situation and find out what is needed.
+[Schedule a free consultation](https://calendar.app.google/JEkbAtZfuJSrK8JSA) to discuss your family's situation and find out what is needed.

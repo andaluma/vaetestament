@@ -88,4 +88,4 @@ Parents who receive this gift consistently tell us the same thing: they are reli
 
 If you would like to give your parents the gift of a properly arranged DIFC will, the first step is a short conversation with us. We will discuss your parents' situation, explain the process in detail, and help you decide on the right approach.
 
-[Schedule a free consultation](https://cal.com/vaetestament.nl) to explore this option for your family.
+[Schedule a free consultation](https://calendar.app.google/JEkbAtZfuJSrK8JSA) to explore this option for your family.

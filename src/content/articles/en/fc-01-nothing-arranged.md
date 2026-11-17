@@ -87,4 +87,4 @@ The guidance packages from UAE Property Wills start at €797 for a single or mi
 
 A short consultation can clarify whether your parents need a DIFC will and what the next steps would be.
 
-[Schedule a free consultation](https://cal.com/vaetestament.nl)
+[Schedule a free consultation](https://calendar.app.google/JEkbAtZfuJSrK8JSA)

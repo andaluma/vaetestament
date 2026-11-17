@@ -55,4 +55,4 @@ Als u twijfelt of uw situatie een Property Will of een Full Will vereist, neem d
 
 [Download onze gratis beslissingsgids: Property Will of Full Will](/assets/leadmagnet-property-vs-full-will.pdf)
 
-[Plan een gratis gesprek van 15 minuten](https://cal.com/vaetestament.nl)
+[Plan een gratis gesprek van 15 minuten](https://calendar.app.google/JEkbAtZfuJSrK8JSA)

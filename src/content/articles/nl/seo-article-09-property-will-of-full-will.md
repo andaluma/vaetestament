@@ -94,4 +94,4 @@ De snelste manier is onze beslissingstool. In vijf vragen bepalen wij of een Pro
 
 Liever persoonlijk advies? In een gratis gesprek van 15 minuten bespreken wij uw situatie en adviseren wij eerlijk welk testament bij u past. Geen verkooppraatje, geen upsell.
 
-[Plan een gratis gesprek van 15 minuten](https://cal.com/vaetestament.nl/15min)
+[Plan een gratis gesprek van 15 minuten](https://calendar.app.google/JEkbAtZfuJSrK8JSA)

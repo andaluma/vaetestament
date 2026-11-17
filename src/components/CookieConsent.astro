@@ -253,11 +253,11 @@
         window.vaeTrack('InitiateCheckout', params);
         return;
       }
-      // Schedule: cal.com booking-link click. This is booking INTENT, not a
+      // Schedule: booking-link (Google Calendar) click. This is booking INTENT, not a
       // confirmed booking, so it uses the standard Schedule event rather than
       // Lead. Lead stays reserved for confirmed conversions (newsletter). True
-      // booking-success -> Lead needs cal.com's server-side/Meta integration.
-      var cal = e.target.closest('a[href*="cal.com"]');
+      // booking-success -> Lead needs a server-side/Meta integration.
+      var cal = e.target.closest('a[href*="calendar.app.google"], a[href*="calendar.google.com"]');
       if (cal) window.vaeTrack('Schedule', { content_name: 'consultation' });
     });
   })();

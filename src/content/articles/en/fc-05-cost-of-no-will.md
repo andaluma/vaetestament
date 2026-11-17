@@ -87,4 +87,4 @@ If your parents own property in the UAE and have not arranged a DIFC will, the m
 
 You do not need to wait for the right moment. Every month without a will is a month of unprotected exposure.
 
-[Schedule a free consultation](https://cal.com/vaetestament.nl) to discuss your parents' situation and learn what needs to be arranged.
+[Schedule a free consultation](https://calendar.app.google/JEkbAtZfuJSrK8JSA) to discuss your parents' situation and learn what needs to be arranged.

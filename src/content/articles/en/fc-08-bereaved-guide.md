@@ -121,4 +121,4 @@ If you are reading this while dealing with a recent loss, please know that there
 
 The most important first step is to consult with a UAE lawyer who can assess your specific situation and outline the process ahead.
 
-[Schedule a free consultation](https://cal.com/vaetestament.nl) if you would like guidance on your next steps or a referral to a suitable legal professional in the UAE.
+[Schedule a free consultation](https://calendar.app.google/JEkbAtZfuJSrK8JSA) if you would like guidance on your next steps or a referral to a suitable legal professional in the UAE.

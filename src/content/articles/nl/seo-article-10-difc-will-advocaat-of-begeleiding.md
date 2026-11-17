@@ -90,4 +90,4 @@ De beslissing is eenvoudiger dan het lijkt. De meeste Nederlandse vastgoedeigena
 
 Twijfelt u? Plan een gratis gesprek. Wij vertellen u eerlijk of u een advocaat nodig heeft.
 
-[Plan een gratis gesprek van 15 minuten](https://cal.com/vaetestament.nl/15min)
+[Plan een gratis gesprek van 15 minuten](https://calendar.app.google/JEkbAtZfuJSrK8JSA)

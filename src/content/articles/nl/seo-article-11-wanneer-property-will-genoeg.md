@@ -90,4 +90,4 @@ In 15 minuten bepalen wij of een Property Will bij uw situatie past. Geen verkoo
 
 [Doe de test: Property Will of Full Will?](/beslissingsgids/)
 
-[Plan een gratis gesprek van 15 minuten](https://cal.com/vaetestament.nl/15min)
+[Plan een gratis gesprek van 15 minuten](https://calendar.app.google/JEkbAtZfuJSrK8JSA)

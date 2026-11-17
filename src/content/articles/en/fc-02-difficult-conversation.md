@@ -99,4 +99,4 @@ The goal is not to close a deal. The goal is to open a door. Once your parents u
 
 It may not feel like it in the moment, but raising this subject is one of the most practical and caring things you can do for your parents. You are not being morbid. You are not overstepping. You are making sure that, if the worst were to happen, the family is protected and their wishes are honoured.
 
-[Schedule a free consultation](https://cal.com/vaetestament.nl)
+[Schedule a free consultation](https://calendar.app.google/JEkbAtZfuJSrK8JSA)

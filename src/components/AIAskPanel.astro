@@ -9,7 +9,7 @@
 //
 // Cited articles render as clickable suggestion cards under the answer;
 // the recommended CTA renders as an action button (tier-check modal,
-// cal.com, WhatsApp, or nothing).
+// Google Calendar booking, WhatsApp, or nothing).
 
 export interface Props {
   /** Current article slug - supplied by article pages for page context. */
@@ -338,7 +338,7 @@ const isEn = locale === 'en';
           ctaHtml = '<div class="ai-cta"><button type="button" onclick="openTierCheck(' + JSON.stringify(slug) + ')">Welk pakket past bij u?</button></div>';
           break;
         case 'book_call':
-          ctaHtml = '<div class="ai-cta"><a href="https://cal.com/vaetestament.nl/15min?utm_source=ai-ask&utm_content=' + encodeURIComponent(slug) + '" target="_blank" rel="noopener">Plan een gratis kennismaking</a></div>';
+          ctaHtml = '<div class="ai-cta"><a href="https://calendar.app.google/JEkbAtZfuJSrK8JSA" target="_blank" rel="noopener">Plan een gratis kennismaking</a></div>';
           break;
         case 'whatsapp':
           ctaHtml = '<div class="ai-cta"><a href="https://wa.me/31616146007" target="_blank" rel="noopener">Verder via WhatsApp</a></div>';

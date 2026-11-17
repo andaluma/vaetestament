@@ -57,4 +57,4 @@ Twijfelt u? Neem contact op. In 15 minuten kunnen wij vaststellen welk testament
 
 [Download onze gratis beslissingsgids: Property Will of Full Will](/assets/leadmagnet-property-vs-full-will.pdf)
 
-[Plan een gratis gesprek van 15 minuten](https://cal.com/vaetestament.nl)
+[Plan een gratis gesprek van 15 minuten](https://calendar.app.google/JEkbAtZfuJSrK8JSA)

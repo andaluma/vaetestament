@@ -53,4 +53,4 @@ Twee appartementen in verschillende emiraten maakt de situatie niet complexer. E
 
 [Download onze gratis beslissingsgids: Property Will of Full Will](/assets/leadmagnet-property-vs-full-will.pdf)
 
-[Plan een gratis gesprek van 15 minuten](https://cal.com/vaetestament.nl)
+[Plan een gratis gesprek van 15 minuten](https://calendar.app.google/JEkbAtZfuJSrK8JSA)

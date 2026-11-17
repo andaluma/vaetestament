@@ -90,4 +90,4 @@ If your parents are open to learning more but not ready to commit, a free consul
 
 You can even book it on their behalf.
 
-[Schedule a free consultation](https://cal.com/vaetestament.nl)
+[Schedule a free consultation](https://calendar.app.google/JEkbAtZfuJSrK8JSA)
