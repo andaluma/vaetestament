@@ -2,7 +2,7 @@
 title: "Nalatenschap in Dubai afwikkelen als Nederlandse erfgenaam: kosten, stappen en tijdlijn"
 slug: probate-dubai-nederlandse-erfgenamen
 en_slug: probate-dubai-foreign-heirs
-meta_description: "Wat doorloopt u als Nederlandse erfgenaam bij probate in Dubai? Stappen, documenten, kosten (EUR 10.000+) en tijdlijn (12-24 maanden)."
+meta_description: "Wat doorloopt u als Nederlandse erfgenaam bij probate in Dubai? Stappen, documenten, kosten (EUR 10.000+) en tijdlijn (vaak 12 maanden of langer)."
 keywords:
   - probate Dubai Nederlands
   - Dubai probate proces erfgenamen
@@ -27,14 +27,14 @@ faq:
   - q: Kan een Nederlandse notaris het probate-proces in de VAE afhandelen?
     a: Nee. Een Nederlandse notaris heeft geen bevoegdheid in de VAE. U heeft een lokale VAE-advocaat nodig die bevoegd is om bij de betreffende rechtbank te procederen.
   - q: Wat als het vastgoed in Abu Dhabi staat in plaats van Dubai?
-    a: Het probate-proces verloopt dan via de rechtbank in Abu Dhabi in plaats van Dubai. De stappen zijn vergelijkbaar, maar de doorlooptijd en kosten kunnen afwijken. Een DIFC-testament dekt vastgoed in alle emiraten.
+    a: Het probate-proces verloopt dan via de rechtbank in Abu Dhabi in plaats van Dubai. De stappen zijn vergelijkbaar, maar de doorlooptijd en kosten kunnen afwijken. Een DIFC-testament dekt vastgoed in alle emiraten. Voor vastgoed in Dubai kan de uitspraak van de DIFC-rechtbank worden uitgevoerd. Voor vastgoed in Abu Dhabi volgt na de DIFC-procedure nog een aanvraag bij de rechtbank in Abu Dhabi voordat het vastgoed kan worden overgeschreven.
   - q: Is probate te vermijden als de eigenaar al een Nederlands testament had?
     a: Een Nederlands testament wordt in de VAE doorgaans niet erkend voor vastgoed op VAE-grond. De probate-procedure is dan nog steeds nodig. Alleen een lokaal geldig testament (zoals een DIFC-testament) voorkomt dit. Lees meer over [het misverstand dat uw Nederlandse erfgenamen uw Dubai-vastgoed automatisch krijgen](/artikelen/difc-will-of-nederlands-testament/).
   - q: Wat als de overledene huurinkomsten ontving uit het vastgoed?
     a: "De huurinkomsten kunnen geblokkeerd worden totdat het eigendom formeel is overgedragen. Dit hangt af van de beheerstructuur en de bank waar de inkomsten binnenkomen. Het is een van de minder zichtbare gevolgen van een probate-procedure."
 ---
 
-Als een Nederlandse vastgoedeigenaar in de VAE overlijdt zonder DIFC-testament, starten de erfgenamen een probate-procedure bij de VAE-rechtbank. Dit traject kost doorgaans meer dan EUR 10.000 en duurt 12 tot 24 maanden. Dit artikel beschrijft het volledige proces: elke stap, elk document en elke kostenpost.
+Als een Nederlandse vastgoedeigenaar in de VAE overlijdt zonder DIFC-testament, starten de erfgenamen een probate-procedure bij de VAE-rechtbank. Dit traject kost doorgaans meer dan EUR 10.000 en duurt vaak 12 maanden of langer. Dit artikel beschrijft het volledige proces: elke stap, elk document en elke kostenpost.
 
 ## Waarom probate?
 
@@ -46,21 +46,21 @@ Voor Nederlandse erfgenamen betekent dit navigeren door een buitenlands rechtssy
 
 ### Stap 1: overlijdensakte verkrijgen en legaliseren
 
-De Nederlandse overlijdensakte moet worden voorzien van een apostille (legalisatie voor internationaal gebruik). Dit loopt via de rechtbank in Den Haag. Vervolgens moet de akte beëdigd worden vertaald naar het Arabisch door een gecertificeerde vertaler.
+Nederlandse documenten, zoals de overlijdensakte en de verklaring van erfrecht, moeten worden gelegaliseerd via de Nederlandse autoriteiten en de ambassade van de VAE, en worden beëdigd vertaald in het Arabisch. Een apostille alleen is in de VAE niet voldoende.
 
 **Doorlooptijd:** 2 tot 4 weken.
-**Kosten:** EUR 200 tot EUR 500 (apostille + vertaling).
+**Kosten:** EUR 200 tot EUR 500 (legalisatie + vertaling).
 
 ### Stap 2: verklaring van erfrecht
 
-In Nederland moet een notaris een verklaring van erfrecht opstellen. Dit document bewijst wie de wettelijke erfgenamen zijn. Ook dit document moet geapostilleerd en beëdigd vertaald worden.
+In Nederland moet een notaris een verklaring van erfrecht opstellen. Dit document bewijst wie de wettelijke erfgenamen zijn. Ook dit document moet gelegaliseerd en beëdigd vertaald worden.
 
 **Doorlooptijd:** 2 tot 6 weken (afhankelijk van de notaris en eventuele complicaties).
-**Kosten:** EUR 500 tot EUR 1.500 (notaris + apostille + vertaling).
+**Kosten:** EUR 500 tot EUR 1.500 (notaris + legalisatie + vertaling).
 
 ### Stap 3: volmacht voor lokale vertegenwoordiging
 
-De erfgenamen moeten een advocaat in de VAE machtigen om namens hen op te treden. Daarvoor is een notariële volmacht nodig, eveneens geapostilleerd en vertaald.
+De erfgenamen moeten een advocaat in de VAE machtigen om namens hen op te treden. Daarvoor is een notariële volmacht nodig, eveneens gelegaliseerd en vertaald.
 
 **Doorlooptijd:** 1 tot 2 weken.
 **Kosten:** EUR 200 tot EUR 500.
@@ -73,7 +73,7 @@ Een lokale advocaat dient de probate-aanvraag in bij de bevoegde rechtbank. De k
 
 ### Stap 5: rechtbankprocedure
 
-De rechtbank beoordeelt de ingediende documenten, stelt de erfgenamen vast en beslist over de verdeling van het vastgoed. Recente wijzigingen in de VAE-regelgeving hebben de standaard erfregels voor buitenlandse eigenaren aangepast, maar de toepassing kan per geval en per emiraat verschillen. Onder Federal Decree-Law No. 51 of 2024 (in werking sinds 1 januari 2026) worden bezittingen van overledenen zonder identificeerbare erfgenamen bovendien overgedragen aan een charitatief Waqf-fonds.
+De rechtbank beoordeelt de ingediende documenten, stelt de erfgenamen vast en beslist over de verdeling van het vastgoed. Recente wijzigingen in de VAE-regelgeving hebben de standaard erfregels voor buitenlandse eigenaren aangepast, maar de toepassing kan per geval en per emiraat verschillen. Sinds juni 2026 geldt bovendien een nieuwe Civil Transactions Law (Federal Decree-Law No. 25 van 2025): bezittingen in de VAE van een buitenlander zonder testament en zonder aanwijsbare erfgenamen gaan naar een liefdadigheidsfonds (Waqf).
 
 **Doorlooptijd:** 3 tot 12 maanden (vanaf indiening). Vertragingen door aanvullende documentatieverzoeken zijn gebruikelijk.
 
@@ -88,7 +88,7 @@ Na de rechtbankuitspraak wordt het vastgoed formeel overgeschreven bij de land a
 
 | Kostenpost | Indicatie |
 |---|---|
-| Apostilles en vertalingen | EUR 600 tot EUR 1.500 |
+| Legalisatie en vertalingen | EUR 600 tot EUR 1.500 |
 | Verklaring van erfrecht (NL) | EUR 500 tot EUR 1.500 |
 | Volmacht en legalisatie | EUR 200 tot EUR 500 |
 | VAE-advocaat | EUR 3.000 tot EUR 8.000 |
@@ -106,7 +106,7 @@ De ondergrens geldt voor een overzichtelijke situatie met één eigendom in Duba
 | VAE-advocaat en indiening | 2 tot 4 weken |
 | Rechtbankprocedure | 3 tot 12 maanden |
 | Eigendomsoverdracht | 2 tot 4 weken |
-| **Totaal** | **6 tot 18 maanden** (realistisch: 12 tot 24 maanden) |
+| **Totaal** | **vaak 12 maanden of langer** |
 
 ## Wat gedurende die periode gebeurt met het vastgoed
 
@@ -115,5 +115,9 @@ Zolang de probate-procedure loopt, is het vastgoed effectief bevroren. De erfgen
 ## Het alternatief: een DIFC-testament
 
 Een DIFC-testament voorkomt het volledige probate-traject. Het testament is geregistreerd bij het DIFC-testaments Service Centre en wordt uitgevoerd via het DIFC-rechtssysteem. De procedure is sneller, goedkoper en verloopt in het Engels.
+
+Sinds 2025 heeft de DIFC-rechtbank exclusieve bevoegdheid over testamenten die bij de DIFC zijn geregistreerd. Na overlijden geeft de DIFC-rechtbank de verklaring van executeur af (Grant of Probate), in eenvoudige gevallen doorgaans binnen enkele weken, tegen een vast tarief van USD 1.500.
+
+Ook met een DIFC-testament betalen uw erfgenamen bij de overschrijving in Dubai een registratievergoeding aan het Dubai Land Department: 0,125% van de waarde van het vastgoed, plus AED 1.000 per woning. Dat is aanzienlijk minder dan de kosten van een procedure zonder testament.
 
 De kosten van een DIFC-testament via VAEtestament: EUR 497, EUR 797 of EUR 1.499. Een fractie van de probate-kosten. Lees meer over de [pakketten en wat elk tier omvat](/artikelen/wat-kost-een-difc-will/).

@@ -19,7 +19,7 @@ related:
   - wat-kost-een-difc-will
 faq:
   - q: Dekt een Property Will vastgoed in alle emiraten?
-    a: Ja. Een DIFC Property Will dekt onroerend goed in alle zeven emiraten, niet alleen Dubai. Abu Dhabi, Sharjah, Ras Al Khaimah en de overige emiraten vallen er ook onder.
+    a: Ja. Een DIFC Property Will dekt onroerend goed in alle zeven emiraten, niet alleen Dubai. Abu Dhabi, Sharjah, Ras Al Khaimah en de overige emiraten vallen er ook onder. Voor vastgoed in Abu Dhabi volgt na de DIFC-procedure nog een aanvraag bij de rechtbank in Abu Dhabi.
   - q: Kan ik met een Property Will vastgoed aan meerdere personen nalaten?
     a: Ja. U kunt per vastgoedobject aangeven wie de begunstigde is en hoe de verdeling loopt. U kunt ook vervangende begunstigden aanwijzen.
   - q: Wat als ik later meer panden koop?

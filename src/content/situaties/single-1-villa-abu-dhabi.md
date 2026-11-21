@@ -29,7 +29,7 @@ Ze wil dat dezelfde personen haar villa in Abu Dhabi erven, maar haar Nederlands
 
 Voor Karin is een **enkelvoudige DIFC Property Will** de juiste keuze. Enkelvoudig, omdat er geen partner is waarmee een spiegeltestament nodig is.
 
-Een Property Will dekt vastgoed op persoonlijke naam in alle emiraten van de VAE. Karins villa in Abu Dhabi valt hier volledig onder. Ze kan haar broer en zus als begunstigden opnemen en bepalen welk percentage elk erft.
+Een Property Will dekt vastgoed op persoonlijke naam in alle emiraten van de VAE. Karins villa in Abu Dhabi valt hier volledig onder. Voor vastgoed in Abu Dhabi volgt na de DIFC-procedure nog een aanvraag bij de rechtbank in Abu Dhabi voordat het vastgoed kan worden overgeschreven. Ze kan haar broer en zus als begunstigden opnemen en bepalen welk percentage elk erft.
 
 Een Full Will is niet nodig. Karin heeft geen bankrekeningen, voertuigen of andere bezittingen in de VAE. Er zijn geen minderjarige kinderen waarvoor voogdij geregeld moet worden. Het enige VAE-bezit is vastgoed, en dat is precies het domein van een Property Will.
 

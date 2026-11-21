@@ -25,7 +25,7 @@ Peter en Sandra wonen in Eindhoven en bezitten twee appartementen in de VAE: een
 
 ## Welk testament past hier?
 
-Een **DIFC Property Will** als **spiegeltestament** is de juiste keuze. Een Property Will dekt vastgoed in alle zeven emiraten van de VAE, niet alleen Dubai. Beide appartementen vallen dus onder hetzelfde testament.
+Een **DIFC Property Will** als **spiegeltestament** is de juiste keuze. Een Property Will dekt vastgoed in alle zeven emiraten van de VAE, niet alleen Dubai. Beide appartementen vallen dus onder hetzelfde testament. Voor vastgoed in Dubai kan de uitspraak van de DIFC-rechtbank worden uitgevoerd. Voor vastgoed in Abu Dhabi volgt na de DIFC-procedure nog een aanvraag bij de rechtbank in Abu Dhabi voordat het vastgoed kan worden overgeschreven.
 
 Het feit dat Peter en Sandra een meerderjarig kind hebben, verandert niets aan het type testament. Een Property Will biedt volledige vrijheid om te bepalen wie wat erft: zij kunnen hun kind als begunstigde opnemen en percentages of specifieke objecten toewijzen.
 

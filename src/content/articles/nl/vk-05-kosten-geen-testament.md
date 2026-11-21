@@ -38,7 +38,7 @@ Uw ouder overlijdt. Wat nu?
 
 Het Dubai Land Department bevriest het eigendom zodra het overlijden wordt gemeld. Dat betekent: geen huurinkomsten meer, geen mogelijkheid om te verkopen, geen toegang tot de waarde van het vastgoed. Dit duurt totdat de nalatenschap volledig is afgewikkeld.
 
-Bij een probate-procedure zonder DIFC-testament is de doorlooptijd doorgaans 12 tot 24 maanden. In complexe gevallen langer.
+Bij een probate-procedure zonder DIFC-testament is de doorlooptijd vaak 12 maanden of langer.
 
 ## Stap 2: de kosten voor de nabestaanden
 
@@ -48,9 +48,9 @@ Hieronder vindt u een overzicht van de kosten waarmee u als erfgenaam te maken k
 
 De overlijdensakte, verklaring van erfrecht en eventuele andere documenten moeten beëdigd worden vertaald naar het Arabisch. Reken op EUR 2.000 tot EUR 3.000 voor het complete pakket.
 
-### Apostille en legalisatie
+### Legalisatie
 
-Alle documenten moeten worden voorzien van een apostille en in sommige gevallen aanvullend worden gelegaliseerd voor gebruik in de VAE. Kosten: circa EUR 500 tot EUR 1.000.
+Alle documenten moeten worden gelegaliseerd via de Nederlandse autoriteiten en de ambassade van de VAE. Een apostille alleen is in de VAE niet voldoende. Kosten: circa EUR 500 tot EUR 1.000.
 
 ### Lokale advocaat in de VAE
 
@@ -69,7 +69,7 @@ Als het appartement werd verhuurd, ontvangt u gedurende de bevriezingsperiode ge
 | Kostenpost | Indicatief bedrag |
 |---|---|
 | Beëdigde vertalingen | EUR 2.000 - 3.000 |
-| Apostille en legalisatie | EUR 500 - 1.000 |
+| Legalisatie | EUR 500 - 1.000 |
 | Lokale advocaat VAE | EUR 3.700 - 7.400 |
 | Reiskosten | EUR 1.500 - 3.000 |
 | **Subtotaal directe kosten** | **EUR 7.700 - 14.400** |
@@ -89,7 +89,7 @@ Het totaal voor een goed geregeld DIFC-testament bedraagt daarmee circa EUR 2.50
 
 ## De vergelijking
 
-Geen DIFC-testament: EUR 10.000 tot EUR 15.000+ aan directe kosten, 12 tot 24 maanden bevroren activa, geen zekerheid over de verdeling.
+Geen DIFC-testament: EUR 10.000 tot EUR 15.000+ aan directe kosten, vaak 12 maanden of langer bevroren activa, geen zekerheid over de verdeling.
 
 Wel een DIFC-testament: circa EUR 2.500 tot EUR 3.500 eenmalig, snelle afwikkeling via het DIFC-probate, volledige zekerheid dat uw wensen worden gevolgd.
 

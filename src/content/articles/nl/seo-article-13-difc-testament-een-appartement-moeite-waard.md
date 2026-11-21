@@ -19,7 +19,7 @@ related:
   - wat-gebeurt-zonder-testament
 faq:
   - q: Loont een DIFC-testament bij maar één appartement?
-    a: "In de meeste gevallen wel. De afweging draait niet om de waarde van het appartement, maar om wat uw nabestaanden moeten doorlopen zonder lokaal testament: een VAE-erfprocedure van 12 tot 24 maanden die doorgaans meer dan EUR 10.000 kost. Een Property Will (vanaf EUR 497 begeleiding + DIFC-registratiekosten apart) voorkomt dat."
+    a: "In de meeste gevallen wel. De afweging draait niet om de waarde van het appartement, maar om wat uw nabestaanden moeten doorlopen zonder lokaal testament: een VAE-erfprocedure van vaak 12 maanden of langer die doorgaans meer dan EUR 10.000 kost. Een Property Will (vanaf EUR 497 begeleiding + DIFC-registratiekosten apart) voorkomt dat."
   - q: Mijn appartement is niet veel waard. Maakt dat verschil?
     a: "Voor de erfprocedure zelf nauwelijks. Of het appartement nu EUR 150.000 of EUR 500.000 waard is, uw nabestaanden moeten dezelfde stappen doorlopen: legalisatie, beëdigde vertalingen en lokale advocaten. De vaste kosten en de doorlooptijd blijven grotendeels gelijk."
   - q: Kan ik niet gewoon mijn Nederlandse testament gebruiken?
@@ -38,7 +38,7 @@ De meeste mensen wegen de kosten van een testament af tegen de waarde van het ap
 
 De juiste vergelijking is: wat kost het uw nabestaanden om het appartement te erven *met* een lokaal testament, versus *zonder*?
 
-Zonder een lokaal geldig testament moeten uw nabestaanden in de regel een volledige VAE-erfprocedure doorlopen. Dat betekent: Nederlandse documenten laten legaliseren via apostille, beëdigde Arabische vertalingen regelen, en lokale advocaten inschakelen. Dit proces duurt doorgaans 12 tot 24 maanden en kost al snel meer dan EUR 10.000. Tijdens die periode kan het appartement vaak niet vrij worden verkocht of verhuurd, en kunnen gekoppelde bankrekeningen bevroren zijn.
+Zonder een lokaal geldig testament moeten uw nabestaanden in de regel een volledige VAE-erfprocedure doorlopen. Dat betekent: Nederlandse documenten laten legaliseren via de ambassade van de VAE, beëdigde Arabische vertalingen regelen, en lokale advocaten inschakelen. Dit proces duurt vaak 12 maanden of langer en kost al snel meer dan EUR 10.000. Tijdens die periode kan het appartement vaak niet vrij worden verkocht of verhuurd, en kunnen gekoppelde bankrekeningen bevroren zijn.
 
 Met een DIFC Property Will is die procedure grotendeels overbodig. U bepaalt zelf wie het appartement erft, en uw nabestaanden hebben een document dat de VAE-autoriteiten erkennen.
 

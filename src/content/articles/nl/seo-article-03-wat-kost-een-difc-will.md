@@ -26,7 +26,7 @@ faq:
   - q: Kan ik upgraden van Tier 1 naar Tier 2 tijdens het proces?
     a: Ja. Als u tijdens het traject merkt dat u toch een persoonlijke sessie wilt, kunt u upgraden. U betaalt het verschil.
   - q: Wat kost een mirror will?
-    a: "Een mirror will (twee testamenten voor een echtpaar) valt onder Tier 2: EUR 797 totaal, niet per persoon."
+    a: "Een mirror will (twee testamenten voor een echtpaar) valt onder Tier 2: EUR 797 voor u beiden samen, niet per persoon. De DIFC-registratiekosten komen er apart bij."
   - q: Hoe verhoudt EUR 497 zich tot de EUR 10.000+ probate-kosten?
     a: "Een DIFC-testament is een fractie van wat uw nabestaanden zouden betalen zonder testament. De investering is niet alleen financieel, maar ook in rust: uw partner hoeft geen jarenlange procedure te doorlopen. Lees het [volledige overzicht van het probate-proces](/artikelen/probate-dubai-nederlandse-erfgenamen/)."
   - q: Biedt VAEtestament een betalingsregeling?
@@ -93,17 +93,14 @@ Het DIFC-testaments Service Centre heeft een online portaal waar u zelf een test
 
 ### Niets doen
 
-De goedkoopste optie op korte termijn is de duurste op lange termijn. Zonder DIFC-testament betalen uw nabestaanden doorgaans meer dan EUR 10.000 aan probate-kosten, met een doorlooptijd van 12 tot 24 maanden. Lees meer over [wat er gebeurt zonder testament](/artikelen/wat-gebeurt-dubai-vastgoed-zonder-testament/).
+De goedkoopste optie op korte termijn is de duurste op lange termijn. Zonder DIFC-testament betalen uw nabestaanden doorgaans meer dan EUR 10.000 aan probate-kosten, met een doorlooptijd van vaak 12 maanden of langer. Lees meer over [wat er gebeurt zonder testament](/artikelen/wat-gebeurt-dubai-vastgoed-zonder-testament/).
 
 ## Wat is inbegrepen in de prijs?
 
-Alle VAEtestament-tarieven zijn inclusief:
+Wat bij elk pakket hoort, verschilt per tier:
 
-- Intake en situatiebepaling.
-- Begeleiding bij het verzamelen van documenten.
-- Conceptopstelling en review-rondes.
-- DIFC-aanmelding en communicatie met het Wills Service Centre.
-- Ondersteuning bij de ondertekeningsafspraak (videocall).
-- Nederlandse begeleiding gedurende het hele traject.
+- **Tier 1, Zelf & Zeker (EUR 497):** toegang tot ons platform met een stapsgewijze gids door het DIFC-portaal, video's per sectie, een documentenchecklist en ondersteuning via het contactformulier (reactie binnen 2 werkdagen). U registreert zelf.
+- **Tier 2, Samen Registreren (EUR 797):** alles uit Tier 1, plus een begeleide portaalsessie van 40 minuten per video waarin wij de registratie samen met u doorlopen, en WhatsApp-ondersteuning rondom uw sessie.
+- **Tier 3, Volledig Ontzorgd (EUR 1.499):** een intake call en coördinatie van het hele traject, introductie bij een gekwalificeerde DIFC-jurist die het juridische maatwerk doet, WhatsApp-begeleiding gedurende het hele traject en een aanvullend adviesgesprek van 15 minuten.
 
-Niet inbegrepen: eventuele kosten voor het opvragen van verloren title deeds bij lokale autoriteiten, en de kosten van externe juridische dienstverlening bij Tier 3 (deze worden apart geoffreerd door de advocaat).
+Bij alle tiers is de begeleiding in het Nederlands. Niet inbegrepen: de DIFC-registratiekosten, eventuele kosten voor het opvragen van verloren title deeds bij lokale autoriteiten, en bij Tier 3 de kosten van de DIFC-jurist (die offreert de jurist apart).

@@ -46,7 +46,7 @@ Dit is het punt dat de meeste Nederlandse eigenaren missen. Zij hebben doorgaans
 
 De VAE heeft in de afgelopen jaren meerdere aanpassingen doorgevoerd in het erfrecht voor buitenlandse eigenaren, bedoeld om het land aantrekkelijker te maken voor internationale investeerders.
 
-De meest recente en ingrijpende wijziging is Federal Decree-Law No. 51 of 2024, dat op 1 januari 2026 in werking is getreden. Deze wet bepaalt dat alle VAE-bezittingen van overledenen zonder testament en zonder identificeerbare erfgenamen permanent worden overgedragen aan een charitatief Waqf-fonds. De wet geldt in alle zeven emiraten.
+De meest recente wijziging is de nieuwe Civil Transactions Law (Federal Decree-Law No. 25 van 2025), die sinds juni 2026 geldt. Daarin staat dat bezittingen in de VAE van een buitenlander zonder testament en zonder aanwijsbare erfgenamen naar een liefdadigheidsfonds (Waqf) gaan. De wet geldt in alle zeven emiraten. Voor de meeste eigenaren met echtgenoot of kinderen speelt dit niet direct, maar het laat zien hoe belangrijk een geregistreerd testament is.
 
 Voor Nederlandse eigenaren met partner en kinderen is het directe Waqf-risico beperkt - zij hebben identificeerbare erfgenamen. Maar de exacte toepassing van de nieuwe regels op Nederlandse non-residenten is niet eenduidig. De regelgeving is in beweging, en de praktijk wijst uit dat de interpretatie per emiraat en per geval kan verschillen.
 

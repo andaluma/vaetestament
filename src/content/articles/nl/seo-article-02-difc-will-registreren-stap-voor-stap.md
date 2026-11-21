@@ -29,7 +29,7 @@ faq:
   - q: In welke taal wordt het testament opgesteld?
     a: Het DIFC-testament is in het Engels. De begeleiding door VAEtestament is volledig in het Nederlands.
   - q: Kan ik mijn DIFC-testament later wijzigen?
-    a: "Ja. U kunt uw testament wijzigen of intrekken zolang u wilsbekwaam bent. Bij wijzigingen doorloopt u een verkorte versie van het registratieproces."
+    a: "Ja. U kunt uw testament wijzigen of intrekken zolang u wilsbekwaam bent. Wijzigen kan via het DIFC-portaal tegen een verlaagd tarief van AED 550 per testament. U ondertekent daarbij een nieuw testament in een nieuwe online afspraak. Koopt u later een extra woning, dan voegt u die op dezelfde manier toe."
 ---
 
 Een DIFC-testament registreert u volledig op afstand, vanuit Nederland. Het proces bestaat uit twee fasen: voorbereiding (1 tot 2 weken) en DIFC-uitvoering (4 tot 8 weken). In dit artikel doorloopt u het volledige traject: welke documenten u nodig heeft, wat u zelf doet, wat begeleid wordt en waar de meeste eigenaren vastlopen.
@@ -88,6 +88,10 @@ Het DIFC plant een ondertekeningsafspraak. Deze vindt plaats via videocall. U ho
 ### Stap 7: registratie en ontvangstbevestiging
 
 Na ondertekening wordt uw testament officieel geregistreerd in het DIFC-testaments Register. U ontvangt een registratiebevestiging. Vanaf dat moment is uw testament afdwingbaar via het DIFC-rechtssysteem.
+
+## Vastgoed in Abu Dhabi
+
+Voor vastgoed in Dubai kan de uitspraak van de DIFC-rechtbank worden uitgevoerd. Voor vastgoed in Abu Dhabi volgt na de DIFC-procedure nog een aanvraag bij de rechtbank in Abu Dhabi voordat het vastgoed kan worden overgeschreven.
 
 ## Wat VAEtestament doet versus wat u zelf doet
 

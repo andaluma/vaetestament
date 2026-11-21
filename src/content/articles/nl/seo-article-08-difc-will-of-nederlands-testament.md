@@ -50,7 +50,7 @@ Twee jurisdicties, twee instrumenten. Geen van beide vervangt de ander.
 
 Het Nederlandse testament regelt: bankrekeningen in Nederland, vastgoed in Nederland, aandelen, pensioenen, overige Nederlandse bezittingen.
 
-De DIFC-testament regelt: vastgoed op persoonlijke naam in de VAE (alle Emiraten).
+Het DIFC-testament regelt: vastgoed op persoonlijke naam in de VAE (alle emiraten). Voor vastgoed in Dubai kan de uitspraak van de DIFC-rechtbank worden uitgevoerd. Voor vastgoed in Abu Dhabi volgt na de DIFC-procedure nog een aanvraag bij de rechtbank in Abu Dhabi voordat het vastgoed kan worden overgeschreven.
 
 De sleutel is dat beide documenten een heldere scope-afbakening hebben. Uw Nederlandse testament moet niet verwijzen naar uw VAE-vastgoed alsof het dat ook regelt. Uw DIFC-testament moet zich beperken tot uw VAE-bezittingen.
 

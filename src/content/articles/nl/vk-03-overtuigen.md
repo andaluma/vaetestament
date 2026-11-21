@@ -51,7 +51,7 @@ Wat u kunt zeggen: "Ik heb het uitgezocht. Het hele proces gaat digitaal, vanuit
 
 ## Bezwaar 4: "Het is te duur"
 
-De begeleiding door VAEtestament begint bij EUR 497 voor een Property Will. Daar komen de registratiekosten bij het DIFC-portaal apart bij. Vergelijk dat met de kosten als er niets geregeld is: EUR 10.000 of meer aan advocaat-, vertaal-, legalisatie- en gerechtskosten. Plus 12 tot 24 maanden wachttijd. Plus bevroren vermogen gedurende die hele periode.
+De begeleiding door VAEtestament begint bij EUR 497 voor een Property Will. Daar komen de registratiekosten bij het DIFC-portaal apart bij. Vergelijk dat met de kosten als er niets geregeld is: EUR 10.000 of meer aan advocaat-, vertaal-, legalisatie- en gerechtskosten. Plus vaak 12 maanden of langer wachttijd. Plus bevroren vermogen gedurende die hele periode.
 
 Wat u kunt zeggen: "De begeleiding kost EUR 497. Dat is een fractie van wat het kost als er niets geregeld is. En als het makkelijker is, betaal ik het voor jullie. Dit is een investering in rust, niet een uitgave."
 

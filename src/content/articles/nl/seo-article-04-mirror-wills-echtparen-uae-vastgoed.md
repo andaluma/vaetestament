@@ -26,8 +26,8 @@ faq:
     a: Nee. Elke partner beslist onafhankelijk. De testamenten worden gelijktijdig geregistreerd, maar de inhoud kan verschillen.
   - q: Wat als we later scheiden?
     a: "Bij scheiding kunt u uw DIFC-testament laten wijzigen of intrekken. De testamenten staan los van elkaar: het wijzigen van het ene testament heeft geen juridische gevolgen voor het andere."
-  - q: Kan ik een mirror will doen als mijn partner geen Nederlandse nationaliteit heeft?
-    a: Ja. Een DIFC-testament staat open voor alle niet-moslims, ongeacht nationaliteit. Uw partner hoeft geen Nederlander te zijn.
+  - q: Kan ik een mirror will doen als mijn echtgenoot geen Nederlandse nationaliteit heeft?
+    a: Ja. Een DIFC-testament staat open voor alle niet-moslims, ongeacht nationaliteit. Uw echtgenoot hoeft geen Nederlander te zijn.
   - q: Wat als slechts één partner vastgoed op naam heeft?
     a: "Dan heeft strikt genomen alleen die partner een DIFC-testament nodig. U kunt er alsnog voor kiezen om een mirror will te doen als voorzorg voor toekomstige eigendomswijzigingen."
 ---
@@ -36,9 +36,11 @@ Een mirror will is de meest praktische manier voor echtparen om hun VAE-vastgoed
 
 ## Wat is een mirror will?
 
-Een mirror will bestaat uit twee aparte testamenten: één per partner. Beide worden gelijktijdig opgesteld en geregistreerd bij het DIFC-testaments Service Centre, in één procedure.
+Een mirror will is een gezamenlijke registratie van twee afzonderlijke testamenten voor echtgenoten, in één afspraak. Bent u niet getrouwd, dan bespreken wij in het kennismakingsgesprek welke route voor u past. Let op: trouwt u na de registratie, dan vervalt het testament, tenzij het voorgenomen huwelijk in het testament is vermeld.
 
-Het woord "mirror" suggereert dat de testamenten identiek zijn, maar dat hoeft niet. Elke partner bepaalt onafhankelijk:
+Een mirror will bestaat uit twee aparte testamenten: één per echtgenoot. Beide worden gelijktijdig opgesteld en geregistreerd bij het DIFC-testaments Service Centre, in één procedure.
+
+Het woord "mirror" suggereert dat de testamenten identiek zijn, maar dat hoeft niet. Elke echtgenoot bepaalt onafhankelijk:
 
 - Wie het vastgoed erft als hij of zij overlijdt.
 - Wie de executeur-testamentair is.

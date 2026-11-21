@@ -2,7 +2,7 @@
 title: Wat gebeurt er met mijn Dubai-vastgoed als ik geen testament heb?
 slug: wat-gebeurt-dubai-vastgoed-zonder-testament
 en_slug: dubai-property-without-will
-meta_description: Geen DIFC-testament voor uw VAE-vastgoed? Uw nabestaanden krijgen te maken met onzekere verdeling, hoge kosten en een probate-procedure van 12 tot 24 maanden.
+meta_description: Geen DIFC-testament voor uw VAE-vastgoed? Uw nabestaanden krijgen te maken met een onzekere verdeling, hoge kosten en een lange probate-procedure.
 keywords:
   - overlijden Dubai vastgoed zonder testament
   - Dubai property no will consequences
@@ -40,7 +40,7 @@ Vastgoed op VAE-grond valt onder de jurisdictie van de VAE. Als u overlijdt zond
 
 Recente wijzigingen in de VAE-regelgeving hebben de standaard erfregels voor buitenlandse eigenaren aangepast. De exacte toepassing op Nederlandse non-residenten is op dit moment niet eenduidig. Dat klinkt abstract, maar de praktische consequentie is concreet: uw overlevende partner weet niet met zekerheid welk deel van het vastgoed hij of zij ontvangt. De verdeling wordt bepaald door een systeem waar u als eigenaar geen invloed op had.
 
-Sinds 1 januari 2026 is daar een extra risico bijgekomen. Onder Federal Decree-Law No. 51 of 2024 worden alle VAE-bezittingen van overledenen zonder identificeerbare erfgenamen permanent overgedragen aan een door de staat beheerd charitatief fonds (Waqf). Voor eigenaren met een partner en kinderen is het directe Waqf-risico beperkt - zij hebben identificeerbare erfgenamen. Maar het aantonen van dat erfgenaamschap vanuit Nederland, in het Arabisch, via een buitenlands rechtssysteem, is een traject dat maanden duurt en duizenden euro's kost. Voor alleenstaanden of eigenaren met een ongehuwde partner is het risico direct: een ongehuwde partner geldt niet als wettelijke erfgenaam onder VAE-recht.
+Sinds juni 2026 geldt in de VAE een nieuwe Civil Transactions Law (Federal Decree-Law No. 25 van 2025). Daarin staat dat bezittingen in de VAE van een buitenlander zonder testament en zonder aanwijsbare erfgenamen naar een liefdadigheidsfonds (Waqf) gaan. Voor eigenaren met een echtgenoot of kinderen is het directe Waqf-risico beperkt, want zij hebben aanwijsbare erfgenamen. Maar het aantonen van dat erfgenaamschap vanuit Nederland, in het Arabisch, via een buitenlands rechtssysteem, is een traject dat maanden duurt en duizenden euro's kost. Voor alleenstaanden of eigenaren met een ongehuwde partner is het risico direct: een ongehuwde partner geldt niet als wettelijke erfgenaam onder VAE-recht.
 
 Een DIFC-testament elimineert die onzekerheid. U bepaalt zelf wie wat erft, en het DIFC-rechtssysteem handhaaft dat.
 
@@ -50,8 +50,8 @@ Zonder lokaal testament starten uw erfgenamen een probate-procedure bij de VAE-r
 
 ### De stappen
 
-1. **Overlijdensakte laten legaliseren.** De Nederlandse overlijdensakte moet voorzien worden van een apostille en vervolgens beëdigd vertaald worden naar het Arabisch.
-2. **Erfgenaamschap aantonen.** Uw erfgenamen moeten via de Nederlandse rechtbank een verklaring van erfrecht verkrijgen, die eveneens geapostilleerd en vertaald moet worden.
+1. **Overlijdensakte laten legaliseren.** De Nederlandse overlijdensakte moet worden gelegaliseerd via de Nederlandse autoriteiten en de ambassade van de VAE, en vervolgens beëdigd vertaald worden naar het Arabisch. Een apostille alleen is in de VAE niet voldoende.
+2. **Erfgenaamschap aantonen.** Uw erfgenamen moeten via de Nederlandse rechtbank een verklaring van erfrecht verkrijgen, die eveneens gelegaliseerd en vertaald moet worden.
 3. **Lokale juridische vertegenwoordiging.** Een advocaat in de VAE moet worden ingeschakeld om de zaak bij de rechtbank in te dienen.
 4. **Rechtbankprocedure doorlopen.** De VAE-rechtbank beoordeelt de zaak en beslist over de verdeling van het vastgoed, volgens de regels die op dat moment gelden.
 5. **Eigendomsoverdracht.** Na de uitspraak wordt het vastgoed formeel overgeschreven, wat aanvullende registratieprocedures vereist.
@@ -60,14 +60,14 @@ Zonder lokaal testament starten uw erfgenamen een probate-procedure bij de VAE-r
 
 De totale kosten van dit traject bedragen doorgaans meer dan EUR 10.000. Dit omvat:
 
-- Apostilles en beëdigde vertalingen (meerdere documenten, meerdere talen).
+- Legalisatie en beëdigde vertalingen (meerdere documenten, meerdere talen).
 - Lokale juridische vertegenwoordiging in de VAE.
 - Rechtbankkosten en registratiekosten.
 - Eventuele reiskosten als fysieke aanwezigheid vereist is.
 
 ### De tijdlijn
 
-Het volledige probate-proces duurt typisch 12 tot 24 maanden. Gedurende die periode is het vastgoed bevroren: het kan niet verkocht, verhuurd (bij nieuwe contracten) of op andere wijze benut worden. Voor nabestaanden die rekenden op de opbrengst of het gebruik van het vastgoed is dit een aanzienlijke belasting.
+Het volledige probate-proces duurt vaak 12 maanden of langer. Gedurende die periode is het vastgoed bevroren: het kan niet verkocht, verhuurd (bij nieuwe contracten) of op andere wijze benut worden. Voor nabestaanden die rekenden op de opbrengst of het gebruik van het vastgoed is dit een aanzienlijke belasting.
 
 ## Het scenario dat niemand verwacht
 
@@ -81,7 +81,7 @@ Dit is geen hypothetisch scenario. Het is de situatie waar de meerderheid van de
 
 ## Het Waqf-risico: wie loopt direct gevaar?
 
-Sinds 1 januari 2026 geldt Federal Decree-Law No. 51 of 2024 in alle zeven emiraten. De wet bepaalt dat bezittingen van overledenen zonder testament en zonder identificeerbare erfgenamen worden overgedragen aan een charitatief Waqf-fonds.
+Sinds juni 2026 geldt in de VAE een nieuwe Civil Transactions Law (Federal Decree-Law No. 25 van 2025). Daarin staat dat bezittingen in de VAE van een buitenlander zonder testament en zonder aanwijsbare erfgenamen naar een liefdadigheidsfonds (Waqf) gaan. Voor de meeste eigenaren met echtgenoot of kinderen speelt dit niet direct, maar het laat zien hoe belangrijk een geregistreerd testament is.
 
 Dit treft niet iedereen gelijk:
 
@@ -100,7 +100,7 @@ Concreet betekent dit:
 
 - **U bepaalt zelf wie erft.** Geen onzekerheid over de verdeling.
 - **Geen probate-procedure.** Het DIFC-systeem verwerkt de nalatenschap sneller en goedkoper.
-- **Geen Arabische vertalingen of apostilles.** Het DIFC opereert in het Engels.
+- **Geen Arabische vertalingen of legalisatie van documenten.** Het DIFC opereert in het Engels.
 - **Geen fysieke aanwezigheid vereist.** Niet bij registratie en niet bij uitvoering.
 
 ## Het verschil in kosten en tijd
@@ -109,6 +109,6 @@ Concreet betekent dit:
 |---|---|---|
 | **Verdeling** | Onzeker, afhankelijk van geldende lokale regels | Door u bepaald |
 | **Kosten nabestaanden** | EUR 10.000+ | Geen aanvullende kosten |
-| **Doorlooptijd** | 12 tot 24 maanden | Aanzienlijk korter via DIFC-systeem |
+| **Doorlooptijd** | Vaak 12 maanden of langer | Aanzienlijk korter via DIFC-systeem |
 | **Taalbarrière** | Arabisch, beëdigde vertalingen vereist | Engels |
 | **Vastgoed bevroren** | Ja, gedurende gehele procedure | Nee |

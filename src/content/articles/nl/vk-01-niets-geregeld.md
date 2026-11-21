@@ -19,9 +19,9 @@ related:
   - vk-08-handleiding-nabestaanden
 faq:
   - q: Hoe lang duurt de afwikkeling van een nalatenschap in Dubai zonder DIFC-testament?
-    a: Zonder DIFC-testament duurt de afwikkeling gemiddeld 12 tot 24 maanden. In complexe gevallen kan het langer duren. Met een geregistreerd DIFC-testament verloopt het proces aanzienlijk sneller, doorgaans binnen enkele maanden.
+    a: Zonder DIFC-testament duurt de afwikkeling vaak 12 maanden of langer. Met een geregistreerd DIFC-testament verloopt het proces aanzienlijk sneller, doorgaans binnen enkele maanden.
   - q: Krijgt mijn moeder als langstlevende partner het appartement automatisch?
-    a: Nee. Zonder DIFC-testament past de lokale rechter het Emiratische erfrecht toe op het vastgoed. In dat geval kan de langstlevende partner slechts 12,5% van het vastgoed ontvangen. De rest wordt verdeeld onder kinderen en andere familieleden volgens vaste regels die u niet kunt beïnvloeden.
+    a: Nee, niet automatisch. Zonder een in de VAE geregistreerd testament is niet zeker hoe het vastgoed wordt verdeeld. Welk recht van toepassing is, hangt af van de woonplaats en nationaliteit van uw ouders en de beoordeling door de rechtbank. Uw moeder moet als erfgenaam eerst een procedure bij een rechtbank in de VAE doorlopen.
   - q: Geldt het Nederlandse testament van mijn ouders ook voor vastgoed in Dubai?
     a: Nee. Een Nederlands testament heeft geen rechtskracht over onroerend goed in de VAE. Alleen een lokaal geregistreerd testament, zoals een DIFC-testament, regelt de vererving van vastgoed in de Emiraten. Beide testamenten vullen elkaar aan, maar het ene vervangt het andere niet.
 ---
@@ -40,13 +40,13 @@ Zonder dat lokale testament beschouwt de VAE het vastgoed als vallend onder het 
 
 Op het moment dat een eigenaar overlijdt zonder lokaal testament, worden de bankrekeningen en het vastgoed in de VAE bevroren. Dat betekent: geen toegang tot tegoeden, geen mogelijkheid om het appartement te verkopen of te verhuren, en geen inkomsten uit het pand. Dit bevriezingsproces treedt direct in werking.
 
-Vervolgens begint een procedure die in de praktijk 12 tot 24 maanden duurt. In sommige gevallen langer. Als erfgenaam moet u de volgende stappen doorlopen:
+Vervolgens begint een procedure die in de praktijk vaak 12 maanden of langer duurt. Als erfgenaam moet u de volgende stappen doorlopen:
 
-**Documenten verzamelen en legaliseren.** U heeft een overlijdensakte nodig, een verklaring van erfrecht, geboorteaktes en huwelijksaktes. Al deze documenten moeten vertaald worden naar het Engels of Arabisch door een beëdigd vertaler. Vervolgens moeten ze worden voorzien van een apostille, en soms ook gelegaliseerd door het Ministerie van Buitenlandse Zaken.
+**Documenten verzamelen en legaliseren.** U heeft een overlijdensakte nodig, een verklaring van erfrecht, geboorteaktes en huwelijksaktes. Al deze documenten moeten vertaald worden naar het Engels of Arabisch door een beëdigd vertaler. Vervolgens moeten ze worden gelegaliseerd via de Nederlandse autoriteiten en de ambassade van de VAE. Een apostille alleen is in de VAE niet voldoende.
 
 **Juridische vertegenwoordiging in de VAE regelen.** U heeft een lokale advocaat nodig die namens u de procedure voert bij de rechtbank. Dat is een advocaat in een ander rechtssysteem, in een andere taal, in een andere tijdzone.
 
-**Wachten op de rechtbank.** De lokale rechter bepaalt hoe het vastgoed wordt verdeeld. Zonder testament past de rechter het Emiratische erfrecht toe. Dat betekent dat uw moeder als langstlevende partner mogelijk slechts 12,5% van de waarde van het vastgoed ontvangt. De rest wordt verdeeld onder kinderen en eventueel andere familieleden, volgens regels die vastliggen in de lokale wetgeving. Sinds 1 januari 2026 geldt bovendien Federal Decree-Law No. 51 of 2024: als er geen identificeerbare erfgenamen zijn, worden de bezittingen permanent overgedragen aan een charitatief Waqf-fonds. Voor uw ouders, met kinderen, is dat directe risico beperkt - maar het bewijzen van erfgenaamschap vanuit Nederland is het echte obstakel.
+**Wachten op de rechtbank.** De lokale rechter bepaalt hoe het vastgoed wordt verdeeld. Zonder een in de VAE geregistreerd testament is niet zeker hoe het vastgoed wordt verdeeld. Welk recht van toepassing is, hangt af van de woonplaats en nationaliteit van uw ouders en de beoordeling door de rechtbank. Sinds juni 2026 geldt bovendien een nieuwe Civil Transactions Law (Federal Decree-Law No. 25 van 2025): bezittingen in de VAE van een buitenlander zonder testament en zonder aanwijsbare erfgenamen gaan naar een liefdadigheidsfonds (Waqf). Voor uw ouders, met kinderen, is dat directe risico beperkt - maar het bewijzen van erfgenaamschap vanuit Nederland is het echte obstakel.
 
 ## De kosten lopen snel op
 

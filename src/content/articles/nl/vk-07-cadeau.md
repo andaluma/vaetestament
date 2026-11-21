@@ -32,7 +32,7 @@ Sommige cadeaus zijn bijzonder omdat ze precies dat regelen waar niemand aan den
 
 Uw ouders hebben vastgoed in de VAE. Misschien een appartement in Dubai, misschien een villa in Abu Dhabi. Ze genieten ervan, verhuren het, of zien het als belegging. Maar de kans is groot dat ze niet weten dat hun Nederlandse testament dit bezit niet afdoende beschermt.
 
-Als er iets met uw ouders gebeurt en er is geen DIFC-testament, worden de activa bevroren. Uw nabestaanden starten een probate-procedure bij de lokale rechtbank. De kosten lopen op tot EUR 10.000 tot EUR 15.000+, het traject duurt 12 tot 24 maanden, en de verdeling is onzeker.
+Als er iets met uw ouders gebeurt en er is geen DIFC-testament, worden de activa bevroren. Uw nabestaanden starten een probate-procedure bij de lokale rechtbank. De kosten lopen op tot EUR 10.000 tot EUR 15.000+, het traject duurt vaak 12 maanden of langer, en de verdeling is onzeker.
 
 Door de begeleiding voor een DIFC-testament als cadeau te geven, neemt u die zorg weg. Niet alleen voor uw ouders, maar voor uzelf en uw broers of zussen.
 

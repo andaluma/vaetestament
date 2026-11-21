@@ -44,15 +44,15 @@ Voordat u enige juridische stap kunt zetten in de VAE, moet u een aantal documen
 
 ### Overlijdensakte
 
-De originele Nederlandse overlijdensakte moet worden voorzien van een apostille (bij de rechtbank in Nederland) en vervolgens beëdigd vertaald naar het Arabisch. Sommige advocaten in de VAE vereisen ook een Engelse vertaling.
+De originele Nederlandse overlijdensakte moet worden gelegaliseerd via de Nederlandse autoriteiten en de ambassade van de VAE, en vervolgens beëdigd vertaald naar het Arabisch. Een apostille alleen is in de VAE niet voldoende. Sommige advocaten in de VAE vereisen ook een Engelse vertaling.
 
 ### Verklaring van erfrecht
 
-Deze verklaring wordt opgesteld door een Nederlandse notaris en bewijst wie de wettelijke erfgenamen zijn. Ook dit document moet worden geapostilleerd en beëdigd vertaald.
+Deze verklaring wordt opgesteld door een Nederlandse notaris en bewijst wie de wettelijke erfgenamen zijn. Ook dit document moet worden gelegaliseerd en beëdigd vertaald.
 
 ### Volmacht (Power of Attorney)
 
-Als u niet zelf naar de VAE kunt of wilt reizen, heeft uw advocaat in de VAE een volmacht nodig om namens u te handelen. Deze volmacht moet in Nederland worden opgesteld, geapostilleerd en vertaald.
+Als u niet zelf naar de VAE kunt of wilt reizen, heeft uw advocaat in de VAE een volmacht nodig om namens u te handelen. Deze volmacht moet in Nederland worden opgesteld, gelegaliseerd en vertaald.
 
 ### Title deed en eigendomsdocumenten
 
@@ -79,7 +79,7 @@ Zonder lokaal testament start een probate-procedure bij de lokale rechtbank in d
 
 ## Tijdlijn
 
-De doorlooptijd van een probate-procedure zonder DIFC-testament bedraagt doorgaans 12 tot 24 maanden. In complexe gevallen, bijvoorbeeld bij meerdere erfgenamen in verschillende landen of bij onenigheid over de verdeling, kan dit oplopen.
+De doorlooptijd van een probate-procedure zonder DIFC-testament bedraagt vaak 12 maanden of langer. In complexe gevallen, bijvoorbeeld bij meerdere erfgenamen in verschillende landen of bij onenigheid over de verdeling, kan dit oplopen.
 
 Gedurende deze periode blijft het vastgoed bevroren. Er zijn geen huurinkomsten, geen verkoopopbrengsten en geen mogelijkheid om het eigendom te herbeleggen.
 
@@ -88,7 +88,7 @@ Gedurende deze periode blijft het vastgoed bevroren. Er zijn geen huurinkomsten,
 De totale kosten variëren per situatie, maar een realistisch overzicht ziet er als volgt uit:
 
 - **Beëdigde vertalingen:** EUR 2.000 tot EUR 3.000
-- **Apostille en legalisatie:** EUR 500 tot EUR 1.000
+- **Legalisatie:** EUR 500 tot EUR 1.000
 - **Advocaat in de VAE:** AED 15.000 tot AED 30.000 (EUR 3.700 tot EUR 7.400)
 - **Reiskosten:** EUR 1.500 tot EUR 3.000 per reis
 - **Overige kosten** (rechtbankkosten, notariskosten NL): EUR 500 tot EUR 1.500

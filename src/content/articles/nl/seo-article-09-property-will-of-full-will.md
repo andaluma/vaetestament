@@ -30,7 +30,7 @@ faq:
 
 Het DIFC biedt twee typen testamenten aan: de Property Will en de Full Will. Het verschil is niet de juridische geldigheid, want beide zijn rechtsgeldig geregistreerd bij het DIFC. Het verschil zit in wat ze dekken.
 
-Een **Property Will** dekt uitsluitend onroerend goed dat op uw persoonlijke naam staat. Dit omvat appartementen, villa's en andere vastgoedobjecten in alle zeven emiraten. Voor veel Nederlandse vastgoedeigenaren is dit het enige dat zij in de VAE bezitten.
+Een **Property Will** dekt uitsluitend onroerend goed dat op uw persoonlijke naam staat. Dit omvat appartementen, villa's en andere vastgoedobjecten in alle zeven emiraten. Voor vastgoed in Dubai kan de uitspraak van de DIFC-rechtbank worden uitgevoerd. Voor vastgoed in Abu Dhabi volgt na de DIFC-procedure nog een aanvraag bij de rechtbank in Abu Dhabi voordat het vastgoed kan worden overgeschreven. Voor veel Nederlandse vastgoedeigenaren is dit het enige dat zij in de VAE bezitten.
 
 Een **Full Will** dekt alles wat een Property Will dekt, plus aanvullende bezittingen en bepalingen. Denk aan bankrekeningen, beleggingen, voertuigen, voogdijbepalingen voor minderjarige kinderen, en vastgoed dat via een bedrijfsstructuur wordt aangehouden.
 

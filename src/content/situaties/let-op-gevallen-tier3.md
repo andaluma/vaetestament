@@ -21,7 +21,7 @@ result: "Tier 3 noodzakelijk"
 
 ## Een Property Will dekt veel, maar niet alles
 
-Voor de meeste Nederlandse vastgoedeigenaren in de VAE is een Property Will de juiste keuze. Het dekt onroerend goed op persoonlijke naam in alle zeven emiraten, en dat is voor veel mensen het enige dat ze in de VAE bezitten.
+Voor de meeste Nederlandse vastgoedeigenaren in de VAE is een Property Will de juiste keuze. Het dekt onroerend goed op persoonlijke naam in alle zeven emiraten (voor vastgoed in Abu Dhabi volgt na de DIFC-procedure nog een aanvraag bij de rechtbank in Abu Dhabi), en dat is voor veel mensen het enige dat ze in de VAE bezitten.
 
 Maar er zijn situaties waarin een Property Will niet volstaat. In die gevallen is een Full Will noodzakelijk, opgesteld met een DIFC-gecertificeerde jurist via ons Tier 3-traject.
 

@@ -60,11 +60,11 @@ U registreert zich op het DIFC Wills Service Centre portaal met uw e-mailadres. 
 
 **2. Type testament kiezen**
 
-U kiest tussen een Property Will en een Full Will, en tussen een enkelvoudig testament of een mirror will (voor u en uw partner).
+U kiest tussen een Property Will en een Full Will, en tussen een enkelvoudig testament of een mirror will (voor echtgenoten).
 
 **3. Persoonlijke gegevens invullen**
 
-Uw volledige naam (zoals op uw paspoort), geboortedatum, nationaliteit, adres, contactgegevens. Bij een mirror will ook die van uw partner.
+Uw volledige naam (zoals op uw paspoort), geboortedatum, nationaliteit, adres, contactgegevens. Bij een mirror will ook die van uw echtgenoot.
 
 **4. Vastgoed opgeven**
 
@@ -85,6 +85,13 @@ U controleert alle ingevulde gegevens, bevestigt dat alles correct is en dient d
 **8. Afspraak en registratie**
 
 Na beoordeling ontvangt u een uitnodiging voor een online afspraak. Tijdens deze afspraak bevestigt u het testament. Daarna wordt het officieel geregistreerd bij het DIFC.
+
+## Waar u op moet letten bij de afspraak
+
+- **Getuigen:** u heeft twee getuigen nodig. Zij mogen geen begunstigde of voogd zijn, en ook niet de partner van een begunstigde of voogd. Zij kunnen via video deelnemen.
+- **Twee apparaten:** u heeft twee apparaten nodig, waarvan één met een touchscreen voor de digitale handtekening.
+- **Duur:** de afspraak duurt ongeveer 20 minuten.
+- **Zaterdag:** registratie is ook op zaterdag mogelijk.
 
 ## Waar gaat het vaak mis?
 

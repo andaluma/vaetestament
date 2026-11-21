@@ -21,7 +21,7 @@ related:
 linked_landing_faq: wat-is-een-difc-will
 faq:
   - q: Is een DIFC-testament alleen geldig voor vastgoed in Dubai?
-    a: Nee. Een DIFC-testament dekt vastgoed in alle zeven emiraten van de VAE, niet alleen Dubai.
+    a: "Nee. Een DIFC-testament dekt vastgoed in alle zeven emiraten van de VAE, niet alleen Dubai. Voor vastgoed in Abu Dhabi volgt na de DIFC-procedure nog een aanvraag bij de rechtbank in Abu Dhabi."
   - q: Heb ik nog steeds een Nederlands testament nodig?
     a: Ja. Een DIFC-testament regelt uitsluitend uw bezittingen in de VAE. Voor uw Nederlandse vermogen blijft uw notariële testament in Nederland van toepassing. Beide documenten vullen elkaar aan. Lees meer in ons artikel over [het misverstand dat uw Nederlandse erfgenamen uw Dubai-vastgoed automatisch krijgen](/artikelen/difc-will-of-nederlands-testament/).
   - q: Kan ik een DIFC-testament vanuit Nederland regelen?
@@ -50,13 +50,13 @@ Een DIFC-testament is bedoeld voor niet-moslims die vastgoed bezitten in de VAE 
 - Echtparen die samen vastgoed bezitten en willen vastleggen wie wat erft.
 - Investeerders met meerdere VAE-properties op persoonlijke naam.
 
-Het maakt niet uit in welk emiraat uw vastgoed staat. Een DIFC-testament dekt vastgoed in alle zeven emiraten.
+Het maakt niet uit in welk emiraat uw vastgoed staat. Een DIFC-testament dekt vastgoed in alle zeven emiraten. Voor vastgoed in Dubai kan de uitspraak van de DIFC-rechtbank worden uitgevoerd. Voor vastgoed in Abu Dhabi volgt na de DIFC-procedure nog een aanvraag bij de rechtbank in Abu Dhabi voordat het vastgoed kan worden overgeschreven.
 
 ## Wat gebeurt er zonder DIFC-testament?
 
 Zonder lokaal testament kunnen de VAE-autoriteiten lokale erfregels toepassen op vastgoed dat op VAE-grond staat, ongeacht uw nationaliteit of geloof. Recente wijzigingen in de VAE-regelgeving hebben deze regels aangepast, maar de exacte toepassing op Nederlandse non-residenten is op dit moment onduidelijk.
 
-Concreet betekent dit: uw nabestaanden weten niet met zekerheid hoe het vastgoed verdeeld zal worden. Daarbovenop volgt een probate-procedure (vergelijkbaar met een nalatenschap afwikkelen via de rechtbank) die doorgaans meer dan EUR 10.000 kost en 12 tot 24 maanden duurt. Dat omvat apostilles, beëdigde Arabische vertalingen en lokale juristen.
+Concreet betekent dit: uw nabestaanden weten niet met zekerheid hoe het vastgoed verdeeld zal worden. Daarbovenop volgt een probate-procedure (vergelijkbaar met een nalatenschap afwikkelen via de rechtbank) die doorgaans meer dan EUR 10.000 kost en vaak 12 maanden of langer duurt. Dat omvat legalisatie van documenten, beëdigde Arabische vertalingen en lokale juristen.
 
 Met een DIFC-testament bepaalt u zelf wie uw vastgoed erft. De registratie verloopt volledig digitaal. U hoeft niet naar Dubai te reizen.
 
