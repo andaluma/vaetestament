@@ -1,0 +1,90 @@
+---
+// ReferralCapture - partner attribution for /r/<code> links.
+//
+// The /r/<code> Worker route redirects to /?ref=<code>. This script runs on
+// every page (via BaseLayout) and:
+//   1. Reads ?ref= on any page, keeps it for the visit (sessionStorage) and
+//      removes it from the address bar.
+//   2. Only when the visitor accepted all cookies (cookie_consent = 'all'),
+//      also keeps it for 90 days (localStorage), so a purchase on a later
+//      visit is still attributed. The first partner wins; a later ref does
+//      not overwrite an unexpired earlier one.
+//   3. Adds client_reference_id=ref-<code> to every Stripe Payment Link click
+//      on every page, including links the tier-check modal sets at runtime.
+//      Links that already carry a client_reference_id (upgrade links with a
+//      client UID) are left alone.
+//
+// Purchases after the free call are attributed with a personal Stripe link
+// (client_reference_id=ref-<code>) that Andre sends; see the partner report.
+---
+<script is:inline>
+  (function () {
+    var KEY = 'vt_ref';
+    var MAX_AGE_MS = 90 * 24 * 60 * 60 * 1000;
+    var VALID = /^[a-z0-9-]{2,40}$/;
+
+    function consentAll() {
+      try { return localStorage.getItem('cookie_consent') === 'all'; } catch (e) { return false; }
+    }
+    function readStored() {
+      try {
+        var raw = localStorage.getItem(KEY);
+        if (!raw) return null;
+        var o = JSON.parse(raw);
+        if (!o || !VALID.test(o.ref) || Date.now() - o.at > MAX_AGE_MS) {
+          localStorage.removeItem(KEY);
+          return null;
+        }
+        return o.ref;
+      } catch (e) { return null; }
+    }
+    function persist(ref) {
+      if (!consentAll() || readStored()) return;
+      try { localStorage.setItem(KEY, JSON.stringify({ ref: ref, at: Date.now() })); } catch (e) {}
+    }
+    function sessionRef() {
+      try { return sessionStorage.getItem(KEY); } catch (e) { return null; }
+    }
+    function currentRef() {
+      return readStored() || sessionRef();
+    }
+
+    // 1. Capture ?ref= on any page.
+    var params = new URLSearchParams(window.location.search);
+    var incoming = (params.get('ref') || '').toLowerCase();
+    if (incoming) {
+      if (VALID.test(incoming)) {
+        try { if (!sessionRef()) sessionStorage.setItem(KEY, incoming); } catch (e) {}
+      }
+      params.delete('ref');
+      var clean = window.location.pathname + (params.toString() ? '?' + params.toString() : '') + window.location.hash;
+      history.replaceState(null, '', clean);
+    }
+
+    // 2. Keep it longer once (or as soon as) the visitor accepted all cookies.
+    var s = sessionRef();
+    if (s) persist(s);
+    document.addEventListener('click', function (e) {
+      if (e.target.closest && e.target.closest('#cookie-banner')) {
+        setTimeout(function () { var r = sessionRef(); if (r) persist(r); }, 0);
+      }
+    }, true);
+
+    // 3. Tag Stripe Payment Links at click time (capture phase, so it also
+    //    runs before other click handlers on the page).
+    function tag(e) {
+      var link = e.target.closest && e.target.closest('a[href*="buy.stripe.com"]');
+      if (!link) return;
+      var ref = currentRef();
+      if (!ref) return;
+      try {
+        var url = new URL(link.href);
+        if (url.searchParams.get('client_reference_id')) return;
+        url.searchParams.set('client_reference_id', 'ref-' + ref);
+        link.href = url.toString();
+      } catch (err) {}
+    }
+    document.addEventListener('click', tag, true);
+    document.addEventListener('auxclick', tag, true);
+  })();
+</script>

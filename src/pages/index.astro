@@ -1462,26 +1462,5 @@ const jsonLd = [
     });
   });
 
-  /* Referral attribution: capture ?ref= from URL, inject into Stripe links */
-  (function () {
-    var params = new URLSearchParams(window.location.search);
-    var ref = params.get('ref');
-    if (ref) {
-      sessionStorage.setItem('vt_ref', ref);
-      params.delete('ref');
-      var clean = window.location.pathname + (params.toString() ? '?' + params.toString() : '');
-      history.replaceState(null, '', clean);
-    }
-
-    document.addEventListener('click', function (e) {
-      var link = e.target.closest('a[href*="buy.stripe.com"]');
-      if (!link) return;
-      var storedRef = sessionStorage.getItem('vt_ref');
-      if (!storedRef) return;
-      e.preventDefault();
-      var url = new URL(link.href);
-      url.searchParams.set('client_reference_id', 'ref-' + storedRef);
-      window.open(url.toString(), '_blank');
-    });
-  })();
+  /* Referral attribution: see components/ReferralCapture.astro (all pages). */
 </script>
