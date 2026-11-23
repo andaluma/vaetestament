@@ -63,7 +63,7 @@ This framing positions the conversation as a logistics question, not an emotiona
 
 This resonates with parents who are motivated by caring for their spouse or partner.
 
-"I read that in the UAE, a surviving spouse can end up receiving as little as 12.5% of the property if there is no local will. That surprised me. I thought you might want to know, just to make sure you and Mum/Dad are protected."
+"I read that in the UAE, without a locally registered will, it is not certain who inherits the property, and the family has to go through a court procedure there that often takes a year or longer. That surprised me. I thought you might want to know, just to make sure you and Mum/Dad are protected."
 
 This approach speaks to their desire to take care of each other. It turns the conversation from "something might go wrong" into "here is how you can protect each other."
 

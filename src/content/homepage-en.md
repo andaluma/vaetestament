@@ -12,13 +12,13 @@ description: Translated homepage content for the English marketing site. Use as 
 ## Hero
 - Label: "DIFC will for foreign property owners"
 - H1: "Your UAE property. Without years of hassle for your family."
-- Subtitle: "Without a locally valid will, your family faces a UAE probate procedure of 12 to 24 months, involving legalisation, sworn Arabic translations and local lawyer costs that quickly exceed EUR 10,000. A DIFC will prevents this."
+- Subtitle: "Without a locally valid will, your family faces a UAE probate procedure that often takes 12 months or longer, involving legalisation, sworn Arabic translations and local lawyer costs that quickly exceed EUR 10,000. A DIFC will prevents this."
 - Primary CTA: "Schedule free consultation"
 - Secondary CTA: "Find your tier now"
 - Note: "15 minutes. No obligation."
 
 ## Stat strip
-- "12-24 months" / "Average duration of a UAE probate procedure without a local will"
+- "12+ months" / "Typical duration of a UAE probate procedure without a local will"
 - "EUR 10,000+" / "Potential costs for legalisation, translation and local lawyers"
 - "All Emirates" / "A DIFC will covers property across the entire UAE"
 
@@ -27,7 +27,7 @@ description: Translated homepage content for the English marketing site. Use as 
 - H2: "Your home-country will is generally not recognised in the UAE"
 - Subtitle: "Your existing will typically does not cover your UAE property."
 - Body: "You live abroad, and you own property in the UAE. Upon death, that property falls under the UAE legal system, not under the inheritance law of your home country. A will drafted at home is generally not recognised by the UAE authorities for property on UAE soil. This applies regardless of how carefully it was prepared."
-- Body 2: "Without a locally valid will, your surviving family must in many cases go through a UAE probate procedure: documents legalised via apostille, sworn Arabic translations, local lawyers engaged, and months of waiting before the property can be transferred. During that period, the property generally cannot be freely sold or rented."
+- Body 2: "Without a locally valid will, your surviving family must in many cases go through a UAE probate procedure: documents legalised via the UAE embassy in your country, sworn Arabic translations, local lawyers engaged, and months of waiting before the property can be transferred. During that period, the property generally cannot be freely sold or rented."
 - Body 3: "A DIFC will is recognised by the UAE authorities and gives you control over who inherits your property. It is a separate legal structure, specifically designed for non-Muslims with assets in the UAE."
 - Callout: "0%" / "This is how your home-country will is typically assessed in the UAE."
 - Callout body: "The UAE generally applies local inheritance rules to property within its borders, regardless of your nationality or place of residence. A DIFC will is recognised and gives you control over who inherits your property."
@@ -35,7 +35,7 @@ description: Translated homepage content for the English marketing site. Use as 
 ## Solution section
 - Label: "The solution"
 - H2: "What is a DIFC will, and why do you need one?"
-- Body: "The Dubai International Financial Centre (DIFC) has a separate legal structure that allows non-Muslims to register a will based on Western succession principles. This will is valid for your property across the entire UAE, in Dubai, Abu Dhabi and all other Emirates."
+- Body: "The Dubai International Financial Centre (DIFC) has a separate legal structure that allows non-Muslims to register a will based on Western succession principles. This will is valid for your property across the entire UAE, in Dubai, Abu Dhabi and all other Emirates. For Abu Dhabi, an application at the court there follows after the DIFC procedure."
 - Body 2: "Registration takes place via an official online portal. You do not need to be physically present in Dubai."
 - Bullets:
   - "Your own distribution - you decide who inherits what"
@@ -102,13 +102,13 @@ description: Translated homepage content for the English marketing site. Use as 
 ## FAQ section
 - Label: "Frequently asked questions"
 - Q&As (translated from Dutch homepage):
-  1. "Does Sharia law apply to me as a non-Muslim?" / "In many cases, yes. The UAE generally applies local inheritance law to assets within its territory upon death, regardless of your nationality or religion. For non-Muslims, this may mean that the default regime based on Sharia applies. A DIFC will allows non-Muslims to deviate from this through a legally registered will."
+  1. "Which inheritance law applies to my UAE property if I am not Muslim?" / "Without a will, this cannot be said with certainty. Which law applies depends on your residence, nationality and the court's assessment. In all cases, your heirs must go through a procedure at a UAE court before they can deal with the property. Since June 2026, a new Civil Transactions Law (Federal Decree-Law No. 25 of 2025) also applies: UAE assets of a foreign national without a will and without identifiable heirs go to a charitable endowment (Waqf). With a DIFC will, as a non-Muslim you decide in advance who inherits your UAE property."
   2. "Does my home-country will also cover my UAE property?" / "Generally not. A home-country will is not automatically recognised in the UAE for property on UAE soil. A DIFC will is in most cases required to legally distribute your UAE property."
   3. "What happens to my UAE property if I pass away without a will?" / "Without a valid will, your property is typically distributed based on applicable inheritance law. For non-Muslims, this may mean that your partner receives a limited share, and the remainder goes to other family members."
   4. "Is a DIFC will complicated to arrange?" / "Not with the right guidance. The process is fully digital via the official DIFC portal and requires no physical presence in Dubai. Preparation is typically completed within 1 to 2 weeks. The DIFC processing afterwards takes 4 to 8 weeks."
   5. "What are the total costs of a DIFC will?" / "Total costs consist of three components: our service fee (EUR 497 to EUR 1,499), DIFC registration fees (paid directly to the DIFC), plus lawyer fees for Tier 3. All DIFC rates are indicative."
-  6. "What does a UAE probate procedure cost without a local will?" / "Without a locally valid will, your surviving family must go through a full UAE probate procedure. This involves legalisation, sworn Arabic translations and local lawyers. Costs quickly reach EUR 10,000 or more, and the process typically takes 12 to 24 months."
-  7. "Can I upgrade later if I need a different tier?" / "Yes. You can upgrade to a higher tier at any time. You only pay the price difference. No hidden costs, no double payment."
+  6. "What does a UAE probate procedure cost without a local will?" / "Without a locally valid will, your surviving family must go through a full UAE probate procedure. This involves legalisation, sworn Arabic translations and local lawyers. Costs quickly reach EUR 10,000 or more, and the process often takes 12 months or longer."
+  7. "Can I upgrade later if I need a different tier?" / "Yes. You can upgrade to a higher tier at any time. You only pay the difference between your current tier and the new tier."
   8. "What is a mirror will and do I need one?" / "A mirror will is a joint registration of two wills, for you and your partner, in one procedure. Each partner independently determines the beneficiaries, executors and distribution. For couples with joint UAE property, this is typically the most practical and cost-effective option."
   9. "Can I arrange a DIFC will if I do not live in Dubai?" / "Yes. The DIFC will is available to non-residents. The entire registration process is conducted remotely via a secure online portal. You do not need to visit the UAE."
 

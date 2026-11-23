@@ -56,7 +56,7 @@ It does not matter in which emirate your property is located. A DIFC will covers
 
 Without a local will, the UAE authorities may apply local inheritance rules to property on UAE soil, regardless of your nationality or faith. Recent changes to UAE legislation have adjusted these rules, but the exact application to foreign non-residents is currently unclear.
 
-In practical terms: your surviving family cannot know with certainty how the property will be divided. On top of that, a probate procedure (comparable to settling an estate through the courts) typically costs more than €10,000 and takes 12 to 24 months. That includes apostilles, sworn Arabic translations and local lawyers.
+In practical terms: your surviving family cannot know with certainty how the property will be divided. On top of that, a probate procedure (comparable to settling an estate through the courts) typically costs more than €10,000 and often takes 12 months or longer. That includes legalisation of documents, sworn Arabic translations and local lawyers.
 
 With a DIFC will, you decide who inherits your property. The registration process is entirely digital. You do not need to travel to Dubai.
 

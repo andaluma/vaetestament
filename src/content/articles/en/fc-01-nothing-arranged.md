@@ -2,13 +2,13 @@
 title: "Your parents own property in Dubai. What happens if nothing is arranged?"
 slug: fc-01-nothing-arranged
 nl_slug: vk-01-niets-geregeld
-meta_description: "If your parents own UAE property without a DIFC will, you could face frozen assets, 12-24 months of probate and €10,000+ in costs. Learn what is at stake."
+meta_description: "Parents with UAE property and no DIFC will? Heirs face frozen assets, a year or more of probate and €10,000+ in costs. Learn what is at stake."
 keywords:
   - parents Dubai property no will
   - DIFC will inheritance risk
   - UAE probate for heirs
   - frozen Dubai property
-  - Sharia inheritance foreign owners
+  - UAE inheritance foreign owners
 publish_date: 2026-05-20
 status: published
 author: Andre van Wijngaarden
@@ -19,11 +19,11 @@ related:
   - fc-08-bereaved-guide
 faq:
   - q: What happens to my parents' Dubai property if they have no DIFC will?
-    a: The property is frozen immediately upon death. No one can sell, rent or transfer it until a UAE court grants probate, which typically takes 12 to 24 months and can cost €10,000 or more.
+    a: The property is frozen immediately upon death. No one can sell, rent or transfer it until a UAE court grants probate, which often takes 12 months or longer and can cost €10,000 or more.
   - q: Does a home-country will protect UAE property?
     a: Not reliably. A will drafted in Europe or elsewhere has no automatic legal standing in the UAE. Without a DIFC will, the local courts may apply their own inheritance rules, which can differ significantly from what your parents intended.
-  - q: How does Sharia distribution affect a surviving spouse?
-    a: Under default Sharia-based inheritance rules, a surviving spouse may receive as little as 12.5% of the property value. The remainder is divided among children and other relatives according to a fixed formula that neither spouse chose.
+  - q: Does the surviving spouse automatically inherit the property?
+    a: No, not automatically. Without a will registered in the UAE, it is not certain how the property will be distributed. Which law applies depends on your parents' residence and nationality and on the court's assessment. The surviving spouse must first go through a procedure at a UAE court as an heir.
 ---
 
 You know your parents own an apartment or villa in the UAE. Maybe they bought it as an investment. Maybe they spend winters there. Either way, have you ever asked the question: what would happen to that property if one of them were to pass away?
@@ -36,7 +36,7 @@ When a property owner in the UAE passes away, the relevant authorities freeze ev
 
 No one can sell the property. No one can rent it out. No one can access the funds in associated accounts. This freeze stays in place until a court issues a succession order. And in the absence of a registered DIFC will, that process is anything but quick.
 
-## Probate can take 12 to 24 months
+## Probate often takes 12 months or longer
 
 Without a DIFC will, your family would need to navigate the regular UAE court system to unlock the property. This involves:
 
@@ -45,7 +45,7 @@ Without a DIFC will, your family would need to navigate the regular UAE court sy
 - Translating and legalising documents from your home country.
 - Waiting for court hearings, which are scheduled at the court's pace.
 
-In practice, this process takes between 12 and 24 months. Some cases take even longer, particularly when there are multiple heirs or when documentation from the home country is incomplete.
+In practice, this process often takes 12 months or longer. Some cases take even longer, particularly when there are multiple heirs or when documentation from the home country is incomplete.
 
 During this entire period, the property sits idle. If there is a mortgage, the payments still need to be made. If there are tenants, rental income may be inaccessible. Service charges and fees continue to accumulate.
 
@@ -57,14 +57,13 @@ These are costs your parents never intended to leave behind, and they come at th
 
 ## Inheritance may not follow your parents' wishes
 
-Perhaps the most unsettling consequence is this: without a DIFC will, the UAE courts may apply Sharia-based inheritance rules by default. For non-Muslim families, this can produce outcomes that are dramatically different from what your parents would have chosen.
+Perhaps the most unsettling consequence is this: without a will registered in the UAE, it is not certain how the property will be distributed. Which law applies depends on your parents' residence and nationality and on the court's assessment. The outcome may be very different from what your parents would have chosen.
 
-Under these default rules:
+In practice:
 
-- A surviving spouse may receive only 12.5% of the property value if there are children.
-- The remainder is divided among children and other relatives according to a fixed formula.
-- The distribution is not something the family can negotiate or adjust after the fact.
-- Since 1 January 2026, Federal Decree-Law No. 51 of 2024 adds a further risk: assets of deceased persons without identifiable heirs are permanently transferred to a state-managed Waqf foundation. For your parents, with children, the direct Waqf risk is limited - but proving heirship from abroad remains the real obstacle.
+- The surviving spouse does not automatically inherit the property and must first go through a UAE court procedure as an heir.
+- The court decides on the distribution; the family cannot simply agree it among themselves.
+- Since June 2026, a new Civil Transactions Law (Federal Decree-Law No. 25 of 2025) also applies: UAE assets of a foreign national without a will and without identifiable heirs go to a charitable endowment (Waqf). For your parents, with children, the direct Waqf risk is limited - but proving heirship from abroad remains the real obstacle.
 
 Your parents likely assumed that their home-country will covers everything. But a will drafted in Europe, North America or elsewhere has no automatic legal standing in the UAE. A separate, locally registered will is needed to ensure their wishes are respected.
 

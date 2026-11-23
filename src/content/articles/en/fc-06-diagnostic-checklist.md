@@ -88,7 +88,7 @@ A DIFC will should be arranged alongside the existing home will. The DIFC will c
 
 ### Scenario C: No will at all
 
-This is the most urgent situation. Without any will covering the UAE property, your family faces the full complexity of a probate procedure through the UAE courts if something were to happen. The process takes 12 to 24 months and costs €10,000 or more.
+This is the most urgent situation. Without any will covering the UAE property, your family faces the full complexity of a probate procedure through the UAE courts if something were to happen. The process often takes 12 months or longer and costs €10,000 or more.
 
 **Priority level: urgent.** A DIFC will should be arranged as soon as possible.
 

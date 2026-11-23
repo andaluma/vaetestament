@@ -81,7 +81,7 @@ The DIFC Wills Service Centre has an online portal where you can submit a will y
 
 ### Doing nothing
 
-The cheapest option in the short term is the most expensive in the long term. Without a DIFC will, your surviving family typically pays more than €10,000 in probate costs, with a timeline of 12 to 24 months. Read more about [what happens without a will](/articles/dubai-property-without-will/).
+The cheapest option in the short term is the most expensive in the long term. Without a DIFC will, your surviving family typically pays more than €10,000 in probate costs, with a timeline that is often 12 months or longer. Read more about [what happens without a will](/articles/dubai-property-without-will/).
 
 ## What is included in the price?
 

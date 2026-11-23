@@ -19,7 +19,7 @@ related:
   - fc-08-bereaved-guide
 faq:
   - q: How much does probate without a will cost in total?
-    a: Direct costs typically range from €10,000 to €15,000 or more. This includes sworn translations, apostille fees, a UAE lawyer, and travel. Lost rental income during the 12 to 24 month process can add significantly to that total.
+    a: Direct costs typically range from €10,000 to €15,000 or more. This includes sworn translations, legalisation fees, a UAE lawyer, and travel. Lost rental income during a process that often takes 12 months or longer can add significantly to that total.
   - q: How does that compare to the cost of a DIFC will?
     a: "A DIFC will costs approximately €2,500 to €3,500 in total: a one-time guidance fee (€797 or €1,499 depending on the situation) plus DIFC registration fees (AED 7,500 for a single will or AED 10,000 for mirror wills), paid directly to the DIFC."
   - q: Can these costs be avoided after someone has already passed away?
@@ -36,9 +36,9 @@ Settling a UAE property inheritance without a DIFC will requires a probate proce
 
 Every document submitted to the UAE court must be in Arabic. Death certificates, certificates of inheritance, powers of attorney, and property title deeds all require sworn translation by a certified translator. Depending on the number of documents and the language pair, translation costs typically range from **€2,000 to €3,000**.
 
-### Apostille and legalisation
+### Legalisation
 
-Before documents can be used in the UAE, they must be legalised with an apostille in your home country. This involves notary fees, government legalisation charges, and in some cases consular attestation. Budget **€500 to €1,000** for this step.
+Before documents can be used in the UAE, they must be legalised via the authorities in your home country and the UAE embassy. An apostille alone is not sufficient in the UAE. This involves notary fees, government legalisation charges and embassy attestation. Budget **€500 to €1,000** for this step.
 
 ### UAE lawyer fees
 
@@ -56,7 +56,7 @@ Adding these together, the direct costs of settling a UAE property inheritance w
 
 Beyond the direct expenses, there is a significant financial impact that many heirs overlook. When a property owner passes away, the Dubai Land Department freezes the property. No transactions can take place, and rental income is typically suspended or held in escrow until ownership is legally transferred.
 
-The probate process without a DIFC will takes **12 to 24 months** on average. For a property generating AED 8,000 per month in rental income, that means up to **18 months of frozen income: AED 144,000, or approximately €36,000**.
+The probate process without a DIFC will often takes **12 months or longer**. For a property generating AED 8,000 per month in rental income, that means up to **18 months of frozen income: AED 144,000, or approximately €36,000**.
 
 This is not a theoretical figure. It is money that would otherwise flow to the heirs, lost to a process that could have been avoided entirely.
 

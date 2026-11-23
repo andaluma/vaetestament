@@ -47,17 +47,17 @@ The freeze remains in place until ownership is legally transferred to the heirs 
 
 The probate process requires a specific set of documents, all of which must be prepared in your home country before they can be used in the UAE. Gathering and preparing these documents is one of the most time-consuming steps.
 
-### Death certificate with apostille
+### Legalised death certificate
 
-The death certificate issued in your home country must be legalised with an apostille (or equivalent, depending on your country's treaties). It must then be sworn-translated into Arabic by a certified translator.
+The death certificate issued in your home country must be legalised via the authorities in your home country and the UAE embassy, and then sworn-translated into Arabic. An apostille alone is not sufficient in the UAE.
 
 ### Certificate of inheritance or grant of probate
 
-This document, issued by a court or notary in your home country, confirms who the legal heirs are. The exact name and format varies by jurisdiction (certificate of inheritance, grant of probate, verklaring van erfrecht, Erbschein). This also requires apostille and sworn translation.
+This document, issued by a court or notary in your home country, confirms who the legal heirs are. The exact name and format varies by jurisdiction (certificate of inheritance, grant of probate, verklaring van erfrecht, Erbschein). This also requires legalisation and sworn translation.
 
 ### Power of attorney
 
-If you are appointing a UAE lawyer to act on your behalf (which is strongly recommended), you will need to issue a power of attorney. This must be notarised in your home country, apostilled, and sworn-translated into Arabic.
+If you are appointing a UAE lawyer to act on your behalf (which is strongly recommended), you will need to issue a power of attorney. This must be notarised in your home country, legalised, and sworn-translated into Arabic.
 
 ### Title deed
 
@@ -71,7 +71,7 @@ Copies of the passports of the deceased and all heirs, typically attested and tr
 
 Without a DIFC will, the inheritance must be processed through the UAE civil courts. The procedure follows these broad steps:
 
-1. **Legalisation of documents.** All required documents are prepared, apostilled, and translated in your home country.
+1. **Legalisation of documents.** All required documents are prepared, legalised, and translated in your home country.
 2. **Appointment of a UAE lawyer.** A lawyer licensed in the UAE files the inheritance case with the court.
 3. **Court proceedings.** The court reviews the documents, verifies the heirs, and determines how the property should be distributed. Without a will, the court may apply local inheritance rules, though recent legislative changes have introduced some flexibility for foreign non-residents.
 4. **Ownership transfer.** Once the court issues its ruling, the Dubai Land Department updates the title deed to reflect the new owner(s).
@@ -82,7 +82,7 @@ For comparison: if a DIFC will had been in place, the process would go through t
 
 ## Timeline
 
-The probate process without a DIFC will typically takes **12 to 24 months** from start to finish. The main factors affecting the timeline are:
+The probate process without a DIFC will often takes **12 months or longer** from start to finish. The main factors affecting the timeline are:
 
 - Speed of document preparation and legalisation in your home country
 - Court scheduling in the UAE
@@ -98,12 +98,12 @@ The direct costs of the probate process without a will include:
 | Cost category | Estimated range |
 |---|---|
 | Sworn translations | €2,000 to €3,000 |
-| Apostille and legalisation | €500 to €1,000 |
+| Legalisation | €500 to €1,000 |
 | UAE lawyer fees | €3,700 to €7,400 |
 | Travel (at least one trip) | €1,500 to €3,000 |
 | **Total direct costs** | **€10,000 to €15,000+** |
 
-Lost rental income during the 12 to 24 month process can add tens of thousands of euros to the total financial impact.
+Lost rental income during a process that often takes 12 months or longer can add tens of thousands of euros to the total financial impact.
 
 ## Who can help
 

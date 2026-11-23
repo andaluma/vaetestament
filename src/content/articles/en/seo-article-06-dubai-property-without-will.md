@@ -2,7 +2,7 @@
 title: What happens to my Dubai property if I have no will?
 slug: dubai-property-without-will
 nl_slug: wat-gebeurt-dubai-vastgoed-zonder-testament
-meta_description: No DIFC will for your UAE property? Your surviving family faces uncertain distribution, high costs and a probate procedure of 12 to 24 months.
+meta_description: No DIFC will for your UAE property? Your surviving family faces uncertain distribution, high costs and a lengthy probate procedure.
 keywords:
   - Dubai property no will consequences
   - what happens without will Dubai
@@ -40,7 +40,7 @@ Property on UAE soil falls under the jurisdiction of the UAE. If you pass away w
 
 Recent changes to UAE legislation have adjusted the default inheritance rules for foreign owners. The exact application to foreign non-residents is currently not straightforward. That sounds abstract, but the practical consequence is concrete: your surviving partner does not know with certainty which part of the property he or she will receive. The distribution is determined by a system over which you, as the owner, had no influence.
 
-Since 1 January 2026, a further risk applies. Under Federal Decree-Law No. 51 of 2024, all UAE assets of deceased persons with no identifiable heirs are permanently transferred to a state-managed charitable foundation (Waqf). For owners with a spouse and children, the direct Waqf risk is limited - they have identifiable heirs. But proving that heirship from abroad, in Arabic, through a foreign legal system, is a process that takes months and costs thousands. For single owners or those with an unmarried partner, the risk is direct: an unmarried partner is not a legal heir under UAE law.
+Since June 2026, a new Civil Transactions Law (Federal Decree-Law No. 25 of 2025) applies in the UAE. It provides that UAE assets of a foreign national without a will and without identifiable heirs go to a charitable endowment (Waqf). For owners with a spouse or children, the direct Waqf risk is limited, because they have identifiable heirs. But proving that heirship from abroad, in Arabic, through a foreign legal system, is a process that takes months and costs thousands. For single owners or those with an unmarried partner, the risk is direct: an unmarried partner is not a legal heir under UAE law.
 
 A DIFC will eliminates that uncertainty. You determine who inherits what, and the DIFC court system enforces it.
 
@@ -50,8 +50,8 @@ Without a local will, your heirs start a probate procedure at the UAE court. Thi
 
 ### The steps
 
-1. **Have the death certificate legalised.** The death certificate from your home country must be given an apostille and then sworn-translated into Arabic.
-2. **Prove heirship.** Your heirs must obtain a certificate of inheritance through the courts or a notary in your home country, which must also be apostilled and translated.
+1. **Have the death certificate legalised.** The death certificate from your home country must be legalised via the authorities in your home country and the UAE embassy, and then sworn-translated into Arabic. An apostille alone is not sufficient in the UAE.
+2. **Prove heirship.** Your heirs must obtain a certificate of inheritance through the courts or a notary in your home country, which must also be legalised and translated.
 3. **Local legal representation.** A lawyer in the UAE must be engaged to submit the case to the court.
 4. **Go through the court procedure.** The UAE court assesses the case and decides on the distribution of the property, according to the rules in force at that time.
 5. **Transfer of ownership.** Following the ruling, the property is formally transferred, which requires additional registration procedures.
@@ -60,14 +60,14 @@ Without a local will, your heirs start a probate procedure at the UAE court. Thi
 
 The total costs of this process typically exceed €10,000. This includes:
 
-- Apostilles and sworn translations (multiple documents, multiple languages).
+- Legalisation and sworn translations (multiple documents, multiple languages).
 - Local legal representation in the UAE.
 - Court fees and registration fees.
 - Potential travel costs if physical presence is required.
 
 ### The timeline
 
-The full probate process typically takes 12 to 24 months. During that period, the property is effectively frozen: it cannot be sold, rented to new tenants or otherwise leveraged. For surviving family members who were counting on the proceeds or use of the property, this is a significant burden.
+The full probate process often takes 12 months or longer. During that period, the property is effectively frozen: it cannot be sold, rented to new tenants or otherwise leveraged. For surviving family members who were counting on the proceeds or use of the property, this is a significant burden.
 
 ## The scenario nobody expects
 
@@ -81,7 +81,7 @@ This is not a hypothetical scenario. It is the situation the majority of foreign
 
 ## The Waqf risk: who is directly affected?
 
-Since 1 January 2026, Federal Decree-Law No. 51 of 2024 applies across all seven Emirates. The law provides that assets of deceased persons without a will and without identifiable heirs are transferred to a charitable Waqf foundation.
+Since June 2026, a new Civil Transactions Law (Federal Decree-Law No. 25 of 2025) also applies: UAE assets of a foreign national without a will and without identifiable heirs go to a charitable endowment (Waqf). For most owners with a spouse or children this does not apply directly, but it shows how important a registered will is.
 
 This does not affect everyone equally:
 
@@ -100,7 +100,7 @@ In concrete terms:
 
 - **You determine who inherits.** No uncertainty about the distribution.
 - **No probate procedure.** The DIFC system processes the estate faster and at lower cost.
-- **No Arabic translations or apostilles.** The DIFC operates in English.
+- **No Arabic translations or legalisation of documents.** The DIFC operates in English.
 - **No physical presence required.** Not for registration and not for execution.
 
 ## The difference in costs and time
@@ -109,6 +109,6 @@ In concrete terms:
 |---|---|---|
 | **Distribution** | Uncertain, dependent on applicable local rules | Determined by you |
 | **Costs for surviving family** | €10,000+ | No additional costs |
-| **Timeline** | 12 to 24 months | Significantly shorter via DIFC system |
+| **Timeline** | Often 12 months or longer | Significantly shorter via DIFC system |
 | **Language barrier** | Arabic, sworn translations required | English |
 | **Property frozen** | Yes, for the entire procedure | No |
