@@ -39,7 +39,7 @@ Het registratieproces verloopt volledig digitaal. Jan en Marieke hoeven niet naa
 
 - Beider paspoorten (kleurkopie van de fotopagina)
 - Het eigendomsbewijs (title deed) van hun appartement
-- De paspoorten van twee getuigen (niet-begunstigden, minimaal 21 jaar)
+- De paspoorten van twee getuigen (niet-begunstigden, minimaal 18 jaar)
 
 De doorlooptijd van aanmelding tot geregistreerd testament is doorgaans twee tot acht weken, afhankelijk van de beschikbaarheid van het DIFC.
 

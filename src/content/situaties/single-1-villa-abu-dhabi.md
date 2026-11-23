@@ -41,7 +41,7 @@ Het registratieproces is digitaal en verloopt vanuit Nederland. Karin heeft nodi
 - Het eigendomsbewijs van de villa
 - De paspoorten van twee getuigen
 
-De getuigen mogen geen begunstigden zijn en niet de partner van een begunstigde. Ze moeten minimaal 21 jaar oud zijn. De ondertekening verloopt digitaal via videogesprek: de getuigen kunnen vanuit elke locatie deelnemen.
+De getuigen mogen geen begunstigden zijn en niet de partner van een begunstigde. Ze moeten minimaal 18 jaar oud zijn. De ondertekening verloopt digitaal via videogesprek: de getuigen kunnen vanuit elke locatie deelnemen.
 
 **Kosten:** begeleidingsvergoeding vanaf EUR 497 (Tier 1, zelf registreren met persoonlijke gids) of EUR 797 (Tier 2, live sessie). DIFC-registratiekosten: AED 7.500 voor een enkelvoudig testament, rechtstreeks aan het DIFC.
 

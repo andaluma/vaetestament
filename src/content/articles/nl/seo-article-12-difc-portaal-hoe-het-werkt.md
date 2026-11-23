@@ -88,10 +88,9 @@ Na beoordeling ontvangt u een uitnodiging voor een online afspraak. Tijdens deze
 
 ## Waar u op moet letten bij de afspraak
 
-- **Getuigen:** u heeft twee getuigen nodig. Zij mogen geen begunstigde of voogd zijn, en ook niet de partner van een begunstigde of voogd. Zij kunnen via video deelnemen.
+- **Getuigen:** u heeft twee getuigen nodig van minimaal 18 jaar, met een geldig paspoort of ander officieel identiteitsbewijs. Zij mogen geen begunstigde of voogd zijn, en ook niet de partner van een begunstigde of voogd. Zij kunnen via video deelnemen.
 - **Twee apparaten:** u heeft twee apparaten nodig, waarvan één met een touchscreen voor de digitale handtekening.
 - **Duur:** de afspraak duurt ongeveer 20 minuten.
-- **Zaterdag:** registratie is ook op zaterdag mogelijk.
 
 ## Waar gaat het vaak mis?
 
