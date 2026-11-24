@@ -153,7 +153,7 @@ const ogLocale = OG_LOCALES[locale] || 'nl_NL';
     <TierCheckModal />
     <AIAskPanel slug={Astro.props.articleSlug ?? ''} locale={locale} />
     <WhatsAppFab slug={Astro.props.articleSlug ?? ''} title={Astro.props.articleTitle ?? ''} locale={locale} />
-    <CookieConsent />
+    <CookieConsent locale={locale} />
     <ReferralCapture />
   </body>
 </html>

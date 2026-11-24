@@ -1,5 +1,6 @@
 ---
 title: "Erfrecht in Dubai en de Emiraten: wat Nederlandse vastgoedeigenaren moeten weten"
+seo_title: "Erfrecht Dubai en VAE voor Nederlandse vastgoedeigenaren"
 slug: erfrecht-vae-nederlandse-vastgoedeigenaren
 en_slug: uae-inheritance-law-foreign-owners
 meta_description: "Hoe werkt erfrecht in Dubai en de VAE voor Nederlandse eigenaren? Recente regelwijzigingen, onduidelijkheden en waarom een DIFC-testament essentieel is."

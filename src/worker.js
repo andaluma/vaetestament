@@ -111,11 +111,43 @@ export default {
       });
     }
 
+    // Sitemaps: Astro builds one sitemap with URLs of both domains. A
+    // sitemap may only list URLs of its own host, so each domain gets a
+    // filtered copy and an index that points to its own sitemap file.
+    if (url.pathname === '/sitemap-index.xml' || /^\/sitemap-\d+\.xml$/.test(url.pathname)) {
+      const domain = LOCALE_DOMAINS[locale] || LOCALE_DOMAINS.nl;
+      const assetResp = await env.ASSETS.fetch(new Request(url.origin + url.pathname, { method: 'GET' }));
+      if (assetResp.status >= 400) return await serve404(env, url, locale);
+      let xml = await assetResp.text();
+      if (url.pathname === '/sitemap-index.xml') {
+        xml = xml.replace(/https:\/\/(vaetestament\.nl|uaepropertywills\.com)\//g, domain + '/');
+      } else {
+        xml = xml.replace(/<url>[\s\S]*?<\/url>/g, (block) => {
+          const loc = (block.match(/<loc>([^<]+)<\/loc>/) || [])[1] || '';
+          return loc.startsWith(domain + '/') ? block : '';
+        });
+      }
+      return new Response(xml, {
+        status: 200,
+        headers: { 'Content-Type': 'application/xml; charset=utf-8', 'Cache-Control': 'public, max-age=3600' },
+      });
+    }
+
     // EN domain: serve the EN homepage (built at /en/) when visiting /
     if (locale === 'en' && (url.pathname === '/' || url.pathname === '')) {
       return env.ASSETS.fetch(
         new Request(url.origin + '/en/', { method: 'GET' })
       );
+    }
+
+    // EN domain: pages built under /en/ (about, for-children,
+    // conversation-guide, ...) are served at the root path, so
+    // uaepropertywills.com/about/ shows /en/about/.
+    if (locale === 'en' && !url.pathname.startsWith('/en/') && !url.pathname.startsWith('/articles') &&
+        !url.pathname.startsWith('/r/') && !/\.[a-z0-9]{2,5}$/i.test(url.pathname)) {
+      const p = url.pathname.endsWith('/') ? url.pathname : url.pathname + '/';
+      const enResp = await env.ASSETS.fetch(new Request(url.origin + '/en' + p, { method: 'GET' }));
+      if (enResp.status === 200) return enResp;
     }
 
     // Only intercept /r/<code> paths

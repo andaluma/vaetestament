@@ -1,5 +1,6 @@
 ---
 title: "Uw ouders hebben een appartement in Dubai. Wat gebeurt er als er niets geregeld is?"
+seo_title: "Ouders met een appartement in Dubai en geen testament"
 slug: vk-01-niets-geregeld
 en_slug: fc-01-nothing-arranged
 meta_description: "Wat gebeurt er met het Dubai-vastgoed van uw ouders als zij geen DIFC-testament hebben? Lees welke gevolgen u als erfgenaam kunt verwachten."

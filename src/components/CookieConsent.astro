@@ -1,18 +1,23 @@
 ---
-// Cookie consent banner. GDPR compliant, Dutch language.
+// Cookie consent banner. GDPR compliant, Dutch or English by page locale.
+interface Props { locale?: 'nl' | 'en' | 'es'; }
+const { locale = 'nl' } = Astro.props;
+const T = locale === 'en'
+  ? { aria: 'Cookie notice', value: 'We use cookies from Meta and Google to show you relevant content and to measure our website reach.', privacy: 'Privacy policy', privacyHref: '/privacy-policy', accept: 'Accept', necessary: 'Necessary only' }
+  : { aria: 'Cookiemelding', value: 'Wij gebruiken cookies van Meta en Google om u relevante inhoud te tonen en ons websitebereik te meten.', privacy: 'Privacybeleid', privacyHref: '/privacybeleid.html', accept: 'Accepteren', necessary: 'Alleen noodzakelijk' };
 // Tracking only loads after an explicit "Accepteren" click.
 // Choice stored in localStorage under 'cookie_consent' = 'all' | 'necessary'.
 ---
 
-<div id="cookie-banner" style="display:none" role="region" aria-label="Cookiemelding" tabindex="-1">
+<div id="cookie-banner" style="display:none" role="region" aria-label={T.aria} tabindex="-1">
   <div class="cb-inner">
     <div class="cb-text">
-      <p class="cb-value">Wij gebruiken cookies van Meta en Google om u relevante inhoud te tonen en ons websitebereik te meten.</p>
-      <a class="cb-privacy" href="/privacybeleid.html">Privacybeleid</a>
+      <p class="cb-value">{T.value}</p>
+      <a class="cb-privacy" href={T.privacyHref}>{T.privacy}</a>
     </div>
     <div class="cb-actions">
-      <button id="cb-accept" type="button">Accepteren</button>
-      <button id="cb-necessary" type="button">Alleen noodzakelijk</button>
+      <button id="cb-accept" type="button">{T.accept}</button>
+      <button id="cb-necessary" type="button">{T.necessary}</button>
     </div>
   </div>
 </div>

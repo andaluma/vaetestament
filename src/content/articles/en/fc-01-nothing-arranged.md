@@ -1,5 +1,6 @@
 ---
 title: "Your parents own property in Dubai. What happens if nothing is arranged?"
+seo_title: "Parents own Dubai property and have no will? What happens"
 slug: fc-01-nothing-arranged
 nl_slug: vk-01-niets-geregeld
 meta_description: "Parents with UAE property and no DIFC will? Heirs face frozen assets, a year or more of probate and €10,000+ in costs. Learn what is at stake."

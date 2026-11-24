@@ -1,5 +1,6 @@
 ---
 title: "Arranging a will for your Dubai property from abroad: the complete process"
+seo_title: "How to register a DIFC will from abroad, step by step"
 slug: register-difc-will-from-abroad
 nl_slug: difc-will-registreren-vanuit-nederland
 meta_description: "Register a DIFC will from abroad: documents, timeline (5-10 weeks), costs and what you handle yourself versus what is guided."

@@ -1,5 +1,6 @@
 ---
 title: "What does it cost when your parents have no will for their UAE property?"
+seo_title: "Cost of no will for UAE property: a worked example"
 slug: fc-05-cost-of-no-will
 nl_slug: vk-05-kosten-geen-testament
 meta_description: "No DIFC will for your parents' Dubai property? Heirs face €10,000+ in costs and up to 18 months of lost rental income. Full breakdown."

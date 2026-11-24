@@ -1,5 +1,6 @@
 ---
 title: "Wat kost een testament voor uw Dubai-vastgoed? Prijzen en pakketten"
+seo_title: "Wat kost een DIFC-testament? Prijzen en pakketten 2026"
 slug: wat-kost-een-difc-will
 en_slug: difc-will-costs-and-packages
 meta_description: "DIFC-testament kosten via VAEtestament: vanaf EUR 497 begeleidingstarief. DIFC-registratiekosten apart. Vergelijking met advocatenkantoren."

@@ -1,5 +1,6 @@
 ---
 title: What happens to my Dubai property if I have no will?
+seo_title: "Dubai property without a will: what happens?"
 slug: dubai-property-without-will
 nl_slug: wat-gebeurt-dubai-vastgoed-zonder-testament
 meta_description: No DIFC will for your UAE property? Your surviving family faces uncertain distribution, high costs and a lengthy probate procedure.

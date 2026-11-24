@@ -1,5 +1,6 @@
 ---
 title: "Het lastige gesprek: hoe begin ik dit onderwerp met mijn ouders?"
+seo_title: "Testament Dubai bespreken met uw ouders: zo begint u"
 slug: vk-02-lastige-gesprek
 en_slug: fc-02-difficult-conversation
 meta_description: "Wilt u het DIFC-testament bespreken met uw ouders maar weet u niet hoe? Praktische gespreksopeners en tips om het gesprek soepel te laten verlopen."

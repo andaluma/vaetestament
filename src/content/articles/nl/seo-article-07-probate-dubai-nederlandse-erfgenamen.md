@@ -1,5 +1,6 @@
 ---
 title: "Nalatenschap in Dubai afwikkelen als Nederlandse erfgenaam: kosten, stappen en tijdlijn"
+seo_title: "Erfenis afwikkelen in Dubai: kosten, stappen, doorlooptijd"
 slug: probate-dubai-nederlandse-erfgenamen
 en_slug: probate-dubai-foreign-heirs
 meta_description: "Wat doorloopt u als Nederlandse erfgenaam bij probate in Dubai? Stappen, documenten, kosten (EUR 10.000+) en tijdlijn (vaak 12 maanden of langer)."

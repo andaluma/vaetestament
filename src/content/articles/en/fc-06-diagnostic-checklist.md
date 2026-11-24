@@ -1,5 +1,6 @@
 ---
 title: "How do I find out if my parents already have a will for their UAE property?"
+seo_title: "Do your parents have a will for their UAE property?"
 slug: fc-06-diagnostic-checklist
 nl_slug: vk-06-uitzoeken
 meta_description: "Not sure if your parents have a DIFC will for their Dubai property? Three questions to ask and a decision tree to assess the situation."

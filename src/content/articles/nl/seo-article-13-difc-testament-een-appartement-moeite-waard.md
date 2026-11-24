@@ -1,5 +1,6 @@
 ---
 title: "Eén appartement in Dubai: is een DIFC-testament dan de moeite waard?"
+seo_title: "Eén appartement in Dubai: is een DIFC-testament nodig?"
 slug: difc-testament-een-appartement-moeite-waard
 meta_description: "Eén appartement in de VAE, gekocht als investering. Loont een DIFC-testament dan? Een eerlijke afweging van kosten, risico en wanneer het kan wachten."
 keywords:

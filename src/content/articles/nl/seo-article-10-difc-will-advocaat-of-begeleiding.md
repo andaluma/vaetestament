@@ -1,5 +1,6 @@
 ---
 title: "DIFC-testament: heeft u een advocaat nodig of is begeleiding voldoende?"
+seo_title: "DIFC-testament: advocaat nodig of is begeleiding genoeg?"
 slug: difc-will-advocaat-of-begeleiding
 meta_description: "Voor een DIFC Property Will is geen advocaat nodig. Lees wanneer begeleiding volstaat en wanneer u wel juridische expertise nodig heeft."
 keywords:

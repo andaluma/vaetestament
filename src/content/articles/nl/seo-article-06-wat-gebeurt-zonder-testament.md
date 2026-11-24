@@ -1,5 +1,6 @@
 ---
 title: Wat gebeurt er met mijn Dubai-vastgoed als ik geen testament heb?
+seo_title: "Dubai-vastgoed zonder testament: wat gebeurt er dan?"
 slug: wat-gebeurt-dubai-vastgoed-zonder-testament
 en_slug: dubai-property-without-will
 meta_description: Geen DIFC-testament voor uw VAE-vastgoed? Uw nabestaanden krijgen te maken met een onzekere verdeling, hoge kosten en een lange probate-procedure.

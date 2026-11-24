@@ -1,5 +1,6 @@
 ---
 title: "Het DIFC-portaal: hoe werkt het en wat kunt u verwachten?"
+seo_title: "Het DIFC-portaal: zo werkt de registratie"
 slug: difc-portaal-hoe-het-werkt
 meta_description: "Het DIFC-portaal is waar u uw testament registreert. Lees wat u kunt verwachten, welke stappen u doorloopt en waar de valkuilen zitten."
 keywords:

@@ -12,6 +12,8 @@ import { glob } from 'astro/loaders';
 
 const articleSchema = z.object({
   title: z.string(),
+  // Short <title> for search results (max 60 chars). The H1 keeps `title`.
+  seo_title: z.string().max(60).optional(),
   slug: z.string().optional(),
   meta_description: z.string().max(160),
   keywords: z.array(z.string()).default([]),

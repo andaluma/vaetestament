@@ -1,5 +1,6 @@
 ---
 title: "Protecting your UAE property: why a will from your home country is not enough"
+seo_title: "DIFC will: why your home-country will is not enough"
 slug: what-is-a-difc-will
 nl_slug: wat-is-een-difc-will
 meta_description: "A DIFC will protects your property in Dubai, Abu Dhabi and the other Emirates. Learn what it is, who needs one and when to arrange it."

@@ -1,5 +1,6 @@
 ---
 title: "How to bring up the DIFC will with your parents"
+seo_title: "How to talk to your parents about a DIFC will"
 slug: fc-02-difficult-conversation
 nl_slug: vk-02-lastige-gesprek
 meta_description: "Talking to your parents about a will for their Dubai property can feel awkward. Three proven conversation openers and practical tips to make it easier."
@@ -89,7 +90,7 @@ If the conversation goes well, the next step is not to push for an immediate dec
 
 You could:
 
-- Share this article or the [overview of what happens without a DIFC will](/en/articles/fc-01-nothing-arranged/).
+- Share this article or the [overview of what happens without a DIFC will](/articles/fc-01-nothing-arranged/).
 - Offer to book a free consultation on their behalf. There is no commitment, and it gives them a chance to ask questions directly.
 - Let them know you are happy to help with the practical side: gathering documents, comparing options, even attending a video call together.
 

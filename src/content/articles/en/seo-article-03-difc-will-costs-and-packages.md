@@ -1,5 +1,6 @@
 ---
 title: "What does a will for your Dubai property cost? Prices and packages"
+seo_title: "DIFC will cost in 2026: fees, prices and packages"
 slug: difc-will-costs-and-packages
 nl_slug: wat-kost-een-difc-will
 meta_description: "DIFC will costs via UAE Property Wills: from €797 guidance fee. DIFC registration fees separate. Comparison with law firms."

@@ -1,5 +1,6 @@
 ---
 title: "Hoe vind ik uit of mijn ouders al een testament hebben voor hun UAE-vastgoed?"
+seo_title: "Hebben uw ouders een testament voor hun VAE-vastgoed?"
 slug: vk-06-uitzoeken
 en_slug: fc-06-diagnostic-checklist
 meta_description: Weet u niet of uw ouders een DIFC-testament hebben voor hun UAE-vastgoed? Dit artikel helpt u de juiste vragen te stellen en de situatie in kaart te brengen.

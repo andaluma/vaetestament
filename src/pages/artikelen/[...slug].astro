@@ -117,7 +117,7 @@ const publishDateFmt = data.publish_date.toLocaleDateString('nl-NL', {
 ---
 
 <BaseLayout
-  title={`${data.title} - VAEtestament`}
+  title={(() => { const base = data.seo_title || data.title; const full = `${base} - VAEtestament`; return full.length <= 65 ? full : base; })()}
   description={data.meta_description}
   canonical={canonical}
   ogType="article"

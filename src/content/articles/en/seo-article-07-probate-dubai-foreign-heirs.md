@@ -1,5 +1,6 @@
 ---
 title: "Settling an estate in Dubai as a foreign heir: costs, steps and timeline"
+seo_title: "Probate in Dubai for foreign heirs: costs and timeline"
 slug: probate-dubai-foreign-heirs
 nl_slug: probate-dubai-nederlandse-erfgenamen
 meta_description: "What does the probate process in Dubai look like for foreign heirs? Steps, documents, costs (€10,000+) and timeline (often 12 months or longer)."

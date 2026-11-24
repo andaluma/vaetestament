@@ -1,5 +1,6 @@
 ---
 title: "Wanneer is een DIFC Property Will genoeg? Checklist voor Nederlandse eigenaren"
+seo_title: "Wanneer is een DIFC Property Will genoeg? Checklist"
 slug: wanneer-property-will-genoeg
 meta_description: "In de meeste gevallen is een Property Will voldoende voor Nederlandse vastgoedeigenaren in de VAE. Lees wanneer het wel en niet volstaat."
 keywords:

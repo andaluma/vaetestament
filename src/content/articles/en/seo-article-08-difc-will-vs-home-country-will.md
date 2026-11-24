@@ -1,5 +1,6 @@
 ---
 title: "Misconception: my heirs will automatically inherit my Dubai property"
+seo_title: "Is my home-country will valid for Dubai property?"
 slug: difc-will-vs-home-country-will
 nl_slug: difc-will-of-nederlands-testament
 meta_description: "A will from your home country probably does not cover your property in Dubai, Abu Dhabi or the UAE. What you need to know about inheritance for UAE property."

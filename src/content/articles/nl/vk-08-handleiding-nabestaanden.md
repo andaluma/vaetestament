@@ -1,5 +1,6 @@
 ---
 title: "Wat als mijn ouders overlijden en er UAE-vastgoed is zonder testament? Een handleiding voor nabestaanden."
+seo_title: "Ouder overleden met VAE-vastgoed zonder testament"
 slug: vk-08-handleiding-nabestaanden
 en_slug: fc-08-bereaved-guide
 meta_description: Uw ouder is overleden en er is UAE-vastgoed zonder testament. Wat nu? Deze handleiding beschrijft de stappen, kosten en tijdlijn voor nabestaanden.

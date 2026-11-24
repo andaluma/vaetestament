@@ -1,0 +1,236 @@
+---
+// /about (EN, served at uaepropertywills.com/about/) - author authority page.
+// English counterpart of /over-andre. Person JSON-LD + matching site chrome.
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BookCallButton from '../../components/BookCallButton.astro';
+
+const canonical = 'https://uaepropertywills.com/about/';
+const image = 'https://vaetestament.nl/andre-headshot.jpg';
+
+const personJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  '@id': `${canonical}#person`,
+  name: 'André van Wijngaarden',
+  givenName: 'André',
+  familyName: 'van Wijngaarden',
+  alternateName: 'Adriaan van Wijngaarden',
+  jobTitle: 'Founder, UAE Property Wills',
+  description:
+    'Founder of UAE Property Wills (VAEtestament). Guides foreign owners of UAE property through registering a DIFC will, fully remotely.',
+  image,
+  url: canonical,
+  sameAs: ['https://www.linkedin.com/in/adriaanvanwijngaarden', 'https://vaetestament.nl/over-andre/'],
+  knowsAbout: [
+    'DIFC Wills',
+    'UAE inheritance law',
+    'Cross-border estate planning',
+    'UAE real estate',
+  ],
+  knowsLanguage: ['nl', 'en', 'es'],
+  worksFor: [
+    {
+      '@type': 'Organization',
+      name: 'UAE Property Wills',
+      legalName: 'Andaluma OÜ',
+      url: 'https://uaepropertywills.com',
+    },
+    {
+      '@type': 'Organization',
+      name: 'Baraca Capital',
+      description: 'Portfolio Advisor',
+    },
+  ],
+  email: 'mailto:support@vaetestament.nl',
+};
+---
+
+<BaseLayout
+  title="About André van Wijngaarden - UAE Property Wills"
+  description="Founder of UAE Property Wills. Guides foreign owners of UAE property through registering a DIFC will - fully remotely, step by step."
+  canonical={canonical}
+  locale="en"
+  alternates={{ nl: '/over-andre/', en: '/about/' }}
+  ogType="website"
+  ogImage={image}
+  jsonLd={[personJsonLd]}
+>
+  <main class="page">
+    <section class="bio-hero">
+      <div class="container">
+        <div class="bio-hero-grid">
+          <img
+            src="/andre-headshot.jpg"
+            alt="Portrait photo of André van Wijngaarden"
+            width="260"
+            height="325"
+            loading="eager"
+            fetchpriority="high"
+          />
+          <div>
+            <span class="hero-eyebrow fade-up">About the founder</span>
+            <h1 class="fade-up delay-1">André van Wijngaarden</h1>
+            <p class="bio-role fade-up delay-2">Founder of UAE Property Wills</p>
+            <p class="bio-tagline fade-up delay-3">
+              Makes the DIFC will accessible to foreign owners of property in the United Arab
+              Emirates. Fully remote, in plain language.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="breadcrumbs">
+      <a href="/">Home</a>
+      <span aria-hidden="true"> › </span>
+      <span aria-current="page">About André</span>
+    </nav>
+
+    <article class="bio-body">
+      <section>
+        <p class="section-label">Background</p>
+        <h2>From Dubai, working with portfolios full of UAE property</h2>
+        <p>
+          I am Dutch and work in international sales and advisory roles, in recent years with a
+          focus on property in the United Arab Emirates. My work as a Portfolio Advisor at Baraca
+          Capital in Dubai puts me in daily contact with international investors who buy in the
+          Emirates, mainly in Dubai, Abu Dhabi and Ras Al Khaimah. My background is in commercial
+          and client-facing roles, complemented by years of experience as an entrepreneur in Peru.
+        </p>
+        <p>
+          I am also an investor myself. That gives me a direct view of what owners in the UAE
+          run into, and of the practical questions that come up as soon as someone owns property
+          in another legal system.
+        </p>
+        <p>
+          I live and work location-independently with my partner, and speak Dutch, English and
+          Spanish fluently.
+        </p>
+      </section>
+
+      <section>
+        <p class="section-label">Why UAE Property Wills</p>
+        <h2>One party that coordinates the whole process</h2>
+        <p>
+          UAE Property Wills grew out of a pattern I kept seeing: foreign owners of UAE property
+          who wanted to arrange their estate, but could not find a coherent path. The DIFC will
+          procedure has its own rules and portal, and requires an understanding of both UAE
+          inheritance rules and the owner's situation at home. People got separate answers to
+          separate questions, but never one overview.
+        </p>
+        <p>
+          That is why UAE Property Wills exists: one party that coordinates the whole process,
+          in plain language, with an understanding of your situation as a non-resident owner.
+        </p>
+      </section>
+
+      <section>
+        <p class="section-label">How I work</p>
+        <h2>Coordinator and guide, not a lawyer</h2>
+        <p>
+          I am not a lawyer and do not give legal advice. My role is that of coordinator and
+          guide: I make sure your DIFC will registration runs smoothly from the first question to
+          the official registration, translate complex UAE procedures into clear steps, and
+          handle the practical logistics on your behalf.
+        </p>
+        <p>
+          For strictly legal work I work with DIFC-registered lawyers in the UAE. For tax or
+          inheritance questions in your home country, I refer you to advisers there.
+        </p>
+      </section>
+
+      <section class="cta-block" style="margin-top:64px;">
+        <p class="section-label">Contact</p>
+        <h2>Talk to me directly</h2>
+        <p>Book a free introductory call, email support, or send a WhatsApp message.</p>
+        <div class="cta-row">
+          <BookCallButton variant="primary" label="Book a free introductory call" />
+          <a href="mailto:support@vaetestament.nl" class="btn btn-outline">support@vaetestament.nl</a>
+          <a href="https://wa.me/31616146007" target="_blank" rel="noopener" class="btn btn-outline">WhatsApp +31 6 16146007</a>
+        </div>
+        <p style="margin-top:1.5rem;font-size:0.85rem;color:var(--muted);">
+          LinkedIn: <a href="https://www.linkedin.com/in/adriaanvanwijngaarden" rel="me noopener" target="_blank">linkedin.com/in/adriaanvanwijngaarden</a>
+          · Entity: Andaluma OÜ (Estonia), trading as UAE Property Wills.
+        </p>
+      </section>
+    </article>
+  </main>
+</BaseLayout>
+
+<style>
+  .bio-hero {
+    background: var(--teal);
+    padding: 148px 0 80px;
+    margin-top: -68px;
+    position: relative;
+    overflow: hidden;
+  }
+  .bio-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 50% at 80% 30%, rgba(200, 164, 74, 0.12) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 60% at 8% 85%, rgba(30, 114, 104, 0.4) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .bio-hero-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 3rem;
+    align-items: center;
+    max-width: 880px;
+  }
+  .bio-hero img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    border: 1px solid rgba(200, 164, 74, 0.3);
+  }
+  .bio-hero h1 {
+    color: #fff;
+    font-family: var(--font-display);
+    font-size: clamp(2.4rem, 4.5vw, 3.4rem);
+    font-weight: 500;
+    line-height: 1.1;
+    margin: 0 0 0.5rem;
+  }
+  .bio-role {
+    font-family: var(--font-body);
+    color: var(--gold);
+    font-size: 0.9rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0 0 1.5rem;
+  }
+  .bio-tagline {
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: 300;
+    margin: 0;
+  }
+  .bio-body {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 1.25rem 24px;
+  }
+  .bio-body section { margin: 56px 0; }
+  .bio-body section:first-child { margin-top: 0; }
+  .bio-body section h2 {
+    margin: 0 0 1.2rem;
+    font-size: clamp(1.6rem, 2.6vw, 2.1rem);
+  }
+  .bio-body p {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--body);
+  }
+  @media (max-width: 720px) {
+    .bio-hero { padding: 130px 0 56px; }
+    .bio-hero-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+    .bio-hero img { max-width: 200px; }
+  }
+</style>

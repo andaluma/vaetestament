@@ -109,7 +109,7 @@ const publishDateFmt = data.publish_date.toLocaleDateString('en-GB', {
 ---
 
 <BaseLayout
-  title={`${data.title} - UAEpropertyWills`}
+  title={(() => { const base = data.seo_title || data.title; const full = `${base} - UAEpropertyWills`; return full.length <= 65 ? full : base; })()}
   description={data.meta_description}
   canonical={canonical}
   ogType="article"

@@ -1,5 +1,6 @@
 ---
 title: "Your parent has passed away and there is UAE property without a will"
+seo_title: "Parent died with UAE property and no will: what to do"
 slug: fc-08-bereaved-guide
 nl_slug: vk-08-handleiding-nabestaanden
 meta_description: "A practical guide for bereaved heirs dealing with UAE property when no DIFC will exists. Frozen assets, required documents, legal process and costs."
