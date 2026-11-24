@@ -16,8 +16,11 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const ARTICLES_DIR = join(__dirname, '..', 'src', 'content', 'articles', 'nl');
-const OUT_PATH = join(__dirname, 'article-corpus.generated.js');
+// Locale: `node scripts/build-article-corpus.mjs` (nl) or `... en`.
+const LOCALE = process.argv[2] === 'en' ? 'en' : 'nl';
+const ARTICLES_DIR = join(__dirname, '..', 'src', 'content', 'articles', LOCALE);
+const OUT_PATH = join(__dirname, LOCALE === 'en' ? 'article-corpus-en.generated.js' : 'article-corpus.generated.js');
+const EXPORT_NAME = LOCALE === 'en' ? 'ARTICLE_CORPUS_EN' : 'ARTICLE_CORPUS';
 
 function splitFrontmatter(raw) {
   const m = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/);
@@ -94,6 +97,7 @@ for (const f of files.sort()) {
   const raw = await readFile(join(ARTICLES_DIR, f), 'utf8');
   const { fmRaw, body } = splitFrontmatter(raw);
   const fm = parseFm(fmRaw);
+  if (fm.status && fm.status !== 'published') continue;
   articles.push({
     slug: fm.slug,
     title: fm.title,
@@ -108,9 +112,9 @@ for (const f of files.sort()) {
 }
 
 const banner = `// AUTO-GENERATED. Do not edit by hand.
-// Source: vaetestament/marketing/src/content/articles/nl/*.md
-// Regenerate via \`node scripts/build-article-corpus.mjs\` in the marketing repo,
-// then copy this file into vaetestament-worker/src/data/article-corpus.js.
+// Source: vaetestament/src/content/articles/${LOCALE}/*.md (published only)
+// Regenerate via \`node scripts/build-article-corpus.mjs ${LOCALE}\` in the marketing repo,
+// then copy this file into vaetestament-worker/src/data/${LOCALE === 'en' ? 'article-corpus-en.js' : 'article-corpus.js'}.
 //
 // Schema per entry:
 //   { slug, title, meta_description, cluster, keywords[], publish_date,
@@ -120,7 +124,7 @@ const banner = `// AUTO-GENERATED. Do not edit by hand.
 // the Worker's /v1/article-ask handler to ground AI answers in the corpus.
 `;
 
-const out = banner + '\nexport const ARTICLE_CORPUS = ' + JSON.stringify(articles, null, 2) + ';\n';
+const out = banner + '\nexport const ' + EXPORT_NAME + ' = ' + JSON.stringify(articles, null, 2) + ';\n';
 
 await writeFile(OUT_PATH, out, 'utf8');
 

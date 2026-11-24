@@ -27,6 +27,7 @@ const isEn = locale === 'en';
   id="aiFab"
   aria-label={isEn ? 'Ask a question' : 'Stel een vraag'}
   data-slug={slug}
+  data-locale={locale}
 >
   <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
     <path
@@ -318,6 +319,17 @@ const isEn = locale === 'en';
         .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
     }
 
+    var EN = (fab.getAttribute('data-locale') || 'nl') === 'en';
+    var L = EN ? {
+      more: 'Read more', base: '/articles/', tier: 'Which package fits you?', call: 'Book a free introductory call',
+      wa: 'Continue on WhatsApp', thinking: 'Thinking…', rate: 'You are asking many questions in a short time. Please try again in a minute.',
+      fail: 'We could not answer your question. Please try again later or email support@vaetestament.nl.', net: 'Connection error. Check your internet connection and try again.'
+    } : {
+      more: 'Lees verder', base: '/artikelen/', tier: 'Welk pakket past bij u?', call: 'Plan een gratis kennismaking',
+      wa: 'Verder via WhatsApp', thinking: 'Even nadenken…', rate: 'U stelt veel vragen in korte tijd. Probeer het over een minuut opnieuw.',
+      fail: 'Het lukte niet om uw vraag te beantwoorden. Probeer het later opnieuw of mail support@vaetestament.nl.', net: 'Verbindingsfout. Controleer uw internetverbinding en probeer opnieuw.'
+    };
+
     function renderAnswer(data) {
       var slug = fab.getAttribute('data-slug') || '';
 
@@ -326,22 +338,24 @@ const isEn = locale === 'en';
 
       var citedHtml = '';
       if (data.cited_slugs && data.cited_slugs.length) {
-        citedHtml = '<h4>Lees verder</h4><ul class="ai-cited-list">' +
+        var titles = {};
+        (data.cited || []).forEach(function (c) { if (c && c.slug) titles[c.slug] = c.title; });
+        citedHtml = '<h4>' + L.more + '</h4><ul class="ai-cited-list">' +
           data.cited_slugs.map(function (s) {
-            return '<li><a href="/artikelen/' + encodeURIComponent(s) + '">' + escapeHtml(s.replace(/-/g, ' ')) + '</a></li>';
+            return '<li><a href="' + L.base + encodeURIComponent(s) + '/">' + escapeHtml(titles[s] || s.replace(/-/g, ' ')) + '</a></li>';
           }).join('') + '</ul>';
       }
 
       var ctaHtml = '';
       switch (data.recommended_cta) {
         case 'tier_check':
-          ctaHtml = '<div class="ai-cta"><button type="button" onclick="openTierCheck(' + JSON.stringify(slug) + ')">Welk pakket past bij u?</button></div>';
+          ctaHtml = '<div class="ai-cta"><button type="button" onclick="openTierCheck(' + JSON.stringify(slug) + ')">' + L.tier + '</button></div>';
           break;
         case 'book_call':
-          ctaHtml = '<div class="ai-cta"><a href="https://calendar.app.google/JEkbAtZfuJSrK8JSA" target="_blank" rel="noopener">Plan een gratis kennismaking</a></div>';
+          ctaHtml = '<div class="ai-cta"><a href="https://calendar.app.google/JEkbAtZfuJSrK8JSA" target="_blank" rel="noopener">' + L.call + '</a></div>';
           break;
         case 'whatsapp':
-          ctaHtml = '<div class="ai-cta"><a href="https://wa.me/31616146007" target="_blank" rel="noopener">Verder via WhatsApp</a></div>';
+          ctaHtml = '<div class="ai-cta"><a href="https://wa.me/31616146007" target="_blank" rel="noopener">' + L.wa + '</a></div>';
           break;
         default:
           ctaHtml = '';
@@ -364,7 +378,7 @@ const isEn = locale === 'en';
 
       submit.disabled = true;
       answer.hidden = false;
-      answer.innerHTML = '<p style="color:var(--muted);">Even nadenken…</p>';
+      answer.innerHTML = '<p style="color:var(--muted);">' + L.thinking + '</p>';
 
       try {
         var res = await fetch('https://api.vaetestament.nl/v1/article-ask', {
@@ -372,21 +386,22 @@ const isEn = locale === 'en';
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             question: q,
+            locale: EN ? 'en' : 'nl',
             current_slug: fab.getAttribute('data-slug') || null
           })
         });
         if (!res.ok) {
           if (res.status === 429) {
-            renderError('U stelt veel vragen in korte tijd. Probeer het over een minuut opnieuw.');
+            renderError(L.rate);
           } else {
-            renderError('Het lukte niet om uw vraag te beantwoorden. Probeer het later opnieuw of mail support@vaetestament.nl.');
+            renderError(L.fail);
           }
           return;
         }
         var data = await res.json();
         renderAnswer(data);
       } catch (err) {
-        renderError('Verbindingsfout. Controleer uw internetverbinding en probeer opnieuw.');
+        renderError(L.net);
       } finally {
         submit.disabled = false;
       }
