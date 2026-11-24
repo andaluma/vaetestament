@@ -111,6 +111,12 @@ export default {
       });
     }
 
+    // AI-engine guidance: English version on the EN domain.
+    if (url.pathname === '/llms.txt' && locale === 'en') {
+      const r = await env.ASSETS.fetch(new Request(url.origin + '/llms-en.txt', { method: 'GET' }));
+      return new Response(r.body, { status: r.status, headers: { 'Content-Type': 'text/plain; charset=utf-8', 'Cache-Control': 'public, max-age=86400' } });
+    }
+
     // Sitemaps: Astro builds one sitemap with URLs of both domains. A
     // sitemap may only list URLs of its own host, so each domain gets a
     // filtered copy and an index that points to its own sitemap file.
