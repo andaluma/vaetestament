@@ -7,7 +7,7 @@ const DEFAULT_HERO =
   'https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1600&q=85&auto=format&fit=crop';
 
 export async function getStaticPaths() {
-  const situaties = await getCollection('situaties');
+  const situaties = await getCollection('situaties', ({ data }) => data.status === 'published');
   return situaties.map((entry) => ({
     params: { slug: entry.id.replace(/\.(md|mdx)$/, '') },
     props: { entry },
@@ -25,7 +25,7 @@ const bodyText = entry.body ?? '';
 const wordCount = bodyText.split(/\s+/).filter(Boolean).length;
 const readMinutes = Math.max(1, Math.round(wordCount / 200));
 
-const allSituaties = await getCollection('situaties');
+const allSituaties = await getCollection('situaties', ({ data }) => data.status === 'published');
 const slugIndex = new Map(
   allSituaties.map((a) => [a.id.replace(/\.(md|mdx)$/, ''), a]),
 );

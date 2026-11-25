@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
-const situaties = await getCollection('situaties');
+const situaties = await getCollection('situaties', ({ data }) => data.status === 'published');
 
 const canonical = 'https://vaetestament.nl/situaties/';
 ---

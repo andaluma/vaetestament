@@ -12,7 +12,7 @@ const DEFAULT_HERO =
   'https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1600&q=85&auto=format&fit=crop';
 
 export async function getStaticPaths() {
-  const articles = await getCollection('articles_en');
+  const articles = await getCollection('articles_en', ({ data }) => data.status === 'published');
   return articles.map((entry) => ({
     params: { slug: entry.id.replace(/\.(md|mdx)$/, '') },
     props: { entry },
@@ -32,7 +32,7 @@ const bodyText = entry.body ?? '';
 const wordCount = bodyText.split(/\s+/).filter(Boolean).length;
 const readMinutes = Math.max(1, Math.round(wordCount / 200));
 
-const allArticles = await getCollection('articles_en');
+const allArticles = await getCollection('articles_en', ({ data }) => data.status === 'published');
 const slugIndex = new Map(
   allArticles.map((a) => [a.id.replace(/\.(md|mdx)$/, ''), a]),
 );

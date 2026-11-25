@@ -9,7 +9,7 @@ import NewsletterSignup from '../../components/NewsletterSignup.astro';
 
 const canonical = 'https://vaetestament.nl/artikelen/';
 
-const allArticles = await getCollection('articles_nl');
+const allArticles = await getCollection('articles_nl', ({ data }) => data.status === 'published');
 
 const clusters = [
   {

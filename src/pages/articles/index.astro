@@ -10,7 +10,7 @@ import NewsletterSignup from '../../components/NewsletterSignup.astro';
 const siteRoot = 'https://uaepropertywills.com';
 const canonical = `${siteRoot}${Astro.url.pathname}`;
 
-const allArticles = await getCollection('articles_en');
+const allArticles = await getCollection('articles_en', ({ data }) => data.status === 'published');
 
 const clusters = [
   {
