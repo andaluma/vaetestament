@@ -19,13 +19,16 @@
 
 const KEY = '70dea2634ec6484db56db04d12e64247';
 const HOSTS = ['vaetestament.nl', 'uaepropertywills.com'];
-const SITEMAP_HOST = HOSTS[0]; // sitemap is cross-domain; either host serves it
-
+// Each domain serves its own filtered sitemap (see src/worker.js).
 async function fetchSitemapUrls() {
-  const res = await fetch(`https://${SITEMAP_HOST}/sitemap-0.xml`);
-  if (!res.ok) throw new Error(`sitemap fetch failed: ${res.status}`);
-  const xml = await res.text();
-  return [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
+  const all = [];
+  for (const host of HOSTS) {
+    const res = await fetch(`https://${host}/sitemap-0.xml`);
+    if (!res.ok) throw new Error(`sitemap fetch failed for ${host}: ${res.status}`);
+    const xml = await res.text();
+    all.push(...[...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]));
+  }
+  return all;
 }
 
 async function submitHost(host, urls) {
