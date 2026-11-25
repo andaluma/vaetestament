@@ -94,6 +94,6 @@ Voor deze situaties biedt VAEtestament Tier 3 (EUR 1.499), inclusief verwijzing 
 ## De praktische stappen
 
 1. **Controleer uw Nederlandse testament.** Bevat het bepalingen die verwijzen naar "al mijn onroerend goed wereldwijd"? Zo ja, bespreek met uw notaris of een aanpassing nodig is.
-2. **Regel een DIFC-testament.** Het volledige proces verloopt op afstand en duurt 5 tot 10 weken. Lees het [stap-voor-stap overzicht](/artikelen/difc-will-registreren-vanuit-nederland/).
+2. **Regel een DIFC-testament.** Het volledige proces verloopt op afstand en duurt doorgaans 2 tot 8 weken. Lees het [stap-voor-stap overzicht](/artikelen/difc-will-registreren-vanuit-nederland/).
 3. **Informeer uw notaris.** Laat weten dat u een apart testament heeft voor uw VAE-vastgoed.
 4. **Bewaar beide documenten toegankelijk.** Zorg dat uw erfgenamen of executeur weten dat er twee testamenten zijn en waar ze te vinden zijn.

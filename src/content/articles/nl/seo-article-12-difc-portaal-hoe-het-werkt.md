@@ -24,7 +24,7 @@ faq:
   - q: Hoe lang duurt het om het portaal in te vullen?
     a: De invoer zelf kost doorgaans 30 tot 60 minuten als u alle documenten bij de hand heeft. De voorbereiding (documenten verzamelen, gegevens controleren) neemt 1 tot 2 weken in beslag.
   - q: Wat gebeurt er na het indienen via het portaal?
-    a: Na het indienen beoordeelt het DIFC uw aanvraag. U ontvangt een uitnodiging voor een online afspraak waarin u het testament bekrachtigt. Daarna wordt het officieel geregistreerd. Dit proces duurt 4 tot 8 weken.
+    a: Na het indienen beoordeelt het DIFC uw aanvraag. U ontvangt een uitnodiging voor een online afspraak waarin u het testament bekrachtigt. Daarna wordt het officieel geregistreerd. Het hele traject duurt doorgaans 2 tot 8 weken.
 ---
 
 ## Het portaal bestaat, en dat is goed nieuws

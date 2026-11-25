@@ -3,7 +3,7 @@ title: "Arranging a will for your Dubai property from abroad: the complete proce
 seo_title: "How to register a DIFC will from abroad, step by step"
 slug: register-difc-will-from-abroad
 nl_slug: difc-will-registreren-vanuit-nederland
-meta_description: "Register a DIFC will from abroad: documents, timeline (5-10 weeks), costs and what you handle yourself versus what is guided."
+meta_description: "Register a DIFC will from abroad: documents, timeline (2-8 weeks), costs and what you handle yourself versus what is guided."
 keywords:
   - register DIFC will from abroad
   - Dubai will procedure
@@ -24,7 +24,7 @@ faq:
   - q: Do I need to travel to Dubai for the registration?
     a: No. The entire process, including the signing, is conducted remotely. The signing appointment takes place via video call.
   - q: Can I speed up the process?
-    a: You can speed up the preparation phase by having your documents and decisions ready quickly. The DIFC processing time (4 to 8 weeks) is fixed.
+    a: You can speed up the preparation phase by having your documents and decisions ready quickly. The DIFC processing time is fixed; the whole process usually takes 2 to 8 weeks.
   - q: What if my situation is complex (corporate structure, more than 5 properties)?
     a: Then you fall under Tier 3 (€1,499), including a referral to a DIFC-certified lawyer from VAEtestament's network. Read more about the [packages and pricing structure](/articles/difc-will-costs-and-packages/).
   - q: In what language is the will drafted?
@@ -33,9 +33,9 @@ faq:
     a: "Yes. You can amend or revoke your will as long as you have legal capacity. Amendments follow a shorter version of the registration process."
 ---
 
-A DIFC will is registered entirely remotely, from wherever you live. The process consists of two phases: preparation (1 to 2 weeks) and DIFC execution (4 to 8 weeks). This article walks you through the complete process: which documents you need, what you handle yourself, what is guided and where most owners get stuck.
+A DIFC will is registered entirely remotely, from wherever you live. The process consists of two phases: preparation (a few days to 2 weeks) and DIFC execution. In total it usually takes 2 to 8 weeks. This article walks you through the complete process: which documents you need, what you handle yourself, what is guided and where most owners get stuck.
 
-## Phase 1: preparation (1 to 2 weeks)
+## Phase 1: preparation (a few days to 2 weeks)
 
 ### Step 1: intake and situation assessment
 
@@ -76,7 +76,7 @@ With Tier 2, you discuss these decisions in a personal 40-minute session with An
 
 Based on your documents and decisions, the draft will is prepared. You review this document and confirm whether everything is correct. Revisions are processed until you approve.
 
-## Phase 2: DIFC execution (4 to 8 weeks)
+## Phase 2: DIFC execution (depends on the DIFC)
 
 ### Step 5: submission to the DIFC Wills Service Centre
 
@@ -109,4 +109,4 @@ Three points where the process commonly stalls in practice:
 
 2. **Unable to locate title deeds.** If you no longer have your ownership certificate, you need to request a copy from the relevant land authority. That costs extra time.
 
-3. **Underestimating the DIFC processing time.** The 4 to 8 weeks of DIFC processing time cannot be accelerated by VAEtestament. Plan accordingly, especially if there is a deadline (for example, a planned sale).
+3. **Underestimating the DIFC processing time.** The DIFC processing time cannot be accelerated by us; plan on 2 to 8 weeks in total. Plan accordingly, especially if there is a deadline (for example, a planned sale).

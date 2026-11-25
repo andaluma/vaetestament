@@ -71,7 +71,7 @@ Er zijn drie momenten waarop het regelen van een DIFC-testament bijzonder urgent
 
 ## Hoe werkt het registratieproces?
 
-De voorbereiding (gegevens verzamelen, beslissingen nemen, documenten voorbereiden) duurt doorgaans 1 tot 2 weken. De DIFC-uitvoering (afspraak, ondertekening, officiële registratie) neemt daar 4 tot 8 weken bij.
+De voorbereiding (gegevens verzamelen, beslissingen nemen, documenten voorbereiden) duurt doorgaans 1 tot 2 weken. De DIFC-uitvoering (afspraak, ondertekening, officiële registratie) hangt af van de beschikbaarheid bij het DIFC. In totaal duurt het traject doorgaans 2 tot 8 weken.
 
 Het gehele proces verloopt op afstand. U hoeft niet fysiek aanwezig te zijn in de VAE. Bij VAEtestament begeleidt André van Wijngaarden u in het Nederlands door het volledige traject.
 

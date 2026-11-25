@@ -94,6 +94,6 @@ For these situations, UAE Property Wills offers Tier 3 (€1,499), including a r
 ## The practical steps
 
 1. **Check your home-country will.** Does it contain provisions referring to "all my real estate worldwide"? If so, discuss with your notary or solicitor whether an amendment is needed.
-2. **Arrange a DIFC will.** The entire process is conducted remotely and takes 5 to 10 weeks. Read the [step-by-step overview](/articles/register-difc-will-from-abroad/).
+2. **Arrange a DIFC will.** The entire process is conducted remotely and usually takes 2 to 8 weeks. Read the [step-by-step overview](/articles/register-difc-will-from-abroad/).
 3. **Inform your notary or solicitor.** Let them know you have a separate will for your UAE property.
 4. **Keep both documents accessible.** Make sure your heirs or executor know that two wills exist and where to find them.

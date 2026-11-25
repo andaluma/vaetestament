@@ -61,7 +61,7 @@ Your parents provide the necessary information (property details, beneficiary pr
 
 ### Step 5: DIFC registration
 
-Once the will is prepared and approved by your parents, it is submitted to the DIFC Courts for registration. The DIFC registration fees (AED 7,500 for a single will, or AED 10,000 for mirror wills) are paid by your parents directly to the DIFC portal. Registration typically takes 4 to 8 weeks.
+Once the will is prepared and approved by your parents, it is submitted to the DIFC Courts for registration. The DIFC registration fees (AED 7,500 for a single will, or AED 10,000 for mirror wills) are paid by your parents directly to the DIFC portal. The whole process usually takes 2 to 8 weeks.
 
 It is worth noting that the DIFC portal allows self-registration. Our role is to guide your parents through the preparation, ensure the will is correctly structured, and support them through completion.
 

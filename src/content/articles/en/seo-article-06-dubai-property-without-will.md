@@ -28,7 +28,7 @@ faq:
   - q: What if I only own one property? Is it still necessary?
     a: Yes. For the legal exposure, it makes no difference whether you own one apartment or five. Without a local will, the same procedure applies for your surviving family.
   - q: How quickly can I arrange a DIFC will?
-    a: Preparation typically takes 1 to 2 weeks. The DIFC registration itself takes 4 to 8 weeks. The entire process is conducted remotely. See the [step-by-step overview](/articles/register-difc-will-from-abroad/).
+    a: Preparation typically takes 1 to 2 weeks. The DIFC registration follows; in total the process usually takes 2 to 8 weeks. The entire process is conducted remotely. See the [step-by-step overview](/articles/register-difc-will-from-abroad/).
   - q: What does a DIFC will cost via VAEtestament?
     a: "VAEtestament works with fixed guidance fees: €797 or €1,499, depending on your situation. DIFC registration fees are separate. Read more about the [packages and pricing structure](/articles/difc-will-costs-and-packages/)."
 ---

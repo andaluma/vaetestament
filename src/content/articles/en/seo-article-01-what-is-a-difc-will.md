@@ -71,7 +71,7 @@ There are three moments when arranging a DIFC will becomes particularly urgent:
 
 ## How does the registration process work?
 
-The preparation (gathering data, making decisions, preparing documents) typically takes 1 to 2 weeks. The DIFC execution (appointment, signing, official registration) adds 4 to 8 weeks.
+The preparation (gathering data, making decisions, preparing documents) typically takes 1 to 2 weeks. The DIFC execution (appointment, signing, official registration) depends on DIFC availability. In total the process usually takes 2 to 8 weeks.
 
 The entire process is conducted remotely. You do not need to be physically present in the UAE. At VAEtestament, André van Wijngaarden guides you through the complete process.
 
