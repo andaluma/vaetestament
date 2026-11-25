@@ -2,6 +2,7 @@
 title: "Eén appartement in Dubai: is een DIFC-testament dan de moeite waard?"
 seo_title: "Eén appartement in Dubai: is een DIFC-testament nodig?"
 slug: difc-testament-een-appartement-moeite-waard
+en_slug: difc-will-one-apartment-worth-it
 meta_description: "Eén appartement in de VAE, gekocht als investering. Loont een DIFC-testament dan? Een eerlijke afweging van kosten, risico en wanneer het kan wachten."
 keywords:
   - DIFC testament een appartement
@@ -17,7 +18,7 @@ cluster: keuze
 related:
   - wat-kost-een-difc-will
   - wanneer-property-will-genoeg
-  - wat-gebeurt-zonder-testament
+  - wat-gebeurt-dubai-vastgoed-zonder-testament
 faq:
   - q: Loont een DIFC-testament bij maar één appartement?
     a: "In de meeste gevallen wel. De afweging draait niet om de waarde van het appartement, maar om wat uw nabestaanden moeten doorlopen zonder lokaal testament: een VAE-erfprocedure van vaak 12 maanden of langer die doorgaans meer dan EUR 10.000 kost. Een Property Will (vanaf EUR 497 begeleiding + DIFC-registratiekosten apart) voorkomt dat."

@@ -19,6 +19,7 @@ related:
   - what-is-a-difc-will
   - difc-will-costs-and-packages
   - mirror-wills-couples-uae-property
+  - difc-portal-how-it-works
 linked_landing_faq: how-to-register-difc-will
 faq:
   - q: Do I need to travel to Dubai for the registration?

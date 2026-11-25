@@ -19,6 +19,8 @@ related:
   - register-difc-will-from-abroad
   - difc-will-vs-home-country-will
   - mirror-wills-couples-uae-property
+  - difc-will-one-apartment-worth-it
+  - property-will-or-full-will
 linked_landing_faq: difc-will-costs
 faq:
   - q: Are there additional costs on top of the chosen tier?

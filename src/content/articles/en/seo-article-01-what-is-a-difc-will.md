@@ -19,6 +19,8 @@ related:
   - dubai-property-without-will
   - register-difc-will-from-abroad
   - difc-will-vs-home-country-will
+  - difc-will-one-apartment-worth-it
+  - property-will-or-full-will
 linked_landing_faq: what-is-a-difc-will
 faq:
   - q: Is a DIFC will only valid for property in Dubai?

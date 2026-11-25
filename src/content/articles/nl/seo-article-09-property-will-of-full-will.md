@@ -2,6 +2,7 @@
 title: "Property Will of Full Will: welk DIFC-testament past bij uw situatie?"
 seo_title: "Property Will of Full Will: welk DIFC-testament kiest u?"
 slug: property-will-of-full-will
+en_slug: property-will-or-full-will
 meta_description: "Niet elke situatie vereist een Full Will. Lees wanneer een Property Will volstaat en wanneer u een Full Will nodig heeft via het DIFC."
 keywords:
   - property will of full will

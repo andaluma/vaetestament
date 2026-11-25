@@ -566,5 +566,155 @@ export const ARTICLE_CORPUS_EN = [
       }
     ],
     "body": "Whether you own an apartment or villa in Dubai, Abu Dhabi, Sharjah or any of the other Emirates, this article applies to you.\n\nIf you own property in the UAE and live abroad, you need in practice two wills: one in your home country for your domestic assets and a DIFC will for your UAE property. Both documents coexist, complement each other and must not contradict one another. This article explains how that works and where things go wrong.\n\n## Why two wills?\n\nThe answer is jurisdiction. Your home-country will governs your domestic assets (and, through applicable international private law, potentially assets in other treaty countries). But the UAE generally does not recognise that will for real estate on UAE soil.\n\nProperty in the UAE falls under UAE jurisdiction. Without a locally valid will, the UAE authorities may apply their own inheritance rules. A DIFC will is the instrument through which non-Muslims specify who inherits their UAE property, enforceable through the DIFC legal system.\n\nTwo jurisdictions, two instruments. Neither replaces the other.\n\n## How do they work together?\n\n### Scope delineation\n\nThe home-country will governs: bank accounts, domestic property, shares, pensions, other domestic assets.\n\nThe DIFC will governs: property in personal name in the UAE (all Emirates).\n\nThe key is that both documents have a clear scope delineation. Your home-country will should not refer to your UAE property as if it covers that too. Your DIFC will should be limited to your UAE assets.\n\n### The role of your notary or solicitor\n\nIt is advisable to inform your home-country notary or solicitor about the existence of your DIFC will. Some include a clause in the home-country will referencing the fact that a separate will applies to foreign property. That prevents confusion during settlement.\n\nThe reverse is not necessary: your DIFC will does not reference your home-country will. The DIFC system operates independently.\n\n## Common pitfalls\n\n### Pitfall 1: assuming your home-country will covers everything\n\nThe most common mistake. An owner has a will at home with \"everything to the surviving spouse\" and assumes it applies worldwide. For UAE property, that is not the case. The UAE does not recognise the home-country will for local real estate.\n\n### Pitfall 2: contradicting provisions\n\nIf your home-country will contains a provision covering your UAE property (for example: \"all my real estate, wherever located, to my partner\"), this can in theory conflict with your DIFC will. In practice, the DIFC document prevails when it concerns UAE property, but it is wiser to prevent the contradiction by amending your home-country will.\n\n### Pitfall 3: forgetting to update both documents\n\nWhen your family situation changes (divorce, remarriage, birth, death of a beneficiary), both wills may need updating. Owners regularly forget to update one document when they amend the other.\n\n### Pitfall 4: confusing choice of law with jurisdiction\n\nThe EU Succession Regulation (Brussels IV) offers the possibility of including a choice-of-law clause in your will. But this regulation applies only within the EU. The UAE is not an EU member state. A choice-of-law clause in your home-country will has no legal force in the UAE.\n\n## When do you only need a DIFC will?\n\nIf you have no assets in your home country (for example, because you live permanently abroad and have wound down all domestic holdings), you may only need a DIFC will for your UAE property. Consult a notary or solicitor in your country of residence for advice on your total estate planning.\n\n## When do you need more than a standard DIFC will?\n\n- **UAE assets beyond property:** bank accounts, shares or vehicles in the UAE require a more comprehensive DIFC will variant.\n- **Property in a corporate structure:** if your property is held by a holding, LLC or trust, a standard Property Will is not sufficient.\n- **Property in more than two countries:** with an international portfolio (for example, your home country, the UAE and Indonesia), you need a separate instrument per country. This requires coordination between multiple advisers.\n\nFor these situations, UAE Property Wills offers Tier 3 (€1,499), including a referral to a DIFC-certified lawyer.\n\n## The practical steps\n\n1. **Check your home-country will.** Does it contain provisions referring to \"all my real estate worldwide\"? If so, discuss with your notary or solicitor whether an amendment is needed.\n2. **Arrange a DIFC will.** The entire process is conducted remotely and usually takes 2 to 8 weeks. Read the [step-by-step overview](/articles/register-difc-will-from-abroad/).\n3. **Inform your notary or solicitor.** Let them know you have a separate will for your UAE property.\n4. **Keep both documents accessible.** Make sure your heirs or executor know that two wills exist and where to find them."
+  },
+  {
+    "slug": "property-will-or-full-will",
+    "title": "Property Will or Full Will: which DIFC will fits your situation?",
+    "meta_description": "Not every situation needs a Full Will. Learn when a DIFC Property Will is enough and when you need a Full Will for your UAE assets.",
+    "cluster": "keuze",
+    "keywords": [
+      "property will or full will",
+      "DIFC property will difference",
+      "DIFC full will cost",
+      "is a property will enough",
+      "which DIFC will"
+    ],
+    "publish_date": "2026-11-25",
+    "lede": "## Two types of DIFC will",
+    "faq": [
+      {
+        "q": "What is the difference between a Property Will and a Full Will?",
+        "a": "A Property Will covers only real estate held in your personal name in the UAE. A Full Will also covers other assets such as bank accounts, vehicles and investments, and can include guardianship provisions."
+      },
+      {
+        "q": "Is a Property Will cheaper than a Full Will?",
+        "a": "Yes. The DIFC registration fees for a Property Will are lower than for a Full Will, and a Property Will does not require a lawyer, which lowers the total cost considerably."
+      },
+      {
+        "q": "Can I move from a Property Will to a Full Will later?",
+        "a": "Yes. If your situation changes, you can have a Full Will drafted. Keep in mind that this is a new registration with its own DIFC fees."
+      }
+    ],
+    "body": "## Two types of DIFC will\n\nThe DIFC offers two types of will: the Property Will and the Full Will. The difference is not legal validity, as both are validly registered with the DIFC. The difference is what they cover.\n\nA **Property Will** covers only real estate held in your personal name. This includes apartments, villas and other property in all seven Emirates. For property in Dubai, the DIFC court's decision can be enforced. For property in Abu Dhabi, an application at the Abu Dhabi court follows after the DIFC procedure before the property can be transferred. For many foreign owners, property is the only thing they own in the UAE.\n\nA **Full Will** covers everything a Property Will covers, plus other assets and provisions: bank accounts, investments, vehicles, guardianship of minor children, and property held through a company structure.\n\n## When is a Property Will enough?\n\nA Property Will is the right choice if all of the following apply:\n\n- Your property is in your personal name (not through a company, holding or free zone company)\n- You own at most 5 properties in the UAE\n- You only want to include property, no other assets\n- You do not need to arrange guardianship for minor children in the will\n\nIf all of these apply, a Property Will is almost always enough. You pay lower DIFC registration fees and you do not need a lawyer.\n\n[Read more: when is a Property Will enough?](/articles/when-is-a-property-will-enough/)\n\n## When do you need a Full Will?\n\nA Full Will is needed in the following situations.\n\n### Property held through a company\n\nIf your property is registered to a company, holding, free zone company or other legal entity, it falls outside a Property Will. Your heirs then inherit the shares or interest in the entity, not the property itself. That requires a Full Will with legal guidance.\n\n### Assets other than property\n\nDo you also have bank accounts, investments or vehicles in the UAE? A Property Will covers real estate only. Other assets need a Full Will.\n\n### Guardianship of minor children\n\nDo you want to set out who becomes guardian of your minor children if both parents pass away? A guardianship provision can only be included in a Full Will.\n\n### More than 5 properties\n\nWith more than 5 properties, the distribution becomes complex enough to justify legal guidance. The risk of mistakes grows with the number of properties and beneficiaries.\n\n## What does the difference cost?\n\nThe cost of a DIFC will has two parts: the guidance fee and the DIFC registration fees.\n\n**Property Will (Guided Registration, Tier 2):**\n- Guidance fee: EUR 797, including a guided session\n- DIFC registration fees: AED 7,500 (single will) or AED 10,000 (mirror wills for spouses)\n\n**Full Will (Fully Managed, Tier 3):**\n- Guidance fee: EUR 1,499\n- DIFC registration fees: AED 10,000 (single) or AED 15,000 (mirror)\n- DIFC lawyer's fee: typically AED 5,000 to 10,000\n\nThe difference in total cost is significant. Do not pay for a Full Will if a Property Will covers your situation.\n\n## How do you decide which will fits you?\n\nAnswer the four questions above. If all four point to a Property Will, that is almost certainly what you need. Would you rather have personal advice? In a free 15-minute call we discuss your situation and tell you honestly which will fits. No sales pitch, no upsell.\n\n[Book a free 15-minute call](https://calendar.app.google/JEkbAtZfuJSrK8JSA)"
+  },
+  {
+    "slug": "difc-will-lawyer-or-guidance",
+    "title": "DIFC will: do you need a lawyer or is guidance enough?",
+    "meta_description": "A DIFC Property Will does not require a lawyer. Learn when guidance is enough and when you do need legal expertise for your UAE will.",
+    "cluster": "keuze",
+    "keywords": [
+      "DIFC will lawyer needed",
+      "DIFC will without lawyer",
+      "DIFC will registration help",
+      "lawyer for DIFC will",
+      "register property will yourself"
+    ],
+    "publish_date": "2026-11-25",
+    "lede": "## The question everyone asks",
+    "faq": [
+      {
+        "q": "Can I register a DIFC Property Will without a lawyer?",
+        "a": "Yes. The DIFC lets you register a Property Will yourself through its online portal. There is no legal requirement to hire a lawyer for a Property Will."
+      },
+      {
+        "q": "When do I need a DIFC lawyer?",
+        "a": "You need a lawyer for a Full Will, when your property is held through a company structure, when you want guardianship provisions, or when your situation is legally complex."
+      },
+      {
+        "q": "What does a guidance service like UAE Property Wills do?",
+        "a": "We guide you through the DIFC portal, make sure you provide the right documents and check that your details are entered correctly. We do not give legal advice and do not draft wills. For legal questions we refer you to DIFC-registered lawyers."
+      }
+    ],
+    "body": "## The question everyone asks\n\n\"Do I need a lawyer for my DIFC will?\" The answer depends on your situation, and it is \"no\" more often than you might think.\n\n## When you do not need a lawyer\n\nA **DIFC Property Will** does not require a lawyer. The DIFC explicitly allows you to register a Property Will yourself through the online portal. You choose your beneficiaries, your executor and how your property is divided, and the portal takes you through the process.\n\nThis applies if:\n\n- Your property is in your personal name\n- You include at most 5 properties\n- You include only property (no bank accounts, vehicles or other assets)\n- You do not need guardianship provisions\n\nIn that situation, guidance is enough. A guidance service such as UAE Property Wills takes you through the portal, checks your documents and makes sure everything is entered correctly. We do not give legal advice and do not draft wills, and you do not need that here.\n\n## When you do need a lawyer\n\nA DIFC-registered lawyer is needed for a **Full Will**. That is the case if:\n\n- Your property is held through a company, holding or free zone company\n- You want to include other UAE assets besides property\n- You want to arrange guardianship of minor children\n- You own more than 5 properties\n- Your distribution is legally complex (several generations, conditional provisions)\n\nIn these situations the lawyer drafts the will, reviews the ownership structure and makes sure the legal provisions are worded correctly. We coordinate the process and refer you to DIFC-registered lawyers in our network.\n\n## The difference in cost\n\nThe difference is not only legal but also financial.\n\n**Without a lawyer (Property Will, Guided Registration):**\n- Guidance fee: EUR 797\n- DIFC registration fees: AED 7,500 (single will) or AED 10,000 (mirror wills)\n- No lawyer's fees\n\n**With a lawyer (Full Will, Fully Managed):**\n- Guidance fee: EUR 1,499\n- DIFC registration fees: AED 10,000 (single) or AED 15,000 (mirror)\n- DIFC lawyer's fee: typically AED 5,000 to 10,000\n\nThe total difference can reach EUR 5,000 or more. Do not pay for legal expertise you do not need.\n\n## What do we do exactly?\n\nUAE Property Wills is not a law firm. We guide you through the registration:\n\n1. **Introduction:** in 15 minutes we determine which will fits your situation\n2. **Documents:** you receive a clear checklist of everything you need\n3. **Portal guidance:** we take you through the DIFC portal step by step, in a live session\n4. **Check:** we verify that everything is complete and correct\n\nIf it turns out you need a Full Will, we refer you to a DIFC-registered lawyer who handles the legal part, and we coordinate the whole process.\n\n## How do I know which route fits me?\n\nThe decision is simpler than it looks. Most foreign owners of UAE property own one or two apartments in their personal name. For them, a Property Will without a lawyer is enough.\n\nNot sure? Book a free call and we will tell you honestly whether you need a lawyer.\n\n[Book a free 15-minute call](https://calendar.app.google/JEkbAtZfuJSrK8JSA)"
+  },
+  {
+    "slug": "when-is-a-property-will-enough",
+    "title": "When is a DIFC Property Will enough? A checklist for property owners",
+    "meta_description": "For most foreign owners of UAE property, a DIFC Property Will is enough. Use this checklist to see when it is, and when it is not.",
+    "cluster": "keuze",
+    "keywords": [
+      "is a property will enough",
+      "DIFC property will checklist",
+      "property will or full will",
+      "simple DIFC will",
+      "property will for foreign owners"
+    ],
+    "publish_date": "2026-11-25",
+    "lede": "## Most owners only need a Property Will",
+    "faq": [
+      {
+        "q": "Does a Property Will cover property in all Emirates?",
+        "a": "Yes. A DIFC Property Will covers real estate in all seven Emirates, not only Dubai. Abu Dhabi, Sharjah, Ras Al Khaimah and the other Emirates are included. For property in Abu Dhabi, an application at the Abu Dhabi court follows after the DIFC procedure."
+      },
+      {
+        "q": "Can I leave property to several people with a Property Will?",
+        "a": "Yes. You can set the beneficiary and the distribution per property, and you can name substitute beneficiaries."
+      },
+      {
+        "q": "What if I buy more property later?",
+        "a": "As long as the total stays at 5 properties or fewer and the property is in your personal name, you can update your Property Will. With more than 5 properties a Full Will is recommended."
+      }
+    ],
+    "body": "## Most owners only need a Property Will\n\nOf all the property owners we speak to, most fit a Property Will. The reason is simple: they own one or two apartments in their personal name, without company structures or other UAE assets.\n\nYet many owners end up with a Full Will, often because they did not know the distinction exists, or because nobody pointed them to the simpler option.\n\n## The checklist: does a Property Will fit you?\n\nAnswer the following four questions. If the answer to all four is \"yes\", a Property Will is almost certainly enough.\n\n**1. Is your property in your personal name?**\n\nCheck the title deed. If your name is on it as owner, the answer is yes. If the property is registered to a company, holding or free zone company, the answer is no.\n\n**2. Do you own at most 5 properties in the UAE?**\n\nCount all apartments, villas and other properties. Up to and including 5 properties fit a Property Will. With more than 5, the distribution is complex enough to justify legal guidance.\n\n**3. Do you only want to include property?**\n\nA Property Will covers real estate only. If you also want to include bank accounts, investments, vehicles or other UAE assets, you need a Full Will.\n\n**4. Do you not need guardianship provisions?**\n\nIf you have minor children and want to set out who becomes their guardian, that is only possible in a Full Will. A Property Will contains no guardianship provisions.\n\n## Four times yes? Then a Property Will is enough.\n\nYou do not need to hire a lawyer, and the cost is considerably lower than for a Full Will. With our Guided Registration (Tier 2) you pay a guidance fee of EUR 797, plus DIFC registration fees of AED 7,500 (single will) or AED 10,000 (mirror wills for spouses).\n\n## Common misconceptions\n\n### \"I have two apartments, so I need a Full Will\"\n\nNot true. A Property Will covers up to 5 properties. Two apartments in your personal name is the most common situation and fits a Property Will.\n\n### \"I bought through an agent, so the property is not in my name\"\n\nIn the vast majority of cases the property is registered in your personal name after purchase, even if you bought through an agent. Check the title deed.\n\n### \"I want my partner as beneficiary, isn't that complex?\"\n\nNo. The most common distribution (everything to the partner, with the children as substitute beneficiaries) is standard and fits a Property Will.\n\n## Examples that fit a Property Will\n\n- **Married couple, 1 apartment in Dubai Marina:** both spouses register mirror wills. Everything to the partner, children as substitute beneficiaries.\n- **Married couple, 2 apartments in Dubai and Abu Dhabi:** the same set-up, with two properties divided.\n- **Single owner, 1 villa in Abu Dhabi:** a single will with a sibling as beneficiary.\n\n## Not sure?\n\nIn 15 minutes we determine whether a Property Will fits your situation. No sales pitch, no upsell: if a Property Will is enough, we tell you.\n\n[Book a free 15-minute call](https://calendar.app.google/JEkbAtZfuJSrK8JSA)"
+  },
+  {
+    "slug": "difc-portal-how-it-works",
+    "title": "The DIFC portal: how does it work and what can you expect?",
+    "meta_description": "The DIFC portal is where you register your will. Learn what to expect, which steps you go through and where the pitfalls are.",
+    "cluster": "keuze",
+    "keywords": [
+      "DIFC portal explained",
+      "DIFC wills portal registration",
+      "how does the DIFC portal work",
+      "register DIFC will yourself",
+      "DIFC portal steps"
+    ],
+    "publish_date": "2026-11-25",
+    "lede": "## The portal exists, and that is good news",
+    "faq": [
+      {
+        "q": "What language is the DIFC portal in?",
+        "a": "The portal is in English only. All fields, instructions and legal terms are in English."
+      },
+      {
+        "q": "How long does it take to complete the portal?",
+        "a": "Entering the details takes about 30 to 60 minutes if you have all documents at hand. Preparation (gathering documents, checking details) takes a few days to 2 weeks."
+      },
+      {
+        "q": "What happens after submitting through the portal?",
+        "a": "The DIFC reviews your application and you receive an invitation to an online appointment in which you confirm the will. It is then officially registered. The whole process usually takes 2 to 8 weeks."
+      }
+    ],
+    "body": "## The portal exists, and that is good news\n\nThe DIFC Wills Service Centre has an online portal where you can register your will. You do not need to travel to Dubai, and you do not need a lawyer for a Property Will. You can handle everything digitally.\n\nThat is the good news. The less good news: the portal was not designed with the average foreign property owner in mind.\n\n## What you will run into\n\n### Legal choices without context\n\nThe portal asks you to make decisions that assume legal knowledge. Who becomes executor? What if a beneficiary dies before you? The portal offers little explanation for these questions.\n\n### Documents in a specific format\n\nYou upload documents in a specific format. Passports must show the photo page, in colour. Title deeds must be current. Wrong files mean delays.\n\n### No phone support\n\nThe DIFC offers support by email. There is no phone number to call if you get stuck, and response times vary.\n\n## The steps in the portal\n\nRegistration through the portal follows these steps:\n\n**1. Create an account**\n\nYou register on the DIFC Wills Service Centre portal with your email address, receive a confirmation and log in.\n\n**2. Choose the type of will**\n\nYou choose between a Property Will and a Full Will, and between a single will or mirror wills (for spouses).\n\n**3. Enter personal details**\n\nYour full name (as in your passport), date of birth, nationality, address and contact details. For mirror wills, also those of your spouse.\n\n**4. Add your property**\n\nFor each property: the address, the plot number and the emirate. You upload the title deed.\n\n**5. Name beneficiaries and an executor**\n\nYou name the beneficiaries per property and set the distribution. You also appoint an executor who carries out the will after your death.\n\n**6. Upload documents**\n\nPassport (colour copy of the photo page), title deeds, and the passports of your witnesses. Files must meet the specifications.\n\n**7. Review, book and pay**\n\nYou check all details, confirm everything is correct, book the signing appointment and pay the DIFC registration fees.\n\n**8. Appointment and registration**\n\nDuring the online appointment you confirm the will. It is then officially registered with the DIFC.\n\n## What to prepare for the appointment\n\n- **Witnesses:** you need two witnesses aged 18 or over, with a valid passport. They may not be a beneficiary, or the partner of a beneficiary. They join by video, from anywhere.\n- **Two devices:** you need two devices, one of them with a touchscreen for the digital signature.\n- **Duration:** the appointment takes about 20 to 30 minutes.\n\n## Where it often goes wrong\n\nThe most common problems we see:\n\n- **Wrong file formats** when uploading documents\n- **Name spelling** that does not match the passport\n- **Unclear choices about executor and beneficiaries**, so the form gets stuck\n- **Plot numbers** that do not match the property papers\n- **The wrong type of will** (a Property Will where a Full Will was needed)\n\nThese mistakes cost time. At best you resubmit; at worst the application is rejected and you start again.\n\n## On your own or with guidance?\n\nThe portal is designed to be used on your own. But \"designed to be used on your own\" does not mean \"easy to use on your own\". The difference between a Property Will that goes right the first time and one that is delayed for weeks is usually the preparation.\n\nWith our **Guided Registration** (Tier 2, EUR 797) you complete the portal together with us in a live video session of about 40 minutes, and we check everything in real time. You receive a personal guide beforehand with your own details ready to copy into each field. DIFC registration fees are paid separately.\n\n## The honest summary\n\nThe DIFC portal works, but it is not intuitive. It asks for legal choices and offers limited support. You can do it yourself, but the risk of mistakes and delays is real. We make the process clear: an explanation at every step, and a check of your documents before you submit.\n\n[Book a free 15-minute call](https://calendar.app.google/JEkbAtZfuJSrK8JSA)"
+  },
+  {
+    "slug": "difc-will-one-apartment-worth-it",
+    "title": "One apartment in Dubai: is a DIFC will worth it?",
+    "meta_description": "One apartment in the UAE, bought as an investment. Is a DIFC will worth it? An honest look at cost, risk, and when it can wait.",
+    "cluster": "keuze",
+    "keywords": [
+      "DIFC will one apartment",
+      "do I need a DIFC will",
+      "is a DIFC will worth it",
+      "will for Dubai investment apartment",
+      "small Dubai property inheritance"
+    ],
+    "publish_date": "2026-11-25",
+    "lede": "You own one apartment in the UAE. Perhaps in Dubai Marina, perhaps in Abu Dhabi or Ras Al Khaimah. You bought it as an investment, often through an agent, possibly without ever visiting it. And now you wonder: is it worth arranging a separate will for it? Or is that overkill for ",
+    "faq": [
+      {
+        "q": "Is a DIFC will worth it for just one apartment?",
+        "a": "In most cases, yes. The question is not the value of the apartment, but what your heirs face without a local will: a UAE inheritance procedure that often takes 12 months or longer and typically costs more than EUR 10,000. A Property Will prevents that."
+      },
+      {
+        "q": "My apartment is not worth much. Does that matter?",
+        "a": "Hardly, for the procedure itself. Whether the apartment is worth EUR 150,000 or EUR 500,000, your heirs go through the same steps: legalisation, sworn translations and local lawyers. The fixed costs and the time it takes stay largely the same."
+      },
+      {
+        "q": "Can I not just use the will from my home country?",
+        "a": "Usually not. A will from your home country is generally not recognised in the UAE for property located there. That requires a separate, locally registered document, such as a DIFC Property Will."
+      }
+    ],
+    "body": "You own one apartment in the UAE. Perhaps in Dubai Marina, perhaps in Abu Dhabi or Ras Al Khaimah. You bought it as an investment, often through an agent, possibly without ever visiting it. And now you wonder: is it worth arranging a separate will for it? Or is that overkill for one property?\n\nIt is a fair question. And the answer depends less on what your apartment is worth than you might think.\n\n## What the decision is really about\n\nMost people weigh the cost of a will against the value of the apartment. That is the wrong comparison.\n\nThe right comparison is: what does it cost your heirs to inherit the apartment *with* a local will, versus *without* one?\n\nWithout a locally valid will, your heirs usually have to go through a full UAE inheritance procedure. That means legalising documents from your home country via the UAE embassy, arranging sworn Arabic translations and hiring local lawyers. The process often takes 12 months or longer and easily costs more than EUR 10,000. During that time the apartment often cannot be freely sold or rented, and linked bank accounts may be frozen.\n\nWith a DIFC Property Will, that procedure is largely unnecessary. You decide who inherits the apartment, and your heirs have a document the UAE authorities recognise.\n\n## The value of the property hardly changes the sum\n\nThis surprises many owners: whether your apartment is worth EUR 150,000 or EUR 500,000, the procedure without a will is largely the same. The same legalisations, the same translations, the same lawyers, the same timeline.\n\nIn other words: for a less expensive apartment, a will is relatively *more* important, not less. The fixed cost of doing nothing weighs more heavily against the value.\n\n## What it costs to arrange it\n\nFor one apartment in your personal name, the situation is usually simple: no company structure, no minor children in the UAE, no portfolio of five properties. In that case a **Property Will**, the simplest and least expensive DIFC will, is almost always enough.\n\nWith our **Guided Registration** (Tier 2, EUR 797) we complete the DIFC portal together in a video session of about 40 minutes. This also suits spouses who register mirror wills together. The DIFC registration fees (AED 7,500 for a single will, AED 10,000 for mirror wills) are paid directly to the DIFC. A full overview is in [what a DIFC will costs](/articles/difc-will-costs-and-packages/).\n\n## When it may be able to wait\n\nWe will not sell you a will you do not need. There are situations where it is less urgent:\n\n- **You are about to sell the apartment.** If you sell soon and do not reinvest in the UAE, the need largely falls away.\n- **The apartment is held in a structure with its own succession arrangement.** Then the situation is different and needs tailored work. Read [when a Property Will is not enough](/articles/when-is-a-property-will-enough/).\n\nIn almost every other case: as long as you own the apartment, the risk lies with your heirs, not with you. They only find out when you are no longer there to explain.\n\n## A concrete example\n\nA single owner with one villa in Abu Dhabi, bought as an investment. No children, a brother as the intended heir. A single Property Will is enough: he decides himself that the villa goes to his brother, and prevents the estate from getting stuck in an inheritance procedure, or, without identifiable heirs, from falling under the new Waqf rule.\n\n## Still unsure?\n\nIn 15 minutes we determine whether a Property Will fits your situation. No sales pitch, no upsell. If it can wait, we will tell you that too.\n\n[Book a free 15-minute call](https://calendar.app.google/JEkbAtZfuJSrK8JSA)"
   }
 ];

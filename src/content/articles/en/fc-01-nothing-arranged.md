@@ -18,6 +18,7 @@ cluster: waarom
 related:
   - fc-05-cost-of-no-will
   - fc-08-bereaved-guide
+  - fc-06-diagnostic-checklist
 faq:
   - q: What happens to my parents' Dubai property if they have no DIFC will?
     a: The property is frozen immediately upon death. No one can sell, rent or transfer it until a UAE court grants probate, which often takes 12 months or longer and can cost €10,000 or more.

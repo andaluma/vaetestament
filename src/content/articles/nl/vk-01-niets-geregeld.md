@@ -18,6 +18,7 @@ cluster: waarom
 related:
   - vk-05-kosten-geen-testament
   - vk-08-handleiding-nabestaanden
+  - vk-06-uitzoeken
 faq:
   - q: Hoe lang duurt de afwikkeling van een nalatenschap in Dubai zonder DIFC-testament?
     a: Zonder DIFC-testament duurt de afwikkeling vaak 12 maanden of langer. Met een geregistreerd DIFC-testament verloopt het proces aanzienlijk sneller, doorgaans binnen enkele maanden.
