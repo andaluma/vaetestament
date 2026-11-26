@@ -26,6 +26,8 @@ faq:
     a: Ja. U kunt per vastgoedobject aangeven wie de begunstigde is en hoe de verdeling loopt. U kunt ook vervangende begunstigden aanwijzen.
   - q: Wat als ik later meer panden koop?
     a: Zolang het totaal onder de 5 panden blijft en het vastgoed op persoonlijke naam staat, kunt u uw Property Will laten aanpassen. Bij meer dan 5 panden is een Full Will aanbevolen.
+  - q: Kan ik een appartement dat nog in aanbouw is (off-plan) opnemen?
+    a: "Ja. In plaats van de title deed gebruikt u het Oqood-registratiebewijs. Na oplevering, zodra de title deed er is, is het verstandig uw testament bij te werken."
 ---
 
 ## De meeste eigenaren hebben genoeg aan een Property Will

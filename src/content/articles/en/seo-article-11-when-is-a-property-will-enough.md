@@ -26,6 +26,8 @@ faq:
     a: Yes. You can set the beneficiary and the distribution per property, and you can name substitute beneficiaries.
   - q: What if I buy more property later?
     a: As long as the total stays at 5 properties or fewer and the property is in your personal name, you can update your Property Will. With more than 5 properties a Full Will is recommended.
+  - q: Can I include an apartment that is still under construction (off-plan)?
+    a: "Yes. Instead of the title deed you use the Oqood registration. After handover, once the title deed is issued, it is wise to update your will."
 ---
 
 ## Most owners only need a Property Will
