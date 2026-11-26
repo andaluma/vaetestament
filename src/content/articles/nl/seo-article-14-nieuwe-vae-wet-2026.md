@@ -11,7 +11,7 @@ keywords:
   - Waqf erfenis Dubai
   - VAE vastgoed zonder testament 2026
 publish_date: 2026-11-25
-status: draft
+status: published
 author: André van Wijngaarden
 schema_type: Article
 cluster: waarom

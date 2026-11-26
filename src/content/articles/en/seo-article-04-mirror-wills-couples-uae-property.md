@@ -20,6 +20,7 @@ related:
   - register-difc-will-from-abroad
   - difc-will-costs-and-packages
   - when-is-a-property-will-enough
+  - executor-difc-will
 linked_landing_faq: mirror-will-couples
 faq:
   - q: Is a mirror will cheaper than two separate wills?

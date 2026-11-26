@@ -19,6 +19,7 @@ related:
   - uae-inheritance-law-foreign-owners
   - probate-dubai-foreign-heirs
   - what-is-a-difc-will
+  - uae-law-2026-property-owners
 linked_landing_faq: without-will-uae
 faq:
   - q: My will at home covers everything, does it not?

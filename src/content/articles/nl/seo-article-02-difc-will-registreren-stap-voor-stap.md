@@ -19,6 +19,7 @@ related:
   - wat-is-een-difc-will
   - wat-kost-een-difc-will
   - mirror-wills-echtparen-uae-vastgoed
+  - executeur-difc-testament
 linked_landing_faq: hoe-registreer-ik-difc-will
 faq:
   - q: Moet ik naar Dubai reizen voor de registratie?

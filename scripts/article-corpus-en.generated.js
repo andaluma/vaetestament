@@ -716,5 +716,95 @@ export const ARTICLE_CORPUS_EN = [
       }
     ],
     "body": "You own one apartment in the UAE. Perhaps in Dubai Marina, perhaps in Abu Dhabi or Ras Al Khaimah. You bought it as an investment, often through an agent, possibly without ever visiting it. And now you wonder: is it worth arranging a separate will for it? Or is that overkill for one property?\n\nIt is a fair question. And the answer depends less on what your apartment is worth than you might think.\n\n## What the decision is really about\n\nMost people weigh the cost of a will against the value of the apartment. That is the wrong comparison.\n\nThe right comparison is: what does it cost your heirs to inherit the apartment *with* a local will, versus *without* one?\n\nWithout a locally valid will, your heirs usually have to go through a full UAE inheritance procedure. That means legalising documents from your home country via the UAE embassy, arranging sworn Arabic translations and hiring local lawyers. The process often takes 12 months or longer and easily costs more than EUR 10,000. During that time the apartment often cannot be freely sold or rented, and linked bank accounts may be frozen.\n\nWith a DIFC Property Will, that procedure is largely unnecessary. You decide who inherits the apartment, and your heirs have a document the UAE authorities recognise.\n\n## The value of the property hardly changes the sum\n\nThis surprises many owners: whether your apartment is worth EUR 150,000 or EUR 500,000, the procedure without a will is largely the same. The same legalisations, the same translations, the same lawyers, the same timeline.\n\nIn other words: for a less expensive apartment, a will is relatively *more* important, not less. The fixed cost of doing nothing weighs more heavily against the value.\n\n## What it costs to arrange it\n\nFor one apartment in your personal name, the situation is usually simple: no company structure, no minor children in the UAE, no portfolio of five properties. In that case a **Property Will**, the simplest and least expensive DIFC will, is almost always enough.\n\nWith our **Guided Registration** (Tier 2, EUR 797) we complete the DIFC portal together in a video session of about 40 minutes. This also suits spouses who register mirror wills together. The DIFC registration fees (AED 7,500 for a single will, AED 10,000 for mirror wills) are paid directly to the DIFC. A full overview is in [what a DIFC will costs](/articles/difc-will-costs-and-packages/).\n\n## When it may be able to wait\n\nWe will not sell you a will you do not need. There are situations where it is less urgent:\n\n- **You are about to sell the apartment.** If you sell soon and do not reinvest in the UAE, the need largely falls away.\n- **The apartment is held in a structure with its own succession arrangement.** Then the situation is different and needs tailored work. Read [when a Property Will is not enough](/articles/when-is-a-property-will-enough/).\n\nIn almost every other case: as long as you own the apartment, the risk lies with your heirs, not with you. They only find out when you are no longer there to explain.\n\n## A concrete example\n\nA single owner with one villa in Abu Dhabi, bought as an investment. No children, a brother as the intended heir. A single Property Will is enough: he decides himself that the villa goes to his brother, and prevents the estate from getting stuck in an inheritance procedure, or, without identifiable heirs, from falling under the new Waqf rule.\n\n## Still unsure?\n\nIn 15 minutes we determine whether a Property Will fits your situation. No sales pitch, no upsell. If it can wait, we will tell you that too.\n\n[Book a free 15-minute call](https://calendar.app.google/JEkbAtZfuJSrK8JSA)"
+  },
+  {
+    "slug": "uae-law-2026-property-owners",
+    "title": "The new UAE law of 2026: what does Decree-Law 25/2025 mean for your property?",
+    "meta_description": "Since June 2026 a new Civil Transactions Law applies in the UAE. What it means for property without a will, and who is most at risk.",
+    "cluster": "waarom",
+    "keywords": [
+      "UAE new law 2026",
+      "Decree-Law 25 of 2025",
+      "UAE Civil Transactions Law",
+      "Waqf inheritance UAE",
+      "UAE property without will 2026"
+    ],
+    "publish_date": "2026-11-25",
+    "lede": "In June 2026 a new Civil Transactions Law came into force in the United Arab Emirates: Federal Decree-Law No. 25 of 2025. To most people that sounds like a technical change. For foreign owners of UAE property, the law contains one provision you should know about.",
+    "faq": [
+      {
+        "q": "What changed in June 2026?",
+        "a": "Since June 2026 a new Civil Transactions Law (Federal Decree-Law No. 25 of 2025) applies in the UAE. Among other things, it provides that UAE assets of a foreign national without a will and without identifiable heirs go to a charitable endowment (Waqf)."
+      },
+      {
+        "q": "Does this affect me if I have a spouse and children?",
+        "a": "The direct Waqf risk is limited, because there are identifiable heirs. But without a will, your heirs still have to go through a procedure at a UAE court before they can deal with the property."
+      },
+      {
+        "q": "Does a DIFC will protect me against this rule?",
+        "a": "Yes. With a registered DIFC will you decide who inherits your UAE property. There is then a will, and the property goes to the people you named."
+      }
+    ],
+    "body": "In June 2026 a new Civil Transactions Law came into force in the United Arab Emirates: **Federal Decree-Law No. 25 of 2025**. To most people that sounds like a technical change. For foreign owners of UAE property, the law contains one provision you should know about.\n\n## What does the new law say?\n\nThe law provides that UAE assets of a foreign national who dies **without a will and without identifiable heirs** go to a charitable endowment, a **Waqf**.\n\nIn other words: if there is no will and no heirs can be identified, your family and friends do not decide what happens to your apartment. The property goes to a fund.\n\n## Who is most at risk?\n\n- **Single owners without a partner or children.** Here the risk is direct. If you want to leave your apartment to a sibling, a niece or a close friend, that has to be in a will.\n- **Unmarried partners.** An unmarried partner is not a legal heir in the UAE. Without a will, your partner does not automatically inherit your UAE property.\n- **Married couples with children.** The direct Waqf risk is limited, because there are identifiable heirs. The other problem remains: without a will, your heirs have to go through a procedure at a UAE court.\n\n## What does not change?\n\nThe law does not change the main point: **a will from your home country is in most cases not enough for UAE property.** Without a will registered in the UAE, it is not certain how your property will be distributed. Which law applies depends on your residence, nationality and the court's assessment.\n\nIt also remains the case that heirs without a will must first go through a UAE court procedure. That often takes 12 months or longer and typically costs EUR 10,000 or more, including legalisation, sworn translations and local lawyers. [Read what happens without a will](/articles/dubai-property-without-will/).\n\n## How do you prevent this?\n\nWith a **DIFC will**, as a non-Muslim you decide in advance who inherits your UAE property. There is then a will, so the Waqf rule does not apply, and your heirs do not need a full inheritance procedure.\n\nFor property in your personal name, a **DIFC Property Will** is almost always enough. You register it fully remotely; the whole process usually takes 2 to 8 weeks.\n\n- [What is a DIFC will?](/articles/what-is-a-difc-will/)\n- [What does a DIFC will cost?](/articles/difc-will-costs-and-packages/)\n\n## Not sure whether this applies to you?\n\nIn a free 15-minute call we look at your situation. No obligation, no sales pitch.\n\n[Book a free 15-minute call](https://calendar.app.google/JEkbAtZfuJSrK8JSA)\n\n*General information, not legal advice.*"
+  },
+  {
+    "slug": "executor-difc-will",
+    "title": "The executor of your DIFC will: what do they do and who should you choose?",
+    "meta_description": "Who carries out your DIFC will after your death? What an executor does, who you can choose, and why a backup executor is wise.",
+    "cluster": "hoe",
+    "keywords": [
+      "DIFC will executor",
+      "executor Dubai property",
+      "executor UAE will",
+      "backup executor",
+      "who to choose as executor"
+    ],
+    "publish_date": "2026-11-25",
+    "lede": "In your DIFC will you decide not only who inherits your UAE property, but also who makes sure that happens: the executor. Many owners fill this in quickly, yet it matters a great deal after your death.",
+    "faq": [
+      {
+        "q": "Can my spouse be both executor and heir?",
+        "a": "Yes. Your spouse can be executor and beneficiary at the same time. For couples this is the most common set-up."
+      },
+      {
+        "q": "Does the executor need to live in the UAE?",
+        "a": "No. The executor can do the work remotely, from anywhere."
+      },
+      {
+        "q": "Does a backup executor cost extra?",
+        "a": "No. Naming a backup executor costs nothing extra in the DIFC registration, and it avoids problems if your first choice is not available."
+      }
+    ],
+    "body": "In your DIFC will you decide not only **who** inherits your UAE property, but also **who makes sure** that happens: the executor. Many owners fill this in quickly, yet it matters a great deal after your death.\n\n## What does an executor do?\n\nThe executor carries out your will after your death. In practice that includes:\n\n- submitting the will to the DIFC court;\n- dealing with the Dubai Land Department;\n- settling any debts or costs;\n- transferring the property to the beneficiaries.\n\nAfter death, the DIFC court issues the Grant of Probate, in simple cases usually within a few weeks, for a fixed fee of USD 1,500. When property in Dubai is transferred, your heirs pay a registration fee to the Dubai Land Department: 0.125% of the property value, plus AED 1,000 per property.\n\nThe executor can do this **remotely**. They do not need to live in the UAE.\n\n## Who can you choose?\n\nIn practice most owners choose:\n\n- **their spouse**, who is often also the main heir. That is allowed: executor and beneficiary can be the same person;\n- **an adult child**;\n- **a sibling or close friend** they trust and who is well organised.\n\nChoose someone you trust completely, who is willing to take on the task and who will remain reachable. Discuss it with them beforehand.\n\n## Why a backup executor is wise\n\nWhat if your executor has died, is ill or cannot do the job? Then the settlement gets stuck. That is why we recommend always naming **a backup executor**. It costs nothing extra and gives a lot of certainty.\n\nA common set-up for couples: the spouse as executor, an adult child or a sibling as backup.\n\n## Watch out with mirror wills\n\nWith mirror wills, both spouses register their own will, often with the same executor. Pay attention to the **relationship** you enter: your brother is \"brother\" to you, but \"brother-in-law\" to your spouse. The DIFC portal asks for the relationship per will.\n\n## Executor or witness?\n\nAn executor may be a beneficiary. **Witnesses** follow different rules: they may not be a beneficiary, nor the partner of a beneficiary. So your spouse can be your executor, but not your witness.\n\n## Read more\n\n- [How to register a DIFC will from abroad](/articles/register-difc-will-from-abroad/)\n- [Mirror wills for couples](/articles/mirror-wills-couples-uae-property/)\n\n[Book a free 15-minute call](https://calendar.app.google/JEkbAtZfuJSrK8JSA)\n\n*General information, not legal advice.*"
+  },
+  {
+    "slug": "expats-dubai-need-a-will",
+    "title": "Do expats living in Dubai need a will?",
+    "meta_description": "Living in Dubai and owning property there? Why a will from your home country is usually not enough, and how a DIFC will works for residents.",
+    "cluster": "waarom",
+    "keywords": [
+      "do expats need a will in Dubai",
+      "will for expats UAE",
+      "DIFC will for residents",
+      "expat will Dubai property",
+      "UAE will non-Muslim expat"
+    ],
+    "publish_date": "2026-11-25",
+    "lede": "Many expats in Dubai own their apartment or villa, and assume the will they made back home covers it. For property in the UAE, that is usually not the case.",
+    "faq": [
+      {
+        "q": "Can UAE residents register a DIFC will?",
+        "a": "Yes. A DIFC will is open to all non-Muslims who own property in the UAE, whether or not they live there. Residents can use their Emirates ID in the registration, but it is not required."
+      },
+      {
+        "q": "I have young children in Dubai. Which will do I need?",
+        "a": "To name a guardian for minor children you need a DIFC Full Will. A Property Will covers only property and cannot include guardianship."
+      },
+      {
+        "q": "Is a will from my home country valid for my Dubai apartment?",
+        "a": "Usually not for property located in the UAE. That requires a separate, locally registered will, such as a DIFC will."
+      }
+    ],
+    "body": "Many expats in Dubai own their apartment or villa, and assume the will they made back home covers it. For property in the UAE, that is usually not the case.\n\n## Why a home-country will is usually not enough\n\nA will drafted in Europe, North America or elsewhere is generally not recognised in the UAE for property located there. Without a will registered in the UAE, it is not certain how your property will be distributed. Which law applies depends on your residence, nationality and the court's assessment, and your heirs first have to go through a procedure at a UAE court. That often takes 12 months or longer and typically costs EUR 10,000 or more.\n\nSince June 2026 there is an additional risk under the new Civil Transactions Law: UAE assets of a foreign national without a will and without identifiable heirs go to a charitable endowment (Waqf). [Read more about the new law](/articles/uae-law-2026-property-owners/).\n\n## Living in the UAE does not change that\n\nBeing a resident, even with a Golden Visa, does not make your home-country will valid for UAE property. A **DIFC will** is open to all non-Muslims who own property in the UAE, residents and non-residents alike. As a resident you can use your Emirates ID in the registration, but it is not required.\n\n## Which DIFC will fits an expat?\n\n- **Property Will:** for property in your personal name (up to 5 properties) in any of the seven Emirates. This is enough for most owners.\n- **Full Will:** also covers bank accounts, investments and vehicles in the UAE, property held through a company, and **guardianship of minor children**. Many expat families with young children in Dubai need this one.\n\n[Property Will or Full Will: which one do you need?](/articles/property-will-or-full-will/)\n\n## Couples\n\nMarried couples can register **mirror wills**: two separate wills in one appointment, often leaving everything to each other with the children as substitute beneficiaries. Unmarried partners are not legal heirs in the UAE, so for them a will is even more important; each partner registers their own will.\n\n## How it works\n\nRegistration is done online through the DIFC portal, and the signing appointment takes place by video with two witnesses (18 or over, not a beneficiary or a beneficiary's partner). The whole process usually takes 2 to 8 weeks.\n\n[Book a free 15-minute call](https://calendar.app.google/JEkbAtZfuJSrK8JSA)\n\n*General information, not legal advice.*"
   }
 ];

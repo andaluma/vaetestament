@@ -19,6 +19,7 @@ related:
   - wat-gebeurt-dubai-vastgoed-zonder-testament
   - probate-dubai-nederlandse-erfgenamen
   - wat-is-een-difc-will
+  - nieuwe-vae-wet-2026-vastgoed
 linked_landing_faq: erfrecht-uae-nederlanders
 faq:
   - q: Geldt VAE-erfrecht ook als ik in Nederland woon en nooit in de VAE heb gewoond?

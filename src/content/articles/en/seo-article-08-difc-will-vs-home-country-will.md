@@ -19,6 +19,7 @@ related:
   - what-is-a-difc-will
   - uae-inheritance-law-foreign-owners
   - difc-will-costs-and-packages
+  - expats-dubai-need-a-will
 linked_landing_faq: difc-vs-home-will
 faq:
   - q: Can my home-country notary or solicitor draft a DIFC will?

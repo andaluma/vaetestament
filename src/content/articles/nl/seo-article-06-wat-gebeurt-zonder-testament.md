@@ -19,6 +19,7 @@ related:
   - erfrecht-vae-nederlandse-vastgoedeigenaren
   - probate-dubai-nederlandse-erfgenamen
   - wat-is-een-difc-will
+  - nieuwe-vae-wet-2026-vastgoed
 linked_landing_faq: zonder-testament-uae
 faq:
   - q: Mijn Nederlandse testament regelt toch alles?

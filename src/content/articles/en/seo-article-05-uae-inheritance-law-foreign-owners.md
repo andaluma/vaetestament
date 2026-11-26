@@ -19,6 +19,7 @@ related:
   - dubai-property-without-will
   - probate-dubai-foreign-heirs
   - what-is-a-difc-will
+  - uae-law-2026-property-owners
 linked_landing_faq: uae-inheritance-law
 faq:
   - q: Does UAE inheritance law apply even if I live abroad and have never lived in the UAE?

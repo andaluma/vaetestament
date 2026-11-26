@@ -19,6 +19,7 @@ related:
   - wat-is-een-difc-will
   - difc-will-registreren-vanuit-nederland
   - wat-kost-een-difc-will
+  - executeur-difc-testament
 linked_landing_faq: mirror-will-echtparen
 faq:
   - q: Is een mirror will goedkoper dan twee afzonderlijke testamenten?
