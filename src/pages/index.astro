@@ -386,6 +386,12 @@ const jsonLd = [
 
       </div>
 
+      <ul class="trust-strip">
+        <li><strong>14 dagen bedenktijd:</strong> zolang u nog niet bent ingelogd, krijgt u alles terug.</li>
+        <li><strong>Veilig betalen</strong> via Stripe.</li>
+        <li><strong>Persoonlijk contact</strong> met André via WhatsApp, in het Nederlands.</li>
+      </ul>
+
       <p class="reassurance-note" style="text-align:center; margin-top:24px; font-size:0.88rem; color:var(--mid); font-weight:300; max-width:640px; margin-left:auto; margin-right:auto;">
         Niet zeker welke tier het beste past? U kunt tijdens het proces altijd upgraden naar een hogere tier - u betaalt alleen het verschil. Meer weten? <a href="#kennismaking" style="color:var(--teal); text-decoration:underline;">Plan een gratis kennismaking</a>.
       </p>
@@ -1038,6 +1044,10 @@ const jsonLd = [
   .card-cta {
     margin-top: auto;
   }
+  .trust-strip { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 28px; margin: 36px auto 0; padding: 18px 20px; max-width: 900px; border: 1px solid rgba(200,164,74,0.35); border-radius: 4px; background: rgba(200,164,74,0.06); }
+  .trust-strip li { font-size: 0.88rem; color: var(--mid); font-weight: 300; line-height: 1.5; text-align: center; }
+  .trust-strip strong { color: var(--teal); font-weight: 600; }
+  .trust-strip li::before { content: "\2713  "; color: var(--gold, #C8A44A); font-weight: 700; }
   .card-cta-secondary {
     display: block;
     text-align: center;

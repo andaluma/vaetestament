@@ -176,7 +176,7 @@ const jsonLd = [
   <!-- NAV -->
   <nav>
     <div class="nav-inner">
-      <a href="/"><img src="/logo-nav-en.svg" alt="UAE Property Wills" width="230" height="68" style="height:68px;width:auto;display:block;"></a>
+      <a href="/"><img class="nav-logo" src="/logo-nav-en.svg" alt="UAE Property Wills" width="230" height="68" style="height:68px;width:auto;display:block;"></a>
       <div style="display:flex;align-items:center;gap:16px;">
         <a href="https://app.uaepropertywills.com" class="nav-login" style="color:rgba(255,255,255,0.65);font-size:0.82rem;text-decoration:none;letter-spacing:0.03em;">Log in</a>
         <a href="#consultation" class="btn btn-gold">Schedule free call</a>
@@ -356,6 +356,12 @@ const jsonLd = [
         </div>
 
       </div>
+
+      <ul class="trust-strip">
+        <li><strong>14 days to change your mind:</strong> full refund as long as you have not logged in yet.</li>
+        <li><strong>Secure payment</strong> via Stripe.</li>
+        <li><strong>Personal contact</strong> with André via WhatsApp.</li>
+      </ul>
 
       <p class="reassurance-note" style="text-align:center; margin-top:24px; font-size:0.88rem; color:var(--mid); font-weight:300; max-width:640px; margin-left:auto; margin-right:auto;">
         Not sure which tier fits best? You can always upgrade to a higher tier during the process - you only pay the difference. Want to know more? <a href="#consultation" style="color:var(--teal); text-decoration:underline;">Schedule a free consultation</a>.
@@ -746,6 +752,10 @@ const jsonLd = [
   .card.featured .price-note { color: rgba(255,255,255,0.45); }
   .card-features { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 36px; flex: 1; }
   .card-cta { margin-top: auto; }
+  .trust-strip { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 28px; margin: 36px auto 0; padding: 18px 20px; max-width: 900px; border: 1px solid rgba(200,164,74,0.35); border-radius: 4px; background: rgba(200,164,74,0.06); }
+  .trust-strip li { font-size: 0.88rem; color: var(--mid); font-weight: 300; line-height: 1.5; text-align: center; }
+  .trust-strip strong { color: var(--teal); font-weight: 600; }
+  .trust-strip li::before { content: "\2713  "; color: var(--gold, #C8A44A); font-weight: 700; }
   .card-cta-secondary { display: block; text-align: center; margin-top: 12px; font-size: 0.82rem; color: var(--light-text); font-weight: 300; }
   .card-cta-secondary a { color: var(--teal); text-decoration: underline; text-underline-offset: 2px; }
   .card.featured .card-cta-secondary a { color: var(--gold-light); }
@@ -834,6 +844,7 @@ const jsonLd = [
     .nav-inner { padding: 0 16px; height: 56px; }
     .nav-inner .btn { padding: 8px 14px; font-size: 0.78rem; white-space: nowrap; }
     :global(.nav-login) { display: none; }
+    .nav-logo { height: 40px !important; }
     .hero-actions { flex-direction: column; align-items: flex-start; }
     .footer-inner { flex-direction: column; align-items: flex-start; }
     .steps { grid-template-columns: 1fr; }
