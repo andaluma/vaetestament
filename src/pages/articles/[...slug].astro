@@ -55,7 +55,7 @@ const articleJsonLd = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'UAEpropertyWills',
+    name: 'UAE Property Wills',
     legalName: 'Andaluma OÜ',
     url: canonical.replace(/\/articles\/.*$/, '/'),
     logo: {
@@ -109,7 +109,7 @@ const publishDateFmt = data.publish_date.toLocaleDateString('en-GB', {
 ---
 
 <BaseLayout
-  title={(() => { const base = data.seo_title || data.title; const full = `${base} - UAEpropertyWills`; return full.length <= 65 ? full : base; })()}
+  title={(() => { const base = data.seo_title || data.title; const full = `${base} - UAE Property Wills`; return full.length <= 65 ? full : base; })()}
   description={data.meta_description}
   canonical={canonical}
   ogType="article"

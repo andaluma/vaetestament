@@ -65,7 +65,7 @@ This is not a theoretical figure. It is money that would otherwise flow to the h
 
 A DIFC will is a one-time arrangement made during the property owner's lifetime. The total cost breaks down as follows.
 
-**Guidance fees** through UAEpropertyWills are fixed: €797 or €1,499, depending on the complexity of the situation. These cover the full preparation and support process.
+**Guidance fees** through UAE Property Wills are fixed: €797 or €1,499, depending on the complexity of the situation. These cover the full preparation and support process.
 
 **DIFC registration fees** are paid directly to the DIFC Courts portal: AED 7,500 for a single will, or AED 10,000 for mirror wills (for couples). These are the official fees set by the DIFC.
 

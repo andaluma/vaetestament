@@ -41,11 +41,11 @@ And unlike most gifts, this one does not sit in a drawer. It provides legal prot
 
 ## How the process works
 
-Giving a DIFC will as a gift through UAEpropertyWills follows a clear and respectful process.
+Giving a DIFC will as a gift through UAE Property Wills follows a clear and respectful process.
 
 ### Step 1: You get in touch
 
-You contact UAEpropertyWills to discuss your parents' situation. We explain what is needed, answer your questions, and confirm whether a DIFC will is the right solution.
+You contact UAE Property Wills to discuss your parents' situation. We explain what is needed, answer your questions, and confirm whether a DIFC will is the right solution.
 
 ### Step 2: You pay the guidance fee
 

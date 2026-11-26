@@ -78,7 +78,7 @@ const {
 const localeDomain = LOCALE_DOMAINS[locale] || LOCALE_DOMAINS.nl;
 const canonical = canonicalProp || `${localeDomain}${Astro.url.pathname}`;
 const ogImage = ogImageProp || `${localeDomain}/${locale === 'nl' ? 'og-default.png' : `og-default-${locale}.png`}`;
-const siteName = locale === 'en' ? 'UAEpropertyWills' : 'VAEtestament';
+const siteName = locale === 'en' ? 'UAE Property Wills' : 'VAEtestament';
 const ogLocale = OG_LOCALES[locale] || 'nl_NL';
 ---
 

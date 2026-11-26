@@ -114,7 +114,7 @@ You do not need to navigate this alone. Several professionals can assist at diff
 
 **A notary in your home country** prepares and legalises the required documents (certificate of inheritance, power of attorney).
 
-**UAEpropertyWills** can provide referrals to experienced UAE lawyers and advise on the document preparation process. While we primarily assist with DIFC will preparation for living property owners, we understand the full landscape and can point you in the right direction.
+**UAE Property Wills** can provide referrals to experienced UAE lawyers and advise on the document preparation process. While we primarily assist with DIFC will preparation for living property owners, we understand the full landscape and can point you in the right direction.
 
 ## A note on timing
 
