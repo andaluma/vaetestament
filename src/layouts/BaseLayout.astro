@@ -15,6 +15,7 @@ import SiteNav from '../components/SiteNav.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import TierCheckModal from '../components/TierCheckModal.astro';
 import WhatsAppFab from '../components/WhatsAppFab.astro';
+import Beacon from '../components/Beacon.astro';
 import AIAskPanel from '../components/AIAskPanel.astro';
 import CookieConsent from '../components/CookieConsent.astro';
 import ReferralCapture from '../components/ReferralCapture.astro';
@@ -155,5 +156,6 @@ const ogLocale = OG_LOCALES[locale] || 'nl_NL';
     <WhatsAppFab slug={Astro.props.articleSlug ?? ''} title={Astro.props.articleTitle ?? ''} locale={locale} />
     <CookieConsent locale={locale} />
     <ReferralCapture />
+    <Beacon />
   </body>
 </html>

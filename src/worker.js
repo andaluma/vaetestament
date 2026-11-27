@@ -91,6 +91,17 @@ export default {
       return Response.redirect(canonical + url.pathname + url.search, 301);
     }
 
+    // Privacy-friendly beacon (see src/components/Beacon.astro): log and return 204.
+    if (url.pathname === '/t') {
+      const p = url.searchParams;
+      const clip = (v) => (v || '').slice(0, 120);
+      console.log(JSON.stringify({
+        beacon: clip(p.get('e')), k: clip(p.get('k')), path: clip(p.get('p')),
+        ref: clip(p.get('r')), country: (request.cf && request.cf.country) || '', site: locale,
+      }));
+      return new Response(null, { status: 204, headers: { 'cache-control': 'no-store' } });
+    }
+
     // Serve domain-specific robots.txt so each domain references its own sitemap
     if (url.pathname === '/robots.txt') {
       const domain = LOCALE_DOMAINS[locale] || LOCALE_DOMAINS.nl;

@@ -161,6 +161,26 @@ const publishDateFmt = data.publish_date.toLocaleDateString('nl-NL', {
       <Content />
     </article>
 
+    <template id="mid-cta-tpl">
+      <aside class="mid-cta" aria-label="Gratis check">
+        <p class="mid-cta-label">Gratis check</p>
+        <p class="mid-cta-title">Heeft u vastgoed in de VAE?</p>
+        <p class="mid-cta-text">In een vrijblijvend gesprek van 15 minuten hoort u of uw testament daar geldig is en welke stap u nodig heeft. Eerlijk advies, ook als u niets hoeft te doen.</p>
+        <div class="mid-cta-row">
+          <a class="mid-cta-btn" href="https://calendar.app.google/JEkbAtZfuJSrK8JSA" target="_blank" rel="noopener">Plan gratis gesprek</a>
+          <a class="mid-cta-link" href={`https://wa.me/31616146007?text=${encodeURIComponent(`Hallo, ik heb een vraag naar aanleiding van het artikel "TITLE".`.replace('TITLE', data.title))}`} target="_blank" rel="noopener">Vraag het via WhatsApp &rarr;</a>
+        </div>
+      </aside>
+    </template>
+    <script is:inline>
+      (function () {
+        var tpl = document.getElementById('mid-cta-tpl');
+        var hs = document.querySelectorAll('.article-body h2');
+        if (!tpl || hs.length < 3) return;
+        hs[1].parentNode.insertBefore(tpl.content.cloneNode(true), hs[1]);
+      })();
+    </script>
+
     <section class="cta-block" aria-labelledby="cta-heading">
       <p class="section-label">Volgende stap</p>
       <h2 id="cta-heading">Welk pakket past bij uw situatie?</h2>
@@ -209,3 +229,13 @@ const publishDateFmt = data.publish_date.toLocaleDateString('nl-NL', {
     )}
   </main>
 </BaseLayout>
+
+<style is:global>
+  .mid-cta { margin: 2.5rem 0; padding: 1.5rem 1.5rem 1.25rem; border-left: 4px solid #C8A44A; background: rgba(200,164,74,0.08); border-radius: 4px; }
+  .mid-cta-label { margin: 0 0 0.25rem; font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: #9a7a2e; font-weight: 600; }
+  .mid-cta-title { margin: 0 0 0.4rem; font-size: 1.25rem; font-weight: 600; color: #0d4a45; }
+  .mid-cta-text { margin: 0 0 1rem; font-size: 0.98rem; line-height: 1.6; }
+  .mid-cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; }
+  .mid-cta-btn { display: inline-block; padding: 12px 22px; background: #C8A44A; color: #1a1a1a !important; font-weight: 600; text-decoration: none !important; border-radius: 3px; }
+  .mid-cta-link { color: #0d4a45 !important; font-weight: 500; }
+</style>

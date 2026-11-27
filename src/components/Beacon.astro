@@ -1,0 +1,42 @@
+---
+// Beacon - privacy-friendly counting without cookies or personal data.
+// Sends a tiny request to /t on the same domain for: a page view (only real
+// browsers run this, so bots that don't run JavaScript are not counted),
+// clicks on the key buttons (call, WhatsApp, buy, tier check), and reading 75%
+// of a page. The site worker logs it; nothing is stored in the browser.
+---
+<script is:inline>
+(function () {
+  try {
+    if (navigator.webdriver || /bot|crawl|spider|headless|lighthouse|preview/i.test(navigator.userAgent)) return;
+    var ref = '';
+    try { ref = document.referrer ? new URL(document.referrer).hostname : ''; } catch (_) {}
+    if (ref === location.hostname) ref = 'internal';
+    var send = function (e, k) {
+      try {
+        var u = '/t?e=' + e + '&k=' + encodeURIComponent(k || '') + '&p=' + encodeURIComponent(location.pathname) + '&r=' + encodeURIComponent(ref);
+        if (navigator.sendBeacon) navigator.sendBeacon(u); else fetch(u, { method: 'POST', keepalive: true });
+      } catch (_) {}
+    };
+    send('pv');
+    document.addEventListener('click', function (ev) {
+      var a = ev.target && ev.target.closest ? ev.target.closest('a,button') : null;
+      if (!a) return;
+      var h = a.getAttribute('href') || '', oc = a.getAttribute('onclick') || '', k = '';
+      if (/calendar\.app\.google|calendar\.google\.com/.test(h)) k = 'call';
+      else if (/wa\.me|whatsapp/i.test(h)) k = 'whatsapp';
+      else if (/buy\.stripe\.com/.test(h)) k = 'buy' + (a.getAttribute('data-value') ? '-' + a.getAttribute('data-value') : '');
+      else if (/openTierCheck/.test(oc)) k = 'tiercheck';
+      else if (/^mailto:/.test(h)) k = 'email';
+      if (a.closest('.mid-cta')) k = k && 'mid-' + k;
+      if (k) send('click', k);
+    }, true);
+    var done = false;
+    window.addEventListener('scroll', function () {
+      if (done) return;
+      var p = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight;
+      if (p > 0.75) { done = true; send('read75'); }
+    }, { passive: true });
+  } catch (_) {}
+})();
+</script>
